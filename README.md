@@ -12,7 +12,7 @@ All Components are made using [ReactJS](https://reactjs.org/) and [Styled Compon
 You can see the complete prototype [here](https://scene.zeplin.io/project/5e309b1a46e5cf7deacb0cd7)
 
 But we are asking you to implement only the Skill section below:
-![Skills](https://pleno.news/wp-content/uploads/2019/09/plenonews_69429078_424547198412357_2917137491588994799_n-1024x684.jpg)
+![Skills](https://drive.google.com/file/d/1dajKzswsbSP6QyRFf5UXqqGMuBBC_Prk/view?usp=sharing)
 
 
 # To complete this test you must 
