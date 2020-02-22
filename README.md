@@ -11,7 +11,7 @@ All Components are made using [ReactJS](https://reactjs.org/) and [Styled Compon
 You can see the complete prototype [here](https://scene.zeplin.io/project/5e309b1a46e5cf7deacb0cd7)
 
 But we are asking you to implement only the Skill section below:
-[Skills](https://www.dropbox.com/s/cvdvjtfk2df3ivb/skills.PNG?dl=0)
+![Skills](https://www.dropbox.com/s/cvdvjtfk2df3ivb/skills.PNG?dl=0)
 
 
 # To complete this test you must 
