@@ -1,6 +1,7 @@
 # This if part of the hiring processes for the [Front End position](http://bit.ly/vanhack-react-job) at VanHack
 
-**Your goal is create a sigle page application usign React. If you follow at the below instruction you should be able to finish everything without problemas, but, in case you need any help or have any questions fell free to contact us by email.**
+### Your goal is:
+**Create a sigle page application usign React. If you follow at the below instruction you should be able to finish everything without problemas, but, in case you need any help or have any questions fell free to contact us by email.**
 
 All Components are made using [ReactJS](https://reactjs.org/) and [Styled Components](https://styled-components.com/) and we use [Storybook](https://storybook.js.org/) as a renderring
 
