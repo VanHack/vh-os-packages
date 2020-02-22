@@ -28,7 +28,7 @@ But we are asking you to implement only the Skill section below:
 5 - We want to see your tests!!!
 
 6 - Create a Single Page Application using ReactJs with 3 routes
-* `/` => Hello World
+* `/` => Home, with 2 links that will redirect to the below routes
 * `/user` => The inital version of the component
 * `/user/[id]` => The view of the component with preload states from our API
 
