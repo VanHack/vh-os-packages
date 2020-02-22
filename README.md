@@ -32,6 +32,8 @@ But we are asking you to implement only the Skill section below:
 * `/user` => The inital version of the component
 * `/user/[id]` => The view of the component with preload states from our API
 
+7 - After finish the project, reply the email that we sent you with your GitHub project link
+
 # API Documentation
 [Swagger API](https://react-job-api-test.azurewebsites.net/swagger/index.html)
 
