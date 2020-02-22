@@ -8,7 +8,9 @@ All Components are made using [ReactJS](https://reactjs.org/) and [Styled Compon
 
 # Prototype
 
-You can see the prototype [here](https://scene.zeplin.io/project/5e309b1a46e5cf7deacb0cd7)
+You can see the complete prototype [here](https://scene.zeplin.io/project/5e309b1a46e5cf7deacb0cd7)
+But we are asking you to implement only the Skill section below:
+
 
 # To complete this test you must 
 1 - Create or Update all components needed to compose the user Skills Section
