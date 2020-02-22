@@ -1,5 +1,6 @@
 # This if part of the hiring processes for the [Front End position](http://bit.ly/vanhack-react-job) at VanHack
 
+Your goal is create an sigle page application usign React following the below documentation:
 
 All Components are made using [ReactJS](https://reactjs.org/) and [Styled Components](https://styled-components.com/) and we use [Storybook](https://storybook.js.org/) as a renderring
 
@@ -30,6 +31,9 @@ But we are asking you to implement only the Skill section below:
 * `/` => Hello World
 * `/user` => The inital version of the component
 * `/user/[id]` => The view of the component with preload states from our API
+
+# API to be used on this project
+[Swagger API](https://react-job-api-test.azurewebsites.net/swagger/index.html)
 
 # how to use the components on your local environment
 
