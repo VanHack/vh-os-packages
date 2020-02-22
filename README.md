@@ -32,7 +32,7 @@ But we are asking you to implement only the Skill section below:
 * `/user` => The inital version of the component
 * `/user/[id]` => The view of the component with preload states from our API
 
-# API to be used on this project
+# API Documentation
 [Swagger API](https://react-job-api-test.azurewebsites.net/swagger/index.html)
 
 # how to use the components on your local environment
