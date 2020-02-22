@@ -38,7 +38,7 @@ But we are asking you to implement only the Skill section below:
 # API Documentation
 [Swagger API](https://react-job-api-test.azurewebsites.net/swagger/index.html)
 
-# how to use the components on your local environment
+# How to use the components on your local environment
 
 * Run `yarn transpile`
 * Run `npm pack`
@@ -88,6 +88,5 @@ ROOT                      #STORYBOOK CONFIG
 ## Mandatory
 > All components must be created inside `packages/Components`
 
-##### If you have any question please ask on the slack and we'll help you.
 
 # Big Thanks and [WeHackTogether](https://vanhack.com/)!!!
