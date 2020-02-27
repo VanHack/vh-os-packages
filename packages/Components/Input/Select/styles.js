@@ -32,4 +32,25 @@ export const Input = styled.input`
 export const Container = styled(VHBox)`
   position: relative;
   margin-bottom: 21px;
+
+  /* remove indicators (x and |)  */
+  div[class*="IndicatorsContainer"]{
+    div:first-of-type, span {
+      display: none;
+    } 
+  }
+
+  /* update selected item style when multivalue  */
+  div[class*="multiValue"] {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    padding: 0 5px;
+
+    div:nth-child(2){
+      &:hover {
+        background: transparent;
+      }
+    }
+  }
 `

@@ -11,7 +11,7 @@ export const Input = styled.input`
   cursor: pointer;
 
   :checked  {
-    opacity: 0;
+    opacity: 1;
   }
 `;
 
