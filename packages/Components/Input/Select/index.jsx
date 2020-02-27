@@ -4,12 +4,13 @@ import PropTypes from 'prop-types'
 import Select from 'react-select';
 import makeAnimated from 'react-select/animated';
 import VHText from '../../Text'
+import { Container } from './styles'
 
 const animatedComponents = makeAnimated();
 
 const VHSelect = props =>  {
   return (
-    <div style={{position: 'relative', marginBottom: '21px'}}>
+    <Container {...props}>
       {
         props.caption &&
           <VHText
@@ -76,7 +77,7 @@ const VHSelect = props =>  {
             />
           </div>
       }
-    </div>
+    </Container>
   );
 }
 

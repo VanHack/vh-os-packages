@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import Color from "../../../Colors";
 
+import VHBox from '../../Box'
+
 export const Input = styled.input`
   border: 1px solid #e0e0e0;
   border-radius: 6px;
@@ -25,3 +27,9 @@ export const Input = styled.input`
     color: #9f9f9f;
   }
 `;
+
+
+export const Container = styled(VHBox)`
+  position: relative;
+  margin-bottom: 21px;
+`

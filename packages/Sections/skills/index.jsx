@@ -22,8 +22,9 @@ const VHSkillsSection = props => {
         <VHCardBase
           className={`vh-skills-section-card ${props.className ? props.className : ''}`}
         >
-            <Row>
+            <Row row>
                 <VHSelect
+                  flex='2'
                   caption="I am..."
                   captionColor={
                     props.controls.position.loading
@@ -37,6 +38,26 @@ const VHSkillsSection = props => {
                   data="position"
                   onEvent={props.onEvent}
                   items={props.positions}
+                  isLoading={props.controls.position.loading}
+                  description={props.controls.position.error && props.controls.position.message}
+                  descriptionColor="red-light"
+                />
+                <VHSelect
+                  flex='1'
+                  marginLeft='15px'
+                  caption='With'
+                  captionColor={
+                    props.controls.position.loading
+                    ? "gray-40"
+                    : props.controls.position.error
+                    ? "red"
+                    : null
+                  }
+                  className={`vh-skills-section-yearOfExperience ${props.className ? props.className : ''}`}
+                  currentItem={props.data.position.yearOfExperience}
+                  data="yearOfExperience"
+                  onEvent={props.onEvent}
+                  items={props.yearOfExperiences}
                   isLoading={props.controls.position.loading}
                   description={props.controls.position.error && props.controls.position.message}
                   descriptionColor="red-light"
