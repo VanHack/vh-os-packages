@@ -2,29 +2,14 @@ import React from 'react'
 
 import VHInfoTitleDescription from  '../InfoTitleDescription';
 import VHSelect from '../Input/Select'
+import VHBadge from '../Badge'
 import Ordinal from '../Ordinal';
 
 import { Container, List, ListItem, ItemContent, Title } from './styles'
 
-/**
- * 
- * mainSkills: [
-    {
-      current: items[1],
-      order: 0,
-      yearOfExperience: items[1]
-    },
-    {
-      current: items[2],
-      order: 1,
-      yearOfExperience: items[1]
-    }
-  ], props 
- */
-
 const VHTable = (props) => {
   return (
-  <Container>
+  <Container {...props}>
     <VHInfoTitleDescription
       title={props.title}
       description={props.subtitle}
@@ -36,6 +21,7 @@ const VHTable = (props) => {
           {props.ordinal && <Ordinal value={(item.order+1)} />}
           <ItemContent>
             <Title>{item.current.label}</Title>
+            {item.badge && <VHBadge title={item.badge} />}
             <VHSelect
               data='selectExperience'
               className='yearsOfExperience'

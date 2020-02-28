@@ -34,7 +34,38 @@ const apiResponse = {
       current: items[2],
       order: 1,
       yearOfExperience: items[1]
+    },
+    {
+      current: items[0],
+      order: 2,
+      yearOfExperience: items[1]
     }
+  ],
+  secondarySkills: [
+    {
+      current: items[1],
+      order: 0,
+      yearOfExperience: items[1],
+      badge: 'Code Test'
+    },
+    {
+      current: items[2],
+      order: 1,
+      yearOfExperience: items[1]
+    },
+    {
+      current: items[0],
+      order: 2,
+      yearOfExperience: items[1],
+      badge: 'Code Score: 85%'
+    }
+  ],
+  suggestions:[
+    {label: "Vue.js"},
+    {label: "Python"},
+    {label: "Ruby on Rails"},
+    {label: "C#"},
+    {label: "Jquery"}
   ],
   openedPosition: true
 }
@@ -66,6 +97,7 @@ storiesOf("Sections|Skills", module)
       }
         workAs={items}
         mainSkills={items}
+        secondarySkills={items}
         positions={items}
         yearOfExperiences={items}
         data={apiResponse}
@@ -101,6 +133,7 @@ storiesOf("Sections|Skills", module)
       }
         workAs={items}
         mainSkills={items}
+        secondarySkills={items}
         positions={items}
         data={apiResponse}
         onEvent={e => {
@@ -135,6 +168,7 @@ storiesOf("Sections|Skills", module)
       }
         workAs={items}
         mainSkills={items}
+        secondarySkills={items}
         positions={items}
         data={apiResponse}
         onEvent={e => {

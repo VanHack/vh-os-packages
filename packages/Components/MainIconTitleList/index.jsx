@@ -2,19 +2,25 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import VHIconText from "../IconText/index";
 
+import { Container } from './styles'
+
 const VHMainIconTitleList = (props) => {
-    return props.items.map(item => (
-        <VHIconText
-            iconColor="primary-light"
-            textColor="primary-light"
-            text={item.label}
-            icon="bullet"
-            className={`vh-main-icon-title-list ${props.className ? props.className : ''}`}
-            variant="caption"
-            data={props.data}
-            onEvent={props.onEvent}
-        />
-    ))
+    return (
+        <Container {...props}>
+        {props.items.map(item => (
+            <VHIconText
+                iconColor="primary-light"
+                textColor="primary-light"
+                text={item.label}
+                icon="bullet"
+                className={`vh-main-icon-title-list ${props.className ? props.className : ''}`}
+                variant="caption"
+                data={props.data}
+                onEvent={props.onEvent}
+            />
+        ))}
+        </Container>
+    );
 }
 
 VHMainIconTitleList.propTypes = {

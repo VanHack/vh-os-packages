@@ -20,7 +20,7 @@ const VHIconText = props => {
    >
       <VHIcon 
         color={props.iconColor}
-        sm 
+        xs
         title={props.text}
         icon={props.icon} />
       <VHText

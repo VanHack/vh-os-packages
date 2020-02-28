@@ -1,6 +1,7 @@
 import styled from 'styled-components';
+import VHBox from '../Box'
 
-export const Container = styled.section``;
+export const Container = styled(VHBox)``;
 
 export const Title = styled.div`
   font-weight:bold;
@@ -17,7 +18,7 @@ export const List = styled.ul`
 export const ListItem = styled.li`
   display: flex;
   align-items:center;
-  height: 44px;
+  height: 50px;
   border-bottom: 1px solid #ccc;
 `;
 
