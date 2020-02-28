@@ -17,6 +17,9 @@ But we are asking you to **implement only the Skill section below:**
 
 
 # To complete this test you must 
+
+#Step 1:
+
 1 - Create or Update all components needed to compose the user Skills Section
  * After run the project you'll be able to check the Section here [Skills Section](http://localhost:6007/?path=/story/sections-skills--default)
  
@@ -28,12 +31,16 @@ But we are asking you to **implement only the Skill section below:**
 
 5 - We want to see your tests!!!
 
-6 - Create a Single Page Application using ReactJs with 3 routes
+6 - Fork your new components (check the How to contribute section)
+
+# Step 2
+
+1 - Create a new Single Page Application project using ReactJs with 3 routes
 * `/` => Home, with 2 links that will redirect to the below routes
 * `/user` => The inital version of the component
 * `/user/[id]` => The view of the component with preload states from our API
 
-7 - After finish the project, reply the email that we sent you with your GitHub project link
+2 - After finishing the project, reply the email that we sent you with your GitHub project link
 
 # API Documentation
 [Swagger API](https://react-job-api-test.azurewebsites.net/swagger/index.html)
