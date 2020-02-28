@@ -5,7 +5,7 @@ import VHCardBase from "../../Components/Cards/Base";
 import VHText from "../../Components/Text";
 import VHSelect from "../../Components/Input/Select";
 import VHInputCheckbox from "../../Components/Input/checkbox";
-
+import VHTable from "../../Components/VHTable"
 
 const VHSkillsSection = props => {
   return (
@@ -107,6 +107,16 @@ const VHSkillsSection = props => {
                   description={props.controls.workAs.error && props.controls.workAs.message}
                   descriptionColor="red-light"
                 />
+            </Row>
+            <Row>
+              <VHTable
+                title="Rank your top 3 skills"
+                subtitle="1st - Highest proficiency level; 3rd - lowest proficiency level"
+                ordinal
+                list={props.data.mainSkills}
+                items={props.mainSkills}
+                data="mainSkills"
+              />
             </Row>
         </VHCardBase>
       </Row>
