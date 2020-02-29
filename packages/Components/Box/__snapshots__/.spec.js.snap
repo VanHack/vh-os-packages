@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[Component] - VHBox renders box without crashing 1`] = `
+<div
+  class=""
+>
+  Box
+</div>
+`;

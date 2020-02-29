@@ -11,11 +11,17 @@
   "scripts": {
     "start": "start-storybook -p 6007",
     "build": "build-storybook -o docs",
+    "test": "jest",
     "transpile": "babel --plugins inline-import-data-uri,@babel/plugin-proposal-class-properties packages --out-dir dist",
     "pretranspile": "svgr -d packages/Icons/ assets/"
   },
   "eslintConfig": {
     "extends": "react-app"
+  },
+  "jest": {
+    "setupFilesAfterEnv": [
+      "./setupTests.js"
+    ]
   },
   "browserslist": {
     "production": [
@@ -41,9 +47,15 @@
     "@storybook/addons": "^5.3.9",
     "@storybook/react": "^5.3.9",
     "@svgr/cli": "^5.2.0",
+    "@testing-library/dom": "^6.12.2",
+    "@testing-library/jest-dom": "^5.1.1",
+    "@testing-library/react": "^9.4.1",
     "babel-loader": "^8.0.6",
     "babel-plugin-inline-import-data-uri": "^1.0.1",
-    "react-scripts": "^3.3.0"
+    "jest": "^25.1.0",
+    "jest-styled-components": "^7.0.0",
+    "react-scripts": "^3.3.0",
+    "react-test-renderer": "^16.13.0"
   },
   "dependencies": {
     "react-select": "^3.0.8",

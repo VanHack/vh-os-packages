@@ -1,9 +1,20 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import VHBox from '.';
+import { render, renderer } from '../../../setupTests';
 
-it('renders box without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<VHBox />, div);
-  ReactDOM.unmountComponentAtNode(div);
+describe('[Component] - VHBox', () => {
+  it('renders box without crashing', () => {
+    const { getByText } = render(<VHBox>Box</VHBox>);
+    expect(getByText('Box')).toMatchSnapshot();
+  });
+
+  it('renders vhbox with bgColor and color', () => {
+    const json = renderer(
+      <VHBox bg="#e99" color="#ccc">
+        Box
+      </VHBox>
+    ).toJSON();
+    expect(json).toHaveStyleRule('background-color', '#e99');
+    expect(json).toHaveStyleRule('color', '#ccc');
+  });
 });
