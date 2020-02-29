@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[Component] - VHBadge renders component without crashing 1`] = `
+.c0 {
+  border: 1px solid #0675ce;
+  color: #0675ce;
+  padding: 5px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+<div
+  class="c0"
+>
+  simple badge
+</div>
+`;

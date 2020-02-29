@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from 'prop-types';
 
 import { Container } from "./styles";
 
@@ -11,5 +12,9 @@ const getOrdinal = (number = 0) => {
 const Ordinal = ({value}) => {
   return <Container>{getOrdinal(value)}</Container>;
 };
+
+Ordinal.propTypes = {
+  value: PropTypes.number.isRequired
+}
 
 export default Ordinal;

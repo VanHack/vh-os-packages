@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[Component] - VHSuggestions renders component without crashing 1`] = `
+.c0 {
+  margin: 0;
+  padding: 0;
+  color: #4f4f4f;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 'regular';
+  line-height: 21.5px;
+}
+
+<p
+  class="c0 vh-text-component "
+  color="gray-90"
+>
+  simple title
+</p>
+`;

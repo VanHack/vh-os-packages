@@ -18,4 +18,8 @@ export const Container = styled(VHBox)`
     margin-top: 15px;
     line-height: 2;
   }
+
+  > [color*="gray-100"]{
+    padding-top: 20px;
+  }
 `

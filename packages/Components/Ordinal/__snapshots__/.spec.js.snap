@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[Component] - VHOrdinal renders component without crashing 1`] = `
+.c0 {
+  width: 30px;
+  font-size: 14px;
+  color: #444;
+  margin-right: 10px;
+}
+
+<span
+  class="c0"
+>
+  1st
+</span>
+`;
