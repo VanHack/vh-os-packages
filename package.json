@@ -11,7 +11,8 @@
   "scripts": {
     "start": "start-storybook -p 6007",
     "build": "build-storybook -o docs",
-    "transpile": "babel --plugins inline-import-data-uri,@babel/plugin-proposal-class-properties packages --out-dir dist"
+    "transpile": "babel --plugins inline-import-data-uri,@babel/plugin-proposal-class-properties packages --out-dir dist",
+    "pretranspile": "svgr -d packages/Icons/ assets/"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -39,6 +40,7 @@
     "@storybook/addon-links": "^5.3.9",
     "@storybook/addons": "^5.3.9",
     "@storybook/react": "^5.3.9",
+    "@svgr/cli": "^5.2.0",
     "babel-loader": "^8.0.6",
     "babel-plugin-inline-import-data-uri": "^1.0.1",
     "react-scripts": "^3.3.0"

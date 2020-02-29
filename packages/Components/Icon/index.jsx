@@ -1,10 +1,18 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { ReactComponent as BulletIcon } from '../../../assets/icons/dot.svg'
-import { ReactComponent as FilterIcon } from '../../../assets/icons/icon_filter.svg'
-import { ReactComponent as ArrowLeftIcon } from '../../../assets/icons/ico-arrow-left.svg'
-import { ReactComponent as SortIcon } from '../../../assets/icons/icon_swap-vert.svg'
-import { ReactComponent as SearchIcon } from '../../../assets/icons/mdi_search.svg'
+
+// import { ReactComponent as BulletIcon } from '../../../assets/icons/dot.svg'
+// import { ReactComponent as FilterIcon } from '../../../assets/icons/icon_filter.svg'
+// import { ReactComponent as ArrowLeftIcon } from '../../../assets/icons/ico-arrow-left.svg'
+// import { ReactComponent as SortIcon } from '../../../assets/icons/icon_swap-vert.svg'
+// import { ReactComponent as SearchIcon } from '../../../assets/icons/mdi_search.svg'
+
+// import svg as component (solve inline import problem outside lib)
+import  BulletIcon from '../../Icons/icons/Dot'
+import  FilterIcon from '../../Icons/icons/IconFilter'
+import  ArrowLeftIcon from '../../Icons/icons/IcoArrowLeft'
+import  SortIcon from '../../Icons/icons/IconSwapVert'
+import  SearchIcon from '../../Icons/icons/MdiSearch'
 
 import Color from "../../Colors";
 
