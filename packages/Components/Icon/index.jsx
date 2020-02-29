@@ -92,7 +92,7 @@ VHIcon.defaultProps = {
   className: '',
 }
 export const IconPropTypes = {
-  source: PropTypes.string.isRequired,
+  source: PropTypes.string,
   title: PropTypes.string.isRequired,
   className: PropTypes.string,
   color: PropTypes.string,

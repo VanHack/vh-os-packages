@@ -9,6 +9,7 @@ const VHMainIconTitleList = (props) => {
         <Container {...props}>
         {props.items.map(item => (
             <VHIconText
+                key={item.label}
                 iconColor="primary-light"
                 textColor="primary-light"
                 text={item.label}

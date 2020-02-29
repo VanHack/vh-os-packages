@@ -1,6 +1,6 @@
-import React from "react";
-import { storiesOf } from "@storybook/react";
-import VHSkillsSection from ".";
+import React from 'react';
+import { storiesOf } from '@storybook/react';
+import VHSkillsSection from '.';
 
 const items = [
   {
@@ -14,8 +14,8 @@ const items = [
   {
     label: 'Item 3',
     value: 'o'
-  },
-]
+  }
+];
 const apiResponse = {
   position: {
     current: items[0],
@@ -60,90 +60,96 @@ const apiResponse = {
       badge: 'Code Score: 85%'
     }
   ],
-  suggestions:[
-    {label: "Vue.js"},
-    {label: "Python"},
-    {label: "Ruby on Rails"},
-    {label: "C#"},
-    {label: "Jquery"}
+  suggestions: [
+    { label: 'Vue.js' },
+    { label: 'Python' },
+    { label: 'Ruby on Rails' },
+    { label: 'C#' },
+    { label: 'Jquery' }
   ],
   openedPosition: true
-}
+};
 
-storiesOf("Sections|Skills", module)
-    .add("Default", () => (
-        <div style={{ backgroundColor: "#f2f2f2", height: "100vh", padding: "24px" }}>
-            <VHSkillsSection
-                controls={{
-                  position: {
-                      loading: false,
-                      error: false,
-                      success: false,
-                      message: 'Database error'
-                  },
-                  workAs: {
-                      loading: false,
-                      error: false,
-                      success: false,
-                      message: 'Database error'
-                  },
-                  openedPosition: {
-                      loading: false,
-                      error: false,
-                      success: false,
-                      message: 'Database error'
+storiesOf('Sections|Skills', module)
+  .add('Default', () => (
+    <div
+      style={{ backgroundColor: '#f2f2f2', height: '100vh', padding: '24px' }}
+    >
+      <VHSkillsSection
+        title="skills"
+        controls={{
+          position: {
+            loading: false,
+            error: false,
+            success: false,
+            message: 'Database error'
           },
-        }
-      }
+          workAs: {
+            loading: false,
+            error: false,
+            success: false,
+            message: 'Database error'
+          },
+          openedPosition: {
+            loading: false,
+            error: false,
+            success: false,
+            message: 'Database error'
+          }
+        }}
         workAs={items}
         mainSkills={items}
         secondarySkills={items}
         positions={items}
         yearOfExperiences={items}
         data={apiResponse}
-        onEvent={e => {
-          console.log(e)
+        onEvent={(e) => {
+          console.log(e);
         }}
       />
     </div>
   ))
-    .add("error", () => (
-        <div style={{ backgroundColor: "#f2f2f2", height: "100vh", padding: "24px" }}>
-            <VHSkillsSection
-                controls={{
-                  position: {
-                      loading: false,
-                      error: true,
-                      success: false,
-                      message: 'Database error'
-                  },
-                  workAs: {
-                      loading: false,
-                      error: true,
-                      success: false,
-                      message: 'Database error'
-                  },
-                  openedPosition: {
-                      loading: false,
-                      error: true,
-                      success: false,
-                      message: 'Database error'
+  .add('error', () => (
+    <div
+      style={{ backgroundColor: '#f2f2f2', height: '100vh', padding: '24px' }}
+    >
+      <VHSkillsSection
+        title="skills"
+        controls={{
+          position: {
+            loading: false,
+            error: true,
+            success: false,
+            message: 'Database error'
           },
-        }
-      }
+          workAs: {
+            loading: false,
+            error: true,
+            success: false,
+            message: 'Database error'
+          },
+          openedPosition: {
+            loading: false,
+            error: true,
+            success: false,
+            message: 'Database error'
+          }
+        }}
         workAs={items}
         mainSkills={items}
         secondarySkills={items}
         positions={items}
         data={apiResponse}
         onEvent={e => {
-          console.log(e)
+          console.log(e);
         }}
       />
     </div>
   ))
-  .add("loading", () => (
-    <div style={{ backgroundColor: "#f2f2f2", height: "100vh", padding: "24px" }}>
+  .add('loading', () => (
+    <div
+      style={{ backgroundColor: '#f2f2f2', height: '100vh', padding: '24px' }}
+    >
       <VHSkillsSection
         controls={{
           position: {
@@ -163,17 +169,16 @@ storiesOf("Sections|Skills", module)
             error: false,
             success: false,
             message: 'Database error'
-          },
-        }
-      }
+          }
+        }}
         workAs={items}
         mainSkills={items}
         secondarySkills={items}
         positions={items}
         data={apiResponse}
         onEvent={e => {
-          console.log(e)
+          console.log(e);
         }}
       />
     </div>
-  ))
+  ));

@@ -1,19 +1,35 @@
-import React, { useState } from 'react'
-import PropTypes from 'prop-types'
-import * as S from "./styles"
-import VHText from '../../Text'
-import { Row } from '../../../Grid'
-import VHInputCheckboxMulti from './multi'
+import React, { useState } from 'react';
+import PropTypes from 'prop-types';
+import * as S from './styles';
+import VHText from '../../Text';
+import { Row } from '../../../Grid';
+import VHInputCheckboxMulti from './multi';
 
 const VHInputCheckbox = props => {
-  const [checked, setChecked] = useState(props.checked)
+  const [checked, setChecked] = useState(props.checked);
 
-  if(props.multi) {
-    return <VHInputCheckboxMulti {...props}/>
+  if (props.multi) {
+    return <VHInputCheckboxMulti {...props} />;
+  }
+
+  function handleOnChange(props) {
+    setChecked(!checked);
+    props.onEvent({
+      type: 'OnClick',
+      origin: 'VHCheckbox',
+      props: {
+        data: props.data,
+        checked: !checked
+      }
+    });
   }
 
   return (
-    <Row row alignItemsCenter className={`vh-checkbox ${props.className ? props.className : ''}`} >
+    <Row
+      row
+      alignItemsCenter
+      className={`vh-checkbox ${props.className ? props.className : ''}`}
+    >
       <S.Wrapper>
         <S.Input
           name={props.name}
@@ -21,43 +37,39 @@ const VHInputCheckbox = props => {
           checked={checked}
           disabled={props.disabled}
           type="checkbox"
-          onClick={() => {
-            setChecked(!checked),
-            props.onEvent({
-              type: "OnClick",
-              origin: "VHCheckbox",
-              props: {
-                data: props.data,
-                checked: !checked
-               }
-            })
-        }}/>
+          onChange={() => handleOnChange(props)}
+        />
       </S.Wrapper>
-      <VHText htmlFor="squaredOne" variant={props.variant} color={props.color} text={props.title}/>
+      <VHText
+        htmlFor="squaredOne"
+        variant={props.variant}
+        color={props.color}
+        text={props.title}
+      />
     </Row>
-  )
-}
+  );
+};
 
 VHInputCheckbox.defaultProps = {
-  title: "",
-  color: "gray-100",
-  variant: "platform1",
+  title: '',
+  color: 'gray-100',
+  variant: 'platform1',
   onEvent: null,
   data: null,
-  checked	: null,
+  checked: null,
   disabled: null,
-  className: '',
-}
+  className: ''
+};
 
 VHInputCheckbox.propTypes = {
   title: PropTypes.string,
   color: PropTypes.string,
   variant: PropTypes.string,
   onEvent: PropTypes.func.isRequired,
-  data: PropTypes.string,
-  checked	: PropTypes.bool,
+  data: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
+  checked: PropTypes.bool,
   disabled: PropTypes.bool,
-  className: PropTypes.string,
-}
+  className: PropTypes.string
+};
 
-export default VHInputCheckbox
+export default VHInputCheckbox;
