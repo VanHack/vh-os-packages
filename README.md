@@ -45,9 +45,9 @@ But we are asking you to **implement only the Skill section below:**
 # API Documentation
 [Swagger API](https://react-job-api-test.azurewebsites.net/swagger/index.html)
 
-UserId = 1:  Will return an profile
-UserId <= 0: Will return an error (profile not found)
-UserId > 1: Will return an emptity profile
+* UserId = 1:  Will return an profile
+* UserId <= 0: Will return an error (profile not found)
+* UserId > 1: Will return an emptity profile
 
 # How to use the components on your local environment
 
