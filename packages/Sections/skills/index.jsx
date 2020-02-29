@@ -113,9 +113,11 @@ const VHSkillsSection = props => {
               <VHTable
                 title="Rank your top 3 skills"
                 subtitle="1st - Highest proficiency level; 3rd - lowest proficiency level"
+                placeholder="Add top skill"
+                size={3}
                 ordinal
                 list={props.data.mainSkills}
-                items={props.mainSkills}
+                options={props.mainSkills}
                 data="mainSkills"
               />
             </Row>
@@ -123,8 +125,10 @@ const VHSkillsSection = props => {
               <VHTable
                 flex ='3'
                 title="Add up to 5 secondary skills"
+                placeholder="Add secondary skill"
+                size={5}
                 list={props.data.secondarySkills}
-                items={props.secondarySkills}
+                options={props.secondarySkills}
                 data="secondarySkills"
               />
               <VHSuggestions

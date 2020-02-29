@@ -28,9 +28,15 @@ export const ItemContent = styled.div`
   justify-content: space-between;
   align-items:center;
 
+  input[type="text"]{
+    padding:0;
+    width: 200px;
+    font-weight: bold;
+  }
+
   /* update selectExperience style */
   [data="selectExperience"]{
-    width: 100px;
+    width: 120px;
     padding: 0;
     margin: 0;
     border: 0;
