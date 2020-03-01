@@ -45,6 +45,9 @@ storiesOf('Components|Table', module)
       list={mainSkills}
       options={yearsOfExp}
       data="mainSkills"
+      onEvent={(e) => {
+        console.log(e);
+      }}
     />
   </div>
 ))
@@ -56,7 +59,25 @@ storiesOf('Components|Table', module)
       size={5}
       list={mainSkills}
       options={yearsOfExp}
+      data="secondarySkills"
+      onEvent={(e) => {
+        console.log(e);
+      }}
+    />
+  </div>
+))
+.add('empty data', () => (
+  <div style={{ margin: '0 auto', backgroundColor: '#fff', height: '300px', width: '600px', padding: '24px' }}>
+    <VHTable
+      title="empty table"
+      size={2}
+      ordinal
+      list={[]}
+      options={yearsOfExp}
       data="mainSkills"
+      onEvent={(e) => {
+        console.log(e);
+      }}
     />
   </div>
 ))

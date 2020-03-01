@@ -11,7 +11,7 @@ const animatedComponents = makeAnimated();
 const VHSelect = props => {
   const { onEvent, ...rest } = props;
   return (
-    <Container {...rest}>
+    <Container {...rest} data-testid="vh-select">
       {props.caption && (
         <VHText
           text={props.caption}

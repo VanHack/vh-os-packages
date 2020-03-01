@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { Container } from "./styles";
 
 function Badge({ title }) {
-  return <Container>{title}</Container>;
+  return <Container data="vh-badge">{title}</Container>;
 }
 
 Badge.propTypes = {

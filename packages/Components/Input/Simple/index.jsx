@@ -7,6 +7,7 @@ const VHInput = props => {
   
   return (
     <S.Input
+      data={props.data}
       id={props.id}
       type={props.type}
       placeholder={props.placeholder}

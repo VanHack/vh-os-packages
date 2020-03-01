@@ -10,7 +10,7 @@ const getOrdinal = (number = 0) => {
 };
 
 const Ordinal = ({value}) => {
-  return <Container>{getOrdinal(value)}</Container>;
+  return <Container data={`vh-ordinal-${value}`}>{getOrdinal(value)}</Container>;
 };
 
 Ordinal.propTypes = {

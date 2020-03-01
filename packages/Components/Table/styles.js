@@ -35,7 +35,7 @@ export const ItemContent = styled.div`
   }
 
   /* update selectExperience style */
-  [data="selectExperience"]{
+  [data*="selectExperience"]{
     width: 120px;
     padding: 0;
     margin: 0;

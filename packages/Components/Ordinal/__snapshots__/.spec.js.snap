@@ -10,6 +10,7 @@ exports[`[Component] - VHOrdinal renders component without crashing 1`] = `
 
 <span
   class="c0"
+  data="vh-ordinal-1"
 >
   1st
 </span>

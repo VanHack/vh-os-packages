@@ -11,6 +11,7 @@ exports[`[Component] - VHBadge renders component without crashing 1`] = `
 
 <div
   class="c0"
+  data="vh-badge"
 >
   simple badge
 </div>

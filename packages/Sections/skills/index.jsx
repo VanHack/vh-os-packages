@@ -119,6 +119,7 @@ const VHSkillsSection = props => {
                 list={props.data.mainSkills}
                 options={props.mainSkills}
                 data="mainSkills"
+                onEvent={props.onEvent}
               />
             </Row>
             <Row row>
@@ -130,6 +131,7 @@ const VHSkillsSection = props => {
                 list={props.data.secondarySkills}
                 options={props.secondarySkills}
                 data="secondarySkills"
+                onEvent={props.onEvent}
               />
               <VHSuggestions
                 flex='1'
