@@ -28,6 +28,10 @@ export const Input = styled.input`
   }
 `;
 
+export const ErrorMsg = styled.div`
+  position: 'absolute';
+  top: '60px';
+`;
 
 export const Container = styled(VHBox)`
   position: relative;

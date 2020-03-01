@@ -32,53 +32,102 @@ const mainSkills = [
   }
 ];
 
+const controls = [
+  {
+    loading: false,
+    error: true,
+    success: false,
+    message: 'Database error'
+  }
+];
+
+const Container = ({ children }) => (
+  <div
+    style={{
+      margin: '0 auto',
+      backgroundColor: '#fff',
+      height: '300px',
+      width: '600px',
+      padding: '24px'
+    }}
+  >
+    {children}
+  </div>
+);
+
 storiesOf('Components|Table', module)
+  .add('main skill', () => (
+    <Container>
+      <VHTable
+        title="Rank your top 3 skills"
+        subtitle="1st - Highest proficiency level; 3rd - lowest proficiency level"
+        placeholder="Add top skill"
+        size={3}
+        ordinal
+        list={mainSkills}
+        options={yearsOfExp}
+        data="mainSkills"
+        onEvent={e => {
+          console.log(e);
+        }}
+      />
+    </Container>
+  ))
+  .add('secondary skills', () => {
+    const skills = [
+      ...mainSkills,
+      {
+        current: { label: 'Nodejs', value: '1' },
+        order: 2,
+        yearOfExperience: yearsOfExp[0],
+        badge: 'code test 90%'
+      }
+    ];
 
-.add('main skill', () => (
-  <div style={{ margin: '0 auto', backgroundColor: '#fff', height: '300px', width: '600px', padding: '24px' }}>
-    <VHTable
-      title="Rank your top 3 skills"
-      subtitle="1st - Highest proficiency level; 3rd - lowest proficiency level"
-      placeholder="Add top skill"
-      size={3}
-      ordinal
-      list={mainSkills}
-      options={yearsOfExp}
-      data="mainSkills"
-      onEvent={(e) => {
-        console.log(e);
-      }}
-    />
-  </div>
-))
-.add('secondary skills', () => (
-  <div style={{ margin: '0 auto', backgroundColor: '#fff', height: '300px', width: '600px', padding: '24px' }}>
-    <VHTable
-      title="Add up to 5 secondary skills"
-      placeholder="Add secondary skill"
-      size={5}
-      list={mainSkills}
-      options={yearsOfExp}
-      data="secondarySkills"
-      onEvent={(e) => {
-        console.log(e);
-      }}
-    />
-  </div>
-))
-.add('empty data', () => (
-  <div style={{ margin: '0 auto', backgroundColor: '#fff', height: '300px', width: '600px', padding: '24px' }}>
-    <VHTable
-      title="empty table"
-      size={2}
-      ordinal
-      list={[]}
-      options={yearsOfExp}
-      data="mainSkills"
-      onEvent={(e) => {
-        console.log(e);
-      }}
-    />
-  </div>
-))
-
+    return (
+      <Container>
+        <VHTable
+          title="Add up to 5 secondary skills"
+          placeholder="Add secondary skill"
+          size={5}
+          list={skills}
+          options={yearsOfExp}
+          data="secondarySkills"
+          onEvent={e => {
+            console.log(e);
+          }}
+        />
+      </Container>
+    );
+  })
+  .add('empty data', () => (
+    <Container>
+      <VHTable
+        title="empty table"
+        size={2}
+        ordinal
+        list={[]}
+        options={yearsOfExp}
+        data="mainSkills"
+        onEvent={e => {
+          console.log(e);
+        }}
+      />
+    </Container>
+  ))
+  .add('error data', () => (
+    <Container>
+      <VHTable
+        title="empty table"
+        size={2}
+        ordinal
+        list={[]}
+        options={yearsOfExp}
+        data="mainSkills"
+        onEvent={e => {
+          console.log(e);
+        }}
+        controls={controls}
+      />
+    </Container>
+  ));

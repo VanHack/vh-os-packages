@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import Select from 'react-select';
 import makeAnimated from 'react-select/animated';
 import VHText from '../../Text';
-import { Container } from './styles';
+import { Container, ErrorMsg} from './styles';
 
 const animatedComponents = makeAnimated();
 
@@ -68,13 +68,13 @@ const VHSelect = props => {
         }}
       />
       {props.description && (
-        <div style={{ position: 'absolute', top: '60px' }}>
+        <ErrorMsg data="vh-error-msg">
           <VHText
             text={props.description}
             variant="caption"
             color={props.descriptionColor}
           />
-        </div>
+        </ErrorMsg>
       )}
     </Container>
   );

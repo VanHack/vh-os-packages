@@ -18,7 +18,7 @@ export const List = styled.ul`
 export const ListItem = styled.li`
   display: flex;
   align-items:center;
-  height: 50px;
+  height: 60px;
   border-bottom: 1px solid #ccc;
 `;
 
@@ -46,6 +46,11 @@ export const ItemContent = styled.div`
       &:hover {
         box-shadow: 0;
       }
+    }
+
+    /* change error message position inside table */
+    [data='vh-error-msg']{
+      top: 20px;
     }
   }
 `

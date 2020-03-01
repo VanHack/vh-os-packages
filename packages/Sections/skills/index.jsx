@@ -120,6 +120,7 @@ const VHSkillsSection = props => {
                 options={props.mainSkills}
                 data="mainSkills"
                 onEvent={props.onEvent}
+                controls={props.controls.mainSkills}
               />
             </Row>
             <Row row>

@@ -95,7 +95,15 @@ storiesOf('Sections|Skills', module)
             error: false,
             success: false,
             message: 'Database error'
-          }
+          },
+          mainSkills: [
+            {
+              loading: false,
+              error: false,
+              success: false,
+              message: 'Database error'
+            }
+          ]
         }}
         workAs={items}
         mainSkills={items}
@@ -133,7 +141,15 @@ storiesOf('Sections|Skills', module)
             error: true,
             success: false,
             message: 'Database error'
-          }
+          },
+          mainSkills: [
+            {
+              loading: false,
+              error: true,
+              success: false,
+              message: 'Database error'
+            }
+          ]
         }}
         workAs={items}
         mainSkills={items}
