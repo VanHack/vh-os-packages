@@ -7,7 +7,7 @@ import { Container } from './styles'
 const VHMainIconTitleList = (props) => {
     return (
         <Container {...props}>
-        {props.items.map(item => (
+        {props.items && props.items.map(item => (
             <VHIconText
                 key={item.label}
                 iconColor="primary-light"

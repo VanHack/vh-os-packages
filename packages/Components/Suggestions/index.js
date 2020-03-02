@@ -8,10 +8,12 @@ import VHText from '../Text';
 import { Container } from './styles';
 
 const Suggestions = props => {
+  const {items = []} = props;
+
   return (
     <Container {...props}>
       <VHInfoTitleDescription description={props.title} />
-      {!props.items.length && (
+      {(!items || !items.length) && (
         <VHText
           data="msg"
           color="gray-100"
@@ -20,7 +22,7 @@ const Suggestions = props => {
           onEvent={null}
         />
       )}
-      <VHMainIconTitleList items={props.items} data="suggestion-list" />
+      <VHMainIconTitleList items={items} data="suggestion-list" />
     </Container>
   );
 };

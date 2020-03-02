@@ -41,10 +41,12 @@ const VHInputCheckbox = props => {
         />
       </S.Wrapper>
       <VHText
+        clickable
         htmlFor="squaredOne"
         variant={props.variant}
         color={props.color}
         text={props.title}
+        onEvent={()=> handleOnChange(props)}
       />
     </Row>
   );

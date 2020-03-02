@@ -4,7 +4,7 @@ import * as Text from './styles'
 
 const VHText = props => {
     const initialState = { className: 'vh-text-component' }
-    const action = () => props.onEvent({
+    const action = () => props.clickable && props.onEvent({
         type: "onClick",
         origin: "VHText",
         props: {

@@ -117,7 +117,7 @@ const VHSkillsSection = props => {
                 size={3}
                 ordinal
                 list={props.data.mainSkills}
-                options={props.mainSkills}
+                options={props.yearOfExperiences}
                 data="mainSkills"
                 onEvent={props.onEvent}
                 controls={props.controls.mainSkills}
@@ -130,7 +130,7 @@ const VHSkillsSection = props => {
                 placeholder="Add secondary skill"
                 size={5}
                 list={props.data.secondarySkills}
-                options={props.secondarySkills}
+                options={props.yearOfExperiences}
                 data="secondarySkills"
                 onEvent={props.onEvent}
               />
@@ -138,7 +138,7 @@ const VHSkillsSection = props => {
                 flex='1'
                 paddingLeft="30px"
                 title="Suggestions based on your top skills"
-                items={props.data.suggestions}
+                items={props.data.suggestions || []}
               />
             </Row>
         </VHCardBase>

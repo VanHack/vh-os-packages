@@ -10,7 +10,7 @@ const VHIconText = props => {
     <S.Wrapper
       inline={props.inline}
       className={`${props.className ? props.className : ""}`}
-      onClick={() => props.onEvent({
+      onClick={() => props.clickable && props.onEvent({
         type: "Click",
         origin: "VHIconText",
         props: {
