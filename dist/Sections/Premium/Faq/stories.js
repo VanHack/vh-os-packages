@@ -25,13 +25,13 @@ var faqs = [{
   answer: "No. Premium is a value-added service for people who wish to improve their professional skills. It does not guarantee you a job."
 }];
 (0, _react2.storiesOf)("Sections|Premium/Faq", module).add("Default", function () {
-  return /*#__PURE__*/_react.default.createElement("div", {
+  return _react.default.createElement("div", {
     style: {
       backgroundColor: "#f2f6f9",
       height: "100vh",
       padding: "24px"
     }
-  }, /*#__PURE__*/_react.default.createElement(_.default, {
+  }, _react.default.createElement(_.default, {
     sectionTitle: items.sectionTitle,
     title: items.title,
     description: items.description,

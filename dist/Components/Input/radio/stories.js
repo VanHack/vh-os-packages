@@ -19,7 +19,7 @@ var data = {
   }]
 };
 (0, _react2.storiesOf)("Components|Input/Radio", module).add("default", function () {
-  return /*#__PURE__*/_react.default.createElement("div", {
+  return _react.default.createElement("div", {
     style: {
       width: '80%',
       marginLeft: '1%',

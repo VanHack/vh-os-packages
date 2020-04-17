@@ -35,34 +35,34 @@ var FifthStep = function FifthStep(props) {
   }) : {};
   var genders = props.genders;
   var gender = props.gender != undefined ? [genders[props.gender]] : {};
-  return /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  return _react.default.createElement(_Grid.Row, {
     column: true
-  }, /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  }, _react.default.createElement(_Grid.Row, {
     row: true,
     marginBottom: 10,
     alignItemsCenter: true
-  }, /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  }, _react.default.createElement(_Grid.Row, {
     autoWidth: true,
     marginRight: 5
-  }, /*#__PURE__*/_react.default.createElement(_Icon.default, {
+  }, _react.default.createElement(_Icon.default, {
     icon: 'user',
     title: "city",
     md: true,
     color: "gray-50"
-  })), /*#__PURE__*/_react.default.createElement(_Grid.Row, null, /*#__PURE__*/_react.default.createElement(_Text.default, {
+  })), _react.default.createElement(_Grid.Row, null, _react.default.createElement(_Text.default, {
     variant: "h4",
     color: "gray-90",
     text: 'Personal Info'
-  }))), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  }))), _react.default.createElement(_Grid.Row, {
     column: true
-  }, /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  }, _react.default.createElement(_Grid.Row, {
     row: true,
     responsive: true,
     marginBottom: 5
-  }, /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  }, _react.default.createElement(_Grid.Row, {
     marginRight: 3,
     id: "citezenship"
-  }, /*#__PURE__*/_react.default.createElement(_Select.default, {
+  }, _react.default.createElement(_Select.default, {
     preLoading: props.controls.citizenship.preLoading || false,
     caption: "Citizenship",
     placeholder: "Select an option",
@@ -75,9 +75,9 @@ var FifthStep = function FifthStep(props) {
     description: props.controls.citizenship.error && props.controls.citizenship.message,
     descriptionColor: "gray-90",
     captionColor: props.controls.citizenship.loading ? "gray-40" : props.controls.citizenship.error ? "red" : 'gray-90'
-  })), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  })), _react.default.createElement(_Grid.Row, {
     id: "location"
-  }, /*#__PURE__*/_react.default.createElement(_Select.default, {
+  }, _react.default.createElement(_Select.default, {
     preLoading: props.controls.location.preLoading || false,
     caption: "Location",
     placeholder: "Select an option",
@@ -90,13 +90,13 @@ var FifthStep = function FifthStep(props) {
     description: props.controls.location.error && props.controls.location.message,
     descriptionColor: "gray-90",
     captionColor: props.controls.location.loading ? "gray-40" : props.controls.location.error ? "red" : 'gray-90'
-  }))), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  }))), _react.default.createElement(_Grid.Row, {
     row: true,
     responsive: true
-  }, /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  }, _react.default.createElement(_Grid.Row, {
     marginRight: 3,
     id: "gender"
-  }, /*#__PURE__*/_react.default.createElement(_Select.default, {
+  }, _react.default.createElement(_Select.default, {
     preLoading: props.controls.gender.preLoading || false,
     caption: "Gender",
     placeholder: "Select an option",
@@ -109,13 +109,13 @@ var FifthStep = function FifthStep(props) {
     description: props.controls.gender.error && props.controls.gender.message,
     descriptionColor: "red",
     captionColor: props.controls.gender.loading ? "gray-40" : props.controls.gender.error ? "red" : 'gray-90'
-  })), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  })), _react.default.createElement(_Grid.Row, {
     row: true,
     marginleft: 3
-  }, /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  }, _react.default.createElement(_Grid.Row, {
     column: true,
     id: "phone"
-  }, /*#__PURE__*/_react.default.createElement(_TitleDescription.default, {
+  }, _react.default.createElement(_TitleDescription.default, {
     className: "vh-general-section-phone ".concat(props.className ? props.className : ''),
     descriptionColor: props.controls.phone.loading ? "gray-40" : props.controls.phone.error ? "red-light" : "gray-90",
     preLoading: props.controls.phone.preLoading || false,
@@ -125,7 +125,7 @@ var FifthStep = function FifthStep(props) {
     title: "Phone number",
     titleColor: props.controls.phone.loading ? "gray-40" : props.controls.phone.error ? "red" : "gray-90",
     titleVariant: "platform1"
-  }), !props.controls.phone.preLoading && /*#__PURE__*/_react.default.createElement(_Simple.default, {
+  }), !props.controls.phone.preLoading && _react.default.createElement(_Simple.default, {
     data: "phone",
     onEvent: props.onEvent,
     disabled: props.controls.phone.loading,
@@ -133,10 +133,10 @@ var FifthStep = function FifthStep(props) {
     loading: props.controls.phone.loading,
     placeholder: "+1 778 000 0000",
     value: props.phone
-  })))), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  })))), _react.default.createElement(_Grid.Row, {
     marginBottom5: true,
     marginTop: 15
-  }, /*#__PURE__*/_react.default.createElement(_Icon2.default, {
+  }, _react.default.createElement(_Icon2.default, {
     className: "",
     disabled: props.controls.linkedin.loading,
     error: props.controls.linkedin.error,

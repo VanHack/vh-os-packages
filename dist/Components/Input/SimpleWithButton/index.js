@@ -22,14 +22,14 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 var VHInputSimpleWithButton = function VHInputSimpleWithButton(props) {
-  return /*#__PURE__*/_react.default.createElement(_index.Row, {
+  return _react.default.createElement(_index.Row, {
     row: true
-  }, /*#__PURE__*/_react.default.createElement(_index.Row, {
+  }, _react.default.createElement(_index.Row, {
     width: "90%",
     style: {
       marginRight: "4px"
     }
-  }, /*#__PURE__*/_react.default.createElement(_index2.default, _defineProperty({
+  }, _react.default.createElement(_index2.default, _defineProperty({
     disabled: props.disabled,
     error: props.error,
     loading: props.loading,
@@ -37,7 +37,7 @@ var VHInputSimpleWithButton = function VHInputSimpleWithButton(props) {
     data: props.data,
     value: props.value,
     onEvent: props.onEvent
-  }, "data", props.data))), /*#__PURE__*/_react.default.createElement(_index3.default, {
+  }, "data", props.data))), _react.default.createElement(_index3.default, {
     primary: true,
     lg: true,
     onEvent: props.onEvent,

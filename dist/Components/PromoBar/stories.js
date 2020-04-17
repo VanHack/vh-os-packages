@@ -15,7 +15,7 @@ var items = {
   backgroundColor: 'red'
 };
 (0, _react2.storiesOf)("Components|Promo Bar", module).add("Types", function () {
-  return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(_.default, {
+  return _react.default.createElement("div", null, _react.default.createElement(_.default, {
     textPromo: items.textPromo,
     label: items.label,
     endDate: items.endDate.setDate(items.endDate.getDate() + 2),

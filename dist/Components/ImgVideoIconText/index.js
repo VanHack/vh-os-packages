@@ -26,15 +26,15 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var VHImgVideoIconText = function VHImgVideoIconText(props) {
-  return /*#__PURE__*/_react.default.createElement(_index.Row, {
+  return _react.default.createElement(_index.Row, {
     alignItemsCenter: true
-  }, /*#__PURE__*/_react.default.createElement(S.Wrapper, {
+  }, _react.default.createElement(S.Wrapper, {
     responsive: true
-  }, /*#__PURE__*/_react.default.createElement(S.ImgItem, {
+  }, _react.default.createElement(S.ImgItem, {
     image: props.image
-  }), /*#__PURE__*/_react.default.createElement(S.ItemsWrapper, null, /*#__PURE__*/_react.default.createElement(_index.Row, {
+  }), _react.default.createElement(S.ItemsWrapper, null, _react.default.createElement(_index.Row, {
     row: true
-  }, /*#__PURE__*/_react.default.createElement(_index.Row, {
+  }, _react.default.createElement(_index.Row, {
     width: "10%",
     alignItemsCenter: true,
     style: {
@@ -42,20 +42,20 @@ var VHImgVideoIconText = function VHImgVideoIconText(props) {
       marginLeft: "15px"
     },
     mobileDisplayNone: true
-  }, /*#__PURE__*/_react.default.createElement(_index3.default, {
+  }, _react.default.createElement(_index3.default, {
     icon: props.icon,
     color: props.color,
     md: true
-  })), /*#__PURE__*/_react.default.createElement(_index.Row, {
+  })), _react.default.createElement(_index.Row, {
     width: "60%",
     style: {
       padding: "0 15px"
     }
-  }, /*#__PURE__*/_react.default.createElement(_index2.default, {
+  }, _react.default.createElement(_index2.default, {
     variant: "platform1",
     color: "gray-10",
     text: props.text
-  })))), /*#__PURE__*/_react.default.createElement(S.ImgOverlay, null)));
+  })))), _react.default.createElement(S.ImgOverlay, null)));
 };
 
 VHImgVideoIconText.defaultProps = {

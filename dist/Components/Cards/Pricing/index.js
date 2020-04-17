@@ -34,14 +34,14 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 var VHCardPricing = function VHCardPricing(props) {
-  return /*#__PURE__*/_react.default.createElement(_Base.default, null, /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  return _react.default.createElement(_Base.default, null, _react.default.createElement(_Grid.Row, {
     alignItemsCenter: true
-  }, /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  }, _react.default.createElement(_Grid.Row, {
     height: 25,
     alignItemsCenter: true
-  }, /*#__PURE__*/_react.default.createElement(S.Wrapper, {
+  }, _react.default.createElement(S.Wrapper, {
     show: props.show
-  }, /*#__PURE__*/_react.default.createElement(_index.default, {
+  }, _react.default.createElement(_index.default, {
     onEvent: props.onEvent,
     label: props.save,
     round: true,
@@ -49,38 +49,38 @@ var VHCardPricing = function VHCardPricing(props) {
     transparent: props.transparentChip,
     noHover: props.noHoverChip,
     marginRight: props.marginRight
-  }))), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  }))), _react.default.createElement(_Grid.Row, {
     alignItemsCenter: true,
     marginTop: 30,
     marginBottom: 10
-  }, /*#__PURE__*/_react.default.createElement(_index2.default, {
+  }, _react.default.createElement(_index2.default, {
     variant: "h4",
     color: "black-60",
     text: props.period
-  })), /*#__PURE__*/_react.default.createElement(_index2.default, {
+  })), _react.default.createElement(_index2.default, {
     variant: "h1",
     color: "primary-dark",
     text: props.price
-  }), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  }), _react.default.createElement(_Grid.Row, {
     alignItemsCenter: true,
     height: 20
-  }, /*#__PURE__*/_react.default.createElement(_index2.default, {
+  }, _react.default.createElement(_index2.default, {
     variant: "subtitle3",
     color: "primary-dark",
     text: props.unit
-  })), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  })), _react.default.createElement(_Grid.Row, {
     alignItemsCenter: true,
     height: 20
-  }, /*#__PURE__*/_react.default.createElement(_index2.default, {
+  }, _react.default.createElement(_index2.default, {
     variant: "subtitle3",
     color: "black-60",
     text: props.subscription
-  })), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  })), _react.default.createElement(_Grid.Row, {
     alignItemsCenter: true,
     marginTop: 30,
     marginBottom: 10,
     width: "60%"
-  }, /*#__PURE__*/_react.default.createElement(_index3.default, {
+  }, _react.default.createElement(_index3.default, {
     onEvent: props.onEvent,
     data: props.data,
     label: props.cta,
@@ -88,13 +88,13 @@ var VHCardPricing = function VHCardPricing(props) {
     outline: props.outlineBtn,
     primary: props.primaryBtn,
     secondary: props.secondaryBtn
-  })), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  })), _react.default.createElement(_Grid.Row, {
     height: 30,
     alignItemsCenter: true,
     style: {
       textAlign: "center"
     }
-  }, /*#__PURE__*/_react.default.createElement(_index2.default, {
+  }, _react.default.createElement(_index2.default, {
     variant: "caption",
     color: "black-60",
     text: props.note

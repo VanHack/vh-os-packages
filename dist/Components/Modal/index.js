@@ -57,12 +57,12 @@ var VHModal = function VHModal(props) {
         target: 'VHModal'
       });
     }
-  }, /*#__PURE__*/_react.default.createElement(_index.default, null))), /*#__PURE__*/_react.default.createElement(S.Content, null, props.content), props.confirmation && /*#__PURE__*/_react.default.createElement(S.ConfirmationSection, null, /*#__PURE__*/_react.default.createElement(_Button.default, {
+  }, _react.default.createElement(_index.default, null))), _react.default.createElement(S.Content, null, props.content), props.confirmation && _react.default.createElement(S.ConfirmationSection, null, _react.default.createElement(_Button.default, {
     primary: true,
     outline: true,
     label: props.cancelTitle,
     onClick: props.onClose
-  }), /*#__PURE__*/_react.default.createElement(_Button.default, {
+  }), _react.default.createElement(_Button.default, {
     disabled: props.disableAction,
     primary: true,
     label: props.confirmType,

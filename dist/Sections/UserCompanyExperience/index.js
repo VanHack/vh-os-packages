@@ -27,15 +27,11 @@ var _Preloader = _interopRequireDefault(require("../../Components/Preloader"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
 
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance"); }
 
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(n); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
-function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+function _iterableToArrayLimit(arr, i) { if (!(Symbol.iterator in Object(arr) || Object.prototype.toString.call(arr) === "[object Arguments]")) { return; } var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
 
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
@@ -75,7 +71,7 @@ var VHUserCompanyExperienceSection = function VHUserCompanyExperienceSection(pro
     return "".concat(allYears, " years, ").concat(partialMonths, " months");
   }
 
-  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, openModal && /*#__PURE__*/_react.default.createElement(_ModalExperience.default, {
+  return _react.default.createElement(_react.default.Fragment, null, openModal && _react.default.createElement(_ModalExperience.default, {
     openModal: openModal,
     onClose: function onClose() {
       return setOpenModal(false);
@@ -90,22 +86,22 @@ var VHUserCompanyExperienceSection = function VHUserCompanyExperienceSection(pro
     industryList: props.industryList,
     positions: props.positions,
     closeModalExperience: props.closeModalExperience
-  }), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  }), _react.default.createElement(_Grid.Row, {
     mmarginBottom: 2
-  }, /*#__PURE__*/_react.default.createElement(_Text.default, {
+  }, _react.default.createElement(_Text.default, {
     className: "vh-skills-section-title ".concat(props.className ? props.className : ''),
     text: "Experience ".concat(experience.length > 0 ? calcDate(props.experience.firstExperienceDate) : ''),
     color: "black-50",
     variant: "h2"
-  })), /*#__PURE__*/_react.default.createElement(_Grid.Row, null, /*#__PURE__*/_react.default.createElement(_Base.default, {
+  })), _react.default.createElement(_Grid.Row, null, _react.default.createElement(_Base.default, {
     className: "vh-skills-section-card ".concat(props.className ? props.className : '')
-  }, props.controls.experienceSection.loading ? /*#__PURE__*/_react.default.createElement(_Preloader.default, {
+  }, props.controls.experienceSection.loading ? _react.default.createElement(_Preloader.default, {
     type: "circle"
-  }) : /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, props.preLoading ? /*#__PURE__*/_react.default.createElement(_reactPreloadSkeleton.PostDescriptionSkeleton, null) : /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, experience.map(function (userPosition) {
-    return /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  }) : _react.default.createElement(_react.default.Fragment, null, props.preLoading ? _react.default.createElement(_reactPreloadSkeleton.PostDescriptionSkeleton, null) : _react.default.createElement(_react.default.Fragment, null, experience.map(function (userPosition) {
+    return _react.default.createElement(_Grid.Row, {
       marginBottom: 10,
       paddingRight: 10
-    }, /*#__PURE__*/_react.default.createElement(_UserCompanyPositonExperience.default, {
+    }, _react.default.createElement(_UserCompanyPositonExperience.default, {
       item: userPosition,
       companyList: props.companyList,
       industryList: props.industryList,
@@ -117,13 +113,13 @@ var VHUserCompanyExperienceSection = function VHUserCompanyExperienceSection(pro
         return _setCurrentItem(userPosition);
       }
     }));
-  }), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  }), _react.default.createElement(_Grid.Row, {
     row: true
-  }, /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  }, _react.default.createElement(_Grid.Row, {
     row: true,
     marginRight: 4,
     autoWidth: true
-  }, /*#__PURE__*/_react.default.createElement(_ButtonNew.default, {
+  }, _react.default.createElement(_ButtonNew.default, {
     nowrap: true,
     primary: true,
     onEvent: props.onEvent,

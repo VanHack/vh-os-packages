@@ -29,30 +29,35 @@ var FirstStep = function FirstStep(props) {
     return element.value === props.positionSkill;
   }) : {};
   var yearsOfExperienceList = props.yearsOfExperienceList;
+<<<<<<< HEAD
+  var yearsOfExperience = props.yearsOfExperience != undefined ? [yearsOfExperienceList[props.yearsOfExperience]] : {};
+  return _react.default.createElement(_Grid.Row, {
+=======
   var yearsOfExperience = props.yearsOfExperience != undefined ? yearsOfExperienceList.find(function (element) {
     return element.value === props.yearsOfExperience;
   }) : {};
   return /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+>>>>>>> 5cb29a2a7ba2b8c09db150bf7cceada996996cab
     column: true
-  }, /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  }, _react.default.createElement(_Grid.Row, {
     row: true,
     marginBottom: 10,
     alignItemsCenter: true
-  }, /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  }, _react.default.createElement(_Grid.Row, {
     autoWidth: true,
     marginRight: 5
-  }, /*#__PURE__*/_react.default.createElement(_Icon.default, {
+  }, _react.default.createElement(_Icon.default, {
     icon: 'experience',
     title: "city",
     md: true,
     color: "gray-50"
-  })), /*#__PURE__*/_react.default.createElement(_Grid.Row, null, /*#__PURE__*/_react.default.createElement(_Text.default, {
+  })), _react.default.createElement(_Grid.Row, null, _react.default.createElement(_Text.default, {
     variant: "h4",
     color: "gray-90",
     text: 'Professional Overview'
-  }))), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  }))), _react.default.createElement(_Grid.Row, {
     marginBottom5: true
-  }, /*#__PURE__*/_react.default.createElement(_Select.default, {
+  }, _react.default.createElement(_Select.default, {
     preLoading: props.preLoading,
     caption: "Which role best applies to your experience?",
     captionColor: props.controls.positionSkill.loading ? "gray-40" : props.controls.positionSkill.error ? "red" : 'gray-90',
@@ -64,10 +69,10 @@ var FirstStep = function FirstStep(props) {
     isLoading: props.controls.positionSkill.loading,
     description: props.controls.positionSkill.error && props.controls.positionSkill.message,
     descriptionColor: "red"
-  })), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  })), _react.default.createElement(_Grid.Row, {
     width: '70%',
     marginBottom5: true
-  }, /*#__PURE__*/_react.default.createElement(_Select.default, {
+  }, _react.default.createElement(_Select.default, {
     preLoading: props.preLoading,
     caption: "For how many years have you been working as an IT professional?",
     captionColor: props.controls.yearsOfExperience.loading ? "gray-40" : props.controls.yearsOfExperience.error ? "red" : 'gray-90',
@@ -79,7 +84,7 @@ var FirstStep = function FirstStep(props) {
     isLoading: props.controls.yearsOfExperience.loading,
     description: props.controls.yearsOfExperience.error && props.controls.yearsOfExperience.message,
     descriptionColor: "red"
-  })), /*#__PURE__*/_react.default.createElement(_Grid.Row, null, /*#__PURE__*/_react.default.createElement(_radio.default, {
+  })), _react.default.createElement(_Grid.Row, null, _react.default.createElement(_radio.default, {
     data: 'activelyLookingForJob',
     color: "gray-90",
     variant: "platform1",

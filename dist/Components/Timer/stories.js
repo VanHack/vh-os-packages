@@ -11,13 +11,13 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var dateNow = new Date();
 dateNow.setHours(dateNow.getHours() + 80);
 (0, _react2.storiesOf)("Components|Timer", module).add("VHTimer", function () {
-  return /*#__PURE__*/_react.default.createElement("div", {
+  return _react.default.createElement("div", {
     style: {
       width: "250px ",
       height: "100vh",
       padding: "24px"
     }
-  }, /*#__PURE__*/_react.default.createElement(_.default, {
+  }, _react.default.createElement(_.default, {
     endDate: new Date(dateNow.getTime() + dateNow.getTimezoneOffset() * 60000)
   }));
 });

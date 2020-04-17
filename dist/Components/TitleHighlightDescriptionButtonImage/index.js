@@ -26,46 +26,46 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var VHTitleHighlightDescriptionButtonImage = function VHTitleHighlightDescriptionButtonImage(props) {
-  return /*#__PURE__*/_react.default.createElement(_index.Container, null, /*#__PURE__*/_react.default.createElement(_index.Row, {
+  return _react.default.createElement(_index.Container, null, _react.default.createElement(_index.Row, {
     row: true,
     responsive: true
-  }, /*#__PURE__*/_react.default.createElement(_index.Row, {
+  }, _react.default.createElement(_index.Row, {
     width: "40%",
     marginTop: 150
-  }, /*#__PURE__*/_react.default.createElement(_index.Row, {
+  }, _react.default.createElement(_index.Row, {
     marginBottom5: true
-  }, /*#__PURE__*/_react.default.createElement(_index2.default, {
+  }, _react.default.createElement(_index2.default, {
     variant: "h3",
     color: "gray-90",
     text: props.title
-  })), /*#__PURE__*/_react.default.createElement(_index.Row, {
+  })), _react.default.createElement(_index.Row, {
     marginBottom5: true
-  }, /*#__PURE__*/_react.default.createElement(_index2.default, {
+  }, _react.default.createElement(_index2.default, {
     variant: "h1",
     color: "gray-90",
     text: props.highlight
-  })), /*#__PURE__*/_react.default.createElement(_index.Row, {
+  })), _react.default.createElement(_index.Row, {
     marginBottom5: true
-  }, /*#__PURE__*/_react.default.createElement(_index2.default, {
+  }, _react.default.createElement(_index2.default, {
     variant: "bodyweb",
     color: "gray-90",
     text: props.description
-  })), /*#__PURE__*/_react.default.createElement(_index.Row, {
+  })), _react.default.createElement(_index.Row, {
     width: "50%",
     marginTop: 30,
     marginBottom: 30
-  }, /*#__PURE__*/_react.default.createElement(_index3.default, {
+  }, _react.default.createElement(_index3.default, {
     secondary: true,
     onEvent: props.onEvent,
     data: props.data,
     label: props.label,
     lg: true
-  }))), /*#__PURE__*/_react.default.createElement(_index.Row, {
+  }))), _react.default.createElement(_index.Row, {
     width: "60%",
     height: 600,
     marginTop: 50,
     mobileDisplayNone: true
-  }, /*#__PURE__*/_react.default.createElement(S.ImgWrapper, {
+  }, _react.default.createElement(S.ImgWrapper, {
     image: props.image
   }))));
 };

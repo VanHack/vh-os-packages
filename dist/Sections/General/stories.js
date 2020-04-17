@@ -25,13 +25,13 @@ var items = [{
   value: 'o'
 }];
 (0, _react2.storiesOf)("Sections|General", module).add("Default", function () {
-  return /*#__PURE__*/_react.default.createElement("div", {
+  return _react.default.createElement("div", {
     style: {
       backgroundColor: "#f7f7f7",
       height: "100vh",
       padding: "24px"
     }
-  }, /*#__PURE__*/_react.default.createElement(_.default, {
+  }, _react.default.createElement(_.default, {
     controls: {
       gender: {
         loading: false,
@@ -82,13 +82,13 @@ var items = [{
     }
   }));
 }).add("Initial", function () {
-  return /*#__PURE__*/_react.default.createElement("div", {
+  return _react.default.createElement("div", {
     style: {
       backgroundColor: "#f7f7f7",
       height: "100vh",
       padding: "24px"
     }
-  }, /*#__PURE__*/_react.default.createElement(_.default, {
+  }, _react.default.createElement(_.default, {
     controls: {
       gender: {
         loading: false,
@@ -139,13 +139,13 @@ var items = [{
     }
   }));
 }).add("Error", function () {
-  return /*#__PURE__*/_react.default.createElement("div", {
+  return _react.default.createElement("div", {
     style: {
       backgroundColor: "#f7f7f7",
       height: "100vh",
       padding: "24px"
     }
-  }, /*#__PURE__*/_react.default.createElement(_.default, {
+  }, _react.default.createElement(_.default, {
     controls: {
       gender: {
         loading: false,
@@ -196,13 +196,13 @@ var items = [{
     }
   }));
 }).add("Success", function () {
-  return /*#__PURE__*/_react.default.createElement("div", {
+  return _react.default.createElement("div", {
     style: {
       backgroundColor: "#f7f7f7",
       height: "100vh",
       padding: "24px"
     }
-  }, /*#__PURE__*/_react.default.createElement(_.default, {
+  }, _react.default.createElement(_.default, {
     controls: {
       gender: {
         loading: false,
@@ -253,13 +253,13 @@ var items = [{
     }
   }));
 }).add("Loading", function () {
-  return /*#__PURE__*/_react.default.createElement("div", {
+  return _react.default.createElement("div", {
     style: {
       backgroundColor: "#f7f7f7",
       height: "100vh",
       padding: "24px"
     }
-  }, /*#__PURE__*/_react.default.createElement(_.default, {
+  }, _react.default.createElement(_.default, {
     controls: {
       gender: {
         loading: true,
@@ -310,13 +310,13 @@ var items = [{
     }
   }));
 }).add("Pre-loaging", function () {
-  return /*#__PURE__*/_react.default.createElement("div", {
+  return _react.default.createElement("div", {
     style: {
       backgroundColor: "#f7f7f7",
       height: "100vh",
       padding: "24px"
     }
-  }, /*#__PURE__*/_react.default.createElement(_.default, {
+  }, _react.default.createElement(_.default, {
     controls: {
       gender: {
         loading: false,

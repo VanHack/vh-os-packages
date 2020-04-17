@@ -24,12 +24,12 @@ var features = [{
   description: "Join thousands of motivated premium members from all over the world. Learn from your peers in a judgement-free environment"
 }];
 (0, _react2.storiesOf)("Components|Cards/Features", module).add("Default", function () {
-  return /*#__PURE__*/_react.default.createElement("div", {
+  return _react.default.createElement("div", {
     style: {
       backgroundColor: "#f2f8fc",
       padding: "24px"
     }
-  }, /*#__PURE__*/_react.default.createElement(_index.Row, null, /*#__PURE__*/_react.default.createElement(_index2.default, {
+  }, _react.default.createElement(_index.Row, null, _react.default.createElement(_index2.default, {
     features: features
   })));
 });

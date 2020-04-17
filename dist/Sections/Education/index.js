@@ -37,15 +37,11 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
-function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
 
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance"); }
 
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(n); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
-function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+function _iterableToArrayLimit(arr, i) { if (!(Symbol.iterator in Object(arr) || Object.prototype.toString.call(arr) === "[object Arguments]")) { return; } var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
 
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
@@ -77,7 +73,7 @@ var VHEducationSection = function VHEducationSection(props) {
   var degreeType = props.degreeType != undefined ? items.find(function (element) {
     return element.value === props.degreeType;
   }) : {};
-  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, openModal && /*#__PURE__*/_react.default.createElement(_ModalEducation.default, _defineProperty({
+  return _react.default.createElement(_react.default.Fragment, null, openModal && _react.default.createElement(_ModalEducation.default, _defineProperty({
     openModal: openModal,
     onClose: function onClose() {
       return setOpenModal(false);
@@ -88,7 +84,7 @@ var VHEducationSection = function VHEducationSection(props) {
     items: items,
     controls: props.controls,
     onEvent: props.onEvent
-  }, "currentItem", currentItem)), openModalLicenses && /*#__PURE__*/_react.default.createElement(_ModalLicenses.default, {
+  }, "currentItem", currentItem)), openModalLicenses && _react.default.createElement(_ModalLicenses.default, {
     openModal: openModalLicenses,
     onClose: function onClose() {
       return setOpenModalLicenses(false);
@@ -99,33 +95,33 @@ var VHEducationSection = function VHEducationSection(props) {
     controls: props.controls,
     onEvent: props.onEvent,
     currentItem: currentItemLicense
-  }), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  }), _react.default.createElement(_Grid.Row, {
     marginBottom: 2
-  }, /*#__PURE__*/_react.default.createElement(_Text.default, {
+  }, _react.default.createElement(_Text.default, {
     className: "vh-education-section-title ".concat(props.className ? props.className : ''),
     text: "Education",
     color: "black-50",
     variant: "h2"
-  })), /*#__PURE__*/_react.default.createElement(_Base.default, {
+  })), _react.default.createElement(_Base.default, {
     className: "vh-education-section-card ".concat(props.className ? props.className : '')
-  }, props.controls.educationSection.loading ? /*#__PURE__*/_react.default.createElement(_Preloader.default, {
+  }, props.controls.educationSection.loading ? _react.default.createElement(_Preloader.default, {
     type: "circle"
-  }) : /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, props.preLoading ? /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement(_reactPreloadSkeleton.CardSkeleton, null), /*#__PURE__*/_react.default.createElement(_reactPreloadSkeleton.CardSkeleton, {
+  }) : _react.default.createElement(_react.default.Fragment, null, props.preLoading ? _react.default.createElement(_react.default.Fragment, null, _react.default.createElement(_reactPreloadSkeleton.CardSkeleton, null), _react.default.createElement(_reactPreloadSkeleton.CardSkeleton, {
     button: true
-  })) : /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  })) : _react.default.createElement(_react.default.Fragment, null, _react.default.createElement(_Grid.Row, {
     column: true,
     marginBottom5: true
-  }, /*#__PURE__*/_react.default.createElement(_Grid.Row, null, /*#__PURE__*/_react.default.createElement(_Text.default, {
+  }, _react.default.createElement(_Grid.Row, null, _react.default.createElement(_Text.default, {
     variant: 'subtitle1',
     text: 'Formal Education',
     color: 'black-100',
     onEvent: props.onEvent
-  }), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  }), _react.default.createElement(_Grid.Row, {
     paddingTop: '5',
     paddingRight8: true,
     id: "education-level",
     width: '50%'
-  }, /*#__PURE__*/_react.default.createElement(_Select.default, {
+  }, _react.default.createElement(_Select.default, {
     caption: "What is your educational level?",
     captionColor: "gray-90",
     className: "vh-general-section-degree ".concat(props.className ? props.className : ''),
@@ -135,9 +131,9 @@ var VHEducationSection = function VHEducationSection(props) {
     items: items,
     color: "gray-90"
   }))), education.map(function (item) {
-    return /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+    return _react.default.createElement(_Grid.Row, {
       marginBottom5: true
-    }, /*#__PURE__*/_react.default.createElement(_TitleDescription.default, {
+    }, _react.default.createElement(_TitleDescription.default, {
       hover: true,
       pointer: true,
       title: item.degreeTitle,
@@ -155,15 +151,15 @@ var VHEducationSection = function VHEducationSection(props) {
       setCurrentItem: function setCurrentItem() {
         return _setCurrentItem(item);
       }
-    }), /*#__PURE__*/_react.default.createElement(_Text.default, {
+    }), _react.default.createElement(_Text.default, {
       variant: 'caption',
       text: "".concat(new Date(item.startDate).getFullYear(), " - ").concat(item.endDate ? new Date(item.endDate).getFullYear() : 'Present'),
       color: 'gray-90',
       onEvent: props.onEvent
     }));
-  }), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  }), _react.default.createElement(_Grid.Row, {
     width: '20%'
-  }, /*#__PURE__*/_react.default.createElement(_ButtonNew.default, {
+  }, _react.default.createElement(_ButtonNew.default, {
     data: 'openModal',
     primary: true,
     onEvent: props.onEvent,
@@ -174,7 +170,7 @@ var VHEducationSection = function VHEducationSection(props) {
       setOpenModal(true);
     },
     label: "Add Education"
-  }))), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  }))), _react.default.createElement(_Grid.Row, {
     column: true,
     marginBottom5: true
   }, /*#__PURE__*/_react.default.createElement(_Grid.Row, {
@@ -184,10 +180,10 @@ var VHEducationSection = function VHEducationSection(props) {
     text: 'Licenses and Certifications',
     color: 'black-100',
     onEvent: props.onEvent
-  })), /*#__PURE__*/_react.default.createElement(_Grid.Row, null, licenses.map(function (item) {
-    return /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  })), _react.default.createElement(_Grid.Row, null, licenses.map(function (item) {
+    return _react.default.createElement(_Grid.Row, {
       marginBottom5: true
-    }, /*#__PURE__*/_react.default.createElement(_TitleDescription.default, {
+    }, _react.default.createElement(_TitleDescription.default, {
       hover: true,
       pointer: true,
       title: item.title,
@@ -205,7 +201,7 @@ var VHEducationSection = function VHEducationSection(props) {
       setCurrentItem: function setCurrentItem() {
         return setCurrentItemLicense(item);
       }
-    }), /*#__PURE__*/_react.default.createElement(_Text.default, {
+    }), _react.default.createElement(_Text.default, {
       variant: 'caption',
       text: "".concat(new Date(item.yearOfComplete).getFullYear()),
       color: 'gray-90',

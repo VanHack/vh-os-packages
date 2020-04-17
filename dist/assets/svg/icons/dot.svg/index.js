@@ -14,13 +14,13 @@ function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
 var dot = function dot(props) {
-  return /*#__PURE__*/React.createElement("svg", {
+  return React.createElement("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     width: props.width || "undefined",
     height: props.height || "undefined",
     fill: props.fill || "undefined",
     viewBox: props.viewBox || "0 0 24 24"
-  }, /*#__PURE__*/React.createElement("circle", {
+  }, React.createElement("circle", {
     cx: "11.5",
     cy: "11.5",
     r: "4.5"

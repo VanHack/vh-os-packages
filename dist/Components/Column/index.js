@@ -28,24 +28,24 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var VHColumn = function VHColumn(props) {
-  return /*#__PURE__*/_react.default.createElement(S.Column, {
+  return _react.default.createElement(S.Column, {
     id: props.id,
     className: "vh-vp-column-component ".concat(props.className ? props.className : ''),
     onDragEnter: props.onDragEnter,
     onDragLeave: props.onDragLeave,
     onDragOver: props.onDragOver,
     onDrop: props.onDrop
-  }, /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  }, _react.default.createElement(_Grid.Row, {
     row: true,
     alignItemsCenter: true,
     className: "vh-vp-row-header-component ".concat(props.className ? props.className : '')
-  }, /*#__PURE__*/_react.default.createElement(S.ColumnName, null, props.name), /*#__PURE__*/_react.default.createElement(S.NumberOfCards, null, props.loading ? /*#__PURE__*/_react.default.createElement(_Avatar.default, null) : /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, props.total))), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  }, _react.default.createElement(S.ColumnName, null, props.name), _react.default.createElement(S.NumberOfCards, null, props.loading ? _react.default.createElement(_Avatar.default, null) : _react.default.createElement(_react.default.Fragment, null, props.total))), _react.default.createElement(_Grid.Row, {
     className: "vh-vp-row-avg-time-component ".concat(props.className ? props.className : '')
-  }, /*#__PURE__*/_react.default.createElement(S.AvgTime, null, props.loading ? /*#__PURE__*/_react.default.createElement(_Text.default, null) : /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, "Avg Time ".concat(props.avgTime, " days")))), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  }, _react.default.createElement(S.AvgTime, null, props.loading ? _react.default.createElement(_Text.default, null) : _react.default.createElement(_react.default.Fragment, null, "Avg Time ".concat(props.avgTime, " days")))), _react.default.createElement(_Grid.Row, {
     className: "vh-vp-row-cards-component ".concat(props.className ? props.className : '')
-  }, props.loading ? /*#__PURE__*/_react.default.createElement(_skeleton.default, {
+  }, props.loading ? _react.default.createElement(_skeleton.default, {
     random: true
-  }) : /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, props.children)));
+  }) : _react.default.createElement(_react.default.Fragment, null, props.children)));
 };
 
 VHColumn.defaultProps = {

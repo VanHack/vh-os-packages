@@ -121,12 +121,12 @@ var descriptionData = {
   description: "Relocation bonus: CA$ 3,000 (half on signing and half upon  arrival in Canada)"
 };
 (0, _react2.storiesOf)('Components|Modal Visa Pipeline', module).add('VHModalVisaPipeline', function () {
-  return /*#__PURE__*/_react.default.createElement("div", {
+  return _react.default.createElement("div", {
     style: {
       width: '100vw',
       height: '100vh'
     }
-  }, /*#__PURE__*/_react.default.createElement(_.default, {
+  }, _react.default.createElement(_.default, {
     job: job,
     user: user,
     activitiesSession: activitiesSession,
@@ -141,12 +141,12 @@ var descriptionData = {
     description: descriptionData.description
   }));
 }).add('loading', function () {
-  return /*#__PURE__*/_react.default.createElement("div", {
+  return _react.default.createElement("div", {
     style: {
       width: '100vw',
       height: '100vh'
     }
-  }, /*#__PURE__*/_react.default.createElement(_.default, {
+  }, _react.default.createElement(_.default, {
     job: job,
     user: user,
     activitiesSession: activitiesSessionLoading,

@@ -23,15 +23,11 @@ var _Simple = _interopRequireDefault(require("../../Components/Input/Simple"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
 
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance"); }
 
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(n); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
-function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+function _iterableToArrayLimit(arr, i) { if (!(Symbol.iterator in Object(arr) || Object.prototype.toString.call(arr) === "[object Arguments]")) { return; } var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
 
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
@@ -52,23 +48,23 @@ var VHGeneralSection = function VHGeneralSection(props) {
       preloaderPhone = _React$useState2[0],
       setPreloaderPhone = _React$useState2[1];
 
-  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  return _react.default.createElement(_react.default.Fragment, null, _react.default.createElement(_Grid.Row, {
     marginBottom: 2
-  }, /*#__PURE__*/_react.default.createElement(_Text.default, {
+  }, _react.default.createElement(_Text.default, {
     className: "vh-general-section-title ".concat(props.className ? props.className : ''),
     text: "General",
     color: "black-50",
     variant: "h2"
-  })), /*#__PURE__*/_react.default.createElement(_Grid.Row, null, /*#__PURE__*/_react.default.createElement(_Base.default, {
+  })), _react.default.createElement(_Grid.Row, null, _react.default.createElement(_Base.default, {
     className: "vh-general-section-card ".concat(props.className ? props.className : '')
-  }, /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  }, _react.default.createElement(_Grid.Row, {
     row: true,
     responsive: true,
     marginBottom: 5
-  }, /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  }, _react.default.createElement(_Grid.Row, {
     marginRight: 3,
     id: "citezenship"
-  }, /*#__PURE__*/_react.default.createElement(_Select.default, {
+  }, _react.default.createElement(_Select.default, {
     preLoading: props.controls.citizenship.preLoading || false,
     caption: "Citizenship",
     placeholder: "Select an option",
@@ -81,9 +77,9 @@ var VHGeneralSection = function VHGeneralSection(props) {
     description: props.controls.citizenship.error && props.controls.citizenship.message,
     descriptionColor: "gray-90",
     captionColor: props.controls.citizenship.loading ? "gray-40" : props.controls.citizenship.error ? "red" : 'gray-90'
-  })), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  })), _react.default.createElement(_Grid.Row, {
     id: "location"
-  }, /*#__PURE__*/_react.default.createElement(_Select.default, {
+  }, _react.default.createElement(_Select.default, {
     preLoading: props.controls.location.preLoading || false,
     caption: "Current Location",
     placeholder: "Select an option",
@@ -96,13 +92,13 @@ var VHGeneralSection = function VHGeneralSection(props) {
     description: props.controls.location.error && props.controls.location.message,
     descriptionColor: "gray-90",
     captionColor: props.controls.location.loading ? "gray-40" : props.controls.location.error ? "red" : 'gray-90'
-  }))), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  }))), _react.default.createElement(_Grid.Row, {
     row: true,
     responsive: true
-  }, /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  }, _react.default.createElement(_Grid.Row, {
     marginRight: 3,
     id: "gender"
-  }, /*#__PURE__*/_react.default.createElement(_Select.default, {
+  }, _react.default.createElement(_Select.default, {
     preLoading: props.controls.gender.preLoading || false,
     caption: "Gender",
     placeholder: "Select an option",
@@ -115,13 +111,13 @@ var VHGeneralSection = function VHGeneralSection(props) {
     description: props.controls.gender.error && props.controls.gender.message,
     descriptionColor: "red",
     captionColor: props.controls.gender.loading ? "gray-40" : props.controls.gender.error ? "red" : 'gray-90'
-  })), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  })), _react.default.createElement(_Grid.Row, {
     row: true,
     marginleft: 3
-  }, /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  }, _react.default.createElement(_Grid.Row, {
     column: true,
     id: "phone"
-  }, /*#__PURE__*/_react.default.createElement(_TitleDescription.default, {
+  }, _react.default.createElement(_TitleDescription.default, {
     className: "vh-general-section-phone ".concat(props.className ? props.className : ''),
     descriptionColor: props.controls.phone.loading ? "gray-40" : props.controls.phone.error ? "red-light" : "gray-90",
     preLoading: props.controls.phone.preLoading || false,
@@ -131,7 +127,7 @@ var VHGeneralSection = function VHGeneralSection(props) {
     title: "Phone number",
     titleColor: props.controls.phone.loading ? "gray-40" : props.controls.phone.error ? "red" : "gray-90",
     titleVariant: "platform1"
-  }), !props.controls.phone.preLoading && /*#__PURE__*/_react.default.createElement(_Simple.default, {
+  }), !props.controls.phone.preLoading && _react.default.createElement(_Simple.default, {
     data: "phone",
     onEvent: props.onEvent,
     disabled: props.controls.phone.loading,

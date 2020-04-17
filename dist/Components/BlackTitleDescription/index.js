@@ -16,7 +16,7 @@ var _index = _interopRequireDefault(require("../TitleDescription/index"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var VHBlackTitleDescription = function VHBlackTitleDescription(props) {
-  return /*#__PURE__*/_react.default.createElement(_Grid.Row, null, /*#__PURE__*/_react.default.createElement(_index.default, {
+  return _react.default.createElement(_Grid.Row, null, _react.default.createElement(_index.default, {
     className: "vh-black-title-description",
     data: props.data,
     description: props.rightTitle,
@@ -26,7 +26,7 @@ var VHBlackTitleDescription = function VHBlackTitleDescription(props) {
     title: props.title,
     titleColor: "gray-100",
     titleVariant: "subtitle2"
-  }), /*#__PURE__*/_react.default.createElement(_index.default, {
+  }), _react.default.createElement(_index.default, {
     className: "vh-black-title-description",
     data: props.data,
     title: props.description,

@@ -24,18 +24,18 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var VHTestimonial = function VHTestimonial(props) {
-  return /*#__PURE__*/_react.default.createElement(_index.Row, {
+  return _react.default.createElement(_index.Row, {
     row: true
-  }, /*#__PURE__*/_react.default.createElement(S.AvatarWrapper, null, /*#__PURE__*/_react.default.createElement(_index2.default, {
+  }, _react.default.createElement(S.AvatarWrapper, null, _react.default.createElement(_index2.default, {
     image: props.image,
     size: props.sizeImg,
     showCursor: true
-  })), /*#__PURE__*/_react.default.createElement(S.TextWrapper, {
+  })), _react.default.createElement(S.TextWrapper, {
     xs: props.xs,
     sm: props.sm,
     lg: props.lg,
     color: props.color
-  }, /*#__PURE__*/_react.default.createElement("p", null, props.testimonial)));
+  }, _react.default.createElement("p", null, props.testimonial)));
 };
 
 VHTestimonial.defaultProps = {

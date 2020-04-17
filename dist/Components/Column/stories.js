@@ -13,15 +13,15 @@ var _Grid = require("../../Grid");
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 (0, _react2.storiesOf)("Components|Column", module).add("default", function () {
-  return /*#__PURE__*/_react.default.createElement(_.default, {
+  return _react.default.createElement(_.default, {
     name: "Offers Accepeted",
     avgTime: 4,
     total: 14
-  }, /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  }, _react.default.createElement(_Grid.Row, {
     style: {
       marginTop: "1rem"
     }
-  }, /*#__PURE__*/_react.default.createElement(_VisaProcess.default, {
+  }, _react.default.createElement(_VisaProcess.default, {
     avatar: "https://s3.amazonaws.com/uifaces/faces/twitter/dancounsell/128.jpg",
     name: "Manuel Barros Reyes",
     companyName: "Bank of America",
@@ -33,11 +33,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
       return console.log(event);
     },
     avgTime: 4
-  })), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  })), _react.default.createElement(_Grid.Row, {
     style: {
       marginTop: "1rem"
     }
-  }, /*#__PURE__*/_react.default.createElement(_VisaProcess.default, {
+  }, _react.default.createElement(_VisaProcess.default, {
     avatar: "https://s3.amazonaws.com/uifaces/faces/twitter/dancounsell/128.jpg",
     name: "Manuel Barros Reyes",
     companyName: "Bank of America",
@@ -50,11 +50,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
       return console.log(event);
     },
     avgTime: 4
-  })), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  })), _react.default.createElement(_Grid.Row, {
     style: {
       marginTop: "1rem"
     }
-  }, /*#__PURE__*/_react.default.createElement(_VisaProcess.default, {
+  }, _react.default.createElement(_VisaProcess.default, {
     avatar: "https://s3.amazonaws.com/uifaces/faces/twitter/dancounsell/128.jpg",
     name: "Manuel Barros Reyes",
     companyName: "Bank of America",
@@ -67,11 +67,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
       return console.log(event);
     },
     avgTime: 4
-  })), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  })), _react.default.createElement(_Grid.Row, {
     style: {
       marginTop: "1rem"
     }
-  }, /*#__PURE__*/_react.default.createElement(_VisaProcess.default, {
+  }, _react.default.createElement(_VisaProcess.default, {
     avatar: "https://s3.amazonaws.com/uifaces/faces/twitter/dancounsell/128.jpg",
     name: "Manuel Barros Reyes",
     companyName: "Bank of America",
@@ -85,16 +85,16 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
     avgTime: 4
   })));
 }).add("loading", function () {
-  return /*#__PURE__*/_react.default.createElement(_.default, {
+  return _react.default.createElement(_.default, {
     name: "Offers Accepeted",
     avgTime: 4,
     total: 4,
     loading: true
-  }, /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  }, _react.default.createElement(_Grid.Row, {
     style: {
       marginTop: "1rem"
     }
-  }, /*#__PURE__*/_react.default.createElement(_VisaProcess.default, {
+  }, _react.default.createElement(_VisaProcess.default, {
     avatar: "https://s3.amazonaws.com/uifaces/faces/twitter/dancounsell/128.jpg",
     name: "Manuel Barros Reyes",
     companyName: "Bank of America",
@@ -106,11 +106,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
       return console.log(event);
     },
     avgTime: 4
-  })), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  })), _react.default.createElement(_Grid.Row, {
     style: {
       marginTop: "1rem"
     }
-  }, /*#__PURE__*/_react.default.createElement(_VisaProcess.default, {
+  }, _react.default.createElement(_VisaProcess.default, {
     avatar: "https://s3.amazonaws.com/uifaces/faces/twitter/dancounsell/128.jpg",
     name: "Manuel Barros Reyes",
     companyName: "Bank of America",
@@ -123,11 +123,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
       return console.log(event);
     },
     avgTime: 4
-  })), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  })), _react.default.createElement(_Grid.Row, {
     style: {
       marginTop: "1rem"
     }
-  }, /*#__PURE__*/_react.default.createElement(_VisaProcess.default, {
+  }, _react.default.createElement(_VisaProcess.default, {
     avatar: "https://s3.amazonaws.com/uifaces/faces/twitter/dancounsell/128.jpg",
     name: "Manuel Barros Reyes",
     companyName: "Bank of America",
@@ -140,11 +140,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
       return console.log(event);
     },
     avgTime: 4
-  })), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  })), _react.default.createElement(_Grid.Row, {
     style: {
       marginTop: "1rem"
     }
-  }, /*#__PURE__*/_react.default.createElement(_VisaProcess.default, {
+  }, _react.default.createElement(_VisaProcess.default, {
     avatar: "https://s3.amazonaws.com/uifaces/faces/twitter/dancounsell/128.jpg",
     name: "Manuel Barros Reyes",
     companyName: "Bank of America",

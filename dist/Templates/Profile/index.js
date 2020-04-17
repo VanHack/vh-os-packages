@@ -44,85 +44,85 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
 var VHProfileTemplate = function VHProfileTemplate(props) {
-  return /*#__PURE__*/_react.default.createElement(_Grid.Container, {
+  return _react.default.createElement(_Grid.Container, {
     md: true,
     style: {
       maxWidth: "732px"
     }
-  }, /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  }, _react.default.createElement(_Grid.Row, {
     marginBottom: 16
-  }, /*#__PURE__*/_react.default.createElement(_VHUserPhotoIconTitleDescription.default, {
+  }, _react.default.createElement(_VHUserPhotoIconTitleDescription.default, {
     avatar: props.image ? props.image : '',
     name: "".concat(props.firstName ? props.firstName : 'Loading...', " ").concat(props.lastName ? props.lastName : ''),
     email: props.User.email,
     onEvent: props.onEvent
-  })), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  })), _react.default.createElement(_Grid.Row, {
     marginBottom: 16
-  }, /*#__PURE__*/_react.default.createElement("div", {
+  }, _react.default.createElement("div", {
     id: "general"
-  }, /*#__PURE__*/_react.default.createElement(_index.default, {
-    content: /*#__PURE__*/_react.default.createElement(_General.default, _extends({}, props, {
+  }, _react.default.createElement(_index.default, {
+    content: _react.default.createElement(_General.default, _extends({}, props, {
       onEvent: props.onEvent
     }))
-  }))), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  }))), _react.default.createElement(_Grid.Row, {
     marginBottom: 16
-  }, /*#__PURE__*/_react.default.createElement("div", {
+  }, _react.default.createElement("div", {
     id: "skills"
-  }, /*#__PURE__*/_react.default.createElement(_index.default, {
-    content: /*#__PURE__*/_react.default.createElement(_skills.default, _extends({
+  }, _react.default.createElement(_index.default, {
+    content: _react.default.createElement(_skills.default, _extends({
       preLoading: props.controls.gender.preLoading
     }, props, {
       onEvent: props.onEvent
     }))
-  }))), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  }))), _react.default.createElement(_Grid.Row, {
     marginBottom: 16
-  }, /*#__PURE__*/_react.default.createElement("div", {
+  }, _react.default.createElement("div", {
     id: "relocation"
-  }, /*#__PURE__*/_react.default.createElement(_index.default, {
-    content: /*#__PURE__*/_react.default.createElement(_Relocation.default, _extends({
+  }, _react.default.createElement(_index.default, {
+    content: _react.default.createElement(_Relocation.default, _extends({
       preLoading: props.controls.gender.preLoading
     }, props, {
       onEvent: props.onEvent
     }))
-  }))), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  }))), _react.default.createElement(_Grid.Row, {
     marginBottom: 16
-  }, /*#__PURE__*/_react.default.createElement(_Social.default, _extends({
+  }, _react.default.createElement(_Social.default, _extends({
     preLoading: props.controls.linkedin.preLoading
   }, props, {
     onEvent: props.onEvent
-  }))), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  }))), _react.default.createElement(_Grid.Row, {
     marginBottom: 16
-  }, /*#__PURE__*/_react.default.createElement("div", {
+  }, _react.default.createElement("div", {
     id: "language"
-  }, /*#__PURE__*/_react.default.createElement(_index.default, {
-    content: /*#__PURE__*/_react.default.createElement(_LanguageSection.default, _extends({}, props, {
+  }, _react.default.createElement(_index.default, {
+    content: _react.default.createElement(_LanguageSection.default, _extends({}, props, {
       preLoading: props.controls.language.preLoading,
       onEvent: props.onEvent
     }))
-  }))), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  }))), _react.default.createElement(_Grid.Row, {
     marginBottom: 16
-  }, /*#__PURE__*/_react.default.createElement("div", {
+  }, _react.default.createElement("div", {
     id: "experience"
-  }, /*#__PURE__*/_react.default.createElement(_index.default, {
-    content: /*#__PURE__*/_react.default.createElement(_UserCompanyExperience.default, _extends({}, props, {
+  }, _react.default.createElement(_index.default, {
+    content: _react.default.createElement(_UserCompanyExperience.default, _extends({}, props, {
       preLoading: props.controls.experienceSection.preLoading,
       onEvent: props.onEvent
     }))
-  }))), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  }))), _react.default.createElement(_Grid.Row, {
     marginBottom: 16
-  }, /*#__PURE__*/_react.default.createElement("div", {
+  }, _react.default.createElement("div", {
     id: "education"
-  }, /*#__PURE__*/_react.default.createElement(_index.default, {
-    content: /*#__PURE__*/_react.default.createElement(_Education.default, _extends({}, props, {
+  }, _react.default.createElement(_index.default, {
+    content: _react.default.createElement(_Education.default, _extends({}, props, {
       preLoading: props.controls.educationSection.preLoading,
       onEvent: props.onEvent
     }))
-  }))), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  }))), _react.default.createElement(_Grid.Row, {
     marginBottom: 10
-  }, /*#__PURE__*/_react.default.createElement("div", {
+  }, _react.default.createElement("div", {
     id: "sideProject"
-  }, /*#__PURE__*/_react.default.createElement(_index.default, {
-    content: /*#__PURE__*/_react.default.createElement(_SideProjects.default, _extends({}, props, {
+  }, _react.default.createElement(_index.default, {
+    content: _react.default.createElement(_SideProjects.default, _extends({}, props, {
       preLoading: props.controls.sideProjectsSection.preLoading,
       onEvent: props.onEvent
     }))

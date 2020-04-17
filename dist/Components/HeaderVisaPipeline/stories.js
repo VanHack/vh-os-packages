@@ -11,12 +11,12 @@ var _Colors = _interopRequireDefault(require("../../Colors"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 (0, _react2.storiesOf)('Components|Header Visa Pipeline', module).add('Header', function () {
-  return /*#__PURE__*/_react.default.createElement("div", {
+  return _react.default.createElement("div", {
     style: {
       backgroundColor: _Colors.default['gray-10'],
       height: '100vh'
     }
-  }, /*#__PURE__*/_react.default.createElement(_.default, {
+  }, _react.default.createElement(_.default, {
     title: "Visa Pipeline",
     onEvent: function onEvent(event) {
       return console.log(event);

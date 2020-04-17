@@ -9,16 +9,16 @@ var _ = _interopRequireDefault(require("."));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 (0, _react2.storiesOf)("Colors|New Colors", module).add("All VHcolors", function () {
-  return /*#__PURE__*/_react.default.createElement("div", {
+  return _react.default.createElement("div", {
     style: {
       display: "grid",
       gridTemplateColumns: "140px 140px 140px 140px 140px 140px 140px 140px 140px 140px"
     }
-  }, /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("div", {
+  }, _react.default.createElement("div", null, _react.default.createElement("div", {
     style: {
       display: "flex"
     }
-  }, /*#__PURE__*/_react.default.createElement("div", {
+  }, _react.default.createElement("div", {
     style: {
       height: "120px",
       width: "120px",
@@ -28,11 +28,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
       padding: "8px",
       margin: "8px"
     }
-  }, "black-10")), /*#__PURE__*/_react.default.createElement("div", {
+  }, "black-10")), _react.default.createElement("div", {
     style: {
       display: "flex"
     }
-  }, /*#__PURE__*/_react.default.createElement("div", {
+  }, _react.default.createElement("div", {
     style: {
       height: "120px",
       width: "120px",
@@ -42,11 +42,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
       padding: "8px",
       margin: "8px"
     }
-  }, "black-20")), /*#__PURE__*/_react.default.createElement("div", {
+  }, "black-20")), _react.default.createElement("div", {
     style: {
       display: "flex"
     }
-  }, /*#__PURE__*/_react.default.createElement("div", {
+  }, _react.default.createElement("div", {
     style: {
       height: "120px",
       width: "120px",
@@ -56,11 +56,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
       padding: "8px",
       margin: "8px"
     }
-  }, "black-30")), /*#__PURE__*/_react.default.createElement("div", {
+  }, "black-30")), _react.default.createElement("div", {
     style: {
       display: "flex"
     }
-  }, /*#__PURE__*/_react.default.createElement("div", {
+  }, _react.default.createElement("div", {
     style: {
       height: "120px",
       width: "120px",
@@ -70,11 +70,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
       padding: "8px",
       margin: "8px"
     }
-  }, "black-40")), /*#__PURE__*/_react.default.createElement("div", {
+  }, "black-40")), _react.default.createElement("div", {
     style: {
       display: "flex"
     }
-  }, /*#__PURE__*/_react.default.createElement("div", {
+  }, _react.default.createElement("div", {
     style: {
       height: "120px",
       width: "120px",
@@ -84,11 +84,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
       padding: "8px",
       margin: "8px"
     }
-  }, "black-50")), /*#__PURE__*/_react.default.createElement("div", {
+  }, "black-50")), _react.default.createElement("div", {
     style: {
       display: "flex"
     }
-  }, /*#__PURE__*/_react.default.createElement("div", {
+  }, _react.default.createElement("div", {
     style: {
       height: "120px",
       width: "120px",
@@ -98,11 +98,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
       padding: "8px",
       margin: "8px"
     }
-  }, "black-60")), /*#__PURE__*/_react.default.createElement("div", {
+  }, "black-60")), _react.default.createElement("div", {
     style: {
       display: "flex"
     }
-  }, /*#__PURE__*/_react.default.createElement("div", {
+  }, _react.default.createElement("div", {
     style: {
       height: "120px",
       width: "120px",
@@ -112,11 +112,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
       padding: "8px",
       margin: "8px"
     }
-  }, "black-70")), /*#__PURE__*/_react.default.createElement("div", {
+  }, "black-70")), _react.default.createElement("div", {
     style: {
       display: "flex"
     }
-  }, /*#__PURE__*/_react.default.createElement("div", {
+  }, _react.default.createElement("div", {
     style: {
       height: "120px",
       width: "120px",
@@ -126,11 +126,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
       padding: "8px",
       margin: "8px"
     }
-  }, "black-80")), /*#__PURE__*/_react.default.createElement("div", {
+  }, "black-80")), _react.default.createElement("div", {
     style: {
       display: "flex"
     }
-  }, /*#__PURE__*/_react.default.createElement("div", {
+  }, _react.default.createElement("div", {
     style: {
       height: "120px",
       width: "120px",
@@ -140,11 +140,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
       padding: "8px",
       margin: "8px"
     }
-  }, "black-90")), /*#__PURE__*/_react.default.createElement("div", {
+  }, "black-90")), _react.default.createElement("div", {
     style: {
       display: "flex"
     }
-  }, /*#__PURE__*/_react.default.createElement("div", {
+  }, _react.default.createElement("div", {
     style: {
       height: "120px",
       width: "120px",
@@ -154,11 +154,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
       padding: "8px",
       margin: "8px"
     }
-  }, "black-100"))), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("div", {
+  }, "black-100"))), _react.default.createElement("div", null, _react.default.createElement("div", {
     style: {
       display: "flex"
     }
-  }, /*#__PURE__*/_react.default.createElement("div", {
+  }, _react.default.createElement("div", {
     style: {
       height: "120px",
       width: "120px",
@@ -168,11 +168,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
       padding: "8px",
       margin: "8px"
     }
-  }, "gray-10")), /*#__PURE__*/_react.default.createElement("div", {
+  }, "gray-10")), _react.default.createElement("div", {
     style: {
       display: "flex"
     }
-  }, /*#__PURE__*/_react.default.createElement("div", {
+  }, _react.default.createElement("div", {
     style: {
       height: "120px",
       width: "120px",
@@ -182,11 +182,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
       padding: "8px",
       margin: "8px"
     }
-  }, "gray-20")), /*#__PURE__*/_react.default.createElement("div", {
+  }, "gray-20")), _react.default.createElement("div", {
     style: {
       display: "flex"
     }
-  }, /*#__PURE__*/_react.default.createElement("div", {
+  }, _react.default.createElement("div", {
     style: {
       height: "120px",
       width: "120px",
@@ -196,11 +196,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
       padding: "8px",
       margin: "8px"
     }
-  }, "gray-30")), /*#__PURE__*/_react.default.createElement("div", {
+  }, "gray-30")), _react.default.createElement("div", {
     style: {
       display: "flex"
     }
-  }, /*#__PURE__*/_react.default.createElement("div", {
+  }, _react.default.createElement("div", {
     style: {
       height: "120px",
       width: "120px",
@@ -210,11 +210,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
       padding: "8px",
       margin: "8px"
     }
-  }, "gray-40")), /*#__PURE__*/_react.default.createElement("div", {
+  }, "gray-40")), _react.default.createElement("div", {
     style: {
       display: "flex"
     }
-  }, /*#__PURE__*/_react.default.createElement("div", {
+  }, _react.default.createElement("div", {
     style: {
       height: "120px",
       width: "120px",
@@ -224,11 +224,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
       padding: "8px",
       margin: "8px"
     }
-  }, "gray-50")), /*#__PURE__*/_react.default.createElement("div", {
+  }, "gray-50")), _react.default.createElement("div", {
     style: {
       display: "flex"
     }
-  }, /*#__PURE__*/_react.default.createElement("div", {
+  }, _react.default.createElement("div", {
     style: {
       height: "120px",
       width: "120px",
@@ -238,11 +238,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
       padding: "8px",
       margin: "8px"
     }
-  }, "gray-60")), /*#__PURE__*/_react.default.createElement("div", {
+  }, "gray-60")), _react.default.createElement("div", {
     style: {
       display: "flex"
     }
-  }, /*#__PURE__*/_react.default.createElement("div", {
+  }, _react.default.createElement("div", {
     style: {
       height: "120px",
       width: "120px",
@@ -252,11 +252,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
       padding: "8px",
       margin: "8px"
     }
-  }, "gray-70")), /*#__PURE__*/_react.default.createElement("div", {
+  }, "gray-70")), _react.default.createElement("div", {
     style: {
       display: "flex"
     }
-  }, /*#__PURE__*/_react.default.createElement("div", {
+  }, _react.default.createElement("div", {
     style: {
       height: "120px",
       width: "120px",
@@ -266,11 +266,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
       padding: "8px",
       margin: "8px"
     }
-  }, "gray-80")), /*#__PURE__*/_react.default.createElement("div", {
+  }, "gray-80")), _react.default.createElement("div", {
     style: {
       display: "flex"
     }
-  }, /*#__PURE__*/_react.default.createElement("div", {
+  }, _react.default.createElement("div", {
     style: {
       height: "120px",
       width: "120px",
@@ -280,11 +280,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
       padding: "8px",
       margin: "8px"
     }
-  }, "gray-90")), /*#__PURE__*/_react.default.createElement("div", {
+  }, "gray-90")), _react.default.createElement("div", {
     style: {
       display: "flex"
     }
-  }, /*#__PURE__*/_react.default.createElement("div", {
+  }, _react.default.createElement("div", {
     style: {
       height: "120px",
       width: "120px",
@@ -294,11 +294,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
       padding: "8px",
       margin: "8px"
     }
-  }, "gray-100"))), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("div", {
+  }, "gray-100"))), _react.default.createElement("div", null, _react.default.createElement("div", {
     style: {
       display: "flex"
     }
-  }, /*#__PURE__*/_react.default.createElement("div", {
+  }, _react.default.createElement("div", {
     style: {
       height: "120px",
       width: "120px",
@@ -308,11 +308,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
       padding: "8px",
       margin: "8px"
     }
-  }, "primary-light")), /*#__PURE__*/_react.default.createElement("div", {
+  }, "primary-light")), _react.default.createElement("div", {
     style: {
       display: "flex"
     }
-  }, /*#__PURE__*/_react.default.createElement("div", {
+  }, _react.default.createElement("div", {
     style: {
       height: "120px",
       width: "120px",
@@ -322,11 +322,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
       padding: "8px",
       margin: "8px"
     }
-  }, "primary-dark")), /*#__PURE__*/_react.default.createElement("div", {
+  }, "primary-dark")), _react.default.createElement("div", {
     style: {
       display: "flex"
     }
-  }, /*#__PURE__*/_react.default.createElement("div", {
+  }, _react.default.createElement("div", {
     style: {
       height: "120px",
       width: "120px",
@@ -336,11 +336,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
       padding: "8px",
       margin: "8px"
     }
-  }, "blue")), /*#__PURE__*/_react.default.createElement("div", {
+  }, "blue")), _react.default.createElement("div", {
     style: {
       display: "flex"
     }
-  }, /*#__PURE__*/_react.default.createElement("div", {
+  }, _react.default.createElement("div", {
     style: {
       height: "120px",
       width: "120px",
@@ -350,11 +350,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
       padding: "8px",
       margin: "8px"
     }
-  }, "blue-light")), /*#__PURE__*/_react.default.createElement("div", {
+  }, "blue-light")), _react.default.createElement("div", {
     style: {
       display: "flex"
     }
-  }, /*#__PURE__*/_react.default.createElement("div", {
+  }, _react.default.createElement("div", {
     style: {
       height: "120px",
       width: "120px",
@@ -364,7 +364,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
       padding: "8px",
       margin: "8px"
     }
-  }, "blue-dark"))), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("div", {
+  }, "blue-dark"))), _react.default.createElement("div", null, _react.default.createElement("div", null, _react.default.createElement("div", {
     style: {
       height: "120px",
       borderRadius: "6px",
@@ -373,11 +373,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
       padding: "8px",
       margin: "8px"
     }
-  }, "secondary")), /*#__PURE__*/_react.default.createElement("div", {
+  }, "secondary")), _react.default.createElement("div", {
     style: {
       display: "flex"
     }
-  }, /*#__PURE__*/_react.default.createElement("div", {
+  }, _react.default.createElement("div", {
     style: {
       height: "120px",
       width: "120px",
@@ -387,11 +387,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
       padding: "8px",
       margin: "8px"
     }
-  }, "secondary-light")), /*#__PURE__*/_react.default.createElement("div", {
+  }, "secondary-light")), _react.default.createElement("div", {
     style: {
       display: "flex"
     }
-  }, /*#__PURE__*/_react.default.createElement("div", {
+  }, _react.default.createElement("div", {
     style: {
       height: "120px",
       width: "120px",
@@ -401,7 +401,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
       padding: "8px",
       margin: "8px"
     }
-  }, "secondary-dark"))), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("div", {
+  }, "secondary-dark"))), _react.default.createElement("div", null, _react.default.createElement("div", null, _react.default.createElement("div", {
     style: {
       height: "120px",
       borderRadius: "6px",
@@ -410,11 +410,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
       padding: "8px",
       margin: "8px"
     }
-  }, "tertiary")), /*#__PURE__*/_react.default.createElement("div", {
+  }, "tertiary")), _react.default.createElement("div", {
     style: {
       display: "flex"
     }
-  }, /*#__PURE__*/_react.default.createElement("div", {
+  }, _react.default.createElement("div", {
     style: {
       height: "120px",
       width: "120px",
@@ -424,11 +424,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
       padding: "8px",
       margin: "8px"
     }
-  }, "tertiary-light")), /*#__PURE__*/_react.default.createElement("div", {
+  }, "tertiary-light")), _react.default.createElement("div", {
     style: {
       display: "flex"
     }
-  }, /*#__PURE__*/_react.default.createElement("div", {
+  }, _react.default.createElement("div", {
     style: {
       height: "120px",
       width: "120px",
@@ -438,7 +438,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
       padding: "8px",
       margin: "8px"
     }
-  }, "tertiary-dark"))), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("div", {
+  }, "tertiary-dark"))), _react.default.createElement("div", null, _react.default.createElement("div", null, _react.default.createElement("div", {
     style: {
       height: "120px",
       borderRadius: "6px",
@@ -447,11 +447,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
       padding: "8px",
       margin: "8px"
     }
-  }, "red")), /*#__PURE__*/_react.default.createElement("div", {
+  }, "red")), _react.default.createElement("div", {
     style: {
       display: "flex"
     }
-  }, /*#__PURE__*/_react.default.createElement("div", {
+  }, _react.default.createElement("div", {
     style: {
       height: "120px",
       width: "120px",
@@ -461,11 +461,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
       padding: "8px",
       margin: "8px"
     }
-  }, "red-light")), /*#__PURE__*/_react.default.createElement("div", {
+  }, "red-light")), _react.default.createElement("div", {
     style: {
       display: "flex"
     }
-  }, /*#__PURE__*/_react.default.createElement("div", {
+  }, _react.default.createElement("div", {
     style: {
       height: "120px",
       width: "120px",
@@ -475,7 +475,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
       padding: "8px",
       margin: "8px"
     }
-  }, "red-dark"))), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("div", {
+  }, "red-dark"))), _react.default.createElement("div", null, _react.default.createElement("div", null, _react.default.createElement("div", {
     style: {
       height: "120px",
       borderRadius: "6px",
@@ -484,11 +484,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
       padding: "8px",
       margin: "8px"
     }
-  }, "yellow")), /*#__PURE__*/_react.default.createElement("div", {
+  }, "yellow")), _react.default.createElement("div", {
     style: {
       display: "flex"
     }
-  }, /*#__PURE__*/_react.default.createElement("div", {
+  }, _react.default.createElement("div", {
     style: {
       height: "120px",
       width: "120px",
@@ -498,11 +498,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
       padding: "8px",
       margin: "8px"
     }
-  }, "yellow-light")), /*#__PURE__*/_react.default.createElement("div", {
+  }, "yellow-light")), _react.default.createElement("div", {
     style: {
       display: "flex"
     }
-  }, /*#__PURE__*/_react.default.createElement("div", {
+  }, _react.default.createElement("div", {
     style: {
       height: "120px",
       width: "120px",
@@ -512,7 +512,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
       padding: "8px",
       margin: "8px"
     }
-  }, "yellow-dark"))), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("div", {
+  }, "yellow-dark"))), _react.default.createElement("div", null, _react.default.createElement("div", null, _react.default.createElement("div", {
     style: {
       height: "120px",
       borderRadius: "6px",
@@ -521,11 +521,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
       padding: "8px",
       margin: "8px"
     }
-  }, "green")), /*#__PURE__*/_react.default.createElement("div", {
+  }, "green")), _react.default.createElement("div", {
     style: {
       display: "flex"
     }
-  }, /*#__PURE__*/_react.default.createElement("div", {
+  }, _react.default.createElement("div", {
     style: {
       height: "120px",
       width: "120px",
@@ -535,11 +535,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
       padding: "8px",
       margin: "8px"
     }
-  }, "green-light")), /*#__PURE__*/_react.default.createElement("div", {
+  }, "green-light")), _react.default.createElement("div", {
     style: {
       display: "flex"
     }
-  }, /*#__PURE__*/_react.default.createElement("div", {
+  }, _react.default.createElement("div", {
     style: {
       height: "120px",
       width: "120px",
@@ -549,7 +549,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
       padding: "8px",
       margin: "8px"
     }
-  }, "green-dark"))), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("div", {
+  }, "green-dark"))), _react.default.createElement("div", null, _react.default.createElement("div", null, _react.default.createElement("div", {
     style: {
       height: "120px",
       borderRadius: "6px",
@@ -558,11 +558,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
       padding: "8px",
       margin: "8px"
     }
-  }, "purple")), /*#__PURE__*/_react.default.createElement("div", {
+  }, "purple")), _react.default.createElement("div", {
     style: {
       display: "flex"
     }
-  }, /*#__PURE__*/_react.default.createElement("div", {
+  }, _react.default.createElement("div", {
     style: {
       height: "120px",
       width: "120px",
@@ -572,11 +572,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
       padding: "8px",
       margin: "8px"
     }
-  }, "purple-light")), /*#__PURE__*/_react.default.createElement("div", {
+  }, "purple-light")), _react.default.createElement("div", {
     style: {
       display: "flex"
     }
-  }, /*#__PURE__*/_react.default.createElement("div", {
+  }, _react.default.createElement("div", {
     style: {
       height: "120px",
       width: "120px",
@@ -586,7 +586,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
       padding: "8px",
       margin: "8px"
     }
-  }, "purple-dark"))), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("div", {
+  }, "purple-dark"))), _react.default.createElement("div", null, _react.default.createElement("div", null, _react.default.createElement("div", {
     style: {
       height: "120px",
       borderRadius: "6px",

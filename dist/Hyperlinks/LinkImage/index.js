@@ -28,10 +28,10 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 var VHLinkImage = function VHLinkImage(props) {
   var _React$createElement;
 
-  return /*#__PURE__*/_react.default.createElement(_index.Row, {
+  return _react.default.createElement(_index.Row, {
     row: true,
     width: 500
-  }, /*#__PURE__*/_react.default.createElement(S.A, {
+  }, _react.default.createElement(S.A, {
     reverse: props.reverse,
     cursor: props.cursor,
     xs: props.xsLabel,
@@ -51,7 +51,7 @@ var VHLinkImage = function VHLinkImage(props) {
     noUnderscore: props.noUnderscore,
     href: props.to,
     label: props.label
-  }, props.label, /*#__PURE__*/_react.default.createElement(S.IconWrapper, null, /*#__PURE__*/_react.default.createElement(_index2.default, (_React$createElement = {
+  }, props.label, _react.default.createElement(S.IconWrapper, null, _react.default.createElement(_index2.default, (_React$createElement = {
     icon: props.icon,
     xs: props.xsIcon,
     sm: props.smIcon,

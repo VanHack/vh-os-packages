@@ -47,11 +47,11 @@ var ArrayOfUserExperience = [];
 ArrayOfUserExperience.push(UserPositionExperience);
 ArrayOfUserExperience.push(UserPositionExperience2);
 (0, _react2.storiesOf)("Components|Company User Positon Experience", module).add("default", function () {
-  return /*#__PURE__*/_react.default.createElement(_Grid.Container, {
+  return _react.default.createElement(_Grid.Container, {
     md: true
-  }, /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  }, _react.default.createElement(_Grid.Row, {
     marginBottom: 15
-  }, /*#__PURE__*/_react.default.createElement(_.default, _extends({}, company, {
+  }, _react.default.createElement(_.default, _extends({}, company, {
     userPositions: ArrayOfUserExperience
   }))));
 });

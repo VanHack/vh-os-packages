@@ -25,10 +25,10 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var VHTitleDescription = function VHTitleDescription(props) {
   if (props.preLoading) {
-    return /*#__PURE__*/_react.default.createElement(_reactPreloadSkeleton.TitleDescriptionSkeleton, null);
+    return _react.default.createElement(_reactPreloadSkeleton.TitleDescriptionSkeleton, null);
   }
 
-  return /*#__PURE__*/_react.default.createElement(S.Wrapper, {
+  return _react.default.createElement(S.Wrapper, {
     contents: props.contents,
     pointer: props.pointer,
     inline: props.inline,
@@ -38,16 +38,16 @@ var VHTitleDescription = function VHTitleDescription(props) {
       props.setCurrentItem ? props.setCurrentItem() : '';
       props.onOpen ? props.onOpen() : '';
     }
-  }, /*#__PURE__*/_react.default.createElement(_Text.default, {
+  }, _react.default.createElement(_Text.default, {
     hover: props.hover,
     color: props.titleColor,
     variant: props.titleVariant,
     text: props.title,
     onEvent: props.onEvent,
     data: props.data
-  }), /*#__PURE__*/_react.default.createElement(S.Display, {
+  }), _react.default.createElement(S.Display, {
     inline: props.inline
-  }, /*#__PURE__*/_react.default.createElement(_Text.default, {
+  }, _react.default.createElement(_Text.default, {
     hover: props.hover,
     color: props.descriptionColor,
     variant: props.descriptionVariant,

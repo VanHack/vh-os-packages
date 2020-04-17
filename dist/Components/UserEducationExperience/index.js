@@ -28,27 +28,27 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var VHUserPositonExperience = function VHUserPositonExperience(props) {
-  return /*#__PURE__*/_react.default.createElement(_Grid.Row, null, /*#__PURE__*/_react.default.createElement(S.Wrapper, {
+  return _react.default.createElement(_Grid.Row, null, _react.default.createElement(S.Wrapper, {
     hideTimeline: props.hideTimeline
-  }, /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  }, _react.default.createElement(_Grid.Row, {
     marginBottom: 3
-  }, /*#__PURE__*/_react.default.createElement(_index2.default, {
+  }, _react.default.createElement(_index2.default, {
     title: props.headline,
     description: props.period,
     onEvent: props.onEvent,
     rightTitle: props.rightTitle,
     className: "vh-user-position-experience ".concat(props.className ? props.className : '')
-  })), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  })), _react.default.createElement(_Grid.Row, {
     marginBottom: 3
-  }, /*#__PURE__*/_react.default.createElement(_index3.default, {
+  }, _react.default.createElement(_index3.default, {
     onEvent: props.onEvent,
     items: props.description,
     color: "gray-30",
     className: "vh-user-position-experience-title-list ".concat(props.className ? props.className : '')
-  })), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  })), _react.default.createElement(_Grid.Row, {
     row: true
   }, props.skills.map(function (skill) {
-    return /*#__PURE__*/_react.default.createElement(_index.default, {
+    return _react.default.createElement(_index.default, {
       label: skill.label,
       transparent: true,
       round: true,

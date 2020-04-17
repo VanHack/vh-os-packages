@@ -24,7 +24,7 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var VHIconText = function VHIconText(props) {
-  return /*#__PURE__*/_react.default.createElement(S.Wrapper, {
+  return _react.default.createElement(S.Wrapper, {
     profile: props.profile,
     cursor: props.cursor,
     inline: props.inline,
@@ -44,13 +44,13 @@ var VHIconText = function VHIconText(props) {
         });
       }
     }
-  }, /*#__PURE__*/_react.default.createElement(_Icon.default, {
+  }, _react.default.createElement(_Icon.default, {
     color: props.iconColor,
     sm: true,
     title: props.text,
     icon: props.icon,
     data: props.data
-  }), /*#__PURE__*/_react.default.createElement(_Text.default, {
+  }), _react.default.createElement(_Text.default, {
     data: props.data,
     color: props.textColor,
     variant: props.variant,

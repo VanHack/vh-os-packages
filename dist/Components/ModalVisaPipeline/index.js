@@ -60,22 +60,22 @@ var VHModalVisaPipeline = function VHModalVisaPipeline(props) {
     projectedDate = "".concat(monthNames[date.getMonth()], ", ").concat(date.getDate());
   }
 
-  return /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  return _react.default.createElement(_Grid.Row, {
     className: "vh-modal-visa-pipeline ".concat(props.className ? props.className : "")
-  }, /*#__PURE__*/_react.default.createElement(_Modal.default, {
+  }, _react.default.createElement(_Modal.default, {
     width: "70",
     minWidth: "660",
     open: true,
-    header: /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+    header: _react.default.createElement(_Grid.Row, {
       row: true
-    }, /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+    }, _react.default.createElement(_Grid.Row, {
       autoWidth: true,
       paddingRight8: true
-    }, /*#__PURE__*/_react.default.createElement(_Avatar.default, {
+    }, _react.default.createElement(_Avatar.default, {
       image: props.user.avatar,
       size: "lg",
       showCursor: true
-    })), /*#__PURE__*/_react.default.createElement(_TitleDescription.default, {
+    })), _react.default.createElement(_TitleDescription.default, {
       title: props.user.name,
       description: props.user.email,
       titleVariant: "h4",
@@ -85,60 +85,60 @@ var VHModalVisaPipeline = function VHModalVisaPipeline(props) {
       onEvent: props.onEvent
     })),
     onEvent: props.onEvent,
-    content: /*#__PURE__*/_react.default.createElement(_Grid.Row, null, /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+    content: _react.default.createElement(_Grid.Row, null, _react.default.createElement(_Grid.Row, {
       row: true
-    }, /*#__PURE__*/_react.default.createElement(S.Wrapper, null, /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+    }, _react.default.createElement(S.Wrapper, null, _react.default.createElement(_Grid.Row, {
       marginBottom5: true,
       row: true,
       alignItemsCenter: true
-    }, /*#__PURE__*/_react.default.createElement(S.IconWrapper, null, /*#__PURE__*/_react.default.createElement(_index2.default, {
+    }, _react.default.createElement(S.IconWrapper, null, _react.default.createElement(_index2.default, {
       source: _index3.default,
       title: "company",
       xs: true
-    })), /*#__PURE__*/_react.default.createElement(S.Info, null, props.job.companyName), /*#__PURE__*/_react.default.createElement(S.IconWrapper, null, /*#__PURE__*/_react.default.createElement(_index2.default, {
+    })), _react.default.createElement(S.Info, null, props.job.companyName), _react.default.createElement(S.IconWrapper, null, _react.default.createElement(_index2.default, {
       source: _index4.default,
       title: "position",
       xs: true
-    })), /*#__PURE__*/_react.default.createElement(S.Info, null, props.job.position)), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+    })), _react.default.createElement(S.Info, null, props.job.position)), _react.default.createElement(_Grid.Row, {
       marginBottom5: true,
       row: true,
       alignItemsCenter: true
-    }, /*#__PURE__*/_react.default.createElement(S.IconWrapper, null, /*#__PURE__*/_react.default.createElement(_index2.default, {
+    }, _react.default.createElement(S.IconWrapper, null, _react.default.createElement(_index2.default, {
       source: _index5.default,
       title: "city",
       xs: true
-    })), /*#__PURE__*/_react.default.createElement(S.Info, null, props.job.location), /*#__PURE__*/_react.default.createElement(S.IconWrapper, null, /*#__PURE__*/_react.default.createElement(_index2.default, {
+    })), _react.default.createElement(S.Info, null, props.job.location), _react.default.createElement(S.IconWrapper, null, _react.default.createElement(_index2.default, {
       source: _index4.default,
       title: "city",
       xs: true
-    })), /*#__PURE__*/_react.default.createElement(S.Info, null, props.salary)), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+    })), _react.default.createElement(S.Info, null, props.salary)), _react.default.createElement(_Grid.Row, {
       marginBottom5: true
-    }, /*#__PURE__*/_react.default.createElement(_Textarea.default, {
+    }, _react.default.createElement(_Textarea.default, {
       description: props.description,
       onEvent: props.onEvent
-    }))), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+    }))), _react.default.createElement(_Grid.Row, {
       marginBottom5: true
-    }, props.assignedSession.loading ? /*#__PURE__*/_react.default.createElement(_index.default, {
+    }, props.assignedSession.loading ? _react.default.createElement(_index.default, {
       size: "sm"
-    }) : /*#__PURE__*/_react.default.createElement(_Assign.default, {
+    }) : _react.default.createElement(_Assign.default, {
       items: props.assign.items,
       onEvent: props.onEvent
-    }))), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+    }))), _react.default.createElement(_Grid.Row, {
       row: true
-    }, /*#__PURE__*/_react.default.createElement(S.Wrapper, null, /*#__PURE__*/_react.default.createElement(_Grid.Row, null, /*#__PURE__*/_react.default.createElement(_Comments.default, {
+    }, _react.default.createElement(S.Wrapper, null, _react.default.createElement(_Grid.Row, null, _react.default.createElement(_Comments.default, {
       data: props.user,
       loading: props.commentsSession.loading,
       comments: props.comments,
       onEvent: props.onEvent
-    }))), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+    }))), _react.default.createElement(_Grid.Row, {
       margin: true
-    }, props.activitiesSession.loading ? /*#__PURE__*/_react.default.createElement(_index.default, {
+    }, props.activitiesSession.loading ? _react.default.createElement(_index.default, {
       size: "sm"
-    }) : /*#__PURE__*/_react.default.createElement(_TimeLine.default, {
+    }) : _react.default.createElement(_TimeLine.default, {
       items: props.timeLine.items,
       totalDays: props.timeLine.totalDays,
       onEvent: props.onEvent
-    }), showDate && /*#__PURE__*/_react.default.createElement(S.InfoDate, null, "Projected Start Date: ", /*#__PURE__*/_react.default.createElement("b", null, projectedDate)))))
+    }), showDate && _react.default.createElement(S.InfoDate, null, "Projected Start Date: ", _react.default.createElement("b", null, projectedDate)))))
   }));
 };
 

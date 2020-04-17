@@ -22,7 +22,7 @@ var ArrayOfItems = [{
   label: "Jquery"
 }];
 (0, _react2.storiesOf)("Components|Main Icon Title List", module).add("Types", function () {
-  return /*#__PURE__*/_react.default.createElement(_Grid.Row, null, /*#__PURE__*/_react.default.createElement(_index.default, {
+  return _react.default.createElement(_Grid.Row, null, _react.default.createElement(_index.default, {
     items: ArrayOfItems,
     data: "vanhack"
   }));

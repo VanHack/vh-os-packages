@@ -9,25 +9,25 @@ var _ = _interopRequireDefault(require("."));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 (0, _react2.storiesOf)('Source|Img', module).add('VHImg Image XS', function () {
-  return /*#__PURE__*/_react.default.createElement(_.default, {
+  return _react.default.createElement(_.default, {
     xs: true,
     title: "Zoombi",
     source: "http://via.placeholder.com/200x200"
   });
 }).add('VHImg Image SM', function () {
-  return /*#__PURE__*/_react.default.createElement(_.default, {
+  return _react.default.createElement(_.default, {
     sm: true,
     title: "Zoombi",
     source: "http://via.placeholder.com/200x200"
   });
 }).add('VHImg Image MD', function () {
-  return /*#__PURE__*/_react.default.createElement(_.default, {
+  return _react.default.createElement(_.default, {
     md: true,
     title: "Zoombi",
     source: "http://via.placeholder.com/200x200"
   });
 }).add('VHImg Image LG', function () {
-  return /*#__PURE__*/_react.default.createElement(_.default, {
+  return _react.default.createElement(_.default, {
     lg: true,
     title: "Zoombi",
     source: "http://via.placeholder.com/200x200"

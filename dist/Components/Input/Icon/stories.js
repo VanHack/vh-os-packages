@@ -9,13 +9,13 @@ var _ = _interopRequireDefault(require("."));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 (0, _react2.storiesOf)("Components|Input/Icon", module).add("default", function () {
-  return /*#__PURE__*/_react.default.createElement("div", {
+  return _react.default.createElement("div", {
     style: {
       width: '80%',
       marginLeft: '1%',
       padding: '9px'
     }
-  }, /*#__PURE__*/_react.default.createElement(_.default, {
+  }, _react.default.createElement(_.default, {
     placeholder: "http://Isobelle.com/",
     value: "http://Isobelle.com/",
     icon: "world",
@@ -25,13 +25,13 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
     }
   }));
 }).add("gitHub", function () {
-  return /*#__PURE__*/_react.default.createElement("div", {
+  return _react.default.createElement("div", {
     style: {
       width: '80%',
       marginLeft: '1%',
       padding: '9px'
     }
-  }, /*#__PURE__*/_react.default.createElement(_.default, {
+  }, _react.default.createElement(_.default, {
     placeholder: "http://github.com/",
     value: "http://github.com/",
     icon: "github",
@@ -39,7 +39,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
     onEvent: function onEvent() {
       return console.log(event);
     }
-  }), /*#__PURE__*/_react.default.createElement(_.default, {
+  }), _react.default.createElement(_.default, {
     placeholder: "http://github.com/",
     value: "http://github.com/",
     icon: "github",
@@ -50,13 +50,13 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
     }
   }));
 }).add("linkedIn", function () {
-  return /*#__PURE__*/_react.default.createElement("div", {
+  return _react.default.createElement("div", {
     style: {
       width: '80%',
       marginLeft: '1%',
       padding: '9px'
     }
-  }, /*#__PURE__*/_react.default.createElement(_.default, {
+  }, _react.default.createElement(_.default, {
     placeholder: "http://linkedIn.com/",
     value: "http://linkedIn.com/",
     icon: "linkedin",

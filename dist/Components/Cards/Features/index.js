@@ -28,40 +28,38 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var VHCardFeatures = function VHCardFeatures(props) {
-  return /*#__PURE__*/_react.default.createElement(_index4.default, {
+  return _react.default.createElement(_index4.default, {
     noHover: props.noHover
-  }, /*#__PURE__*/_react.default.createElement(_index.Row, {
+  }, _react.default.createElement(_index.Row, {
     row: true,
     alignItemsCenter: true,
     responsive: true
   }, props.features.map(function (feature) {
-    return (
-      /*#__PURE__*/
-      // <S.Item>
+    return (// <S.Item>
       _react.default.createElement(_index.Row, {
         marginTop: 15,
         marginBottom5: true
-      }, /*#__PURE__*/_react.default.createElement(_index.Row, {
+      }, _react.default.createElement(_index.Row, {
         alignItemsCenter: true,
         marginBottom5: true,
         height: 50
-      }, /*#__PURE__*/_react.default.createElement(_index2.default, {
+      }, _react.default.createElement(_index2.default, {
         icon: feature.icon,
         title: feature.title,
         md: true
-      })), /*#__PURE__*/_react.default.createElement(_index.Row, {
+      })), _react.default.createElement(_index.Row, {
         alignItemsCenter: true,
         marginBottom5: true,
         height: 50
-      }, /*#__PURE__*/_react.default.createElement(S.TextWrapper, null, /*#__PURE__*/_react.default.createElement(_index3.default, {
+      }, _react.default.createElement(S.TextWrapper, null, _react.default.createElement(_index3.default, {
         variant: "h4",
         color: "gray-90",
         text: feature.title
-      }))), /*#__PURE__*/_react.default.createElement(_index.Row, {
+      }))), _react.default.createElement(_index.Row, {
         alignItemsCenter: true,
         marginBottom5: true,
         height: 160
-      }, /*#__PURE__*/_react.default.createElement(S.TextWrapper, null, /*#__PURE__*/_react.default.createElement(_index3.default, {
+      }, _react.default.createElement(S.TextWrapper, null, _react.default.createElement(_index3.default, {
         variant: "bodyweb",
         color: "gray-60",
         text: feature.description

@@ -14,7 +14,7 @@ var _styles = _interopRequireDefault(require("./styles"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var VHChips = function VHChips(props) {
-  return /*#__PURE__*/_react.default.createElement(_styles.default, {
+  return _react.default.createElement(_styles.default, {
     primary: props.primary,
     secondary: props.secondary,
     danger: props.danger,

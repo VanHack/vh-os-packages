@@ -21,11 +21,13 @@ function _createSuper(Derived) { return function () { var Super = _getPrototypeO
 
 function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
 
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
 function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
 
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
 
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
 
@@ -34,14 +36,12 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 var VHDateInput = /*#__PURE__*/function (_React$Component) {
   _inherits(VHDateInput, _React$Component);
 
-  var _super = _createSuper(VHDateInput);
-
   function VHDateInput(props) {
     var _this;
 
     _classCallCheck(this, VHDateInput);
 
-    _this = _super.call(this);
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(VHDateInput).call(this));
     _this.handleChange = _this.handleChange.bind(_assertThisInitialized(_this));
     _this.keyPressFunc = _this.keyPressFunc.bind(_assertThisInitialized(_this));
     _this.state = {
@@ -87,7 +87,7 @@ var VHDateInput = /*#__PURE__*/function (_React$Component) {
     value: function render() {
       var value = this.state.value;
       var placeholder = 'DAY / MONTH / YEAR';
-      return /*#__PURE__*/_react.default.createElement("input", {
+      return _react.default.createElement("input", {
         type: "text",
         value: value,
         placeholder: placeholder,

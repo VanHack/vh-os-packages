@@ -22,31 +22,31 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var VHHeader = function VHHeader(props) {
   switch (true) {
     case props.h1:
-      return /*#__PURE__*/_react.default.createElement(Header.H1, {
+      return _react.default.createElement(Header.H1, {
         className: "vh-header-component ".concat(props.className ? props.className : ''),
         reverse: props.reverse
       }, props.label);
 
     case props.h2:
-      return /*#__PURE__*/_react.default.createElement(Header.H2, {
+      return _react.default.createElement(Header.H2, {
         className: "vh-header-component ".concat(props.className ? props.className : ''),
         reverse: props.reverse
       }, props.label);
 
     case props.h3:
-      return /*#__PURE__*/_react.default.createElement(Header.H3, {
+      return _react.default.createElement(Header.H3, {
         className: "vh-header-component ".concat(props.className ? props.className : ''),
         reverse: props.reverse
       }, props.label);
 
     case props.h4:
-      return /*#__PURE__*/_react.default.createElement(Header.H4, {
+      return _react.default.createElement(Header.H4, {
         className: "vh-header-component ".concat(props.className ? props.className : ''),
         reverse: props.reverse
       }, props.label);
 
     case props.h5:
-      return /*#__PURE__*/_react.default.createElement(Header.H5, {
+      return _react.default.createElement(Header.H5, {
         className: "vh-header-component ".concat(props.className ? props.className : ''),
         reverse: props.reverse,
         padding: props.padding,
@@ -54,7 +54,7 @@ var VHHeader = function VHHeader(props) {
       }, props.label);
 
     case props.h6:
-      return /*#__PURE__*/_react.default.createElement(Header.H6, {
+      return _react.default.createElement(Header.H6, {
         className: "vh-header-component ".concat(props.className ? props.className : ''),
         reverse: props.reverse
       }, props.label);

@@ -22,23 +22,23 @@ var _reactPreloadSkeleton = require("react-preload-skeleton");
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var VHSocialSection = function VHSocialSection(props) {
-  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  return _react.default.createElement(_react.default.Fragment, null, _react.default.createElement(_Grid.Row, {
     marginBottom: 2
-  }, /*#__PURE__*/_react.default.createElement(_Text.default, {
+  }, _react.default.createElement(_Text.default, {
     className: "vh-skills-section-title ".concat(props.className ? props.className : ''),
     text: "Social Profile",
     color: "black-50",
     variant: "h2"
-  })), /*#__PURE__*/_react.default.createElement(_Grid.Row, null, /*#__PURE__*/_react.default.createElement(_Base.default, {
+  })), _react.default.createElement(_Grid.Row, null, _react.default.createElement(_Base.default, {
     className: "vh-skills-section-card ".concat(props.className ? props.className : '')
-  }, props.preLoading ? /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  }, props.preLoading ? _react.default.createElement(_Grid.Row, {
     marginBottom4: true
-  }, /*#__PURE__*/_react.default.createElement(_reactPreloadSkeleton.InputSkeleton, {
+  }, _react.default.createElement(_reactPreloadSkeleton.InputSkeleton, {
     lines: 3
-  })) : /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  })) : _react.default.createElement(_react.default.Fragment, null, _react.default.createElement(_Grid.Row, {
     marginBottom5: true,
     id: "linkedin-href"
-  }, /*#__PURE__*/_react.default.createElement(_Icon.default, {
+  }, _react.default.createElement(_Icon.default, {
     className: "",
     disabled: props.controls.linkedin.loading,
     error: props.controls.linkedin.error,
@@ -48,10 +48,10 @@ var VHSocialSection = function VHSocialSection(props) {
     onEvent: props.onEvent,
     placeholder: "http://linkedin.com/",
     value: props.linkedin
-  })), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  })), _react.default.createElement(_Grid.Row, {
     marginBottom5: true,
     id: "github-href"
-  }, /*#__PURE__*/_react.default.createElement(_Icon.default, {
+  }, _react.default.createElement(_Icon.default, {
     className: "",
     disabled: props.controls.git.loading,
     error: props.controls.git.error,
@@ -61,10 +61,10 @@ var VHSocialSection = function VHSocialSection(props) {
     onEvent: props.onEvent,
     placeholder: "http://github.com/",
     value: props.git
-  })), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  })), _react.default.createElement(_Grid.Row, {
     marginBottom5: true,
     id: "website-href"
-  }, /*#__PURE__*/_react.default.createElement(_Icon.default, {
+  }, _react.default.createElement(_Icon.default, {
     className: "",
     disabled: props.controls.webSite.loading,
     error: props.controls.webSite.error,
@@ -74,10 +74,10 @@ var VHSocialSection = function VHSocialSection(props) {
     data: 'webSite',
     icon: "webSite",
     onEvent: props.onEvent
-  })), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  })), _react.default.createElement(_Grid.Row, {
     marginBottom5: true,
     id: "resume-href"
-  }, /*#__PURE__*/_react.default.createElement(_Icon.default, {
+  }, _react.default.createElement(_Icon.default, {
     className: "",
     disabled: props.controls.resume.loading,
     error: props.controls.resume.error,

@@ -18,14 +18,14 @@ var _styles = require("./styles");
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var VHInputCheckboxMulti = function VHInputCheckboxMulti(props) {
-  return /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  return _react.default.createElement(_Grid.Row, {
     row: true,
     className: "vh-checkbox ".concat(props.className ? props.className : ''),
     autoWidth: true
   }, props.items.map(function (item) {
-    return /*#__PURE__*/_react.default.createElement(_styles.WrapperMulti, {
+    return _react.default.createElement(_styles.WrapperMulti, {
       key: "vh-input-multi-".concat(item.id)
-    }, /*#__PURE__*/_react.default.createElement(_.default, {
+    }, _react.default.createElement(_.default, {
       title: item.label,
       color: "gray-100",
       variant: "platform1",

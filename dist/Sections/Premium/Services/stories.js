@@ -52,13 +52,13 @@ var premiumOtherServices = [{
   reverseBottom: true
 }];
 (0, _react2.storiesOf)("Sections|Premium/Services", module).add("Default", function () {
-  return /*#__PURE__*/_react.default.createElement("div", {
+  return _react.default.createElement("div", {
     style: {
       backgroundColor: "#fffffff",
       height: "100vh",
       padding: "24px"
     }
-  }, /*#__PURE__*/_react.default.createElement(_.default, {
+  }, _react.default.createElement(_.default, {
     sectionTitle: "How Does Premium Work",
     title: premiumInterviewClass.title,
     highlight: premiumInterviewClass.highlight,

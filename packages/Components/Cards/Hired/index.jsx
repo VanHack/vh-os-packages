@@ -14,7 +14,7 @@ const VHCardHired = props => {
                 <VHAvatar 
                     image={props.userPhoto}
                     size={"xl"}
-                    showCursor={true}
+                    showCursor={false}
                 />
                 <S.InnerImg>
                     <VHIcon

@@ -16,7 +16,7 @@ var _index2 = _interopRequireDefault(require("../../../Components/Cards/Features
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var VHPremiumIntroSection = function VHPremiumIntroSection(props) {
-  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement(_index.default, {
+  return _react.default.createElement(_react.default.Fragment, null, _react.default.createElement(_index.default, {
     title: props.title,
     highlight: props.highlight,
     description: props.description,
@@ -24,7 +24,7 @@ var VHPremiumIntroSection = function VHPremiumIntroSection(props) {
     image: props.image,
     onEvent: props.onEvent,
     data: "VHTitleHighlightDescriptionButtonImage"
-  }), /*#__PURE__*/_react.default.createElement(_index2.default, {
+  }), _react.default.createElement(_index2.default, {
     features: props.features
   }));
 };

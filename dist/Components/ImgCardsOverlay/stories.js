@@ -19,12 +19,12 @@ var items = {
   }
 };
 (0, _react2.storiesOf)("Components|Img Cards Overlay", module).add("Default", function () {
-  return /*#__PURE__*/_react.default.createElement("div", {
+  return _react.default.createElement("div", {
     style: {
       backgroundColor: "#fff",
       padding: "24px"
     }
-  }, /*#__PURE__*/_react.default.createElement(_index.default, {
+  }, _react.default.createElement(_index.default, {
     cardLeftTitle: items.cardLeft.title,
     cardLeftDescription: items.cardLeft.description,
     cardRightTitle: items.cardRight.title,

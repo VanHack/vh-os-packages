@@ -33,12 +33,12 @@ var controls = {
   }
 };
 (0, _react2.storiesOf)('Components|Modal Education', module).add('VHModalEducation', function () {
-  return /*#__PURE__*/_react.default.createElement("div", {
+  return _react.default.createElement("div", {
     style: {
       width: '100vw',
       height: '100vh'
     }
-  }, /*#__PURE__*/_react.default.createElement(_.default, {
+  }, _react.default.createElement(_.default, {
     currentItem: currentItem,
     items: items,
     controls: controls,

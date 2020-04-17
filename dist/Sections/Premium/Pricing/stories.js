@@ -45,13 +45,13 @@ var cardItems = [{
   note: "The choice of 46% of premium members"
 }];
 (0, _react2.storiesOf)("Sections|Premium/Pricing", module).add("Default", function () {
-  return /*#__PURE__*/_react.default.createElement("div", {
+  return _react.default.createElement("div", {
     style: {
       backgroundColor: "rgba(203, 248, 251, 0.44)",
       height: "100vh",
       padding: "24px"
     }
-  }, /*#__PURE__*/_react.default.createElement(_.default, {
+  }, _react.default.createElement(_.default, {
     sectionTitle: "Pricing",
     icon: "medal",
     title: "30 Days Money Back Guarantee",

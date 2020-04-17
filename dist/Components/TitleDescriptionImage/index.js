@@ -18,30 +18,30 @@ var _ImgSvg = _interopRequireDefault(require("../ImgSvg"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var VHTitleDescriptionImage = function VHTitleDescriptionImage(props) {
-  return /*#__PURE__*/_react.default.createElement(_index.Row, {
+  return _react.default.createElement(_index.Row, {
     row: true,
     alignItemsCenter: true,
     responsive: true
-  }, /*#__PURE__*/_react.default.createElement(_index.Row, {
+  }, _react.default.createElement(_index.Row, {
     style: {
       justifyContent: "center",
       marginRight: "30px"
     }
-  }, /*#__PURE__*/_react.default.createElement(_index.Row, {
+  }, _react.default.createElement(_index.Row, {
     marginBottom5: true,
     responsive: true
-  }, /*#__PURE__*/_react.default.createElement(_index2.default, {
+  }, _react.default.createElement(_index2.default, {
     variant: "h4",
     color: "gray-100",
     text: props.title
-  })), /*#__PURE__*/_react.default.createElement(_index2.default, {
+  })), _react.default.createElement(_index2.default, {
     variant: "h6",
     color: "black-70",
     text: props.description
-  })), /*#__PURE__*/_react.default.createElement(_index.Row, {
+  })), _react.default.createElement(_index.Row, {
     alignItemsCenter: true,
     marginTop: 12
-  }, /*#__PURE__*/_react.default.createElement(_ImgSvg.default, {
+  }, _react.default.createElement(_ImgSvg.default, {
     imgSvg: "meeting"
   })));
 };

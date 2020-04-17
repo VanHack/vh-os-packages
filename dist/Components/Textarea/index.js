@@ -24,13 +24,13 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var VHTextarea = function VHTextarea(props) {
-  return /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  return _react.default.createElement(_Grid.Row, {
     className: "vh-textarea-description ".concat(props.className ? props.className : '')
-  }, /*#__PURE__*/_react.default.createElement(_Text.default, {
+  }, _react.default.createElement(_Text.default, {
     color: "gray-80",
     variant: 'platform',
     text: "Description"
-  }), /*#__PURE__*/_react.default.createElement(S.Textarea, {
+  }), _react.default.createElement(S.Textarea, {
     data: "data",
     type: "textarea",
     value: props.description,

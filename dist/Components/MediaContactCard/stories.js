@@ -11,7 +11,7 @@ var _index = _interopRequireDefault(require("./index"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 (0, _react2.storiesOf)("Components|Media Contact Card", module).add("Types", function () {
-  return /*#__PURE__*/_react.default.createElement(_Grid.Row, null, /*#__PURE__*/_react.default.createElement(_index.default, {
+  return _react.default.createElement(_Grid.Row, null, _react.default.createElement(_index.default, {
     title: "Media Contact",
     name: "Karli Leitl",
     email: "karli@switchboardpr.com",

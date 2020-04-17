@@ -11,13 +11,13 @@ var _skeleton = _interopRequireDefault(require("./skeleton"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 (0, _react2.storiesOf)('Components|Cards/Visa Process', module).add('default', function () {
-  return /*#__PURE__*/_react.default.createElement("div", {
+  return _react.default.createElement("div", {
     style: {
       backgroundColor: "#f2f2f2",
       width: "300px",
       padding: "24px"
     }
-  }, /*#__PURE__*/_react.default.createElement(_.default, {
+  }, _react.default.createElement(_.default, {
     avatar: "https://s3.amazonaws.com/uifaces/faces/twitter/dancounsell/128.jpg",
     name: "Manuel Barros Reyes",
     companyName: "Bank of America",
@@ -31,13 +31,13 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
     avgTime: 4
   }));
 }).add('Invoiced', function () {
-  return /*#__PURE__*/_react.default.createElement("div", {
+  return _react.default.createElement("div", {
     style: {
       backgroundColor: "#f2f2f2",
       width: "300px",
       padding: "24px"
     }
-  }, /*#__PURE__*/_react.default.createElement(_.default, {
+  }, _react.default.createElement(_.default, {
     avatar: "https://s3.amazonaws.com/uifaces/faces/twitter/dancounsell/128.jpg",
     name: "Manuel Barros Reyes",
     companyName: "Bank of America",
@@ -52,13 +52,13 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
     avgTime: 4
   }));
 }).add('Favorite', function () {
-  return /*#__PURE__*/_react.default.createElement("div", {
+  return _react.default.createElement("div", {
     style: {
       backgroundColor: "#f2f2f2",
       width: "300px",
       padding: "24px"
     }
-  }, /*#__PURE__*/_react.default.createElement(_.default, {
+  }, _react.default.createElement(_.default, {
     avatar: "https://s3.amazonaws.com/uifaces/faces/twitter/dancounsell/128.jpg",
     name: "Manuel Barros Reyes",
     companyName: "Bank of America",
@@ -73,21 +73,21 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
     avgTime: 4
   }));
 }).add('skeleton', function () {
-  return /*#__PURE__*/_react.default.createElement("div", {
+  return _react.default.createElement("div", {
     style: {
       backgroundColor: "#f2f2f2",
       width: "300px",
       padding: "24px"
     }
-  }, /*#__PURE__*/_react.default.createElement(_skeleton.default, null));
+  }, _react.default.createElement(_skeleton.default, null));
 }).add('skeleton multiply', function () {
-  return /*#__PURE__*/_react.default.createElement("div", {
+  return _react.default.createElement("div", {
     style: {
       backgroundColor: "#f2f2f2",
       width: "300px",
       padding: "24px"
     }
-  }, /*#__PURE__*/_react.default.createElement(_skeleton.default, {
+  }, _react.default.createElement(_skeleton.default, {
     random: true
   }));
 });

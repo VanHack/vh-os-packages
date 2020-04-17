@@ -60,11 +60,11 @@ var premiumServices = [{
   reverseBottom: true
 }];
 (0, _react2.storiesOf)("Components|Texts Image Link", module).add("Default", function () {
-  return /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  return _react.default.createElement(_Grid.Row, {
     style: {
       padding: "24px"
     }
-  }, /*#__PURE__*/_react.default.createElement(_index.default, {
+  }, _react.default.createElement(_index.default, {
     title: premiumServices[0].title,
     highlight: premiumServices[0].highlight,
     description: premiumServices[0].description,
@@ -78,11 +78,11 @@ var premiumServices = [{
     reverseBottom: premiumServices[0].reverseBottom
   }));
 }).add("Reverse", function () {
-  return /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  return _react.default.createElement(_Grid.Row, {
     style: {
       padding: "24px"
     }
-  }, /*#__PURE__*/_react.default.createElement(_index.default, {
+  }, _react.default.createElement(_index.default, {
     title: premiumServices[1].title,
     highlight: premiumServices[1].highlight,
     description: premiumServices[1].description,
@@ -96,12 +96,12 @@ var premiumServices = [{
     reverseBottom: premiumServices[1].reverseBottom
   }));
 }).add("Multiply", function () {
-  return /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  return _react.default.createElement(_Grid.Row, {
     style: {
       padding: "24px"
     }
   }, premiumServices.map(function (service) {
-    return /*#__PURE__*/_react.default.createElement(_index.default, {
+    return _react.default.createElement(_index.default, {
       title: service.title,
       highlight: service.highlight,
       description: service.description,

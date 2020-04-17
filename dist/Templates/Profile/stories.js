@@ -502,12 +502,12 @@ var User = {
 }; //end Avatar
 
 (0, _react2.storiesOf)("Templates|Profile", module).add("default", function () {
-  return /*#__PURE__*/_react.default.createElement("div", {
+  return _react.default.createElement("div", {
     style: {
       backgroundColor: "#f2f2f2",
       height: "100%"
     }
-  }, /*#__PURE__*/_react.default.createElement(_.default, {
+  }, _react.default.createElement(_.default, {
     controls: controls,
     User: User,
     experience: experiences,
@@ -522,19 +522,19 @@ var User = {
     candidates: candidates
   }));
 }).add("preLoading", function () {
-  return /*#__PURE__*/_react.default.createElement("div", {
+  return _react.default.createElement("div", {
     style: {
       backgroundColor: "#f2f2f2",
       height: "100%"
     }
   });
 }).add("loading", function () {
-  return /*#__PURE__*/_react.default.createElement("div", {
+  return _react.default.createElement("div", {
     style: {
       backgroundColor: "#f2f2f2",
       height: "100%"
     }
-  }, /*#__PURE__*/_react.default.createElement(_.default, {
+  }, _react.default.createElement(_.default, {
     experience: experiences,
     languages: languages,
     controls: controlsLoading

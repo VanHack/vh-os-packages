@@ -42,7 +42,7 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var VHCardVisaProcess = function VHCardVisaProcess(props) {
-  return /*#__PURE__*/_react.default.createElement(_Base.default, {
+  return _react.default.createElement(_Base.default, {
     candidate: props.candidate,
     onDragEnter: props.onDragEnter,
     id: props.id,
@@ -52,53 +52,53 @@ var VHCardVisaProcess = function VHCardVisaProcess(props) {
     draggable: props.draggable,
     onEvent: props.onEvent,
     userId: props.userId
-  }, props.invoiced && /*#__PURE__*/_react.default.createElement(S.Tag, null, "Invoiced"), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  }, props.invoiced && _react.default.createElement(S.Tag, null, "Invoiced"), _react.default.createElement(_Grid.Row, {
     row: true
-  }, /*#__PURE__*/_react.default.createElement(S.PersonalInfo, null, /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  }, _react.default.createElement(S.PersonalInfo, null, _react.default.createElement(_Grid.Row, {
     row: true,
     alignItemsCenter: true
-  }, /*#__PURE__*/_react.default.createElement(S.AvatarWrapper, null, /*#__PURE__*/_react.default.createElement(S.Avatar, {
+  }, _react.default.createElement(S.AvatarWrapper, null, _react.default.createElement(S.Avatar, {
     src: props.avatar
-  })), /*#__PURE__*/_react.default.createElement(S.Name, null, props.name)), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  })), _react.default.createElement(S.Name, null, props.name)), _react.default.createElement(_Grid.Row, {
     row: true,
     alignItemsCenter: true
-  }, /*#__PURE__*/_react.default.createElement(S.IconWrapper, null, /*#__PURE__*/_react.default.createElement(_Img.default, {
+  }, _react.default.createElement(S.IconWrapper, null, _react.default.createElement(_Img.default, {
     source: _index.default,
     title: "city",
     xs: true
-  })), /*#__PURE__*/_react.default.createElement(S.Info, null, props.companyName)), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  })), _react.default.createElement(S.Info, null, props.companyName)), _react.default.createElement(_Grid.Row, {
     row: true,
     alignItemsCenter: true
-  }, /*#__PURE__*/_react.default.createElement(S.IconWrapper, null, /*#__PURE__*/_react.default.createElement(_Img.default, {
+  }, _react.default.createElement(S.IconWrapper, null, _react.default.createElement(_Img.default, {
     source: _index2.default,
     title: "position",
     xs: true
-  })), /*#__PURE__*/_react.default.createElement(S.Info, null, props.positionName)), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  })), _react.default.createElement(S.Info, null, props.positionName)), _react.default.createElement(_Grid.Row, {
     row: true,
     alignItemsCenter: true
-  }, /*#__PURE__*/_react.default.createElement(S.IconWrapper, null, /*#__PURE__*/_react.default.createElement(_Img.default, {
+  }, _react.default.createElement(S.IconWrapper, null, _react.default.createElement(_Img.default, {
     source: _index3.default,
     title: "time",
     xs: true
-  })), /*#__PURE__*/_react.default.createElement(S.Info, null, props.cityName)))), /*#__PURE__*/_react.default.createElement(_Grid.Row, null, /*#__PURE__*/_react.default.createElement(S.Footer, null, /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  })), _react.default.createElement(S.Info, null, props.cityName)))), _react.default.createElement(_Grid.Row, null, _react.default.createElement(S.Footer, null, _react.default.createElement(_Grid.Row, {
     row: true
-  }, /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  }, _react.default.createElement(_Grid.Row, {
     row: true,
     alignItemsCenter: true
-  }, /*#__PURE__*/_react.default.createElement(S.TimeWrapper, null, /*#__PURE__*/_react.default.createElement(_Img.default, {
+  }, _react.default.createElement(S.TimeWrapper, null, _react.default.createElement(_Img.default, {
     source: props.time <= props.avgTime ? "".concat(_index6.default) : "".concat(_index5.default),
     title: "time",
     xs: true
-  })), /*#__PURE__*/_react.default.createElement(S.InfoTime, {
+  })), _react.default.createElement(S.InfoTime, {
     avgTime: props.time <= props.avgTime
-  }, "".concat(props.time, " days ago")))), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  }, "".concat(props.time, " days ago")))), _react.default.createElement(_Grid.Row, {
     row: true,
     alignItemsCenter: true
-  }, /*#__PURE__*/_react.default.createElement(S.FavoriteWrapper, null, props.favorite && /*#__PURE__*/_react.default.createElement(_Img.default, {
+  }, _react.default.createElement(S.FavoriteWrapper, null, props.favorite && _react.default.createElement(_Img.default, {
     source: _index7.default,
     title: "comments",
     xs: true
-  })), /*#__PURE__*/_react.default.createElement(S.Info, null, props.comments), /*#__PURE__*/_react.default.createElement(S.CommentsWrapper, null, /*#__PURE__*/_react.default.createElement(_Img.default, {
+  })), _react.default.createElement(S.Info, null, props.comments), _react.default.createElement(S.CommentsWrapper, null, _react.default.createElement(_Img.default, {
     source: _index4.default,
     title: "comments",
     xs: true

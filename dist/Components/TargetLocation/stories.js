@@ -9,5 +9,5 @@ var _ = _interopRequireDefault(require("."));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 (0, _react2.storiesOf)("Components|Target Location", module).add("Types", function () {
-  return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(_.default, null));
+  return _react.default.createElement("div", null, _react.default.createElement(_.default, null));
 });

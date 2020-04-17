@@ -37,38 +37,38 @@ var VHTimeLine = function VHTimeLine(props) {
   var dates = props.items.map(function (item) {
     return getDay(item.createdOn);
   });
-  return /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  return _react.default.createElement(_Grid.Row, {
     marginTop: -110,
     marginBottom: 10,
     height: 300,
     overflowY: 'scroll',
     className: "vh-time-line ".concat(props.className ? props.className : "")
-  }, /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  }, _react.default.createElement(_Grid.Row, {
     row: true,
     alignItemsCenter: true,
     justifySpaceBetween: true
-  }, /*#__PURE__*/_react.default.createElement(_Text.default, {
+  }, _react.default.createElement(_Text.default, {
     onEvent: props.onEvent,
     text: "ACTIVITY",
     variant: "subtitle2",
     color: "gray-90"
-  }), /*#__PURE__*/_react.default.createElement(_Text.default, {
+  }), _react.default.createElement(_Text.default, {
     onEvent: props.onEvent,
     text: "Total: ".concat(props.totalDays),
     variant: "caption",
     color: "gray-50"
-  })), /*#__PURE__*/_react.default.createElement(S.Group, null, props.items.map(function (item, index) {
-    return /*#__PURE__*/_react.default.createElement(S.Item, {
+  })), _react.default.createElement(S.Group, null, props.items.map(function (item, index) {
+    return _react.default.createElement(S.Item, {
       key: "vh-time-line-item".concat(index)
-    }, /*#__PURE__*/_react.default.createElement(S.Circle, null), /*#__PURE__*/_react.default.createElement(S.WrapperText, null, /*#__PURE__*/_react.default.createElement(S.Date, null, getDate(item.createdOn), /*#__PURE__*/_react.default.createElement(_Text.default, {
+    }, _react.default.createElement(S.Circle, null), _react.default.createElement(S.WrapperText, null, _react.default.createElement(S.Date, null, getDate(item.createdOn), _react.default.createElement(_Text.default, {
       onEvent: props.onEvent,
       text: dates[index + 1] !== undefined && " ".concat(dates[index] - dates[index + 1] < 0 ? -(dates[index] - dates[index + 1]) : dates[index] - dates[index + 1], " days"),
       variant: "caption",
       color: "gray-50"
-    })), item.items.length > 1 ? /*#__PURE__*/_react.default.createElement(_Grid.Row, null, item.items.map(function (item) {
-      return /*#__PURE__*/_react.default.createElement(S.WrapperSameDate, {
+    })), item.items.length > 1 ? _react.default.createElement(_Grid.Row, null, item.items.map(function (item) {
+      return _react.default.createElement(S.WrapperSameDate, {
         key: "vh-time-line-".concat(item.columnName)
-      }, /*#__PURE__*/_react.default.createElement(_TitleDescription.default, {
+      }, _react.default.createElement(_TitleDescription.default, {
         className: "vh-title-description-time-line",
         data: item,
         description: item.description,
@@ -79,8 +79,8 @@ var VHTimeLine = function VHTimeLine(props) {
         titleColor: "gray-90",
         titleVariant: "platform2"
       }));
-    })) : /*#__PURE__*/_react.default.createElement(_Grid.Row, null, item.items.map(function (item) {
-      return /*#__PURE__*/_react.default.createElement(_TitleDescription.default, {
+    })) : _react.default.createElement(_Grid.Row, null, item.items.map(function (item) {
+      return _react.default.createElement(_TitleDescription.default, {
         key: "vh-time-line-".concat(item.columnName),
         className: "vh-title-description-time-line",
         data: item,

@@ -29,15 +29,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
-function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
 
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance"); }
 
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(n); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
-function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+function _iterableToArrayLimit(arr, i) { if (!(Symbol.iterator in Object(arr) || Object.prototype.toString.call(arr) === "[object Arguments]")) { return; } var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
 
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
@@ -54,7 +50,7 @@ var VHSideProjectsSection = function VHSideProjectsSection(props) {
       currentItem = _React$useState4[0],
       _setCurrentItem = _React$useState4[1];
 
-  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, openModal && /*#__PURE__*/_react.default.createElement(_ModalSideProjects.default, _defineProperty({
+  return _react.default.createElement(_react.default.Fragment, null, openModal && _react.default.createElement(_ModalSideProjects.default, _defineProperty({
     openModal: openModal,
     onClose: function onClose() {
       return setOpenModal(false);
@@ -64,23 +60,23 @@ var VHSideProjectsSection = function VHSideProjectsSection(props) {
     currentItem: props.currentItem,
     controls: props.controls,
     onEvent: props.onEvent
-  }, "currentItem", currentItem)), /*#__PURE__*/_react.default.createElement(_Grid.Row, null, /*#__PURE__*/_react.default.createElement(_Text.default, {
+  }, "currentItem", currentItem)), _react.default.createElement(_Grid.Row, null, _react.default.createElement(_Text.default, {
     className: "vh-sideProjects-section-title ".concat(props.className ? props.className : ''),
     text: "Side Projects",
     color: "black-50",
     variant: "h2"
-  })), /*#__PURE__*/_react.default.createElement(_Base.default, {
+  })), _react.default.createElement(_Base.default, {
     className: "vh-sideProjects-section-card ".concat(props.className ? props.className : '')
-  }, props.controls.sideProjectsSection.loading ? /*#__PURE__*/_react.default.createElement(_Preloader.default, {
+  }, props.controls.sideProjectsSection.loading ? _react.default.createElement(_Preloader.default, {
     type: "circle"
-  }) : /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, props.preLoading ? /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement(_reactPreloadSkeleton.CardSkeleton, null), /*#__PURE__*/_react.default.createElement(_reactPreloadSkeleton.CardSkeleton, {
+  }) : _react.default.createElement(_react.default.Fragment, null, props.preLoading ? _react.default.createElement(_react.default.Fragment, null, _react.default.createElement(_reactPreloadSkeleton.CardSkeleton, null), _react.default.createElement(_reactPreloadSkeleton.CardSkeleton, {
     button: true
-  })) : /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  })) : _react.default.createElement(_Grid.Row, {
     column: true
   }, sideProjects.map(function (item) {
-    return /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+    return _react.default.createElement(_Grid.Row, {
       marginBottom5: true
-    }, /*#__PURE__*/_react.default.createElement(_TitleDescription.default, {
+    }, _react.default.createElement(_TitleDescription.default, {
       hover: true,
       pointer: true,
       title: item.title,
@@ -99,22 +95,22 @@ var VHSideProjectsSection = function VHSideProjectsSection(props) {
       setCurrentItem: function setCurrentItem() {
         return _setCurrentItem(item);
       }
-    }), /*#__PURE__*/_react.default.createElement(_Text.default, {
+    }), _react.default.createElement(_Text.default, {
       cursor: true,
       hover: true,
       variant: 'platform',
       text: item.projectUrl ? item.projectUrl : '',
       onEvent: props.onEvent,
       color: 'primary-light'
-    }), /*#__PURE__*/_react.default.createElement(_Text.default, {
+    }), _react.default.createElement(_Text.default, {
       variant: 'caption',
       text: "".concat(new Date(item.completedAt).getFullYear(), " - ").concat(item.endDate ? new Date(item.endDate).getFullYear() : 'Present'),
       color: 'gray-90',
       onEvent: props.onEvent
     }));
-  }), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  }), _react.default.createElement(_Grid.Row, {
     width: '20%'
-  }, /*#__PURE__*/_react.default.createElement(_ButtonNew.default, {
+  }, _react.default.createElement(_ButtonNew.default, {
     data: 'openModal',
     primary: true,
     onEvent: props.onEvent,

@@ -17,9 +17,9 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var VHProgressBar = function VHProgressBar(props) {
   var steps = new Array(props.steps).fill('');
-  return /*#__PURE__*/_react.default.createElement(_Grid.Container, {
+  return _react.default.createElement(_Grid.Container, {
     fullWidth: true
-  }, /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  }, _react.default.createElement(_Grid.Row, {
     row: true
   }, steps.map(function (step, index) {
     var borderRadius = '0 0 0 0';
@@ -41,7 +41,7 @@ var VHProgressBar = function VHProgressBar(props) {
       color = _Colors.default['gray-30'];
     }
 
-    return /*#__PURE__*/_react.default.createElement("span", {
+    return _react.default.createElement("span", {
       style: {
         backgroundColor: color,
         height: '10px',

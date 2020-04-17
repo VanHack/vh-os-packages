@@ -37,45 +37,45 @@ var VHCardVisaProcessSkeleton = function VHCardVisaProcessSkeleton(props) {
     arr.length = 1;
   }
 
-  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, arr.map(function (item) {
-    return /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  return _react.default.createElement(_react.default.Fragment, null, arr.map(function (item) {
+    return _react.default.createElement(_Grid.Row, {
       marginBottom: 10
-    }, /*#__PURE__*/_react.default.createElement(_Base.default, null, /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+    }, _react.default.createElement(_Base.default, null, _react.default.createElement(_Grid.Row, {
       margin: true
-    }, /*#__PURE__*/_react.default.createElement(_Text.default, null)), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+    }, _react.default.createElement(_Text.default, null)), _react.default.createElement(_Grid.Row, {
       margin: true
-    }, /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+    }, _react.default.createElement(_Grid.Row, {
       row: true,
       alignItemsCenter: true
-    }, /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+    }, _react.default.createElement(_Grid.Row, {
       autoWidth: true,
       paddingRight2: true
-    }, /*#__PURE__*/_react.default.createElement(_Avatar.default, null)), /*#__PURE__*/_react.default.createElement(_Grid.Row, null, /*#__PURE__*/_react.default.createElement(_Text.default, {
+    }, _react.default.createElement(_Avatar.default, null)), _react.default.createElement(_Grid.Row, null, _react.default.createElement(_Text.default, {
       color: 'black-20'
-    })))), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+    })))), _react.default.createElement(_Grid.Row, {
       margin: true
-    }, /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+    }, _react.default.createElement(_Grid.Row, {
       row: true,
       alignItemsCenter: true
-    }, /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+    }, _react.default.createElement(_Grid.Row, {
       autoWidth: true,
       paddingRight2: true
-    }, /*#__PURE__*/_react.default.createElement(_Avatar.default, null)), /*#__PURE__*/_react.default.createElement(_Grid.Row, null, /*#__PURE__*/_react.default.createElement(_Text.default, null)))), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+    }, _react.default.createElement(_Avatar.default, null)), _react.default.createElement(_Grid.Row, null, _react.default.createElement(_Text.default, null)))), _react.default.createElement(_Grid.Row, {
       margin: true
-    }, /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+    }, _react.default.createElement(_Grid.Row, {
       row: true,
       alignItemsCenter: true
-    }, /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+    }, _react.default.createElement(_Grid.Row, {
       autoWidth: true,
       paddingRight2: true
-    }, /*#__PURE__*/_react.default.createElement(_Avatar.default, null)), /*#__PURE__*/_react.default.createElement(_Grid.Row, null, /*#__PURE__*/_react.default.createElement(_Text.default, null)))), /*#__PURE__*/_react.default.createElement(S.Footer, null, /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+    }, _react.default.createElement(_Avatar.default, null)), _react.default.createElement(_Grid.Row, null, _react.default.createElement(_Text.default, null)))), _react.default.createElement(S.Footer, null, _react.default.createElement(_Grid.Row, {
       row: true,
       alignItemsRight: true
-    }, /*#__PURE__*/_react.default.createElement(_Grid.Row, null, /*#__PURE__*/_react.default.createElement(_Text.default, {
+    }, _react.default.createElement(_Grid.Row, null, _react.default.createElement(_Text.default, {
       color: 'black-20'
-    })), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+    })), _react.default.createElement(_Grid.Row, {
       alignItemsRight: true
-    }, /*#__PURE__*/_react.default.createElement(_Avatar.default, null))))));
+    }, _react.default.createElement(_Avatar.default, null))))));
   }));
 };
 

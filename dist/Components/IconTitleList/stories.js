@@ -20,7 +20,7 @@ var ArrayOfItems = [{
   label: "Ad tempor proident enim veniam duis. Occaecat veniam irure minim cillum"
 }];
 (0, _react2.storiesOf)("Components|Icon Title List", module).add("Types", function () {
-  return /*#__PURE__*/_react.default.createElement(_Grid.Row, null, /*#__PURE__*/_react.default.createElement(_index.default, {
+  return _react.default.createElement(_Grid.Row, null, _react.default.createElement(_index.default, {
     items: ArrayOfItems,
     data: "vanhack"
   }));

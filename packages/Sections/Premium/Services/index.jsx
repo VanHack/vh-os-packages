@@ -40,7 +40,7 @@ const VHPremiumServicesSection = props => {
                     imgSvg={service.imgSvg}
                     reverseTop={service.reverseTop}
                     avatar={service.avatar}
-                    sizeAvatar={"md"}
+                    sizeAvatar={"md2"}
                     testimonial={service.testimonial}
                     color={"gray-90"}
                     reverseBottom={service.reverseBottom}

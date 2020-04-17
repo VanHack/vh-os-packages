@@ -20,13 +20,13 @@ var items = JSON.stringify([{
 // const items = '[{"id":1,"value":"Durand Neto"},{"id":2,"value":"Robson"},{"value":"asdas"}]'
 
 (0, _react2.storiesOf)("Components|Input/Multiple", module).add("default", function () {
-  return /*#__PURE__*/_react.default.createElement("div", {
+  return _react.default.createElement("div", {
     style: {
       width: '90%',
       marginLeft: '1%',
       padding: '9px'
     }
-  }, /*#__PURE__*/_react.default.createElement(_.default, {
+  }, _react.default.createElement(_.default, {
     max: 5,
     items: items,
     placeholder: "VH Multiple Input",
@@ -35,13 +35,13 @@ var items = JSON.stringify([{
     }
   }));
 }).add("loading", function () {
-  return /*#__PURE__*/_react.default.createElement("div", {
+  return _react.default.createElement("div", {
     style: {
       width: '90%',
       marginLeft: '1%',
       padding: '9px'
     }
-  }, /*#__PURE__*/_react.default.createElement(_.default, {
+  }, _react.default.createElement(_.default, {
     loading: true,
     max: 5,
     items: items,
@@ -51,13 +51,13 @@ var items = JSON.stringify([{
     }
   }));
 }).add("error", function () {
-  return /*#__PURE__*/_react.default.createElement("div", {
+  return _react.default.createElement("div", {
     style: {
       width: '90%',
       marginLeft: '1%',
       padding: '9px'
     }
-  }, /*#__PURE__*/_react.default.createElement(_.default, {
+  }, _react.default.createElement(_.default, {
     error: true,
     max: 5,
     items: items,

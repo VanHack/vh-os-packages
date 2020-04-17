@@ -257,7 +257,7 @@ var controls = {
   }
 };
 (0, _react2.storiesOf)('Components|Onboarding', module).add('Step 1', function () {
-  return /*#__PURE__*/_react.default.createElement(_.default, {
+  return _react.default.createElement(_.default, {
     controls: controls,
     steps: 6,
     currentStep: 1,

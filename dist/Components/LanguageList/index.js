@@ -59,7 +59,7 @@ var VHLanguageList = function VHLanguageList(props) {
     row: true,
     marginRight: 2,
     marginLeft: 2
-  }, /*#__PURE__*/_react.default.createElement(_Grid.Row, null, /*#__PURE__*/_react.default.createElement(_Select.default, {
+  }, _react.default.createElement(_Grid.Row, null, _react.default.createElement(_Select.default, {
     removeIndicator: true,
     preLoading: true,
     marginBottom: '0px',
@@ -72,12 +72,20 @@ var VHLanguageList = function VHLanguageList(props) {
     description: "",
     descriptionColor: "primary",
     onEvent: props.onEvent,
+<<<<<<< HEAD
+    order: 0
+  }))), _react.default.createElement(_Grid.Row, {
+    width: '20%'
+  }, _react.default.createElement(_Select.default, {
+    preLoading: props.controls.language.preLoading,
+=======
     order: 0,
     placeholder: 'Select Language'
   }))), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
     width: '20%'
   }, /*#__PURE__*/_react.default.createElement(_Select.default, {
     preLoading: true,
+>>>>>>> 88ef957ebc82ece36b29d871cfcdd282260a0277
     marginBottom: '0px',
     removeBorder: true,
     caption: "",
@@ -91,6 +99,9 @@ var VHLanguageList = function VHLanguageList(props) {
     onEvent: props.onEvent,
     order: 0,
     placeholder: 'Proficiency'
+<<<<<<< HEAD
+  }))), _react.default.createElement(S.Wrapper, null, _react.default.createElement(_Grid.Row, {
+=======
   }))) : /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, languages.map(function (language, index) {
     return /*#__PURE__*/_react.default.createElement(S.Wrapper, null, /*#__PURE__*/_react.default.createElement(_Grid.Row, {
       alignItemsCenter: true,
@@ -158,10 +169,91 @@ var VHLanguageList = function VHLanguageList(props) {
       alt: "Close icon"
     }))));
   }), /*#__PURE__*/_react.default.createElement(S.Wrapper, null, /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+>>>>>>> 88ef957ebc82ece36b29d871cfcdd282260a0277
     alignItemsCenter: true,
     row: true,
     marginRight: 2,
     marginLeft: 2
+<<<<<<< HEAD
+  }, _react.default.createElement(_Grid.Row, null, _react.default.createElement(_Select.default, {
+    removeIndicator: true,
+    preLoading: props.controls.language.preLoading,
+    marginBottom: '0px',
+    removeBorder: true,
+    caption: "",
+    data: 'defaultLanguage',
+    className: 'language',
+    currentItem: {
+      value: 'fr',
+      label: 'French'
+    },
+    items: [{
+      value: 'fr',
+      label: 'French'
+    }],
+    description: "",
+    descriptionColor: "primary",
+    onEvent: props.onEvent,
+    order: 1
+  }))), _react.default.createElement(_Grid.Row, {
+    width: '20%'
+  }, _react.default.createElement(_Select.default, {
+    preLoading: props.controls.language.preLoading,
+    marginBottom: '0px',
+    removeBorder: true,
+    caption: "",
+    data: 'proficiency',
+    className: 'proficiency',
+    currentItem: french != undefined ? secondList[french.level] : {},
+    items: secondList,
+    description: "",
+    descriptionColor: "primary",
+    leftText: "",
+    onEvent: props.onEvent,
+    order: 1,
+    placeholder: 'Proficiency'
+  }))), _react.default.createElement(S.Wrapper, null, _react.default.createElement(_Grid.Row, {
+    alignItemsCenter: true,
+    row: true,
+    marginRight: 2,
+    marginLeft: 2
+  }, _react.default.createElement(_Grid.Row, null, _react.default.createElement(_Select.default, {
+    removeIndicator: true,
+    preLoading: props.controls.language.preLoading,
+    marginBottom: '0px',
+    removeBorder: true,
+    caption: "",
+    data: 'language',
+    className: 'language',
+    currentItem: other != undefined ? {
+      value: other.code,
+      label: other.name
+    } : {},
+    items: props.list,
+    description: "",
+    descriptionColor: "primary",
+    onEvent: props.onEvent,
+    order: 2
+  }))), _react.default.createElement(_Grid.Row, {
+    width: '20%'
+  }, _react.default.createElement(_Select.default, {
+    preLoading: props.controls.language.preLoading,
+    isDisabled: other === undefined ? true : false,
+    marginBottom: '0px',
+    removeBorder: true,
+    caption: "",
+    data: 'proficiency',
+    className: 'proficiency',
+    currentItem: other != undefined ? secondList[other.level] : {},
+    items: secondList,
+    description: "",
+    descriptionColor: "primary",
+    leftText: "",
+    onEvent: props.onEvent,
+    order: 2,
+    placeholder: 'Proficiency'
+  }))));
+=======
   }, /*#__PURE__*/_react.default.createElement(_Text.default, {
     color: "gradient-primary",
     onEvent: function onEvent(e) {
@@ -179,6 +271,7 @@ var VHLanguageList = function VHLanguageList(props) {
     text: "+ Add language",
     cursor: true
   })))));
+>>>>>>> 88ef957ebc82ece36b29d871cfcdd282260a0277
 };
 
 var _default = VHLanguageList;

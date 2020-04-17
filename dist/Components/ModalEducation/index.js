@@ -37,15 +37,11 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
 
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance"); }
 
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(n); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
-function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+function _iterableToArrayLimit(arr, i) { if (!(Symbol.iterator in Object(arr) || Object.prototype.toString.call(arr) === "[object Arguments]")) { return; } var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
 
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
@@ -80,15 +76,15 @@ var VHModalEducation = function VHModalEducation(props) {
       endYear = _React$useState10[0],
       setEndYear = _React$useState10[1];
 
-  return /*#__PURE__*/_react.default.createElement(_Modal.default, {
+  return _react.default.createElement(_Modal.default, {
     width: "732",
     minWidth: "660",
     open: props.openModal,
     onClose: props.onClose,
     onEvent: props.onEvent,
-    header: /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+    header: _react.default.createElement(_Grid.Row, {
       row: true
-    }, /*#__PURE__*/_react.default.createElement(_TitleDescription.default, {
+    }, _react.default.createElement(_TitleDescription.default, {
       title: 'Add Education',
       description: '',
       titleVariant: "h3",
@@ -97,13 +93,13 @@ var VHModalEducation = function VHModalEducation(props) {
       descriptionVariant: "platform",
       onEvent: props.onEvent
     })),
-    content: /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+    content: _react.default.createElement(_Grid.Row, {
       column: true
-    }, /*#__PURE__*/_react.default.createElement("div", {
+    }, _react.default.createElement("div", {
       style: {
         width: '50%'
       }
-    }, /*#__PURE__*/_react.default.createElement(_Select.default, {
+    }, _react.default.createElement(_Select.default, {
       caption: "Degree Type",
       captionColor: "gray-90",
       className: "vh-general-section-degree ".concat(props.className ? props.className : ''),
@@ -112,13 +108,13 @@ var VHModalEducation = function VHModalEducation(props) {
       onEvent: props.onEvent,
       items: props.items,
       color: "gray-90"
-    }), props.modalEducation.degreeType.messageError && /*#__PURE__*/_react.default.createElement(S.ErrorMessage, null, "Field required")), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+    }), props.modalEducation.degreeType.messageError && _react.default.createElement(S.ErrorMessage, null, "Field required")), _react.default.createElement(_Grid.Row, {
       marginBottom5: true
-    }, /*#__PURE__*/_react.default.createElement(_index.default, {
+    }, _react.default.createElement(_index.default, {
       color: "gray-90",
       variant: 'platform',
       text: "Degree Title"
-    }), /*#__PURE__*/_react.default.createElement(_Simple.default, {
+    }), _react.default.createElement(_Simple.default, {
       placeholder: "",
       onEvent: props.onEvent,
       value: degreeTitle,
@@ -126,13 +122,13 @@ var VHModalEducation = function VHModalEducation(props) {
         id: "ModalEducation",
         field: "degreeTitle"
       }
-    }), props.modalEducation.degreeTitle.messageError && /*#__PURE__*/_react.default.createElement(S.ErrorMessage, null, "Field required")), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+    }), props.modalEducation.degreeTitle.messageError && _react.default.createElement(S.ErrorMessage, null, "Field required")), _react.default.createElement(_Grid.Row, {
       marginBottom5: true
-    }, /*#__PURE__*/_react.default.createElement(_index.default, {
+    }, _react.default.createElement(_index.default, {
       color: "gray-90",
       variant: 'platform',
       text: "Institution"
-    }), /*#__PURE__*/_react.default.createElement(_Simple.default, {
+    }), _react.default.createElement(_Simple.default, {
       placeholder: "",
       onEvent: props.onEvent,
       value: schoolName,
@@ -140,18 +136,18 @@ var VHModalEducation = function VHModalEducation(props) {
         id: "ModalEducation",
         field: "schoolName"
       }
-    }), props.modalEducation.schoolName.messageError && /*#__PURE__*/_react.default.createElement(S.ErrorMessage, null, "Field required")), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+    }), props.modalEducation.schoolName.messageError && _react.default.createElement(S.ErrorMessage, null, "Field required")), _react.default.createElement(_Grid.Row, {
       marginBottom5: true,
       row: true,
       justifySpaceBetween: true
-    }, /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+    }, _react.default.createElement(_Grid.Row, {
       width: '50%',
       marginRight: 4
-    }, /*#__PURE__*/_react.default.createElement(_index.default, {
+    }, _react.default.createElement(_index.default, {
       color: "gray-90",
       variant: 'platform',
       text: "Start Date"
-    }), /*#__PURE__*/_react.default.createElement(_Simple.default, {
+    }), _react.default.createElement(_Simple.default, {
       placeholder: "",
       type: 'date',
       onEvent: props.onEvent,
@@ -160,13 +156,13 @@ var VHModalEducation = function VHModalEducation(props) {
         id: "ModalEducation",
         field: "startYear"
       }
-    }), props.modalEducation.startYear.messageError && /*#__PURE__*/_react.default.createElement(S.ErrorMessage, null, "Field required")), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+    }), props.modalEducation.startYear.messageError && _react.default.createElement(S.ErrorMessage, null, "Field required")), _react.default.createElement(_Grid.Row, {
       width: '50%'
-    }, /*#__PURE__*/_react.default.createElement(_index.default, {
+    }, _react.default.createElement(_index.default, {
       color: "gray-90",
       variant: 'platform',
       text: "End Date"
-    }), /*#__PURE__*/_react.default.createElement(_Simple.default, {
+    }), _react.default.createElement(_Simple.default, {
       placeholder: "",
       type: 'date',
       onEvent: props.onEvent,
@@ -175,11 +171,11 @@ var VHModalEducation = function VHModalEducation(props) {
         id: "ModalEducation",
         field: "endYear"
       }
-    }))), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+    }))), _react.default.createElement(_Grid.Row, {
       row: true
-    }, item.id && /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+    }, item.id && _react.default.createElement(_Grid.Row, {
       alignItemsLeft: true
-    }, /*#__PURE__*/_react.default.createElement(_IconText.default, {
+    }, _react.default.createElement(_IconText.default, {
       cursor: true,
       iconColor: "gray-60",
       textColor: "gray-60",
@@ -193,9 +189,9 @@ var VHModalEducation = function VHModalEducation(props) {
       },
       onEvent: props.onEvent,
       onClose: props.onClose
-    })), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+    })), _react.default.createElement(_Grid.Row, {
       alignItemsRight: true
-    }, /*#__PURE__*/_react.default.createElement(_index2.default, {
+    }, _react.default.createElement(_index2.default, {
       primary: true,
       onEvent: props.onEvent,
       data: 'saveEducation',

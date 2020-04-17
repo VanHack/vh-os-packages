@@ -38,11 +38,11 @@ var premiumServices = [{
   reverse: true
 }];
 (0, _react2.storiesOf)("Components|Text Highlight Description Image", module).add("Default", function () {
-  return /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  return _react.default.createElement(_Grid.Row, {
     style: {
       padding: "24px"
     }
-  }, /*#__PURE__*/_react.default.createElement(_index.default, {
+  }, _react.default.createElement(_index.default, {
     title: premiumServices[0].title,
     highlight: premiumServices[0].highlight,
     description: premiumServices[0].description,
@@ -50,11 +50,11 @@ var premiumServices = [{
     reverse: premiumServices[0].reverse
   }));
 }).add("Reverse", function () {
-  return /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  return _react.default.createElement(_Grid.Row, {
     style: {
       padding: "24px"
     }
-  }, /*#__PURE__*/_react.default.createElement(_index.default, {
+  }, _react.default.createElement(_index.default, {
     title: premiumServices[1].title,
     highlight: premiumServices[1].highlight,
     description: premiumServices[1].description,
@@ -62,16 +62,16 @@ var premiumServices = [{
     reverse: premiumServices[1].reverse
   }));
 }).add("Multiply", function () {
-  return /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  return _react.default.createElement(_Grid.Row, {
     style: {
       padding: "24px"
     },
     responsive: true
   }, premiumServices.map(function (service) {
-    return /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+    return _react.default.createElement(_Grid.Row, {
       marginBottom: 50,
       responsive: true
-    }, /*#__PURE__*/_react.default.createElement(_index.default, {
+    }, _react.default.createElement(_index.default, {
       title: service.title,
       highlight: service.highlight,
       description: service.description,

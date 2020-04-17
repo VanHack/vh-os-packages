@@ -23,22 +23,22 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var VHPreloader = function VHPreloader(props) {
   if (props.type === "bubble") {
-    return /*#__PURE__*/_react.default.createElement(S.PreloaderBubble, {
+    return _react.default.createElement(S.PreloaderBubble, {
       size: props.size
-    }, /*#__PURE__*/_react.default.createElement("div", null), /*#__PURE__*/_react.default.createElement("div", null), /*#__PURE__*/_react.default.createElement("div", null));
+    }, _react.default.createElement("div", null), _react.default.createElement("div", null), _react.default.createElement("div", null));
   }
 
   if (props.type === "fullPage") {
-    return /*#__PURE__*/_react.default.createElement(S.Container, null, /*#__PURE__*/_react.default.createElement(S.ImageSection, null, /*#__PURE__*/_react.default.createElement(S.Image, {
+    return _react.default.createElement(S.Container, null, _react.default.createElement(S.ImageSection, null, _react.default.createElement(S.Image, {
       image: _index.default
-    })), /*#__PURE__*/_react.default.createElement(S.PreloaderSection, null, /*#__PURE__*/_react.default.createElement(S.PreloaderBubble, {
+    })), _react.default.createElement(S.PreloaderSection, null, _react.default.createElement(S.PreloaderBubble, {
       size: props.size
-    }, /*#__PURE__*/_react.default.createElement("div", null), /*#__PURE__*/_react.default.createElement("div", null), /*#__PURE__*/_react.default.createElement("div", null))));
+    }, _react.default.createElement("div", null), _react.default.createElement("div", null), _react.default.createElement("div", null))));
   }
 
-  return /*#__PURE__*/_react.default.createElement(S.PreloaderCircle, {
+  return _react.default.createElement(S.PreloaderCircle, {
     size: props.size
-  }, /*#__PURE__*/_react.default.createElement("div", null));
+  }, _react.default.createElement("div", null));
 };
 
 VHPreloader.defaultProps = {

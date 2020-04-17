@@ -11,12 +11,13 @@ const VHTestimonial = props => {
             <VHAvatar 
                 image={props.image} 
                 size={props.sizeImg}
-                showCursor
+                showCursor={false}
             />
         </S.AvatarWrapper>
         <S.TextWrapper
             xs={props.xs}
             sm={props.sm}
+            md2={props.md2}
             lg={props.lg}
             color={props.color}>
             <p>{props.testimonial}</p>

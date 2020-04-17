@@ -9,13 +9,13 @@ var _ = _interopRequireDefault(require("."));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 (0, _react2.storiesOf)("Templates|Announcement", module).add("default", function () {
-  return /*#__PURE__*/_react.default.createElement(_.default, {
+  return _react.default.createElement(_.default, {
     title: "tiutloiasdfkjahs fkjash dfkadf asdfsadjfasdfasdf",
     subTitle: "tiutloiasdfkjahs fkjash dfkadf asdfsadjfasdfasdf",
     description: "Voluptate magna culpaculpaculpaculpaculpaculpaculpa culpaculpaculpaculpa culpaculpaculpa culpaculpa in dolore ut cupidatat qui sint culpa. Duis cupidatat in aliquip ad reprehenderit labore anim nulla qui. Duis laborum est ad voluptate veniam exercitation in. reprehenderit labore anim nulla qui. Duis laborum est ad voluptate veniam exercitation in. reprehenderit labore anim nulla qui. Duis laborum est ad voluptate veniam exercitation in.reprehenderit labore anim nulla qui."
   });
 }).add("with cta", function () {
-  return /*#__PURE__*/_react.default.createElement(_.default, {
+  return _react.default.createElement(_.default, {
     title: "tiutloiasdfkjahs fkjash dfkadf asdfsadjfasdfasdf",
     subTitle: "tiutloiasdfkjahs fkjash dfkadf asdfsadjfasdfasdf",
     description: "Voluptate magna culpaculpaculpaculpaculpaculpaculpa culpaculpaculpaculpa culpaculpaculpa culpaculpa in dolore ut cupidatat qui sint culpa. Duis cupidatat in aliquip ad reprehenderit labore anim nulla qui. Duis laborum est ad voluptate veniam exercitation in. reprehenderit labore anim nulla qui. Duis laborum est ad voluptate veniam exercitation in. reprehenderit labore anim nulla qui. Duis laborum est ad voluptate veniam exercitation in.reprehenderit labore anim nulla qui.",
@@ -26,7 +26,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
     }
   });
 }).add("loading", function () {
-  return /*#__PURE__*/_react.default.createElement(_.default, {
+  return _react.default.createElement(_.default, {
     title: "tiutloiasdfkjahs fkjash dfkadf asdfsadjfasdfasdf",
     subTitle: "tiutloiasdfkjahs fkjash dfkadf asdfsadjfasdfasdf",
     description: "Voluptate magna culpaculpaculpaculpaculpaculpaculpa culpaculpaculpaculpa culpaculpaculpa culpaculpa in dolore ut cupidatat qui sint culpa. Duis cupidatat in aliquip ad reprehenderit labore anim nulla qui. Duis laborum est ad voluptate veniam exercitation in. reprehenderit labore anim nulla qui. Duis laborum est ad voluptate veniam exercitation in. reprehenderit labore anim nulla qui. Duis laborum est ad voluptate veniam exercitation in.reprehenderit labore anim nulla qui.",

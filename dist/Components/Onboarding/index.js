@@ -47,15 +47,11 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 
 function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
-function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
 
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance"); }
 
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(n); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
-function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+function _iterableToArrayLimit(arr, i) { if (!(Symbol.iterator in Object(arr) || Object.prototype.toString.call(arr) === "[object Arguments]")) { return; } var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
 
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
@@ -131,57 +127,57 @@ var VHOnboarding = function VHOnboarding(props) {
       backgroundImage: 'linear-gradient(to bottom right, #56CCF2, #0675CE)'
     },
     fullWidth: true
-  }, /*#__PURE__*/_react.default.createElement("img", {
+  }, _react.default.createElement("img", {
     style: {
       marginBottom: '50px'
     },
     src: VanhackLogo
-  }), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  }), _react.default.createElement(_Grid.Row, {
     alignItemsCenter: true
-  }, /*#__PURE__*/_react.default.createElement(_Base.default, {
+  }, _react.default.createElement(_Base.default, {
     noPadding: true,
     width: "730px",
     height: "580px",
     id: "onboarding"
-  }, props.controls.language.loading ? /*#__PURE__*/_react.default.createElement(_Preloader.default, {
+  }, props.controls.language.loading ? _react.default.createElement(_Preloader.default, {
     type: "fullPage",
     size: "md"
-  }) : /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, currentStep > 0 && /*#__PURE__*/_react.default.createElement(_Grid.Row, null, /*#__PURE__*/_react.default.createElement(_ProgressBar.default, {
+  }) : _react.default.createElement(_react.default.Fragment, null, currentStep > 0 && _react.default.createElement(_Grid.Row, null, _react.default.createElement(_ProgressBar.default, {
     steps: props.steps,
     currentStep: currentStep,
     onEvent: props.onEvent
-  })), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  })), _react.default.createElement(_Grid.Row, {
     alignItemsCenter: true,
     style: {
       height: '100%'
     }
-  }, /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  }, _react.default.createElement(_Grid.Row, {
     style: {
       width: '100%',
       height: 'calc(100% - 10px)',
       boxSizing: 'border-box',
       padding: '33px'
     }
-  }, /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  }, _react.default.createElement(_Grid.Row, {
     style: {
       height: '100%',
       overflow: 'auto',
       boxSizing: 'border-box',
       padding: '0 3px'
     }
-  }, currentStep === 0 && /*#__PURE__*/_react.default.createElement(_StartStep.default, _extends({}, props, {
+  }, currentStep === 0 && _react.default.createElement(_StartStep.default, _extends({}, props, {
     onEvent: props.onEvent,
     setCurrentStep: function setCurrentStep() {
       return _setCurrentStep(1);
     }
-  })), currentStep === 1 && /*#__PURE__*/_react.default.createElement(_FirstStep.default, props), currentStep === 2 && /*#__PURE__*/_react.default.createElement(_SecondStep.default, props), currentStep === 3 && /*#__PURE__*/_react.default.createElement(_ThirdStep.default, props), currentStep === 4 && /*#__PURE__*/_react.default.createElement(_FourthStep.default, props), currentStep === 5 && /*#__PURE__*/_react.default.createElement(_FifthStep.default, props), currentStep === 6 && /*#__PURE__*/_react.default.createElement(_SixStep.default, props), currentStep > 6 && /*#__PURE__*/_react.default.createElement(_FinishStep.default, props)), currentStep > 0 && /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  })), currentStep === 1 && _react.default.createElement(_FirstStep.default, props), currentStep === 2 && _react.default.createElement(_SecondStep.default, props), currentStep === 3 && _react.default.createElement(_ThirdStep.default, props), currentStep === 4 && _react.default.createElement(_FourthStep.default, props), currentStep === 5 && _react.default.createElement(_FifthStep.default, props), currentStep === 6 && _react.default.createElement(_SixStep.default, props), currentStep > 6 && _react.default.createElement(_FinishStep.default, props)), currentStep > 0 && _react.default.createElement(_Grid.Row, {
     row: true,
     justifySpaceBetween: true,
     alignItemsCenter: true,
     style: {
       padding: '12px 0'
     }
-  }, /*#__PURE__*/_react.default.createElement("span", null, currentStep > 1 && /*#__PURE__*/_react.default.createElement(_ButtonNew.default, {
+  }, _react.default.createElement("span", null, currentStep > 1 && _react.default.createElement(_ButtonNew.default, {
     className: "",
     textButton: true,
     label: "Back",
@@ -202,11 +198,15 @@ var VHOnboarding = function VHOnboarding(props) {
     },
     primary: true,
     data: props
-  })), /*#__PURE__*/_react.default.createElement(_Text.default, {
+  })), _react.default.createElement(_Text.default, {
     text: "".concat(currentStep, " / ").concat(props.steps),
     variant: "platform1",
     color: "gray-60"
+<<<<<<< HEAD
+  }), _react.default.createElement(_ButtonNew.default, {
+=======
   }), currentStep < 7 && /*#__PURE__*/_react.default.createElement(_ButtonNew.default, {
+>>>>>>> 5cb29a2a7ba2b8c09db150bf7cceada996996cab
     className: "",
     label: currentStep < 6 ? "Next" : "Finish",
     disabled: disabled,

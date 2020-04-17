@@ -34,7 +34,7 @@ var links = [{
   href: '#sideProjects'
 }];
 (0, _react2.storiesOf)('Components|Profile Menu', module).add('default', function () {
-  return /*#__PURE__*/_react.default.createElement(_.default, {
+  return _react.default.createElement(_.default, {
     links: links
   });
 });

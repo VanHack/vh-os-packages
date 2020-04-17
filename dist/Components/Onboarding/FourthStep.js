@@ -49,27 +49,27 @@ var FourthStep = function FourthStep(props) {
 
   return /*#__PURE__*/_react.default.createElement(_Grid.Row, {
     column: true
-  }, /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  }, _react.default.createElement(_Grid.Row, {
     row: true,
     marginBottom: 10,
     alignItemsCenter: true
-  }, /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  }, _react.default.createElement(_Grid.Row, {
     autoWidth: true,
     marginRight: 5
-  }, /*#__PURE__*/_react.default.createElement(_Icon.default, {
+  }, _react.default.createElement(_Icon.default, {
     icon: 'relocation',
     title: "city",
     md: true,
     color: "gray-50"
-  })), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  })), _react.default.createElement(_Grid.Row, {
     width: '70%'
-  }, /*#__PURE__*/_react.default.createElement(_Text.default, {
+  }, _react.default.createElement(_Text.default, {
     variant: "h4",
     color: "gray-90",
     text: 'Relocation'
-  }))), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  }))), _react.default.createElement(_Grid.Row, {
     column: true
-  }, /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  }, _react.default.createElement(_Grid.Row, {
     marginBottom: 10,
     style: {
       padding: '1px'
@@ -88,7 +88,7 @@ var FourthStep = function FourthStep(props) {
     captionColor: props.controls.openForRemoteJobs.loading ? "gray-40" : props.controls.openForRemoteJobs.error ? "red" : "gray-90"
   })), props.openForRemoteJobs !== null && props.openForRemoteJobs < 2 && /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement(_Grid.Row, {
     marginBottom: 1
-  }, /*#__PURE__*/_react.default.createElement(_TitleDescription.default, {
+  }, _react.default.createElement(_TitleDescription.default, {
     className: "vh-general-section-companySize ".concat(props.className ? props.className : ''),
     descriptionColor: props.controls.companySize.loading ? "gray-40" : props.controls.companySize.error ? "red-light" : "gray-90",
     descriptionVariant: "caption",
@@ -97,10 +97,10 @@ var FourthStep = function FourthStep(props) {
     title: "Where would you like to work?",
     titleColor: props.controls.companySize.loading ? "gray-40" : props.controls.companySize.error ? "red" : "gray-90",
     titleVariant: "platform1"
-  })), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  })), _react.default.createElement(_Grid.Row, {
     marginBottom: 5,
     width: '100%'
-  }, /*#__PURE__*/_react.default.createElement(_TargetLocation.default, {
+  }, _react.default.createElement(_TargetLocation.default, {
     onEvent: props.onEvent,
     items: targetLocation
   })), preferedCountries.length > 0 && /*#__PURE__*/_react.default.createElement(_Grid.Row, {
@@ -121,9 +121,9 @@ var FourthStep = function FourthStep(props) {
   }))), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
     row: true,
     responsive: true
-  }, /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  }, _react.default.createElement(_Grid.Row, {
     paddingRight8: true
-  }, /*#__PURE__*/_react.default.createElement(_Select.default, {
+  }, _react.default.createElement(_Select.default, {
     caption: "Canadian Visa Status",
     className: "vh-general-section-visaStatusCanadian ".concat(props.className ? props.className : ''),
     currentItem: visaStatusCanadian,
@@ -134,7 +134,7 @@ var FourthStep = function FourthStep(props) {
     description: props.controls.visaStatusCanadian.error && props.controls.visaStatusCanadian.message,
     descriptionColor: "red",
     captionColor: props.controls.visaStatusCanadian.loading ? "gray-40" : props.controls.visaStatusCanadian.error ? "red" : "gray-90"
-  })), /*#__PURE__*/_react.default.createElement(_Grid.Row, null, /*#__PURE__*/_react.default.createElement(_Select.default, {
+  })), _react.default.createElement(_Grid.Row, null, _react.default.createElement(_Select.default, {
     caption: "EU Visa Status",
     className: "vh-general-section-visaStatusEU ".concat(props.className ? props.className : ''),
     currentItem: visaStatusEU,
