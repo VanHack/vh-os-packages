@@ -17,7 +17,7 @@ const VHPremiumPricingSection = props => {
             />
         </Row>
         <Row row marginTop={50} marginBottom={10} style={{justifyContent: "center"}} alignItemsCenter responsive>
-            {props.cardItems.map(item => (
+            {props.cardItems.map((item, index) => (
                 <Row width={"360px"} style={{padding: "10px"}}>
                     <VHCardPrincing 
                         show={item.show}                             
@@ -36,7 +36,7 @@ const VHPremiumPricingSection = props => {
                         outlineBtn={item.outlineBtn}
                         secondaryBtn={item.secondaryBtn}
                         onEvent={props.onEvent}
-                        data={"VHCardPrincing"}
+                        data={`VHCardPrincing${index}`}
                     />
                 </Row>
             ))}
