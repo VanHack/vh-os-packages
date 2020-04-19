@@ -15,7 +15,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var VHMainIconTitleList = function VHMainIconTitleList(props) {
   return props.items.map(function (item) {
-    return _react.default.createElement(_index.default, {
+    return /*#__PURE__*/_react.default.createElement(_index.default, {
       iconColor: "primary-light",
       textColor: "primary-light",
       text: item.label,

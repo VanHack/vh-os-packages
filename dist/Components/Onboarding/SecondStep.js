@@ -22,30 +22,30 @@ var _List = _interopRequireDefault(require("../List"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var SecondStep = function SecondStep(props) {
-  return _react.default.createElement(_Grid.Row, {
+  return /*#__PURE__*/_react.default.createElement(_Grid.Row, {
     column: true
-  }, _react.default.createElement(_Grid.Row, {
+  }, /*#__PURE__*/_react.default.createElement(_Grid.Row, {
     row: true,
     marginBottom: 10,
     alignItemsCenter: true
-  }, _react.default.createElement(_Grid.Row, {
+  }, /*#__PURE__*/_react.default.createElement(_Grid.Row, {
     autoWidth: true,
     marginRight: 5
-  }, _react.default.createElement(_Icon.default, {
+  }, /*#__PURE__*/_react.default.createElement(_Icon.default, {
     icon: 'skills',
     title: "city",
     md: true,
     color: "gray-50"
-  })), _react.default.createElement(_Grid.Row, null, _react.default.createElement(_Text.default, {
+  })), /*#__PURE__*/_react.default.createElement(_Grid.Row, null, /*#__PURE__*/_react.default.createElement(_Text.default, {
     variant: "h4",
     color: "gray-90",
     text: 'Top Skills'
-  }))), _react.default.createElement(_Grid.Row, {
+  }))), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
     column: true
-  }, _react.default.createElement(_Grid.Row, {
+  }, /*#__PURE__*/_react.default.createElement(_Grid.Row, {
     column: true,
     marginBottom5: true
-  }, _react.default.createElement(_TitleDescription.default, {
+  }, /*#__PURE__*/_react.default.createElement(_TitleDescription.default, {
     contents: true,
     className: "vh-general-section-topSkill-description ".concat(props.className ? props.className : ''),
     onEvent: props.onEvent,
@@ -54,9 +54,9 @@ var SecondStep = function SecondStep(props) {
     titleVariant: "subtitle1",
     description: "1st = Highest proficiency level; 3rd = Lowest proficiency level",
     descriptionColor: props.controls.topSkill.loading ? "gray-40" : props.controls.topSkill.error ? "red" : "gray-50"
-  })), _react.default.createElement(_Grid.Row, {
+  })), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
     marginBottom5: true
-  }, _react.default.createElement(_List.default, {
+  }, /*#__PURE__*/_react.default.createElement(_List.default, {
     controls: props.controls,
     onEvent: props.onEvent,
     secondList: props.yearsOfExperienceList,

@@ -18,7 +18,7 @@ var _reactPreloadSkeleton = require("react-preload-skeleton");
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var VHSkeletonText = function VHSkeletonText(props) {
-  return _react.default.createElement(_reactPreloadSkeleton.TextSkeleton, {
+  return /*#__PURE__*/_react.default.createElement(_reactPreloadSkeleton.TextSkeleton, {
     color: props.color
   });
 };

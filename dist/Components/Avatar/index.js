@@ -20,7 +20,7 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var VHAvatar = function VHAvatar(props) {
-  return _react.default.createElement(S.Avatar, {
+  return /*#__PURE__*/_react.default.createElement(S.Avatar, {
     center: props.center,
     image: props.image,
     size: props.size,

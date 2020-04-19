@@ -30,61 +30,61 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var VHPromoBar = function VHPromoBar(props) {
-  return _react.default.createElement(_Grid.Row, {
+  return /*#__PURE__*/_react.default.createElement(_Grid.Row, {
     className: "vh-promo-bar ".concat(props.className ? props.className : '')
-  }, _react.default.createElement(S.Wrapper, {
+  }, /*#__PURE__*/_react.default.createElement(S.Wrapper, {
     color: props.backgroundColor ? props.backgroundColor : 'gray-30'
-  }, _react.default.createElement(_Grid.Container, {
+  }, /*#__PURE__*/_react.default.createElement(_Grid.Container, {
     md: true
-  }, _react.default.createElement(_Grid.Row, {
+  }, /*#__PURE__*/_react.default.createElement(_Grid.Row, {
     row: true,
     style: {
       marginTop: "6px"
     }
-  }, _react.default.createElement(_Grid.Row, {
+  }, /*#__PURE__*/_react.default.createElement(_Grid.Row, {
     row: true,
     alignItemsCenter: true,
     mobileDisplayNone: true
-  }, _react.default.createElement("span", {
+  }, /*#__PURE__*/_react.default.createElement("span", {
     style: {
       marginRight: "3px"
     }
-  }, _react.default.createElement(_index.default, {
+  }, /*#__PURE__*/_react.default.createElement(_index.default, {
     variant: "subtitle2",
     color: "gray-10",
     text: "Special Offer:"
-  })), _react.default.createElement(_index.default, {
+  })), /*#__PURE__*/_react.default.createElement(_index.default, {
     variant: "subtitle3",
     color: "gray-10",
     text: props.textPromo
-  }), _react.default.createElement("span", {
+  }), /*#__PURE__*/_react.default.createElement("span", {
     style: {
       marginLeft: "22px"
     }
-  }, _react.default.createElement(_index.default, {
+  }, /*#__PURE__*/_react.default.createElement(_index.default, {
     variant: "subtitle3",
     color: "gray-10",
     text: "Sale ends in"
-  }))), _react.default.createElement(_Grid.Row, {
+  }))), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
     row: true,
     justifyBottom: true
-  }, _react.default.createElement(_index4.default, {
+  }, /*#__PURE__*/_react.default.createElement(_index4.default, {
     endDate: props.endDate
-  }), _react.default.createElement(_Grid.Row, {
+  }), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
     row: true,
     alignItemsCenter: true,
     marginRight: 1,
     marginLeft: 3
-  }, _react.default.createElement(_Grid.Row, {
+  }, /*#__PURE__*/_react.default.createElement(_Grid.Row, {
     width: "100px"
-  }, _react.default.createElement(_index2.default, {
+  }, /*#__PURE__*/_react.default.createElement(_index2.default, {
     label: props.label,
     full: true,
     lg: true,
     onEvent: props.onEvent,
     data: "VHPromoBar",
     black: true
-  }))), _react.default.createElement(_Grid.Row, {
+  }))), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
     row: true,
     alignItemsCenter: true,
     justifyBottom: true,
@@ -92,7 +92,7 @@ var VHPromoBar = function VHPromoBar(props) {
       cursor: "pointer"
     },
     mobileDisplayNone: true
-  }, _react.default.createElement(_index3.default, {
+  }, /*#__PURE__*/_react.default.createElement(_index3.default, {
     white: true,
     xl: true,
     noUnderscore: true,

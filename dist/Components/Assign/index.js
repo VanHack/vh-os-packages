@@ -27,29 +27,29 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var VHAssign = function VHAssign(props) {
   var count = 0;
-  return _react.default.createElement(_Grid.Row, {
+  return /*#__PURE__*/_react.default.createElement(_Grid.Row, {
     row: true,
     alignItemsCenter: true,
     justifySpaceAround: true,
     className: "vh-assign ".concat(props.className ? props.className : "")
-  }, _react.default.createElement(_Grid.Row, {
+  }, /*#__PURE__*/_react.default.createElement(_Grid.Row, {
     row: true,
     alignItemsCenter: true
-  }, _react.default.createElement(_Text.default, {
+  }, /*#__PURE__*/_react.default.createElement(_Text.default, {
     color: "gradient-primary",
     variant: "platform",
     text: "Assign",
     data: "VHAssign",
     onEvent: props.onEvent
-  })), _react.default.createElement(_Grid.Row, {
+  })), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
     row: true,
     alignItemsCenter: true
   }, props.items.map(function (item, index) {
     if (index < 3) {
       count++;
-      return _react.default.createElement(S.Wrapper, {
+      return /*#__PURE__*/_react.default.createElement(S.Wrapper, {
         key: "vh-assign-".concat(item.id)
-      }, _react.default.createElement(S.Tooltip, null, item.name), _react.default.createElement(_Avatar.default, {
+      }, /*#__PURE__*/_react.default.createElement(S.Tooltip, null, item.name), /*#__PURE__*/_react.default.createElement(_Avatar.default, {
         content: "test",
         image: item.avatar,
         showCursor: true,
@@ -58,9 +58,9 @@ var VHAssign = function VHAssign(props) {
     }
 
     if (index > 2 && index === props.items.length - 1) {
-      return _react.default.createElement(S.Wrapper, {
+      return /*#__PURE__*/_react.default.createElement(S.Wrapper, {
         key: "vh-assign-".concat(item.id)
-      }, _react.default.createElement(S.Rounded, null, _react.default.createElement(_Text.default, {
+      }, /*#__PURE__*/_react.default.createElement(S.Rounded, null, /*#__PURE__*/_react.default.createElement(_Text.default, {
         variant: "platform",
         text: "+".concat(props.items.length - count)
       })));

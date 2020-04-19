@@ -26,17 +26,17 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var VHTextsImageLink = function VHTextsImageLink(props) {
-  return _react.default.createElement(_index.Container, null, _react.default.createElement(_index.Row, null, _react.default.createElement(_index2.default, {
+  return /*#__PURE__*/_react.default.createElement(_index.Container, null, /*#__PURE__*/_react.default.createElement(_index.Row, null, /*#__PURE__*/_react.default.createElement(_index2.default, {
     title: props.title,
     highlight: props.highlight,
     description: props.description,
     imgSvg: props.imgSvg,
     reverse: props.reverseTop
-  }), _react.default.createElement(_index.Container, null, _react.default.createElement(S.Wrapper, {
+  }), /*#__PURE__*/_react.default.createElement(_index.Container, null, /*#__PURE__*/_react.default.createElement(S.Wrapper, {
     reverse: props.reverseBottom
-  }, _react.default.createElement(_index.Row, {
+  }, /*#__PURE__*/_react.default.createElement(_index.Row, {
     width: "50%"
-  }, _react.default.createElement(_index3.default, {
+  }, /*#__PURE__*/_react.default.createElement(_index3.default, {
     xsLabel: props.xsLabel,
     smLabel: props.smLabel,
     lgLabel: props.lgLabel,
@@ -50,7 +50,7 @@ var VHTextsImageLink = function VHTextsImageLink(props) {
     lgIcon: props.lgImg,
     data: props.data,
     onEvent: props.onEvent
-  })), _react.default.createElement(_index.Row, {
+  })), /*#__PURE__*/_react.default.createElement(_index.Row, {
     width: "50%"
   })))));
 };

@@ -26,37 +26,37 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var VHImgSvg = function VHImgSvg(props) {
   switch (props.imgSvg) {
     case 'bubble':
-      return _react.default.createElement(_index.default, {
+      return /*#__PURE__*/_react.default.createElement(_index.default, {
         className: "vh-img-svg ".concat(props.className ? props.className : '')
       });
 
     case "meeting":
-      return _react.default.createElement(_index2.default, {
+      return /*#__PURE__*/_react.default.createElement(_index2.default, {
         className: "vh-img-svg ".concat(props.className ? props.className : '')
       });
 
     case "interview":
-      return _react.default.createElement(_index3.default, {
+      return /*#__PURE__*/_react.default.createElement(_index3.default, {
         className: "vh-img-svg ".concat(props.className ? props.className : '')
       });
 
     case "profile":
-      return _react.default.createElement(_index4.default, {
+      return /*#__PURE__*/_react.default.createElement(_index4.default, {
         className: "vh-img-svg ".concat(props.className ? props.className : '')
       });
 
     case "slack":
-      return _react.default.createElement(_index5.default, {
+      return /*#__PURE__*/_react.default.createElement(_index5.default, {
         className: "vh-img-svg ".concat(props.className ? props.className : '')
       });
 
     case "webinar":
-      return _react.default.createElement(_index6.default, {
+      return /*#__PURE__*/_react.default.createElement(_index6.default, {
         className: "vh-img-svg ".concat(props.className ? props.className : '')
       });
 
     default:
-      return _react.default.createElement("span", null);
+      return /*#__PURE__*/_react.default.createElement("span", null);
   }
 };
 

@@ -38,7 +38,7 @@ var activities = {
   }]
 };
 (0, _react2.storiesOf)("Components|Activity", module).add("default", function () {
-  return _react.default.createElement(_.default, {
+  return /*#__PURE__*/_react.default.createElement(_.default, {
     activities: activities
   });
 });

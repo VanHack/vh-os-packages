@@ -49,7 +49,7 @@ var VHImg = function VHImg(props) {
       break;
   }
 
-  return _react.default.createElement("img", {
+  return /*#__PURE__*/_react.default.createElement("img", {
     src: props.source,
     alt: props.title,
     title: props.title,

@@ -15,7 +15,7 @@ var _index = require("../../Grid/index");
 
 var _index2 = _interopRequireDefault(require("../Text/index"));
 
-var _index3 = _interopRequireDefault(require("../Button/index"));
+var _index3 = _interopRequireDefault(require("../Button-New/index"));
 
 var S = _interopRequireWildcard(require("./styles"));
 
@@ -26,46 +26,46 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var VHTitleHighlightDescriptionButtonImage = function VHTitleHighlightDescriptionButtonImage(props) {
-  return _react.default.createElement(_index.Container, null, _react.default.createElement(_index.Row, {
+  return /*#__PURE__*/_react.default.createElement(_index.Container, null, /*#__PURE__*/_react.default.createElement(_index.Row, {
     row: true,
     responsive: true
-  }, _react.default.createElement(_index.Row, {
+  }, /*#__PURE__*/_react.default.createElement(_index.Row, {
     width: "40%",
     marginTop: 150
-  }, _react.default.createElement(_index.Row, {
+  }, /*#__PURE__*/_react.default.createElement(_index.Row, {
     marginBottom5: true
-  }, _react.default.createElement(_index2.default, {
+  }, /*#__PURE__*/_react.default.createElement(_index2.default, {
     variant: "h3",
     color: "gray-90",
     text: props.title
-  })), _react.default.createElement(_index.Row, {
+  })), /*#__PURE__*/_react.default.createElement(_index.Row, {
     marginBottom5: true
-  }, _react.default.createElement(_index2.default, {
+  }, /*#__PURE__*/_react.default.createElement(_index2.default, {
     variant: "h1",
     color: "gray-90",
     text: props.highlight
-  })), _react.default.createElement(_index.Row, {
+  })), /*#__PURE__*/_react.default.createElement(_index.Row, {
     marginBottom5: true
-  }, _react.default.createElement(_index2.default, {
+  }, /*#__PURE__*/_react.default.createElement(_index2.default, {
     variant: "bodyweb",
     color: "gray-90",
     text: props.description
-  })), _react.default.createElement(_index.Row, {
+  })), /*#__PURE__*/_react.default.createElement(_index.Row, {
     width: "50%",
     marginTop: 30,
     marginBottom: 30
-  }, _react.default.createElement(_index3.default, {
+  }, /*#__PURE__*/_react.default.createElement(_index3.default, {
     secondary: true,
     onEvent: props.onEvent,
     data: props.data,
     label: props.label,
     lg: true
-  }))), _react.default.createElement(_index.Row, {
+  }))), /*#__PURE__*/_react.default.createElement(_index.Row, {
     width: "60%",
     height: 600,
     marginTop: 50,
     mobileDisplayNone: true
-  }, _react.default.createElement(S.ImgWrapper, {
+  }, /*#__PURE__*/_react.default.createElement(S.ImgWrapper, {
     image: props.image
   }))));
 };

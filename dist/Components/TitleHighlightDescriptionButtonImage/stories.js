@@ -18,7 +18,7 @@ var items = {
   image: require("../../assets/general/background/img_hero_premium.png")
 };
 (0, _react2.storiesOf)("Components|Title Highlight Description Button Image", module).add("Default", function () {
-  return _react.default.createElement(_Grid.Row, null, _react.default.createElement(_index.default, {
+  return /*#__PURE__*/_react.default.createElement(_Grid.Row, null, /*#__PURE__*/_react.default.createElement(_index.default, {
     title: items.title,
     highlight: items.highlight,
     description: items.description,

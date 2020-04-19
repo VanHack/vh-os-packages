@@ -16,7 +16,7 @@ var _index = _interopRequireDefault(require("../TitleDescription/index"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var VHMainTitleDescription = function VHMainTitleDescription(props) {
-  return _react.default.createElement(_Grid.Row, null, _react.default.createElement(_index.default, {
+  return /*#__PURE__*/_react.default.createElement(_Grid.Row, null, /*#__PURE__*/_react.default.createElement(_index.default, {
     hover: props.hover,
     pointer: props.pointer,
     onEvent: props.onEvent,
@@ -32,7 +32,7 @@ var VHMainTitleDescription = function VHMainTitleDescription(props) {
     titleColor: "primary-light",
     titleVariant: "subtitle1",
     setNewExperience: props.setNewExperience
-  }), _react.default.createElement(_index.default, {
+  }), /*#__PURE__*/_react.default.createElement(_index.default, {
     hover: props.hover,
     pointer: props.pointer,
     onEvent: props.onEvent,

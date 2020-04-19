@@ -251,13 +251,13 @@ var controls = {
   }
 };
 (0, _react2.storiesOf)("Sections|Social", module).add("Default", function () {
-  return _react.default.createElement("div", {
+  return /*#__PURE__*/_react.default.createElement("div", {
     style: {
       backgroundColor: "#f2f2f2",
       height: "100vh",
       padding: "24px"
     }
-  }, _react.default.createElement(_.default, {
+  }, /*#__PURE__*/_react.default.createElement(_.default, {
     controls: controls,
     data: {
       linkedin: {
@@ -275,13 +275,13 @@ var controls = {
     }
   }));
 }).add("Preloading", function () {
-  return _react.default.createElement("div", {
+  return /*#__PURE__*/_react.default.createElement("div", {
     style: {
       backgroundColor: "#f2f2f2",
       height: "100vh",
       padding: "24px"
     }
-  }, _react.default.createElement(_.default, {
+  }, /*#__PURE__*/_react.default.createElement(_.default, {
     preLoading: true,
     controls: {
       linkedin: {

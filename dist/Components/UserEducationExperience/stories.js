@@ -42,30 +42,30 @@ ArrayOfUserExperience.push(UserPositionExperience2);
 ArrayOfUserExperience.push(UserPositionExperience2);
 ArrayOfUserExperience.push(UserPositionExperience2);
 (0, _react2.storiesOf)("Components|User Positon Experience", module).add("with Timeline", function () {
-  return _react.default.createElement(_Grid.Container, null, _react.default.createElement(_Grid.Row, {
+  return /*#__PURE__*/_react.default.createElement(_Grid.Container, null, /*#__PURE__*/_react.default.createElement(_Grid.Row, {
     style: {
       padding: "24px"
     }
-  }, _react.default.createElement(_index.default, {
+  }, /*#__PURE__*/_react.default.createElement(_index.default, {
     headline: UserPositionExperience.headline,
     period: UserPositionExperience.period,
     skills: UserPositionExperience.skills,
     description: UserPositionExperience.description
   })));
 }).add("many Timeline", function () {
-  return _react.default.createElement(_Grid.Container, null, _react.default.createElement(_Grid.Row, {
+  return /*#__PURE__*/_react.default.createElement(_Grid.Container, null, /*#__PURE__*/_react.default.createElement(_Grid.Row, {
     style: {
       padding: "24px"
     }
   }, ArrayOfUserExperience.map(function (userPosition) {
-    return _react.default.createElement(_index.default, userPosition);
+    return /*#__PURE__*/_react.default.createElement(_index.default, userPosition);
   })));
 }).add("without Timeline", function () {
-  return _react.default.createElement(_Grid.Container, null, _react.default.createElement(_Grid.Row, {
+  return /*#__PURE__*/_react.default.createElement(_Grid.Container, null, /*#__PURE__*/_react.default.createElement(_Grid.Row, {
     style: {
       padding: "24px"
     }
-  }, _react.default.createElement(_index.default, {
+  }, /*#__PURE__*/_react.default.createElement(_index.default, {
     headline: "CTO",
     hideTimeline: true,
     period: "Oct 2019 - Present . 3 mos",

@@ -32,14 +32,15 @@ function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
 var VHPremiumTemplate = function VHPremiumTemplate(props) {
-  return _react.default.createElement(_Grid.Row, null, _react.default.createElement(_Grid.Row, {
+  return /*#__PURE__*/_react.default.createElement(_Grid.Row, null, /*#__PURE__*/_react.default.createElement(_Grid.Row, {
     style: {
       backgroundColor: "#f2f8fc",
       padding: "0px 0 50px 0"
     }
-  }, _react.default.createElement(_Grid.Container, {
-    lg: true
-  }, _react.default.createElement(_index.default, {
+  }, /*#__PURE__*/_react.default.createElement(_Grid.Container, {
+    lg: true,
+    id: "hero-session"
+  }, /*#__PURE__*/_react.default.createElement(_index.default, {
     title: props.intro.items.title,
     highlight: props.intro.items.highlight,
     description: props.intro.items.description,
@@ -47,14 +48,15 @@ var VHPremiumTemplate = function VHPremiumTemplate(props) {
     image: props.intro.items.image,
     features: props.intro.features,
     onEvent: props.onEvent
-  }))), _react.default.createElement(_Grid.Row, {
+  }))), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
     style: {
       backgroundColor: "#fffffff",
       padding: "50px 0"
-    }
-  }, _react.default.createElement(_Grid.Container, {
+    },
+    id: "services-session"
+  }, /*#__PURE__*/_react.default.createElement(_Grid.Container, {
     lg: true
-  }, _react.default.createElement(_index2.default, {
+  }, /*#__PURE__*/_react.default.createElement(_index2.default, {
     sectionTitle: props.services.items.sectionTitle,
     title: props.services.interviewClass.title,
     highlight: props.services.interviewClass.highlight,
@@ -65,26 +67,28 @@ var VHPremiumTemplate = function VHPremiumTemplate(props) {
     icon: props.services.interviewClass.icon,
     premiumOtherServices: props.services.otherServices,
     onEvent: props.onEvent
-  }))), _react.default.createElement(_Grid.Row, {
+  }))), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
     style: {
       backgroundColor: "rgba(203, 248, 251, 0.44)",
       padding: "50px 0"
-    }
-  }, _react.default.createElement(_Grid.Container, null, _react.default.createElement(_index3.default, {
+    },
+    id: "pricing-session"
+  }, /*#__PURE__*/_react.default.createElement(_Grid.Container, null, /*#__PURE__*/_react.default.createElement(_index3.default, {
     sectionTitle: props.pricing.items.sectionTitle,
     icon: props.pricing.items.icon,
     title: props.pricing.items.title,
     description: props.pricing.items.description,
     cardItems: props.pricing.cardItems,
     onEvent: props.onEvent
-  }))), _react.default.createElement(_Grid.Row, {
+  }))), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
     style: {
       backgroundColor: "#ffffff",
       padding: "50px 0"
-    }
-  }, _react.default.createElement(_Grid.Container, {
+    },
+    id: "success-casa-session"
+  }, /*#__PURE__*/_react.default.createElement(_Grid.Container, {
     lg: true
-  }, _react.default.createElement(_index4.default, {
+  }, /*#__PURE__*/_react.default.createElement(_index4.default, {
     sectionTitle: props.success.items.sectionTitle,
     title: props.success.items.title,
     highlight: props.success.items.highlight,
@@ -102,27 +106,29 @@ var VHPremiumTemplate = function VHPremiumTemplate(props) {
     to: props.success.items.to,
     iconLink: props.success.items.iconLink,
     onEvent: props.onEvent
-  }))), _react.default.createElement(_Grid.Row, {
+  }))), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
     style: {
       backgroundColor: "#ffffff",
       padding: "50px 0"
-    }
-  }, _react.default.createElement(_Grid.Container, {
+    },
+    id: "hired-session"
+  }, /*#__PURE__*/_react.default.createElement(_Grid.Container, {
     lg: true
-  }, _react.default.createElement(_index5.default, {
+  }, /*#__PURE__*/_react.default.createElement(_index5.default, {
     sectionTitle: props.hired.items.sectionTitle,
     btnLabel: props.hired.items.btnLabel,
     candidates: props.hired.candidates,
     onEvent: props.onEvent,
     data: "VHPremiumHiredSection"
-  }))), _react.default.createElement(_Grid.Row, {
+  }))), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
     style: {
       backgroundColor: "#f2f6f9",
       padding: "50px 0"
-    }
-  }, _react.default.createElement(_Grid.Container, {
+    },
+    id: "faq-session"
+  }, /*#__PURE__*/_react.default.createElement(_Grid.Container, {
     lg: true
-  }, _react.default.createElement(_index6.default, {
+  }, /*#__PURE__*/_react.default.createElement(_index6.default, {
     sectionTitle: props.faq.items.sectionTitle,
     title: props.faq.items.title,
     description: props.faq.items.description,

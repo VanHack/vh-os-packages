@@ -272,12 +272,12 @@ var industryList = [{
   label: "Other"
 }];
 (0, _react2.storiesOf)('Components|Modal Experience', module).add('VHModalExperience', function () {
-  return _react.default.createElement("div", {
+  return /*#__PURE__*/_react.default.createElement("div", {
     style: {
       width: '100vw',
       height: '100vh'
     }
-  }, _react.default.createElement(_.default, {
+  }, /*#__PURE__*/_react.default.createElement(_.default, {
     positions: positions,
     modalExperience: modalExperience,
     industryList: industryList,

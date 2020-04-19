@@ -32,29 +32,29 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var VHCommentsSkeleton = function VHCommentsSkeleton(props) {
-  return _react.default.createElement(_Grid.Row, {
+  return /*#__PURE__*/_react.default.createElement(_Grid.Row, {
     className: "vh-comments ".concat(props.className ? props.className : '')
-  }, _react.default.createElement(_Grid.Row, {
+  }, /*#__PURE__*/_react.default.createElement(_Grid.Row, {
     marginBottom5: true
-  }, _react.default.createElement(_Text.default, {
+  }, /*#__PURE__*/_react.default.createElement(_Text.default, {
     variant: "platform2",
     color: "gray-80",
     text: "Comments ..."
-  })), _react.default.createElement(_Grid.Row, {
+  })), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
     margin: true
-  }, _react.default.createElement(S.Wrapper, null, [1, 2].map(function (comment) {
-    return _react.default.createElement(_Grid.Row, {
+  }, /*#__PURE__*/_react.default.createElement(S.Wrapper, null, [1, 2].map(function (comment) {
+    return /*#__PURE__*/_react.default.createElement(_Grid.Row, {
       row: true,
       marginBottom: 10
-    }, _react.default.createElement(_Grid.Row, {
+    }, /*#__PURE__*/_react.default.createElement(_Grid.Row, {
       margin: true,
       autoWidth: true,
       paddingRight8: true
-    }, _react.default.createElement(_Avatar2.default, null)), _react.default.createElement(_Grid.Row, null, _react.default.createElement(_Grid.Row, {
+    }, /*#__PURE__*/_react.default.createElement(_Avatar2.default, null)), /*#__PURE__*/_react.default.createElement(_Grid.Row, null, /*#__PURE__*/_react.default.createElement(_Grid.Row, {
       margin: true
-    }, _react.default.createElement(_Text2.default, null)), _react.default.createElement(_Grid.Row, {
+    }, /*#__PURE__*/_react.default.createElement(_Text2.default, null)), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
       margin: true
-    }, _react.default.createElement(_Description.default, null))));
+    }, /*#__PURE__*/_react.default.createElement(_Description.default, null))));
   }))));
 };
 

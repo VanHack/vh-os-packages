@@ -65,7 +65,7 @@ var values = [{
 }];
 var currentItem = [items[4]];
 (0, _react2.storiesOf)("Components|Secondary List", module).add("Types", function () {
-  return _react.default.createElement(_index.default, {
+  return /*#__PURE__*/_react.default.createElement(_index.default, {
     items: items,
     data: "vanhack"
   });

@@ -11,7 +11,7 @@ var _ = _interopRequireDefault(require("."));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 (0, _react2.storiesOf)('Components|Buttons/WhiteBorder', module).add('Outlined', function () {
-  return _react.default.createElement("div", {
+  return /*#__PURE__*/_react.default.createElement("div", {
     style: {
       backgroundColor: "#0074D9",
       width: "100%",
@@ -19,7 +19,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
       textAlign: "center",
       paddingTop: "30px"
     }
-  }, _react.default.createElement(_.default, {
+  }, /*#__PURE__*/_react.default.createElement(_.default, {
     white: true,
     outline: true,
     onEvent: function onEvent(e) {
@@ -28,7 +28,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
     label: "VHButton"
   }));
 }).add('Disabled', function () {
-  return _react.default.createElement("div", {
+  return /*#__PURE__*/_react.default.createElement("div", {
     style: {
       backgroundColor: "#0074D9",
       width: "100%",
@@ -36,7 +36,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
       textAlign: "center",
       paddingTop: "30px"
     }
-  }, _react.default.createElement(_.default, {
+  }, /*#__PURE__*/_react.default.createElement(_.default, {
     white: true,
     outline: true,
     disabled: true,
@@ -46,7 +46,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
     label: "VHButton"
   }));
 }).add('Full size', function () {
-  return _react.default.createElement("div", {
+  return /*#__PURE__*/_react.default.createElement("div", {
     style: {
       backgroundColor: "#0074D9",
       width: "100%",
@@ -54,7 +54,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
       textAlign: "center",
       padding: "30px"
     }
-  }, _react.default.createElement(_.default, {
+  }, /*#__PURE__*/_react.default.createElement(_.default, {
     white: true,
     outline: true,
     disabled: true,
@@ -63,7 +63,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
       (0, _addonActions.action)(e);
     },
     label: "VHButton"
-  }), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement(_.default, {
+  }), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement(_.default, {
     white: true,
     outline: true,
     full: true,

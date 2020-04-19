@@ -35,6 +35,8 @@ function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) ===
 
 function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
 
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
@@ -44,19 +46,14 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 var VHMediaTemplate = /*#__PURE__*/function (_Component) {
   _inherits(VHMediaTemplate, _Component);
 
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-var VHMediaTemplate =
-/*#__PURE__*/
-function (_Component) {
-  _inherits(VHMediaTemplate, _Component);
+  var _super = _createSuper(VHMediaTemplate);
 
   function VHMediaTemplate(props) {
     var _this;
 
     _classCallCheck(this, VHMediaTemplate);
 
-    _this = _possibleConstructorReturn(this, _getPrototypeOf(VHMediaTemplate).call(this, props));
+    _this = _super.call(this, props);
     _this.state = {};
     return _this;
   }
@@ -64,14 +61,14 @@ function (_Component) {
   _createClass(VHMediaTemplate, [{
     key: "render",
     value: function render() {
-      return _react.default.createElement(_react.default.Fragment, null, _react.default.createElement(_Grid.Row, null, _react.default.createElement(S.Wrapper1, null, _react.default.createElement(_Grid.Container, {
+      return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement(_Grid.Row, null, /*#__PURE__*/_react.default.createElement(S.Wrapper1, null, /*#__PURE__*/_react.default.createElement(_Grid.Container, {
         md: true,
         alignItemsCenter: true
-      }, _react.default.createElement(_Grid.Row, {
+      }, /*#__PURE__*/_react.default.createElement(_Grid.Row, {
         alignItemsCenter: true
-      }, _react.default.createElement(S.Press, null, this.props.press)))), _react.default.createElement(S.Wrapper2, null, _react.default.createElement(_Grid.Container, {
+      }, /*#__PURE__*/_react.default.createElement(S.Press, null, this.props.press)))), /*#__PURE__*/_react.default.createElement(S.Wrapper2, null, /*#__PURE__*/_react.default.createElement(_Grid.Container, {
         md: true
-      }, _react.default.createElement(_Grid.Row, null, _react.default.createElement(_index.default, {
+      }, /*#__PURE__*/_react.default.createElement(_Grid.Row, null, /*#__PURE__*/_react.default.createElement(_index.default, {
         title: this.props.title,
         name: this.props.name,
         email: this.props.email,

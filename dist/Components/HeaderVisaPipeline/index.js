@@ -16,19 +16,19 @@ var _index = _interopRequireDefault(require("../Text/index"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var VHHeaderVisaPipeline = function VHHeaderVisaPipeline(props) {
-  return _react.default.createElement(_Grid.Container, {
+  return /*#__PURE__*/_react.default.createElement(_Grid.Container, {
     lg: true,
     className: "vh-header-visa-pipe-line ".concat(props.className ? props.className : '')
-  }, _react.default.createElement(_Grid.Row, {
+  }, /*#__PURE__*/_react.default.createElement(_Grid.Row, {
     row: true,
     alignItemsCenter: true
-  }, _react.default.createElement(_Grid.Row, null, _react.default.createElement(_index.default, {
+  }, /*#__PURE__*/_react.default.createElement(_Grid.Row, null, /*#__PURE__*/_react.default.createElement(_index.default, {
     variant: 'h2',
     text: "Visa Pipeline"
-  })), _react.default.createElement(_Grid.Row, {
+  })), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
     row: true,
     alignItemsCenter: true
-  }, _react.default.createElement(_Grid.Row, null), _react.default.createElement(_Grid.Row, {
+  }, /*#__PURE__*/_react.default.createElement(_Grid.Row, null), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
     row: true,
     justifySpaceAround: true
   }))), props.children);

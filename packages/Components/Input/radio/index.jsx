@@ -4,12 +4,12 @@ import * as S from "./styles"
 import VHText from '../../Text'
 import VHInput from '../../Input/Simple'
 import { Row } from '../../../Grid'
-import { getFormatedDate } from '../../../util'
+import InputMask from "react-input-mask";
+import { stringToDate, getFormatedPassport } from '../../../util'
 
 const VHInputRadio = props => {
     const [checked, setChecked] = useState(props.checked)
-
-    const [value, setValue] = useState(props.value)
+    const [value, setValue] = useState(getFormatedPassport(props.value))
 
     React.useEffect(() => {
         setChecked(props.checked);
@@ -61,8 +61,14 @@ const VHInputRadio = props => {
                 />
                 <S.Label for={props.text}>{'No'}</S.Label>
                 {props.input && checked &&
-                    <S.Container>
-                        <VHInput maxLength={'4'} type="text" data={'passportExpirationDate'} pattern="([0-9]{2}[/]?){2}" placeholder={'Expiration: mm/yy'} value={value} onEvent={props.onEvent} />
+                    <S.Container error={props.controls.passportExpirationDate.error}>
+                        <InputMask mask="99/9999" onBlur={(e) => {
+                                props.onEvent({
+                                    data: {key: 'passportExpirationDate',  value: stringToDate(e.currentTarget.value)},
+                                    event: "onBlur",
+                                    origin: "VHInput",
+                                })
+                        }} onChange={(e)=>{setValue(e.currentTarget.value)}} value={value} placeholder={'Expiration: mm/yyyy'} />
                     </S.Container>
                 }
             </S.Wrapper>

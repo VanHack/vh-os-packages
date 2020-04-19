@@ -22,13 +22,13 @@ var _index5 = _interopRequireDefault(require("../../../Components/Icon/index"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var VHPremiumPricingSection = function VHPremiumPricingSection(props) {
-  return _react.default.createElement(_react.default.Fragment, null, _react.default.createElement(_index.Row, {
+  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement(_index.Row, {
     alignItemsCenter: true
-  }, _react.default.createElement(_index2.default, {
+  }, /*#__PURE__*/_react.default.createElement(_index2.default, {
     variant: "h4",
     color: "tertiary-dark",
     text: props.sectionTitle
-  })), _react.default.createElement(_index.Row, {
+  })), /*#__PURE__*/_react.default.createElement(_index.Row, {
     row: true,
     marginTop: 50,
     marginBottom: 10,
@@ -37,13 +37,13 @@ var VHPremiumPricingSection = function VHPremiumPricingSection(props) {
     },
     alignItemsCenter: true,
     responsive: true
-  }, props.cardItems.map(function (item) {
-    return _react.default.createElement(_index.Row, {
+  }, props.cardItems.map(function (item, index) {
+    return /*#__PURE__*/_react.default.createElement(_index.Row, {
       width: "360px",
       style: {
         padding: "10px"
       }
-    }, _react.default.createElement(_index3.default, {
+    }, /*#__PURE__*/_react.default.createElement(_index3.default, {
       show: item.show,
       label: item.label,
       save: item.save,
@@ -60,22 +60,22 @@ var VHPremiumPricingSection = function VHPremiumPricingSection(props) {
       outlineBtn: item.outlineBtn,
       secondaryBtn: item.secondaryBtn,
       onEvent: props.onEvent,
-      data: "VHCardPrincing"
+      data: "VHCardPrincing".concat(index)
     }));
-  })), _react.default.createElement(_index.Row, {
+  })), /*#__PURE__*/_react.default.createElement(_index.Row, {
     marginBottom5: true,
     alignItemsCenter: true
-  }, _react.default.createElement(_index5.default, {
+  }, /*#__PURE__*/_react.default.createElement(_index5.default, {
     icon: props.icon,
     md: true
-  })), _react.default.createElement(_index.Row, {
+  })), /*#__PURE__*/_react.default.createElement(_index.Row, {
     alignItemsCenter: true
-  }, _react.default.createElement(_index.Row, {
+  }, /*#__PURE__*/_react.default.createElement(_index.Row, {
     width: "50%",
     style: {
       textAlign: "center"
     }
-  }, _react.default.createElement(_index4.default, {
+  }, /*#__PURE__*/_react.default.createElement(_index4.default, {
     titleColor: "h4",
     descriptionColor: "gray-80",
     titleVariant: "platform",

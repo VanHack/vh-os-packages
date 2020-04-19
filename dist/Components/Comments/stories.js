@@ -21,24 +21,24 @@ var comments = [{
   "id": 9021
 }];
 (0, _react2.storiesOf)("Components|Comments", module).add("default", function () {
-  return _react.default.createElement("div", {
+  return /*#__PURE__*/_react.default.createElement("div", {
     style: {
       width: '589px',
       padding: "24px"
     }
-  }, _react.default.createElement(_.default, {
+  }, /*#__PURE__*/_react.default.createElement(_.default, {
     comments: comments,
     onEvent: function onEvent(event) {
       return console.log(event);
     }
   }));
 }).add("loading", function () {
-  return _react.default.createElement("div", {
+  return /*#__PURE__*/_react.default.createElement("div", {
     style: {
       width: '589px',
       padding: "24px"
     }
-  }, _react.default.createElement(_.default, {
+  }, /*#__PURE__*/_react.default.createElement(_.default, {
     loading: true,
     comments: comments,
     onEvent: function onEvent(event) {

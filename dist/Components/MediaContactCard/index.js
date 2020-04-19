@@ -24,15 +24,15 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var VHMediacontactCard = function VHMediacontactCard(props) {
-  return _react.default.createElement(_Grid.Row, {
+  return /*#__PURE__*/_react.default.createElement(_Grid.Row, {
     style: {
       marginTop: "-10%",
       boxShadow: "0 4px 14px 0 rgba(0, 0, 0, 0.1)",
       borderRadius: "6px"
     }
-  }, _react.default.createElement(_index.default, {
+  }, /*#__PURE__*/_react.default.createElement(_index.default, {
     noHover: true
-  }, _react.default.createElement(_Grid.Row, null, _react.default.createElement(S.Title, null, props.title), _react.default.createElement(S.Info, null, props.name), _react.default.createElement(S.Info, null, props.email), _react.default.createElement(S.Info, null, props.phone))));
+  }, /*#__PURE__*/_react.default.createElement(_Grid.Row, null, /*#__PURE__*/_react.default.createElement(S.Title, null, props.title), /*#__PURE__*/_react.default.createElement(S.Info, null, props.name), /*#__PURE__*/_react.default.createElement(S.Info, null, props.email), /*#__PURE__*/_react.default.createElement(S.Info, null, props.phone))));
 };
 
 VHMediacontactCard.propTypes = {

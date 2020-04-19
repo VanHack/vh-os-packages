@@ -18,23 +18,23 @@ var _propTypes = _interopRequireDefault(require("prop-types"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var VHConfirmationTemplate = function VHConfirmationTemplate(props) {
-  return _react.default.createElement(_Grid.Container, null, _react.default.createElement(_Grid.Row, {
+  return /*#__PURE__*/_react.default.createElement(_Grid.Container, null, /*#__PURE__*/_react.default.createElement(_Grid.Row, {
     alignItemsCenter: true,
     marginTop: 90
-  }, _react.default.createElement(_Text.default, {
+  }, /*#__PURE__*/_react.default.createElement(_Text.default, {
     text: props.title,
     variant: "h4"
-  })), _react.default.createElement(_Grid.Row, {
+  })), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
     alignItemsCenter: true,
     marginTop: 39
-  }, _react.default.createElement(_Text.default, {
+  }, /*#__PURE__*/_react.default.createElement(_Text.default, {
     alignCenter: true,
     text: props.description,
     variant: "bodyweb"
-  })), _react.default.createElement(_Grid.Row, {
+  })), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
     alignItemsCenter: true,
     marginTop: 39
-  }, _react.default.createElement(_Button.default, {
+  }, /*#__PURE__*/_react.default.createElement(_Button.default, {
     className: "",
     label: props.ctaLabel,
     onEvent: props.onEvent,

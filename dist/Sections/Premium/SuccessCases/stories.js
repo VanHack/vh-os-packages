@@ -32,13 +32,13 @@ var items = {
   iconLink: "arrow-right"
 };
 (0, _react2.storiesOf)("Sections|Premium/Success Cases", module).add("Default", function () {
-  return _react.default.createElement("div", {
+  return /*#__PURE__*/_react.default.createElement("div", {
     style: {
       backgroundColor: "#ffffff",
       height: "100vh",
       padding: "24px"
     }
-  }, _react.default.createElement(_.default, {
+  }, /*#__PURE__*/_react.default.createElement(_.default, {
     sectionTitle: items.sectionTitle,
     title: items.title,
     highlight: items.highlight,

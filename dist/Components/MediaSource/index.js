@@ -15,7 +15,7 @@ var VHMediaSource = function VHMediaSource(props) {
   if (props.youtube) {
     var autoplay = props.autoplay ? '?autoplay=1;' : '';
     console.log("".concat(props.source).concat(autoplay));
-    return _react.default.createElement("iframe", {
+    return /*#__PURE__*/_react.default.createElement("iframe", {
       style: {
         borderRadius: "4px"
       },
@@ -29,7 +29,7 @@ var VHMediaSource = function VHMediaSource(props) {
     });
   }
 
-  return _react.default.createElement("video", {
+  return /*#__PURE__*/_react.default.createElement("video", {
     style: {
       borderRadius: "4px"
     },
@@ -38,7 +38,7 @@ var VHMediaSource = function VHMediaSource(props) {
     height: props.height,
     className: "vh-media-source-component ".concat(props.className ? props.className : ''),
     poster: props.poster
-  }, _react.default.createElement("source", {
+  }, /*#__PURE__*/_react.default.createElement("source", {
     src: props.source,
     type: props.type
   }));

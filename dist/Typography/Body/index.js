@@ -14,7 +14,7 @@ var _styles = _interopRequireDefault(require("./styles"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var VHBody = function VHBody(props) {
-  return _react.default.createElement(_styles.default, {
+  return /*#__PURE__*/_react.default.createElement(_styles.default, {
     xs: props.xs,
     sm: props.sm,
     lg: props.lg,

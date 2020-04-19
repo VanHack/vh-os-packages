@@ -18,8 +18,8 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var VHActivity = function VHActivity(props) {
-  return _react.default.createElement(_react.default.Fragment, null, props.activities.days.map(function (activity) {
-    return _react.default.createElement(_react.default.Fragment, null, _react.default.createElement(S.Item, null, _react.default.createElement(S.Elipse, null)));
+  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, props.activities.days.map(function (activity) {
+    return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement(S.Item, null, /*#__PURE__*/_react.default.createElement(S.Elipse, null)));
   }));
 };
 

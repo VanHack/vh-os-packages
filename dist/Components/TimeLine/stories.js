@@ -34,13 +34,13 @@ var data = {
   }]
 };
 (0, _react2.storiesOf)("Components|TimeLine", module).add("VHTimeLine", function () {
-  return _react.default.createElement("div", {
+  return /*#__PURE__*/_react.default.createElement("div", {
     style: {
       width: "250px ",
       height: "100vh",
       padding: "24px"
     }
-  }, _react.default.createElement(_.default, {
+  }, /*#__PURE__*/_react.default.createElement(_.default, {
     items: data.items,
     totalDays: data.totalDays,
     onEvent: function onEvent(event) {

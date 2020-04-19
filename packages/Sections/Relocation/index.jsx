@@ -232,6 +232,7 @@ const VHRelocationSection = props => {
                                         <Row row marginBottom={5} responsive id="passaport-valid">
                                             <Row paddingRight8 >
                                                 <VHInputRadio
+                                                    controls={props.controls}
                                                     input
                                                     data={'passportValid'}
                                                     color="gray-90"
@@ -257,10 +258,7 @@ const VHRelocationSection = props => {
                                                         inline
                                                         onEvent={props.onEvent}
                                                         title="What size company do you prefer?"
-                                                        titleColor={
-                                                            props.controls.companySize.loading
-                                                                ? "gray-40"
-                                                                : props.controls.companySize.error
+                                                        titleColor={props.controls.companySize.error
                                                                     ? "red"
                                                                     : "gray-90"
                                                         }
@@ -272,10 +270,7 @@ const VHRelocationSection = props => {
                                                         <VHInputCheckbox
                                                             checked={companySize[0].value}
                                                             className=""
-                                                            color={
-                                                                props.controls.companySize.loading
-                                                                    ? "gray-40"
-                                                                    : props.controls.companySize.error
+                                                            color={props.controls.companySize.error
                                                                         ? "red"
                                                                         : 'gray-90'
                                                             }

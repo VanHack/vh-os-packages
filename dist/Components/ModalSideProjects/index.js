@@ -37,11 +37,15 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
 
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance"); }
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
 
-function _iterableToArrayLimit(arr, i) { if (!(Symbol.iterator in Object(arr) || Object.prototype.toString.call(arr) === "[object Arguments]")) { return; } var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(n); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
 
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
@@ -73,15 +77,15 @@ var VHModalSideProjects = function VHModalSideProjects(props) {
       endDate = _React$useState10[0],
       setEndYear = _React$useState10[1];
 
-  return _react.default.createElement(_Modal.default, {
+  return /*#__PURE__*/_react.default.createElement(_Modal.default, {
     width: "732",
     minWidth: "660",
     open: props.openModal,
     onClose: props.onClose,
     onEvent: props.onEvent,
-    header: _react.default.createElement(_Grid.Row, {
+    header: /*#__PURE__*/_react.default.createElement(_Grid.Row, {
       row: true
-    }, _react.default.createElement(_TitleDescription.default, {
+    }, /*#__PURE__*/_react.default.createElement(_TitleDescription.default, {
       title: 'Add Side Project',
       description: '',
       titleVariant: "h3",
@@ -90,15 +94,15 @@ var VHModalSideProjects = function VHModalSideProjects(props) {
       descriptionVariant: "platform",
       onEvent: props.onEvent
     })),
-    content: _react.default.createElement(_Grid.Row, {
+    content: /*#__PURE__*/_react.default.createElement(_Grid.Row, {
       column: true
-    }, _react.default.createElement(_Grid.Row, {
+    }, /*#__PURE__*/_react.default.createElement(_Grid.Row, {
       marginBottom5: true
-    }, _react.default.createElement(_index.default, {
+    }, /*#__PURE__*/_react.default.createElement(_index.default, {
       color: "gray-90",
       variant: 'platform',
       text: "Title"
-    }), _react.default.createElement(_Simple.default, {
+    }), /*#__PURE__*/_react.default.createElement(_Simple.default, {
       placeholder: "",
       onEvent: props.onEvent,
       value: title,
@@ -106,13 +110,13 @@ var VHModalSideProjects = function VHModalSideProjects(props) {
         id: "modalSideProjects",
         field: "title"
       }
-    }), props.modalSideProjects.title.messageError && _react.default.createElement(S.ErrorMessage, null, "Field required")), _react.default.createElement(_Grid.Row, {
+    }), props.modalSideProjects.title.messageError && /*#__PURE__*/_react.default.createElement(S.ErrorMessage, null, "Field required")), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
       marginBottom5: true
-    }, _react.default.createElement(_index.default, {
+    }, /*#__PURE__*/_react.default.createElement(_index.default, {
       color: "gray-90",
       variant: 'platform',
       text: "Description"
-    }), _react.default.createElement(_Simple.default, {
+    }), /*#__PURE__*/_react.default.createElement(_Simple.default, {
       placeholder: "",
       onEvent: props.onEvent,
       value: description,
@@ -120,13 +124,13 @@ var VHModalSideProjects = function VHModalSideProjects(props) {
         id: "modalSideProjects",
         field: "description"
       }
-    }), props.modalSideProjects.description.messageError && _react.default.createElement(S.ErrorMessage, null, "Field required")), _react.default.createElement(_Grid.Row, {
+    }), props.modalSideProjects.description.messageError && /*#__PURE__*/_react.default.createElement(S.ErrorMessage, null, "Field required")), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
       marginBottom5: true
-    }, _react.default.createElement(_index.default, {
+    }, /*#__PURE__*/_react.default.createElement(_index.default, {
       color: "gray-90",
       variant: 'platform',
       text: "Project link"
-    }), _react.default.createElement(_Simple.default, {
+    }), /*#__PURE__*/_react.default.createElement(_Simple.default, {
       placeholder: "",
       onEvent: props.onEvent,
       value: projectUrl,
@@ -134,18 +138,18 @@ var VHModalSideProjects = function VHModalSideProjects(props) {
         id: "modalSideProjects",
         field: "projectUrl"
       }
-    })), _react.default.createElement(_Grid.Row, {
+    })), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
       marginBottom5: true,
       row: true,
       justifySpaceBetween: true
-    }, _react.default.createElement(_Grid.Row, {
+    }, /*#__PURE__*/_react.default.createElement(_Grid.Row, {
       width: '50%',
       marginRight: 4
-    }, _react.default.createElement(_index.default, {
+    }, /*#__PURE__*/_react.default.createElement(_index.default, {
       color: "gray-90",
       variant: 'platform',
       text: "Start Date"
-    }), _react.default.createElement(_Simple.default, {
+    }), /*#__PURE__*/_react.default.createElement(_Simple.default, {
       placeholder: "",
       type: 'date',
       onEvent: props.onEvent,
@@ -154,13 +158,13 @@ var VHModalSideProjects = function VHModalSideProjects(props) {
         id: "modalSideProjects",
         field: "completedAt"
       }
-    }), props.modalSideProjects.completedAt.messageError && _react.default.createElement(S.ErrorMessage, null, "Field required")), _react.default.createElement(_Grid.Row, {
+    }), props.modalSideProjects.completedAt.messageError && /*#__PURE__*/_react.default.createElement(S.ErrorMessage, null, "Field required")), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
       width: '50%'
-    }, _react.default.createElement(_index.default, {
+    }, /*#__PURE__*/_react.default.createElement(_index.default, {
       color: "gray-90",
       variant: 'platform',
       text: "End Date"
-    }), _react.default.createElement(_Simple.default, {
+    }), /*#__PURE__*/_react.default.createElement(_Simple.default, {
       placeholder: "",
       type: 'date',
       onEvent: props.onEvent,
@@ -169,11 +173,11 @@ var VHModalSideProjects = function VHModalSideProjects(props) {
         id: "modalSideProjects",
         field: "endDate"
       }
-    }))), _react.default.createElement(_Grid.Row, {
+    }))), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
       row: true
-    }, item.id && _react.default.createElement(_Grid.Row, {
+    }, item.id && /*#__PURE__*/_react.default.createElement(_Grid.Row, {
       alignItemsLeft: true
-    }, _react.default.createElement(_IconText.default, {
+    }, /*#__PURE__*/_react.default.createElement(_IconText.default, {
       cursor: true,
       iconColor: "gray-60",
       textColor: "gray-60",
@@ -187,9 +191,9 @@ var VHModalSideProjects = function VHModalSideProjects(props) {
       },
       onEvent: props.onEvent,
       onClose: props.onClose
-    })), _react.default.createElement(_Grid.Row, {
+    })), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
       alignItemsRight: true
-    }, _react.default.createElement(_index2.default, {
+    }, /*#__PURE__*/_react.default.createElement(_index2.default, {
       primary: true,
       onEvent: props.onEvent,
       data: {

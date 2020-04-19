@@ -73,7 +73,7 @@ var controls = {
   }
 };
 (0, _react2.storiesOf)("Components|Language List", module).add("Default", function () {
-  return _react.default.createElement(_index.default, {
+  return /*#__PURE__*/_react.default.createElement(_index.default, {
     items: items,
     data: "vanhack",
     controls: controls

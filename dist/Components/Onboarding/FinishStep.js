@@ -16,32 +16,32 @@ var _Colors = _interopRequireDefault(require("../../Colors"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var FinishStep = function FinishStep(props) {
-  return _react.default.createElement("div", {
+  return /*#__PURE__*/_react.default.createElement("div", {
     style: {
       width: '100%',
       display: 'flex',
       flexDirection: 'column',
       alignItems: 'center'
     }
-  }, _react.default.createElement("div", {
+  }, /*#__PURE__*/_react.default.createElement("div", {
     style: {
       marginBottom: '36px',
       marginTop: '60px'
     }
-  }, _react.default.createElement("h1", {
+  }, /*#__PURE__*/_react.default.createElement("h1", {
     style: {
       textAlign: 'center',
       fontFamily: 'Nunito Sans',
       fontSize: '24px',
       color: '#4f4f4f'
     }
-  }, "Thank you !")), _react.default.createElement("div", {
+  }, "Thank you !")), /*#__PURE__*/_react.default.createElement("div", {
     style: {
       paddingLeft: '100px',
       paddingRight: '100px',
       marginBottom: '50px'
     }
-  }, _react.default.createElement("p", {
+  }, /*#__PURE__*/_react.default.createElement("p", {
     style: {
       textAlign: 'center',
       lineHeight: '28px',

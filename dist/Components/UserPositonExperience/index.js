@@ -28,25 +28,25 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var VHUserPositonExperience = function VHUserPositonExperience(props) {
-  return _react.default.createElement(_Grid.Row, {
+  return /*#__PURE__*/_react.default.createElement(_Grid.Row, {
     row: true,
     style: {
       boxSizing: "border-box",
       paddingRight: "33px"
     }
-  }, _react.default.createElement(S.Wrapper, {
+  }, /*#__PURE__*/_react.default.createElement(S.Wrapper, {
     hideTimeline: props.hideTimeline
-  }, _react.default.createElement(_Grid.Row, {
+  }, /*#__PURE__*/_react.default.createElement(_Grid.Row, {
     marginBottom: 3
-  }, _react.default.createElement(_index2.default, {
-    title: props.position,
+  }, /*#__PURE__*/_react.default.createElement(_index2.default, {
+    title: props.positionId === 37 ? props.otherPosition : props.position,
     description: "".concat(new Date(props.startDate).getFullYear(), " - ").concat(props.endDate ? new Date(props.endDate).getFullYear() : 'Present'),
     onEvent: props.onEvent,
     rightTitle: props.rightTitle,
     className: "vh-user-position-experience ".concat(props.className ? props.className : '')
-  })), _react.default.createElement(_Grid.Row, {
+  })), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
     marginBottom: 3
-  }, _react.default.createElement(_index3.default, {
+  }, /*#__PURE__*/_react.default.createElement(_index3.default, {
     profile: true,
     onEvent: props.onEvent,
     items: props.description,

@@ -25,21 +25,14 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var VHSecondaryList = function VHSecondaryList(props) {
   var items = props.items ? props.items : [];
-
-  if (items.length > 0) {
-    items.sort(function (a, b) {
-      return a.id < b.id ? 1 : -1;
-    });
-  }
-
   var list = props.list ? props.list : [];
   var secondList = props.secondList ? props.secondList : [];
-  return _react.default.createElement(_react.default.Fragment, null, _react.default.createElement(S.Wrapper, null, _react.default.createElement(_Grid.Row, {
+  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement(S.Wrapper, null, /*#__PURE__*/_react.default.createElement(_Grid.Row, {
     alignItemsCenter: true,
     row: true
-  }, _react.default.createElement(_Grid.Row, {
+  }, /*#__PURE__*/_react.default.createElement(_Grid.Row, {
     marginRight: 2
-  }, _react.default.createElement(_Select.default, {
+  }, /*#__PURE__*/_react.default.createElement(_Select.default, {
     removeIndicator: true,
     preLoading: props.controls.secondarySkill.preLoading,
     marginBottom: '0px',
@@ -47,21 +40,22 @@ var VHSecondaryList = function VHSecondaryList(props) {
     caption: "",
     data: 'secondarySkillExperience',
     className: 'secondarySkillExperience',
-    currentItem: items[0] ? list.find(function (element) {
-      return element.value === items[0].id;
-    }) : {},
+    currentItem: items[0] && items[0].id != 0 ? {
+      value: items[0].id,
+      label: items[0].name
+    } : {},
     items: props.list,
     description: "",
     descriptionColor: "primary",
     onEvent: props.onEvent,
     order: 0,
     placeholder: "Add secondary skill"
-  }))), _react.default.createElement(_Grid.Row, {
+  }))), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
     width: '20%'
-  }, _react.default.createElement(_Select.default, {
+  }, /*#__PURE__*/_react.default.createElement(_Select.default, {
     removeIndicator: true,
     preLoading: props.controls.secondarySkill.preLoading,
-    isDisabled: !items[0] ? true : false,
+    isDisabled: !items[0] || items[0].id === 0 ? true : false,
     marginBottom: '0px',
     removeBorder: true,
     caption: "",
@@ -77,11 +71,11 @@ var VHSecondaryList = function VHSecondaryList(props) {
     onEvent: props.onEvent,
     order: 0,
     placeholder: "Experience"
-  }))), _react.default.createElement(S.Wrapper, null, _react.default.createElement(_Grid.Row, {
+  }))), /*#__PURE__*/_react.default.createElement(S.Wrapper, null, /*#__PURE__*/_react.default.createElement(_Grid.Row, {
     alignItemsCenter: true,
     row: true,
     marginRight: 2
-  }, _react.default.createElement(_Grid.Row, null, _react.default.createElement(_Select.default, {
+  }, /*#__PURE__*/_react.default.createElement(_Grid.Row, null, /*#__PURE__*/_react.default.createElement(_Select.default, {
     removeIndicator: true,
     preLoading: props.controls.secondarySkill.preLoading,
     marginBottom: '0px',
@@ -89,21 +83,22 @@ var VHSecondaryList = function VHSecondaryList(props) {
     caption: "",
     data: 'secondarySkillExperience',
     className: 'secondarySkillExperience',
-    currentItem: items[1] ? list.find(function (element) {
-      return element.value === items[1].id;
-    }) : {},
+    currentItem: items[1] && items[1].id != 0 ? {
+      value: items[1].id,
+      label: items[1].name
+    } : {},
     items: props.list,
     description: "",
     descriptionColor: "primary",
     onEvent: props.onEvent,
     order: 1,
     placeholder: "Add secondary skill"
-  }))), _react.default.createElement(_Grid.Row, {
+  }))), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
     width: '20%'
-  }, _react.default.createElement(_Select.default, {
+  }, /*#__PURE__*/_react.default.createElement(_Select.default, {
     removeIndicator: true,
     preLoading: props.controls.secondarySkill.preLoading,
-    isDisabled: !items[1] ? true : false,
+    isDisabled: !items[1] || items[1].id === 0 ? true : false,
     marginBottom: '0px',
     removeBorder: true,
     caption: "",
@@ -119,11 +114,11 @@ var VHSecondaryList = function VHSecondaryList(props) {
     onEvent: props.onEvent,
     order: 1,
     placeholder: "Experience"
-  }))), _react.default.createElement(S.Wrapper, null, _react.default.createElement(_Grid.Row, {
+  }))), /*#__PURE__*/_react.default.createElement(S.Wrapper, null, /*#__PURE__*/_react.default.createElement(_Grid.Row, {
     alignItemsCenter: true,
     row: true,
     marginRight: 2
-  }, _react.default.createElement(_Grid.Row, null, _react.default.createElement(_Select.default, {
+  }, /*#__PURE__*/_react.default.createElement(_Grid.Row, null, /*#__PURE__*/_react.default.createElement(_Select.default, {
     removeIndicator: true,
     preLoading: props.controls.secondarySkill.preLoading,
     marginBottom: '0px',
@@ -131,21 +126,22 @@ var VHSecondaryList = function VHSecondaryList(props) {
     caption: "",
     data: 'secondarySkillExperience',
     className: 'secondarySkillExperience',
-    currentItem: items[2] ? list.find(function (element) {
-      return element.value === items[2].id;
-    }) : {},
+    currentItem: items[2] && items[2].id != 0 ? {
+      value: items[2].id,
+      label: items[2].name
+    } : {},
     items: props.list,
     description: "",
     descriptionColor: "primary",
     onEvent: props.onEvent,
     order: 2,
     placeholder: "Add secondary skill"
-  }))), _react.default.createElement(_Grid.Row, {
+  }))), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
     width: '20%'
-  }, _react.default.createElement(_Select.default, {
+  }, /*#__PURE__*/_react.default.createElement(_Select.default, {
     removeIndicator: true,
     preLoading: props.controls.secondarySkill.preLoading,
-    isDisabled: !items[2] ? true : false,
+    isDisabled: !items[2] || items[2].id === 0 ? true : false,
     marginBottom: '0px',
     removeBorder: true,
     caption: "",
@@ -161,10 +157,10 @@ var VHSecondaryList = function VHSecondaryList(props) {
     onEvent: props.onEvent,
     order: 2,
     placeholder: "Experience"
-  }))), _react.default.createElement(S.Wrapper, null, _react.default.createElement(_Grid.Row, {
+  }))), /*#__PURE__*/_react.default.createElement(S.Wrapper, null, /*#__PURE__*/_react.default.createElement(_Grid.Row, {
     alignItemsCenter: true,
     row: true
-  }, _react.default.createElement(_Grid.Row, null, _react.default.createElement(_Select.default, {
+  }, /*#__PURE__*/_react.default.createElement(_Grid.Row, null, /*#__PURE__*/_react.default.createElement(_Select.default, {
     removeIndicator: true,
     preLoading: props.controls.secondarySkill.preLoading,
     marginBottom: '0px',
@@ -172,21 +168,22 @@ var VHSecondaryList = function VHSecondaryList(props) {
     caption: "",
     data: 'secondarySkillExperience',
     className: 'secondarySkillExperience',
-    currentItem: items[3] ? list.find(function (element) {
-      return element.value === items[3].id;
-    }) : {},
+    currentItem: items[3] && items[3].id != 0 ? {
+      value: items[3].id,
+      label: items[3].name
+    } : {},
     items: props.list,
     description: "",
     descriptionColor: "primary",
     onEvent: props.onEvent,
     order: 3,
     placeholder: "Add secondary skill"
-  }))), _react.default.createElement(_Grid.Row, {
+  }))), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
     width: '20%'
-  }, _react.default.createElement(_Select.default, {
+  }, /*#__PURE__*/_react.default.createElement(_Select.default, {
     removeIndicator: true,
     preLoading: props.controls.secondarySkill.preLoading,
-    isDisabled: !items[3] ? true : false,
+    isDisabled: !items[3] || items[3].id === 0 ? true : false,
     marginBottom: '0px',
     removeBorder: true,
     caption: "",
@@ -202,10 +199,10 @@ var VHSecondaryList = function VHSecondaryList(props) {
     onEvent: props.onEvent,
     order: 3,
     placeholder: "Experience"
-  }))), _react.default.createElement(S.Wrapper, null, _react.default.createElement(_Grid.Row, {
+  }))), /*#__PURE__*/_react.default.createElement(S.Wrapper, null, /*#__PURE__*/_react.default.createElement(_Grid.Row, {
     alignItemsCenter: true,
     row: true
-  }, _react.default.createElement(_Grid.Row, null, _react.default.createElement(_Select.default, {
+  }, /*#__PURE__*/_react.default.createElement(_Grid.Row, null, /*#__PURE__*/_react.default.createElement(_Select.default, {
     removeIndicator: true,
     preLoading: props.controls.secondarySkill.preLoading,
     marginBottom: '0px',
@@ -213,21 +210,22 @@ var VHSecondaryList = function VHSecondaryList(props) {
     caption: "",
     data: 'secondarySkillExperience',
     className: 'secondarySkillExperience',
-    currentItem: items[4] ? list.find(function (element) {
-      return element.value === items[4].id;
-    }) : {},
+    currentItem: items[4] && items[4].id != 0 ? {
+      value: items[4].id,
+      label: items[4].name
+    } : {},
     items: props.list,
     description: "",
     descriptionColor: "primary",
     onEvent: props.onEvent,
     order: 4,
     placeholder: "Add secondary skill"
-  }))), _react.default.createElement(_Grid.Row, {
+  }))), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
     width: '20%'
-  }, _react.default.createElement(_Select.default, {
+  }, /*#__PURE__*/_react.default.createElement(_Select.default, {
     removeIndicator: true,
     preLoading: props.controls.secondarySkill.preLoading,
-    isDisabled: !items[4] ? true : false,
+    isDisabled: !items[4] || items[4].id === 0 ? true : false,
     marginBottom: '0px',
     removeBorder: true,
     caption: "",

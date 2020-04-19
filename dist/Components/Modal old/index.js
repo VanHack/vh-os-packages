@@ -40,12 +40,12 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 var GlobalStyle = (0, _styledComponents.createGlobalStyle)(_templateObject());
 
 var VHModal = function VHModal(props) {
-  return _react.default.createElement(S.ModalWrapper, null, _react.default.createElement(S.ModalContainer, {
+  return /*#__PURE__*/_react.default.createElement(S.ModalWrapper, null, /*#__PURE__*/_react.default.createElement(S.ModalContainer, {
     open: props.open
-  }, _react.default.createElement(GlobalStyle, null), _react.default.createElement(S.ModalBox, {
+  }, /*#__PURE__*/_react.default.createElement(GlobalStyle, null), /*#__PURE__*/_react.default.createElement(S.ModalBox, {
     width: props.width,
     minWidth: props.minWidth
-  }, _react.default.createElement(S.Header, null, _react.default.createElement("div", null, props.header && props.header), !props.hideBtnClose && _react.default.createElement(S.Close, {
+  }, /*#__PURE__*/_react.default.createElement(S.Header, null, /*#__PURE__*/_react.default.createElement("div", null, props.header && props.header), !props.hideBtnClose && /*#__PURE__*/_react.default.createElement(S.Close, {
     onClick: function onClick() {
       props.onEvent({
         event: 'onClose',
@@ -53,15 +53,15 @@ var VHModal = function VHModal(props) {
       });
       props.onClose();
     }
-  }, _react.default.createElement("img", {
+  }, /*#__PURE__*/_react.default.createElement("img", {
     src: _index.default,
     alt: "Close icon"
-  }))), _react.default.createElement(S.Content, null, props.content), props.confirmation && _react.default.createElement(S.ConfirmationSection, null, _react.default.createElement(_Button.default, {
+  }))), /*#__PURE__*/_react.default.createElement(S.Content, null, props.content), props.confirmation && /*#__PURE__*/_react.default.createElement(S.ConfirmationSection, null, /*#__PURE__*/_react.default.createElement(_Button.default, {
     primary: true,
     outline: true,
     label: props.cancelTitle,
     onClick: props.onClose
-  }), _react.default.createElement(_Button.default, {
+  }), /*#__PURE__*/_react.default.createElement(_Button.default, {
     disabled: props.disableAction,
     primary: true,
     label: props.confirmType,

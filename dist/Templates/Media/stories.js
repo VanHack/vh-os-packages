@@ -9,7 +9,7 @@ var _ = _interopRequireDefault(require("."));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 (0, _react2.storiesOf)("Templates|Media", module).add("default", function () {
-  return _react.default.createElement(_.default, {
+  return /*#__PURE__*/_react.default.createElement(_.default, {
     title: "Media Contact",
     name: "Karli Leitl",
     email: "karli@switchboardpr.com",

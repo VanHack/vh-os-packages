@@ -34,46 +34,46 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var VHPremiumSuccessCasesSection = function VHPremiumSuccessCasesSection(props) {
-  return _react.default.createElement(_react.default.Fragment, null, _react.default.createElement(_index.Container, null, _react.default.createElement(_index.Row, {
+  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement(_index.Container, null, /*#__PURE__*/_react.default.createElement(_index.Row, {
     alignItemsCenter: true,
     marginBottom: 20
-  }, _react.default.createElement(_index2.default, {
+  }, /*#__PURE__*/_react.default.createElement(_index2.default, {
     variant: "h2",
     color: "gray-100",
     text: props.sectionTitle
-  })), _react.default.createElement(_index.Row, {
+  })), /*#__PURE__*/_react.default.createElement(_index.Row, {
     row: true,
     responsive: true
-  }, _react.default.createElement(_index.Row, {
+  }, /*#__PURE__*/_react.default.createElement(_index.Row, {
     alignItemsCenter: true
-  }, _react.default.createElement(_index.Row, {
+  }, /*#__PURE__*/_react.default.createElement(_index.Row, {
     mobileDisplayNone: true
-  }, _react.default.createElement(_index3.default, {
+  }, /*#__PURE__*/_react.default.createElement(_index3.default, {
     title: props.title,
     highlight: props.highlight
-  })), _react.default.createElement(_index.Row, null, _react.default.createElement(_index4.default, {
+  })), /*#__PURE__*/_react.default.createElement(_index.Row, null, /*#__PURE__*/_react.default.createElement(_index4.default, {
     imgSvg: props.imgBackgroundCards,
     cardLeftTitle: props.cardLeftTitle,
     cardLeftDescription: props.cardLeftDescription,
     cardRightTitle: props.cardRightTitle,
     cardRightDescription: props.cardRightDescription
-  }))), _react.default.createElement(_index.Row, {
+  }))), /*#__PURE__*/_react.default.createElement(_index.Row, {
     alignItemsCenter: true
-  }, _react.default.createElement(_index.Row, {
+  }, /*#__PURE__*/_react.default.createElement(_index.Row, {
     marginBottom: 8,
     marginTop: 50,
     alignItemsCenter: true
-  }, _react.default.createElement(S.Wrapper, {
+  }, /*#__PURE__*/_react.default.createElement(S.Wrapper, {
     responsive: true,
     className: "test"
-  }, _react.default.createElement(_index6.default, {
+  }, /*#__PURE__*/_react.default.createElement(_index6.default, {
     source: props.source,
     youtube: true,
     controls: props.control,
     poster: props.poster,
     width: "100%",
     height: "100%"
-  }))), _react.default.createElement(_index.Row, null, _react.default.createElement(_index7.default, {
+  }))), /*#__PURE__*/_react.default.createElement(_index.Row, null, /*#__PURE__*/_react.default.createElement(_index7.default, {
     lgLabel: true,
     label: props.label,
     to: props.to,

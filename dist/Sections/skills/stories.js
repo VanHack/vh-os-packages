@@ -280,13 +280,13 @@ var apiResponse = {
   openedPosition: true
 };
 (0, _react2.storiesOf)("Sections|Skills", module).add("Default", function () {
-  return _react.default.createElement("div", {
+  return /*#__PURE__*/_react.default.createElement("div", {
     style: {
       backgroundColor: "#f2f2f2",
       height: "100vh",
       padding: "24px"
     }
-  }, _react.default.createElement(_.default, {
+  }, /*#__PURE__*/_react.default.createElement(_.default, {
     controls: controls,
     mainSkills: items,
     positions: items,
@@ -296,13 +296,13 @@ var apiResponse = {
     }
   }));
 }).add("error", function () {
-  return _react.default.createElement("div", {
+  return /*#__PURE__*/_react.default.createElement("div", {
     style: {
       backgroundColor: "#f2f2f2",
       height: "100vh",
       padding: "24px"
     }
-  }, _react.default.createElement(_.default, {
+  }, /*#__PURE__*/_react.default.createElement(_.default, {
     controls: {
       positionSkill: {
         loading: false,
@@ -350,13 +350,13 @@ var apiResponse = {
     }
   }));
 }).add("loading", function () {
-  return _react.default.createElement("div", {
+  return /*#__PURE__*/_react.default.createElement("div", {
     style: {
       backgroundColor: "#f2f2f2",
       height: "100vh",
       padding: "24px"
     }
-  }, _react.default.createElement(_.default, {
+  }, /*#__PURE__*/_react.default.createElement(_.default, {
     controls: {
       positionSkill: {
         loading: true,
@@ -403,13 +403,13 @@ var apiResponse = {
     }
   }));
 }).add("preLoading", function () {
-  return _react.default.createElement("div", {
+  return /*#__PURE__*/_react.default.createElement("div", {
     style: {
       backgroundColor: "#f2f2f2",
       height: "100vh",
       padding: "24px"
     }
-  }, _react.default.createElement(_.default, {
+  }, /*#__PURE__*/_react.default.createElement(_.default, {
     preLoading: true,
     controls: {
       positionSkill: {

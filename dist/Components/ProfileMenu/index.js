@@ -35,6 +35,8 @@ function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) ===
 
 function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
 
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
@@ -44,32 +46,27 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 var VHProfileMenu = /*#__PURE__*/function (_Component) {
   _inherits(VHProfileMenu, _Component);
 
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-var VHProfileMenu =
-/*#__PURE__*/
-function (_Component) {
-  _inherits(VHProfileMenu, _Component);
+  var _super = _createSuper(VHProfileMenu);
 
   function VHProfileMenu() {
     _classCallCheck(this, VHProfileMenu);
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(VHProfileMenu).apply(this, arguments));
+    return _super.apply(this, arguments);
   }
 
   _createClass(VHProfileMenu, [{
     key: "render",
     value: function render() {
-      return _react.default.createElement(_Grid.Container, {
+      return /*#__PURE__*/_react.default.createElement(_Grid.Container, {
         fullWidth: true
-      }, _react.default.createElement(_Grid.Row, {
+      }, /*#__PURE__*/_react.default.createElement(_Grid.Row, {
         column: true,
         fixed: true
       }, this.props.links.map(function (link, index) {
-        return _react.default.createElement(S.Wrapper, null, _react.default.createElement(_Img.default, {
+        return /*#__PURE__*/_react.default.createElement(S.Wrapper, null, /*#__PURE__*/_react.default.createElement(_Img.default, {
           source: link.img,
           sm: true
-        }), _react.default.createElement(S.Link, {
+        }), /*#__PURE__*/_react.default.createElement(S.Link, {
           onClick: function onClick() {
             document.getElementById(link.href).scrollIntoView({
               behavior: 'smooth',

@@ -20,7 +20,7 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var VHCardBase = function VHCardBase(props) {
-  return _react.default.createElement(S.Card, {
+  return /*#__PURE__*/_react.default.createElement(S.Card, {
     onClick: function onClick(event) {
       if (props.onEvent) {
         props.onEvent({

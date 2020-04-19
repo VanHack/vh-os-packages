@@ -32,13 +32,13 @@ var data = {
   }]
 };
 (0, _react2.storiesOf)("Components|Assign", module).add("VHAssign", function () {
-  return _react.default.createElement("div", {
+  return /*#__PURE__*/_react.default.createElement("div", {
     style: {
       width: "300px",
       padding: "60px 24px 24px 24px",
       height: "450px"
     }
-  }, _react.default.createElement(_.default, {
+  }, /*#__PURE__*/_react.default.createElement(_.default, {
     items: data.items,
     onEvent: function onEvent(event) {
       return console.log(event);

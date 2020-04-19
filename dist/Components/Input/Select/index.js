@@ -35,11 +35,15 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
-function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
 
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance"); }
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
 
-function _iterableToArrayLimit(arr, i) { if (!(Symbol.iterator in Object(arr) || Object.prototype.toString.call(arr) === "[object Arguments]")) { return; } var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(n); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
 
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
@@ -49,7 +53,7 @@ var VHSelect = function VHSelect(props) {
   var animatedComponents = (0, _animated.default)();
 
   if (props.preLoading) {
-    return _react.default.createElement(_reactPreloadSkeleton.TitleDescriptionSkeleton, null);
+    return /*#__PURE__*/_react.default.createElement(_reactPreloadSkeleton.TitleDescriptionSkeleton, null);
   }
 
   var newValue = undefined;
@@ -77,7 +81,7 @@ var VHSelect = function VHSelect(props) {
         fontWeight: props.bold ? 'bold' : 'normal',
         fontFamily: 'Roboto',
         fontSize: '14px',
-        padding: '0',
+        padding: '0 6px',
         borderRadius: '6px'
       });
     },
@@ -168,32 +172,42 @@ var VHSelect = function VHSelect(props) {
   };
 
   var DropdownIcon = function DropdownIcon() {
-    return _react.default.createElement(_index.default, null);
+    return /*#__PURE__*/_react.default.createElement(_index.default, null);
   };
 
   var DropdownIndicator = function DropdownIndicator(props2) {
     // if (props.removeIndicator) {
     //   return <>{ DropdownIndicator = () => null, IndicatorSeparator = () => null }</>
     // }
-    return _react.default.createElement(_reactSelect.components.DropdownIndicator, props2, _react.default.createElement(DropdownIcon, null));
+    return /*#__PURE__*/_react.default.createElement(_reactSelect.components.DropdownIndicator, props2, /*#__PURE__*/_react.default.createElement(DropdownIcon, null));
   };
 
-  return _react.default.createElement(_Grid.Row, {
+  return /*#__PURE__*/_react.default.createElement(_Grid.Row, {
     responsive: true,
     style: {
       position: 'relative',
       marginBottom: props.marginBottom ? props.marginBottom : '21px'
     },
     className: "VH-select"
-  }, props.caption && _react.default.createElement(_Grid.Row, {
+  }, props.caption && /*#__PURE__*/_react.default.createElement(_Grid.Row, {
     style: {
       marginBottom: '6px'
     }
-  }, _react.default.createElement(_Text.default, {
+  }, /*#__PURE__*/_react.default.createElement(_Text.default, {
     text: props.caption,
     variant: "platform1",
     color: props.captionColor
-  })), _react.default.createElement(_Grid.Row, null, _react.default.createElement(_reactSelect.default, {
+  })), /*#__PURE__*/_react.default.createElement(_Grid.Row, null, /*#__PURE__*/_react.default.createElement(_reactSelect.default, {
+    onInputChange: function onInputChange(newValue) {
+      props.onEvent({
+        type: "OnKeyDown",
+        origin: "VHSelect",
+        props: {
+          data: props.data,
+          value: newValue
+        }
+      });
+    },
     styles: props.removeBorder ? style : styled,
     closeMenuOnSelect: !props.isMulti,
     className: props.className,
@@ -292,13 +306,13 @@ var VHSelect = function VHSelect(props) {
           break;
       }
     }
-  })), props.description && _react.default.createElement(_Grid.Row, {
+  })), props.description && /*#__PURE__*/_react.default.createElement(_Grid.Row, {
     style: {
       position: 'absolute',
       top: '64px',
       marginTop: '8px'
     }
-  }, _react.default.createElement(_Text.default, {
+  }, /*#__PURE__*/_react.default.createElement(_Text.default, {
     text: props.description,
     variant: "caption",
     color: props.descriptionColor

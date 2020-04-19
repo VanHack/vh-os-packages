@@ -22,7 +22,7 @@ function _templateObject4() {
 }
 
 function _templateObject3() {
-  var data = _taggedTemplateLiteral(["\n    display: flex;\n    margin-top: -10px;\n    width: 150px;\n"]);
+  var data = _taggedTemplateLiteral(["\n    display: flex;\n    margin-top: -10px;\n    width: auto;\n\n    ", "\n"]);
 
   _templateObject3 = function _templateObject3() {
     return data;
@@ -61,7 +61,10 @@ var Input = _styledComponents.default.input(_templateObject2(), _Colors.default[
 
 exports.Input = Input;
 
-var Container = _styledComponents.default.div(_templateObject3());
+var Container = _styledComponents.default.div(_templateObject3(), function (_ref) {
+  var error = _ref.error;
+  return error && "\n      border: 1px solid red;\n  ";
+});
 
 exports.Container = Container;
 

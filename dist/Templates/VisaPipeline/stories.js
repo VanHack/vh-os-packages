@@ -14,7 +14,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var MockData = [_OffersMock.default, _WorkPermitMock.default];
 (0, _react2.storiesOf)("Templates|VisaPipeline", module).add("default", function () {
-  return _react.default.createElement(_.default, {
+  return /*#__PURE__*/_react.default.createElement(_.default, {
     data: MockData
   });
 });

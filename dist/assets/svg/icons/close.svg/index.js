@@ -14,27 +14,27 @@ function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
 var close = function close(props) {
-  return React.createElement("svg", {
+  return /*#__PURE__*/React.createElement("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     width: props.width || "24px",
     height: props.height || "24px",
     fill: props.fill || "undefined",
     viewBox: props.viewBox || "0 0 24 24"
-  }, React.createElement("g", {
+  }, /*#__PURE__*/React.createElement("g", {
     id: "Page-1",
     stroke: "none",
     strokeWidth: "1",
     fill: "none",
     fillRule: "evenodd"
-  }, React.createElement("g", {
+  }, /*#__PURE__*/React.createElement("g", {
     id: "Artboard",
     transform: "translate(-580.000000, -100.000000)"
-  }, React.createElement("g", {
+  }, /*#__PURE__*/React.createElement("g", {
     id: "close",
     transform: "translate(580.000000, 100.000000)"
-  }, React.createElement("g", {
+  }, /*#__PURE__*/React.createElement("g", {
     id: "vh-/-icons-/-material-/-24"
-  }, React.createElement("rect", {
+  }, /*#__PURE__*/React.createElement("rect", {
     id: "bounds",
     fill: "#0675CE",
     opacity: "0",
@@ -42,7 +42,7 @@ var close = function close(props) {
     y: "0",
     width: "24",
     height: "24"
-  }), React.createElement("polygon", {
+  }), /*#__PURE__*/React.createElement("polygon", {
     id: "\uE5CD",
     fill: "#95A1AC",
     fillRule: "nonzero",
