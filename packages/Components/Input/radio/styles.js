@@ -20,7 +20,11 @@ export const Input = styled.input`
 export const Container = styled.div`
     display: flex;
     margin-top: -10px;
-    width: 150px;
+    width: auto;
+
+    ${({ error }) => error &&   `
+      border: 1px solid red;
+  `}
 `;
 
 

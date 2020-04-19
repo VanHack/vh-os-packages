@@ -158,8 +158,9 @@ var VHLanguageList = function VHLanguageList(props) {
       alt: "Close icon"
     }))));
   }), /*#__PURE__*/_react.default.createElement(S.Wrapper, null, /*#__PURE__*/_react.default.createElement(_Grid.Row, {
-    alignItemsCenter: true,
     row: true,
+    paddingTop: 2,
+    paddingBottom: 2,
     marginRight: 2,
     marginLeft: 2
   }, /*#__PURE__*/_react.default.createElement(_Text.default, {

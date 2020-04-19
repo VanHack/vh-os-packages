@@ -39,7 +39,7 @@ var VHUserPositonExperience = function VHUserPositonExperience(props) {
   }, /*#__PURE__*/_react.default.createElement(_Grid.Row, {
     marginBottom: 3
   }, /*#__PURE__*/_react.default.createElement(_index2.default, {
-    title: props.position,
+    title: props.positionId === 37 ? props.otherPosition : props.position,
     description: "".concat(new Date(props.startDate).getFullYear(), " - ").concat(props.endDate ? new Date(props.endDate).getFullYear() : 'Present'),
     onEvent: props.onEvent,
     rightTitle: props.rightTitle,

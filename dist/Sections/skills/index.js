@@ -155,13 +155,13 @@ var VHSkillsSection = function VHSkillsSection(props) {
     descriptionColor: "red"
   })), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
     column: true,
-    marginTop: 15
+    marginTop: 48
   }, /*#__PURE__*/_react.default.createElement(_TitleDescription.default, {
     contents: true,
     className: "vh-general-section-topSkill-description ".concat(props.className ? props.className : ''),
     onEvent: props.onEvent,
     title: "Rank your top 3 skills",
-    titleColor: props.controls.topSkill.loading ? "gray-40" : props.controls.topSkill.error ? "red" : "gray-100",
+    titleColor: props.controls.topSkill.error ? "red" : "gray-90",
     titleVariant: "subtitle1",
     description: "1st = Highest proficiency level; 3rd = Lowest proficiency level",
     descriptionColor: props.controls.topSkill.loading ? "gray-40" : props.controls.topSkill.error ? "red" : "gray-50"
@@ -184,7 +184,7 @@ var VHSkillsSection = function VHSkillsSection(props) {
     className: "vh-general-section-topSkill-description ".concat(props.className ? props.className : ''),
     onEvent: props.onEvent,
     title: "Add 5 secondary skills",
-    titleColor: props.controls.secondarySkill.loading ? "gray-40" : props.controls.secondarySkill.error ? "red" : "gray-100",
+    titleColor: props.controls.secondarySkill.error ? "red" : "gray-90",
     titleVariant: "subtitle1"
   })), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
     id: "secondary-skills-group"

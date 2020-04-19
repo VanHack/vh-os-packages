@@ -83,7 +83,6 @@ const VHSelect = props => {
     }),
   };
 
-
   const DropdownIcon = () => {
     return <IconDropdown />
   };
@@ -114,7 +113,16 @@ const VHSelect = props => {
       }
       <Row>
         <Select
-
+          onInputChange={(newValue) => {
+            props.onEvent({
+              type: "OnKeyDown",
+              origin: "VHSelect",
+              props: {
+                data: props.data,
+                value: newValue
+              }
+            })
+          }}
           styles={props.removeBorder ? style : styled}
           closeMenuOnSelect={!props.isMulti}
           className={props.className}

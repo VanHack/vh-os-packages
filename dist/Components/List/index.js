@@ -25,14 +25,6 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var VHList = function VHList(props) {
   var items = props.items ? props.items : [];
-
-  if (items.length > 0) {
-    items.sort(function (a, b) {
-      return a.id < b.id ? 1 : -1;
-    });
-  }
-
-  var list = props.list ? props.list : [];
   var secondList = props.secondList ? props.secondList : [];
   return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement(S.Wrapper, null, /*#__PURE__*/_react.default.createElement(_Grid.Row, {
     alignItemsCenter: true,
@@ -54,15 +46,16 @@ var VHList = function VHList(props) {
     placeholder: "Select your top skill",
     removeIndicator: true,
     removeDropdownIcon: true,
-    bold: true,
+    bold: false,
     marginBottom: '0px',
     removeBorder: true,
     caption: "",
     data: 'topSkillExperience',
     className: 'topSkillExperience',
-    currentItem: items[0] ? list.find(function (element) {
-      return element.value === items[0].id;
-    }) : {},
+    currentItem: items[0] && items[0].id != 0 ? {
+      value: items[0].id,
+      label: items[0].name
+    } : {},
     items: props.list,
     description: "",
     descriptionColor: "primary",
@@ -75,7 +68,7 @@ var VHList = function VHList(props) {
     preLoading: props.controls.topSkill.preLoading,
     placeholder: "Experience",
     removeIndicator: true,
-    isDisabled: !items[0] ? true : false,
+    isDisabled: !items[0] || items[0].id === 0 ? true : false,
     marginBottom: '0px',
     removeBorder: true,
     caption: "",
@@ -109,15 +102,16 @@ var VHList = function VHList(props) {
     preLoading: props.controls.topSkill.preLoading,
     placeholder: "Select your top skill",
     removeIndicator: true,
-    bold: true,
+    bold: false,
     marginBottom: '0px',
     removeBorder: true,
     caption: "",
     data: 'topSkillExperience',
     className: 'topSkillExperience',
-    currentItem: items[1] ? list.find(function (element) {
-      return element.value === items[1].id;
-    }) : {},
+    currentItem: items[1] && items[1].id != 0 ? {
+      value: items[1].id,
+      label: items[1].name
+    } : {},
     items: props.list,
     description: "",
     descriptionColor: "primary",
@@ -130,7 +124,7 @@ var VHList = function VHList(props) {
     preLoading: props.controls.topSkill.preLoading,
     placeholder: "Experience",
     removeIndicator: true,
-    isDisabled: !items[1] ? true : false,
+    isDisabled: !items[1] || items[1].id === 0 ? true : false,
     marginBottom: '0px',
     removeBorder: true,
     caption: "",
@@ -164,15 +158,16 @@ var VHList = function VHList(props) {
     preLoading: props.controls.topSkill.preLoading,
     placeholder: "Select your top skill",
     removeIndicator: true,
-    bold: true,
+    bold: false,
     marginBottom: '0px',
     removeBorder: true,
     caption: "",
     data: 'topSkillExperience',
     className: 'topSkillExperience',
-    currentItem: items[2] ? list.find(function (element) {
-      return element.value === items[2].id;
-    }) : {},
+    currentItem: items[2] && items[2].id != 0 ? {
+      value: items[2].id,
+      label: items[2].name
+    } : {},
     items: props.list,
     description: "",
     descriptionColor: "primary",
@@ -185,7 +180,7 @@ var VHList = function VHList(props) {
     preLoading: props.controls.topSkill.preLoading,
     placeholder: "Experience",
     removeIndicator: true,
-    isDisabled: !items[2] ? true : false,
+    isDisabled: !items[2] || items[2].id === 0 ? true : false,
     marginBottom: '0px',
     removeBorder: true,
     caption: "",

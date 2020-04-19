@@ -201,6 +201,7 @@ var VHRelocationSection = function VHRelocationSection(props) {
   }, /*#__PURE__*/_react.default.createElement(_Grid.Row, {
     paddingRight8: true
   }, /*#__PURE__*/_react.default.createElement(_radio.default, {
+    controls: props.controls,
     input: true,
     data: 'passportValid',
     color: "gray-90",
@@ -220,7 +221,7 @@ var VHRelocationSection = function VHRelocationSection(props) {
     inline: true,
     onEvent: props.onEvent,
     title: "What size company do you prefer?",
-    titleColor: props.controls.companySize.loading ? "gray-40" : props.controls.companySize.error ? "red" : "gray-90",
+    titleColor: props.controls.companySize.error ? "red" : "gray-90",
     titleVariant: "platform1"
   })), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
     row: true,
@@ -229,7 +230,7 @@ var VHRelocationSection = function VHRelocationSection(props) {
   }, /*#__PURE__*/_react.default.createElement(_Grid.Row, null, /*#__PURE__*/_react.default.createElement(_checkbox.default, {
     checked: companySize[0].value,
     className: "",
-    color: props.controls.companySize.loading ? "gray-40" : props.controls.companySize.error ? "red" : 'gray-90',
+    color: props.controls.companySize.error ? "red" : 'gray-90',
     data: {
       id: 'companySize',
       label: 'yes',

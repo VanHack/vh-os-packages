@@ -33,7 +33,6 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 var VHInputMultiple = function VHInputMultiple(props) {
   var it = [];
-  console.log(props.items);
 
   try {
     if (props.items !== null) {
@@ -76,24 +75,6 @@ var VHInputMultiple = function VHInputMultiple(props) {
       placeholder: props.placeholder,
       onEvent: function onEvent(e) {
         switch (true) {
-          // case e.event === "onKeyUpAction":
-          //   if (e.data.value !== '') {
-          //     items[index] = {
-          //       value: e.data.value,
-          //       loading: e.data.data.id === item.id
-          //     }
-          //     setItems(items)
-          //     reRender(render + 1)
-          //     props.onEvent({
-          //       data: {
-          //         value: JSON.stringify(items.concat(newItems)),
-          //         data: props.data
-          //       },
-          //       event: "onKeyUpAction",
-          //       origin: "VHInputMultiple"
-          //     })
-          //   }
-          //   break
           case e.event === "onBlur":
             if (e.data.value !== '') {
               items[index] = {
@@ -110,6 +91,10 @@ var VHInputMultiple = function VHInputMultiple(props) {
                 event: "onBlur",
                 origin: "VHInputMultiple"
               });
+            } else {
+              items.splice(index, 1);
+              setItems(items);
+              reRender(render + 1);
             }
 
             break;
@@ -130,31 +115,15 @@ var VHInputMultiple = function VHInputMultiple(props) {
       autoFocus: true,
       onEvent: function onEvent(e) {
         switch (true) {
-          case e.event === "onKeyUpAction":
-            if (e.data.value !== '') {
-              newItems[index] = {
-                value: e.data.value,
-                loading: true
-              };
-
-              if (items.length + newItems.length < props.max) {
-                newItems.push({
-                  value: ''
-                });
-              }
-
-              setNewItems(newItems);
-              reRender(render + 1);
-              props.onEvent({
-                data: {
-                  value: JSON.stringify(items.concat(newItems)),
-                  data: props.data
-                },
-                event: "onKeyUpAction",
-                origin: "VHInputMultiple"
+          case e.event === "onKeyUp":
+            if (index === newItems.length - 1 && items.length + newItems.length < props.max) {
+              newItems.push({
+                value: ''
               });
             }
 
+            setNewItems(newItems);
+            reRender(render + 1);
             break;
 
           case e.event === "onBlur":
@@ -173,6 +142,10 @@ var VHInputMultiple = function VHInputMultiple(props) {
                 event: "onBlur",
                 origin: "VHInputMultiple"
               });
+            } else {
+              newItems.splice(index, 1);
+              setNewItems(newItems);
+              reRender(render + 1);
             }
 
             break;

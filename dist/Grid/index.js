@@ -121,13 +121,13 @@ var Row = _styledComponents.default.div(_templateObject2(), function (_ref11) {
   return paddingRight2 && "\n       padding-right: 6px;\n    ";
 }, function (_ref29) {
   var paddingTop = _ref29.paddingTop;
-  return paddingTop && "\n        paddingTop: ".concat(paddingTop * 3, "px;\n    ");
+  return paddingTop && "\n        padding-top: ".concat(paddingTop * 3, "px;\n    ");
 }, function (_ref30) {
   var paddingRight = _ref30.paddingRight;
-  return paddingRight && "\n        paddingRight: ".concat(paddingRight * 3, "px;\n    ");
+  return paddingRight && "\n        padding-right: ".concat(paddingRight * 3, "px;\n    ");
 }, function (_ref31) {
   var paddingBottom = _ref31.paddingBottom;
-  return paddingBottom && "\n        paddingBottom: ".concat(paddingBottom * 3, "px;\n    ");
+  return paddingBottom && "\n        padding-bottom: ".concat(paddingBottom * 3, "px;\n    ");
 }, function (_ref32) {
   var paddingLeft = _ref32.paddingLeft;
   return paddingLeft && "\n        padding-left: ".concat(paddingLeft * 3, "px;\n    ");

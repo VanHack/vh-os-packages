@@ -81,7 +81,7 @@ var VHSelect = function VHSelect(props) {
         fontWeight: props.bold ? 'bold' : 'normal',
         fontFamily: 'Roboto',
         fontSize: '14px',
-        padding: '0',
+        padding: '0 6px',
         borderRadius: '6px'
       });
     },
@@ -198,6 +198,16 @@ var VHSelect = function VHSelect(props) {
     variant: "platform1",
     color: props.captionColor
   })), /*#__PURE__*/_react.default.createElement(_Grid.Row, null, /*#__PURE__*/_react.default.createElement(_reactSelect.default, {
+    onInputChange: function onInputChange(newValue) {
+      props.onEvent({
+        type: "OnKeyDown",
+        origin: "VHSelect",
+        props: {
+          data: props.data,
+          value: newValue
+        }
+      });
+    },
     styles: props.removeBorder ? style : styled,
     closeMenuOnSelect: !props.isMulti,
     className: props.className,

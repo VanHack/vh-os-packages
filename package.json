@@ -50,6 +50,7 @@
   },
   "dependencies": {
     "react-image-crop": "^8.5.0",
+    "react-input-mask": "^3.0.0-alpha.2",
     "react-preload-skeleton": "^0.0.1-16",
     "react-scroll": "^1.7.16",
     "react-scrollable-anchor": "^0.6.1",

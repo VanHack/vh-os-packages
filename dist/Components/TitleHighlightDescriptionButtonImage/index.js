@@ -15,7 +15,7 @@ var _index = require("../../Grid/index");
 
 var _index2 = _interopRequireDefault(require("../Text/index"));
 
-var _index3 = _interopRequireDefault(require("../Button/index"));
+var _index3 = _interopRequireDefault(require("../Button-New/index"));
 
 var S = _interopRequireWildcard(require("./styles"));
 

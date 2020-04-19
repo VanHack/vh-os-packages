@@ -89,7 +89,7 @@ const VHEducationSection = props => {
                               pointer
                               title={item.degreeTitle}
                               titleColor="primary-light"
-                              description={item.schoolName}
+                              description={`${item.degreeTypeStr} - ${item.schoolName}`}
                               titleVariant="h4"
                               descriptionVariant="bodyweb"
                               onEvent={props.onEvent}

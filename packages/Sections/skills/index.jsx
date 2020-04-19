@@ -156,10 +156,7 @@ const VHSkillsSection = props => {
               className={`vh-general-section-topSkill-description ${props.className ? props.className : ''}`}
               onEvent={props.onEvent}
               title="Rank your top 3 skills"
-              titleColor={
-                props.controls.topSkill.loading
-                  ? "gray-40"
-                  : props.controls.topSkill.error
+              titleColor={ props.controls.topSkill.error
                     ? "red"
                     : "gray-90"
               }
@@ -189,10 +186,7 @@ const VHSkillsSection = props => {
               className={`vh-general-section-topSkill-description ${props.className ? props.className : ''}`}
               onEvent={props.onEvent}
               title="Add 5 secondary skills"
-              titleColor={
-                props.controls.secondarySkill.loading
-                  ? "gray-40"
-                  : props.controls.secondarySkill.error
+              titleColor={ props.controls.secondarySkill.error
                     ? "red"
                     : "gray-90"
               }

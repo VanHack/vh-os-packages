@@ -100,7 +100,7 @@ var StartStep = function StartStep(props) {
       color: '#fff',
       cursor: 'pointer'
     }
-  }, "Let's start!"))));
+  }, "Start!"))));
 };
 
 StartStep.defaultProps = {

@@ -19,6 +19,8 @@ var _Simple = _interopRequireDefault(require("../../Input/Simple"));
 
 var _Grid = require("../../../Grid");
 
+var _reactInputMask = _interopRequireDefault(require("react-input-mask"));
+
 var _util = require("../../../util");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -45,7 +47,7 @@ var VHInputRadio = function VHInputRadio(props) {
       checked = _useState2[0],
       setChecked = _useState2[1];
 
-  var _useState3 = (0, _react.useState)(props.value),
+  var _useState3 = (0, _react.useState)((0, _util.getFormatedPassport)(props.value)),
       _useState4 = _slicedToArray(_useState3, 2),
       value = _useState4[0],
       setValue = _useState4[1];
@@ -100,14 +102,25 @@ var VHInputRadio = function VHInputRadio(props) {
     }
   }), /*#__PURE__*/_react.default.createElement(S.Label, {
     for: props.text
-  }, 'No'), props.input && checked && /*#__PURE__*/_react.default.createElement(S.Container, null, /*#__PURE__*/_react.default.createElement(_Simple.default, {
-    maxLength: '4',
-    type: "text",
-    data: 'passportExpirationDate',
-    pattern: "([0-9]{2}[/]?){2}",
-    placeholder: 'Expiration: mm/yy',
+  }, 'No'), props.input && checked && /*#__PURE__*/_react.default.createElement(S.Container, {
+    error: props.controls.passportExpirationDate.error
+  }, /*#__PURE__*/_react.default.createElement(_reactInputMask.default, {
+    mask: "99/9999",
+    onBlur: function onBlur(e) {
+      props.onEvent({
+        data: {
+          key: 'passportExpirationDate',
+          value: (0, _util.stringToDate)(e.currentTarget.value)
+        },
+        event: "onBlur",
+        origin: "VHInput"
+      });
+    },
+    onChange: function onChange(e) {
+      setValue(e.currentTarget.value);
+    },
     value: value,
-    onEvent: props.onEvent
+    placeholder: 'Expiration: mm/yyyy'
   }))));
 };
 
