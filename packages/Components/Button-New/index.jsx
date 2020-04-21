@@ -28,6 +28,9 @@ const VHButton = props => {
           lg={props.lg}
           type="button"
           onClick={() => {
+            if (props.onOpen) {
+              props.onOpen()
+            }
             props.onEvent({
               type: "OnClick",
               origin: "VHButton",
@@ -58,6 +61,9 @@ const VHButton = props => {
           lg={props.lg}
           type="button"
           onClick={() => {
+            if (props.onOpen) {
+              props.onOpen()
+            }
             props.onEvent({
               type: "OnClick",
               origin: "VHButton",
