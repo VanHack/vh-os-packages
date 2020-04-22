@@ -31,9 +31,9 @@ const VHSocialSection = props => {
                 <Row marginBottom5 id="linkedin-href">
                   <VHInputIcon
                     className=""
-                    disabled={props.controls.linkedin.loading}
+                    disabled={false}
                     error={props.controls.linkedin.error}
-                    loading={props.controls.linkedin.loading}
+                    loading={false}
                     data={'linkedin'}
                     icon="linkedin"
                     onEvent={props.onEvent}
@@ -44,9 +44,9 @@ const VHSocialSection = props => {
                 <Row marginBottom5 id="github-href">
                   <VHInputIcon
                     className=""
-                    disabled={props.controls.git.loading}
+                    disabled={false}
                     error={props.controls.git.error}
-                    loading={props.controls.git.loading}
+                    loading={false}
                     data={'git'}
                     icon="github"
                     onEvent={props.onEvent}
@@ -57,9 +57,9 @@ const VHSocialSection = props => {
                 <Row marginBottom5 id="website-href">
                   <VHInputIcon
                     className=""
-                    disabled={props.controls.webSite.loading}
+                    disabled={false}
                     error={props.controls.webSite.error}
-                    loading={props.controls.webSite.loading}
+                    loading={false}
                     placeholder="http://sitename.com/"
                     value={props.webSite}
                     data={'webSite'}
@@ -70,9 +70,9 @@ const VHSocialSection = props => {
                 <Row marginBottom5 id="resume-href">
                   <VHInputIcon
                     className=""
-                    disabled={props.controls.resume.loading}
+                    disabled={false}
                     error={props.controls.resume.error}
-                    loading={props.controls.resume.loading}
+                    loading={false}
                     placeholder="https://drive.google.com/your-resume"
                     value={props.resume}
                     data={'resume'}

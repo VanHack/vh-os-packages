@@ -247,10 +247,7 @@ const VHRelocationSection = props => {
                                                 <Row marginBottom={3} >
                                                     <VHTitleDescription
                                                         className={`vh-general-section-companySize ${props.className ? props.className : ''}`}
-                                                        descriptionColor={
-                                                            props.controls.companySize.loading
-                                                                ? "gray-40"
-                                                                : props.controls.companySize.error
+                                                        descriptionColor={ props.controls.companySize.error
                                                                     ? "red"
                                                                     : "gray-90"
                                                         }
@@ -289,10 +286,7 @@ const VHRelocationSection = props => {
                                                     <VHInputCheckbox
                                                         checked={companySize[1].value}
                                                         className=""
-                                                        color={
-                                                            props.controls.companySize.loading
-                                                                ? "gray-40"
-                                                                : props.controls.companySize.error
+                                                        color={props.controls.companySize.error
                                                                     ? "red"
                                                                     : 'gray-90'
                                                         }
@@ -310,10 +304,7 @@ const VHRelocationSection = props => {
                                                     <VHInputCheckbox
                                                         checked={companySize[2].value}
                                                         className=""
-                                                        color={
-                                                            props.controls.companySize.loading
-                                                                ? "gray-40"
-                                                                : props.controls.companySize.error
+                                                        color={props.controls.companySize.error
                                                                     ? "red"
                                                                     : 'gray-90'
                                                         }

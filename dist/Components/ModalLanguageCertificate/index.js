@@ -17,6 +17,8 @@ var _Modal = _interopRequireDefault(require("../Modal"));
 
 var _TitleDescription = _interopRequireDefault(require("../TitleDescription"));
 
+var _Select = _interopRequireDefault(require("../../Components/Input/Select"));
+
 var _Simple = _interopRequireDefault(require("../../Components/Input/Simple"));
 
 var _index = _interopRequireDefault(require("../../Components/Text/index"));
@@ -47,33 +49,38 @@ function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(
 
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
-var VHModalSideProjects = function VHModalSideProjects(props) {
+var VHModalLanguageCertificate = function VHModalLanguageCertificate(props) {
   var item = props.currentItem ? props.currentItem : {};
 
-  var _React$useState = _react.default.useState(item.title),
+  var _React$useState = _react.default.useState(item.type ? props.items[item.type] : {}),
       _React$useState2 = _slicedToArray(_React$useState, 2),
-      title = _React$useState2[0],
-      setDegreeTitle = _React$useState2[1];
+      type = _React$useState2[0],
+      setType = _React$useState2[1];
 
-  var _React$useState3 = _react.default.useState(item.description),
+  var _React$useState3 = _react.default.useState(item.listening),
       _React$useState4 = _slicedToArray(_React$useState3, 2),
-      description = _React$useState4[0],
-      setSchoolName = _React$useState4[1];
+      listening = _React$useState4[0],
+      setListening = _React$useState4[1];
 
-  var _React$useState5 = _react.default.useState((0, _index3.getFormatedDate)(item.completedAt)),
+  var _React$useState5 = _react.default.useState(item.reading),
       _React$useState6 = _slicedToArray(_React$useState5, 2),
-      completedAt = _React$useState6[0],
-      setStartYear = _React$useState6[1];
+      reading = _React$useState6[0],
+      setReading = _React$useState6[1];
 
-  var _React$useState7 = _react.default.useState(item.projectUrl),
+  var _React$useState7 = _react.default.useState(item.writing),
       _React$useState8 = _slicedToArray(_React$useState7, 2),
-      projectUrl = _React$useState8[0],
-      setProjectUrl = _React$useState8[1];
+      writing = _React$useState8[0],
+      setWriting = _React$useState8[1];
 
-  var _React$useState9 = _react.default.useState((0, _index3.getFormatedDate)(item.endDate)),
+  var _React$useState9 = _react.default.useState(item.speaking),
       _React$useState10 = _slicedToArray(_React$useState9, 2),
-      endDate = _React$useState10[0],
-      setEndYear = _React$useState10[1];
+      speaking = _React$useState10[0],
+      setSpeaking = _React$useState10[1];
+
+  var _React$useState11 = _react.default.useState(item.overall),
+      _React$useState12 = _slicedToArray(_React$useState11, 2),
+      overall = _React$useState12[0],
+      setOverall = _React$useState12[1];
 
   return /*#__PURE__*/_react.default.createElement(_Modal.default, {
     width: "732",
@@ -84,7 +91,7 @@ var VHModalSideProjects = function VHModalSideProjects(props) {
     header: /*#__PURE__*/_react.default.createElement(_Grid.Row, {
       row: true
     }, /*#__PURE__*/_react.default.createElement(_TitleDescription.default, {
-      title: 'Add Side Project',
+      title: 'Add Language Certificate',
       description: '',
       titleVariant: "h3",
       titleColor: "black-50",
@@ -95,83 +102,102 @@ var VHModalSideProjects = function VHModalSideProjects(props) {
     content: /*#__PURE__*/_react.default.createElement(_Grid.Row, {
       column: true
     }, /*#__PURE__*/_react.default.createElement(_Grid.Row, {
-      marginBottom5: true
-    }, /*#__PURE__*/_react.default.createElement(_index.default, {
-      color: "gray-90",
-      variant: 'platform',
-      text: "Title"
-    }), /*#__PURE__*/_react.default.createElement(_Simple.default, {
-      placeholder: "",
-      onEvent: props.onEvent,
-      value: title,
-      data: {
-        id: "modalSideProjects",
-        field: "title"
-      }
-    }), props.modalSideProjects.title.messageError && /*#__PURE__*/_react.default.createElement(S.ErrorMessage, null, "Field required")), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
-      marginBottom5: true
-    }, /*#__PURE__*/_react.default.createElement(_index.default, {
-      color: "gray-90",
-      variant: 'platform',
-      text: "Description"
-    }), /*#__PURE__*/_react.default.createElement(_Simple.default, {
-      placeholder: "",
-      onEvent: props.onEvent,
-      value: description,
-      data: {
-        id: "modalSideProjects",
-        field: "description"
-      }
-    }), props.modalSideProjects.description.messageError && /*#__PURE__*/_react.default.createElement(S.ErrorMessage, null, "Field required")), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
-      marginBottom5: true
-    }, /*#__PURE__*/_react.default.createElement(_index.default, {
-      color: "gray-90",
-      variant: 'platform',
-      text: "Project link"
-    }), /*#__PURE__*/_react.default.createElement(_Simple.default, {
-      placeholder: "",
-      onEvent: props.onEvent,
-      value: projectUrl,
-      data: {
-        id: "modalSideProjects",
-        field: "projectUrl"
-      }
-    })), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
       marginBottom5: true,
-      row: true,
-      justifySpaceBetween: true
+      width: '40%'
+    }, /*#__PURE__*/_react.default.createElement(_Select.default, {
+      caption: "Certificate Type",
+      captionColor: "gray-90",
+      className: "vh-general-section-degree ".concat(props.className ? props.className : ''),
+      currentItem: type,
+      data: "type",
+      onEvent: props.onEvent,
+      items: props.items,
+      color: "gray-90"
+    }), props.modalLanguageCertificate.type.messageError && /*#__PURE__*/_react.default.createElement(S.ErrorMessage, null, "Field required")), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+      marginBottom5: true,
+      row: true
     }, /*#__PURE__*/_react.default.createElement(_Grid.Row, {
-      width: '50%',
-      marginRight: 4
+      width: '40%',
+      paddingRight: 5
     }, /*#__PURE__*/_react.default.createElement(_index.default, {
       color: "gray-90",
       variant: 'platform',
-      text: "Start Date"
+      text: "Listening"
     }), /*#__PURE__*/_react.default.createElement(_Simple.default, {
       placeholder: "",
-      type: 'date',
       onEvent: props.onEvent,
-      value: completedAt,
+      type: 'number',
+      value: listening,
       data: {
-        id: "modalSideProjects",
-        field: "completedAt"
+        id: "modalLanguageCertificate",
+        field: "listening"
       }
-    }), props.modalSideProjects.completedAt.messageError && /*#__PURE__*/_react.default.createElement(S.ErrorMessage, null, "Field required")), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
-      width: '50%'
+    }), props.modalLanguageCertificate.listening.messageError && /*#__PURE__*/_react.default.createElement(S.ErrorMessage, null, "Field required")), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+      width: '40%'
     }, /*#__PURE__*/_react.default.createElement(_index.default, {
       color: "gray-90",
       variant: 'platform',
-      text: "End Date"
+      text: "Reading"
     }), /*#__PURE__*/_react.default.createElement(_Simple.default, {
       placeholder: "",
-      type: 'date',
+      type: 'number',
       onEvent: props.onEvent,
-      value: endDate,
+      value: reading,
       data: {
-        id: "modalSideProjects",
-        field: "endDate"
+        id: "modalLanguageCertificate",
+        field: "reading"
       }
-    }))), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+    }), props.modalLanguageCertificate.reading.messageError && /*#__PURE__*/_react.default.createElement(S.ErrorMessage, null, "Field required"))), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+      marginBottom5: true,
+      row: true
+    }, /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+      width: '40%',
+      paddingRight: 5
+    }, /*#__PURE__*/_react.default.createElement(_index.default, {
+      color: "gray-90",
+      variant: 'platform',
+      text: "Writing"
+    }), /*#__PURE__*/_react.default.createElement(_Simple.default, {
+      placeholder: "",
+      onEvent: props.onEvent,
+      type: 'number',
+      value: writing,
+      data: {
+        id: "modalLanguageCertificate",
+        field: "writing"
+      }
+    }), props.modalLanguageCertificate.writing.messageError && /*#__PURE__*/_react.default.createElement(S.ErrorMessage, null, "Field required")), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+      width: '40%'
+    }, /*#__PURE__*/_react.default.createElement(_index.default, {
+      color: "gray-90",
+      variant: 'platform',
+      text: "Speaking"
+    }), /*#__PURE__*/_react.default.createElement(_Simple.default, {
+      placeholder: "",
+      type: 'number',
+      onEvent: props.onEvent,
+      value: speaking,
+      data: {
+        id: "modalLanguageCertificate",
+        field: "speaking"
+      }
+    }), props.modalLanguageCertificate.speaking.messageError && /*#__PURE__*/_react.default.createElement(S.ErrorMessage, null, "Field required"))), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+      marginBottom5: true,
+      width: '40%'
+    }, /*#__PURE__*/_react.default.createElement(_index.default, {
+      color: "gray-90",
+      variant: 'platform',
+      text: "Overall"
+    }), /*#__PURE__*/_react.default.createElement(_Simple.default, {
+      placeholder: "",
+      onEvent: props.onEvent,
+      type: 'number',
+      value: overall,
+      data: {
+        id: "modalLanguageCertificate",
+        field: "overall"
+      }
+    }), props.modalLanguageCertificate.overall.messageError && /*#__PURE__*/_react.default.createElement(S.ErrorMessage, null, "Field required")), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
       row: true
     }, item.id && /*#__PURE__*/_react.default.createElement(_Grid.Row, {
       alignItemsLeft: true
@@ -181,10 +207,10 @@ var VHModalSideProjects = function VHModalSideProjects(props) {
       textColor: "gray-60",
       text: 'Delete',
       icon: "delete",
-      className: "vh-delete-education ".concat(props.className ? props.className : ''),
+      className: "vh-delete-languageCertificate ".concat(props.className ? props.className : ''),
       variant: "platform",
       data: {
-        action: 'deleteSideProjects',
+        action: 'deleteLanguageCertificate',
         id: item.id
       },
       onEvent: props.onEvent,
@@ -195,7 +221,7 @@ var VHModalSideProjects = function VHModalSideProjects(props) {
       primary: true,
       onEvent: props.onEvent,
       data: {
-        action: 'saveSideProjects',
+        action: 'saveLanguageCertificate',
         id: item.id
       },
       onClose: props.onClose,
@@ -205,13 +231,13 @@ var VHModalSideProjects = function VHModalSideProjects(props) {
   });
 };
 
-VHModalSideProjects.defaultProps = {
+VHModalLanguageCertificate.defaultProps = {
   onEvent: null,
   className: ""
 };
-VHModalSideProjects.propTypes = {
+VHModalLanguageCertificate.propTypes = {
   onEvent: _propTypes.default.func,
   className: _propTypes.default.stringc
 };
-var _default = VHModalSideProjects;
+var _default = VHModalLanguageCertificate;
 exports.default = _default;
