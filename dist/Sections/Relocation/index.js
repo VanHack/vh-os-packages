@@ -216,7 +216,7 @@ var VHRelocationSection = function VHRelocationSection(props) {
     marginBottom: 3
   }, /*#__PURE__*/_react.default.createElement(_TitleDescription.default, {
     className: "vh-general-section-companySize ".concat(props.className ? props.className : ''),
-    descriptionColor: props.controls.companySize.loading ? "gray-40" : props.controls.companySize.error ? "red" : "gray-90",
+    descriptionColor: props.controls.companySize.error ? "red" : "gray-90",
     descriptionVariant: "caption",
     inline: true,
     onEvent: props.onEvent,
@@ -244,7 +244,7 @@ var VHRelocationSection = function VHRelocationSection(props) {
   })), /*#__PURE__*/_react.default.createElement(_checkbox.default, {
     checked: companySize[1].value,
     className: "",
-    color: props.controls.companySize.loading ? "gray-40" : props.controls.companySize.error ? "red" : 'gray-90',
+    color: props.controls.companySize.error ? "red" : 'gray-90',
     data: {
       id: 'companySize',
       label: 'yes',
@@ -258,7 +258,7 @@ var VHRelocationSection = function VHRelocationSection(props) {
   }), /*#__PURE__*/_react.default.createElement(_checkbox.default, {
     checked: companySize[2].value,
     className: "",
-    color: props.controls.companySize.loading ? "gray-40" : props.controls.companySize.error ? "red" : 'gray-90',
+    color: props.controls.companySize.error ? "red" : 'gray-90',
     data: {
       id: 'companySize',
       label: 'yes',
