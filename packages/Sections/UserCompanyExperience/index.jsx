@@ -8,18 +8,15 @@ import VHUserCompanyPositionExperience from "../../Components/UserCompanyPositon
 import VHModalExperience from '../../Components/ModalExperience'
 import { PostDescriptionSkeleton } from 'react-preload-skeleton'
 import VHPreloader from '../../Components/Preloader';
+import VHModalProfileReview from '../../Components/ModalProfileReview'
 
 const VHUserCompanyExperienceSection = props => {
   const [openModal, setOpenModal] = React.useState(false);
+  const [openModalReview, setOpenModalReview] = React.useState(false);
   const [newExperience, setNewExperience] = React.useState(false);
   const experience = props.experience.experiences ? props.experience.experiences : [];
   const [currentItem, setCurrentItem] = React.useState({});
-
-  // const [profileReviewInProgress, setProfileReviewInProgress] = React.useState(profileReviewInProgress || props.reviewInProgress);
-
-  // React.useEffect(() => {
-  //   setProfileReviewInProgress(profileReviewInProgress || props.reviewInProgress);
-  // }, [profileReviewInProgress || props.reviewInProgress])
+  const notes = props.experience.profileReview ? props.experience.profileReview.notes : []
 
   function calcDate(date) {
 
@@ -49,6 +46,11 @@ const VHUserCompanyExperienceSection = props => {
           industryList={props.industryList}
           positions={props.positions}
           closeModalExperience={props.closeModalExperience} />
+      }
+      {openModalReview &&
+        <VHModalProfileReview openModal={openModalReview} onClose={() => setOpenModalReview(false)}
+          onEvent={props.onEvent}
+          notes={notes} />
       }
       <Row mmarginBottom={2}>
         <VHText
@@ -102,13 +104,13 @@ const VHUserCompanyExperienceSection = props => {
                           />
                         </Row>
                         {props.experience.canRequestReview && !props.reviewInProgress &&
-                          <Row row alignItemsCenter>
+                          <Row row alignItemsCenter  marginRight={4} autoWidth>
                             <VHButton
                               outline
                               primary
                               onEvent={props.onEvent}
                               data={"RequestProfileReview"}
-                              label="Request Profile Review"
+                              label={props.experience.profileReview && props.experience.profileReview.notes.length > 0 ? 'Request Another Profile Review' : 'Request Profile Review'}
                             />
                           </Row>
                         }
@@ -117,7 +119,7 @@ const VHUserCompanyExperienceSection = props => {
                             <VHText
                               variant={"platform2"}
                               color="gray-80"
-                              text={`You can request another rpofile review in ${props.canRequestReviewInDays} days`}
+                              text={`You can request another profile review in ${props.canRequestReviewInDays} days`}
                             />
                           </Row>
                         }
@@ -131,11 +133,23 @@ const VHUserCompanyExperienceSection = props => {
                           </Row>
                         }
                         {props.experience.profileReviewInProgress &&
-                          <Row row alignItemsCenter>
+                          <Row row alignItemsCenter marginRight={4} autoWidth>
                             <VHText
                               variant={"platform2"}
                               color="gray-80"
                               text={`Your profile is under review`}
+                            />
+                          </Row>
+                        }
+                        {props.experience.profileReview && props.experience.profileReview.notes.length > 0 &&
+                          <Row row alignItemsCenter autoWidth>
+                            <VHButton
+                              outline
+                              primary
+                              onEvent={props.onEvent}
+                              data={"ViewReview"}
+                              label="Check the Review"
+                              onOpen={() => {setOpenModalReview(true)}}
                             />
                           </Row>
                         }

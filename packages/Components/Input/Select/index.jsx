@@ -38,7 +38,7 @@ const VHSelect = props => {
       fontWeight: props.bold ? 'bold' : 'normal',
       fontFamily: 'Roboto',
       fontSize: '14px',
-      padding: '0',
+      padding: '0 6px',
       borderRadius: '6px',
 
     }),
@@ -83,7 +83,6 @@ const VHSelect = props => {
     }),
   };
 
-
   const DropdownIcon = () => {
     return <IconDropdown />
   };
@@ -114,7 +113,16 @@ const VHSelect = props => {
       }
       <Row>
         <Select
-
+          onInputChange={(newValue) => {
+            props.onEvent({
+              type: "OnKeyDown",
+              origin: "VHSelect",
+              props: {
+                data: props.data,
+                value: newValue
+              }
+            })
+          }}
           styles={props.removeBorder ? style : styled}
           closeMenuOnSelect={!props.isMulti}
           className={props.className}
@@ -135,9 +143,11 @@ const VHSelect = props => {
                   newValue.value = 0
                 }
                 handleChange(newValue);
-                newValue.map(item => {
-                  finalValue.push(parseInt(item.value === 'zero' ? 0 : item.value))
-                })
+                if (newValue != undefined && newValue != null) {
+                  newValue.map(item => {
+                    finalValue.push(parseInt(item.value === 'zero' ? 0 : item.value))
+                  })
+                }
                 props.onEvent({
                   type: "OnChange",
                   origin: "VHSelect",
@@ -161,26 +171,41 @@ const VHSelect = props => {
                 })
                 break
               case actionMeta.action === "select-option":
-                let finalValueChange = []
-                if (newValue.value === 'zero') {
-                  newValue.value = 0
-                }
-                handleChange(newValue);
                 if (props.isMulti && newValue.length <= 3) {
+                  let finalValueChange = []
+                  if (newValue.value === 'zero') {
+                    newValue.value = 0
+                  }
+                  handleChange(newValue);
                   newValue.map(item => {
                     finalValueChange.push(parseInt(item.value === 'zero' ? 0 : item.value))
                   })
-                }
-                props.onEvent({
-                  type: "OnChange",
-                  origin: "VHSelect",
-                  props: {
-                    data: props.data,
-                    item: props.isMulti ? finalValueChange : newValue,
-                    action: 'add',
-                    order: props.order
+                  props.onEvent({
+                    type: "OnChange",
+                    origin: "VHSelect",
+                    props: {
+                      data: props.data,
+                      item: finalValueChange,
+                      action: 'add',
+                      order: props.order
+                    }
+                  })
+                } else if (!props.isMulti) {
+                  if (newValue.value === 'zero') {
+                    newValue.value = 0
                   }
-                })
+                  handleChange(newValue);
+                  props.onEvent({
+                    type: "OnChange",
+                    origin: "VHSelect",
+                    props: {
+                      data: props.data,
+                      item: newValue,
+                      action: 'add',
+                      order: props.order
+                    }
+                  })
+                }
                 break
             }
           }}

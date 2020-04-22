@@ -11,7 +11,7 @@ import VHPremiumFaqSection from '../../Sections/Premium/Faq/index';
 const VHPremiumTemplate = props => (
   <Row>
     <Row style={{ backgroundColor: "#f2f8fc", padding: "0px 0 50px 0" }}>
-      <Container lg>
+      <Container lg id="hero-session">
         <VHPremiumIntroSection
             title={props.intro.items.title}
             highlight={props.intro.items.highlight}
@@ -23,7 +23,7 @@ const VHPremiumTemplate = props => (
         />
       </Container>
     </Row>
-    <Row style={{ backgroundColor: "#fffffff", padding: "50px 0" }}>
+    <Row style={{ backgroundColor: "#fffffff", padding: "50px 0" }} id="services-session">
       <Container lg>
         <VHPremiumServicesSection
           sectionTitle={props.services.items.sectionTitle}
@@ -39,7 +39,7 @@ const VHPremiumTemplate = props => (
         />
       </Container>
     </Row>
-    <Row style={{ backgroundColor: "rgba(203, 248, 251, 0.44)", padding: "50px 0" }}>
+    <Row style={{ backgroundColor: "rgba(203, 248, 251, 0.44)", padding: "50px 0" }} id="pricing-session">
       <Container>
         <VHPremiumPricingSection
           sectionTitle={props.pricing.items.sectionTitle}
@@ -51,7 +51,7 @@ const VHPremiumTemplate = props => (
         />
       </Container>
     </Row>
-    <Row style={{ backgroundColor: "#ffffff", padding: "50px 0" }}>
+    <Row style={{ backgroundColor: "#ffffff", padding: "50px 0" }} id="success-casa-session">
       <Container lg>
         <VHPremiumSuccessCasesSection
           sectionTitle={props.success.items.sectionTitle}
@@ -74,7 +74,7 @@ const VHPremiumTemplate = props => (
         />
       </Container>
     </Row>
-    <Row style={{ backgroundColor: "#ffffff", padding: "50px 0" }}>
+    <Row style={{ backgroundColor: "#ffffff", padding: "50px 0" }} id="hired-session">
       <Container lg>
         <VHPremiumHiredSection
           sectionTitle={props.hired.items.sectionTitle}
@@ -85,7 +85,7 @@ const VHPremiumTemplate = props => (
         />
       </Container>
     </Row>
-    <Row style={{ backgroundColor: "#f2f6f9", padding: "50px 0" }}>
+    <Row style={{ backgroundColor: "#f2f6f9", padding: "50px 0" }} id="faq-session">
       <Container lg>
         <VHPremiumFaqSection
           sectionTitle={props.faq.items.sectionTitle}

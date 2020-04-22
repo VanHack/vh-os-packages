@@ -6,7 +6,11 @@ const VHInputMultiple = props => {
   let it = []
   try {
     if (props.items !== null) {
-      it = JSON.parse(props.items.value)
+      if (props.items.value !== null) {
+        it = JSON.parse(props.items.value)
+      } else {
+        it = JSON.parse("[{ value: '' }]")
+      }
     }
   } catch (error) {
 
@@ -32,25 +36,6 @@ const VHInputMultiple = props => {
               placeholder={props.placeholder}
               onEvent={e => {
                 switch (true) {
-                  // case e.event === "onKeyUpAction":
-                  //   if (e.data.value !== '') {
-                  //     items[index] = {
-                  //       value: e.data.value,
-                  //       loading: e.data.data.id === item.id
-                  //     }
-                  //     setItems(items)
-                  //     reRender(render + 1)
-
-                  //     props.onEvent({
-                  //       data: {
-                  //         value: JSON.stringify(items.concat(newItems)),
-                  //         data: props.data
-                  //       },
-                  //       event: "onKeyUpAction",
-                  //       origin: "VHInputMultiple"
-                  //     })
-                  //   }
-                  //   break
                   case e.event === "onBlur":
                     if (e.data.value !== '') {
                       items[index] = {
@@ -68,6 +53,11 @@ const VHInputMultiple = props => {
                         event: "onBlur",
                         origin: "VHInputMultiple"
                       })
+                    }
+                    else {
+                      items.splice(index, 1)
+                      setItems(items)
+                      reRender(render + 1)
                     }
                     break
                 }
@@ -90,26 +80,15 @@ const VHInputMultiple = props => {
               autoFocus
               onEvent={e => {
                 switch (true) {
-                  case e.event === "onKeyUpAction":
-                    if (e.data.value !== '') {
-                      newItems[index] = { value: e.data.value, loading: true }
+                  case e.event === "onKeyUp":
 
-                      if (items.length + newItems.length < props.max) {
-                        newItems.push({ value: '' })
-                      }
-
-                      setNewItems(newItems)
-                      reRender(render + 1)
-                      props.onEvent({
-                        data: {
-                          value: JSON.stringify(items.concat(newItems)),
-                          data: props.data
-                        },
-                        event: "onKeyUpAction",
-                        origin: "VHInputMultiple"
-                      })
-
+                    if ((index === (newItems.length - 1)) && items.length + newItems.length < props.max) {
+                      newItems.push({ value: '' })
                     }
+
+                    setNewItems(newItems)
+                    reRender(render + 1)
+
                     break
                   case e.event === "onBlur":
                     if (e.data.value !== '') {
@@ -128,6 +107,10 @@ const VHInputMultiple = props => {
                         event: "onBlur",
                         origin: "VHInputMultiple"
                       })
+                    } else {
+                      newItems.splice(index, 1)
+                      setNewItems(newItems)
+                      reRender(render + 1)
                     }
                     break
                 }

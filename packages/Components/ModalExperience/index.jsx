@@ -84,7 +84,7 @@ const VHModalExperience = props => {
                                 caption="Industry"
                                 captionColor="gray-90"
                                 className={`vh-general-section-industry ${props.className ? props.className : ''}`}
-                                currentItem={{ value: item.industryId.value, label: item.industryId.value ? props.industryList[item.industryId.value].label : '' }}
+                                currentItem={item.industryId.value ? props.industryList.find(element => element.value === item.industryId.value) : {}}
                                 data={{ id: "ModalExperience", field: "industryId" }}
                                 onEvent={props.onEvent}
                                 items={props.industryList}
@@ -133,12 +133,12 @@ const VHModalExperience = props => {
                                             variant="platform1"
                                             data={{
                                                 modal: 'ModalExperience',
-                                                checked: experience.isCurrentRole,
+                                                checked: experience.isCurrentRole.value,
                                                 id: 'isCurrentRole',
                                                 index: index
                                             }}
-                                            checked={experience.isCurrentRole}
-                                            value={''}
+                                            checked={experience.isCurrentRole.value}
+                                            value={'123'}
                                             name={`${'working-role'}-input-checkbox`}
                                             id={`${'working-role'}-vh-input-checkbox`}
                                             onEvent={props.onEvent}
@@ -153,10 +153,12 @@ const VHModalExperience = props => {
                                             <S.ErrorMessage>Field required</S.ErrorMessage>
                                         )}
                                     </Row>
-                                    <Row width={'50%'} marginLeft={2}>
-                                        <VHText color="gray-90" variant={'platform'} text="End Date" />
-                                        <VHInput placeholder="" type={'date'} onEvent={props.onEvent} value={getFormatedDate(experience.endDate.value)} data={{ id: "ModalExperience", field: "endDate", index: index }} />
-                                    </Row>
+                                    {!experience.isCurrentRole.value &&
+                                        <Row width={'50%'} marginLeft={2}>
+                                            <VHText color="gray-90" variant={'platform'} text="End Date" />
+                                            <VHInput placeholder="" type={'date'} onEvent={props.onEvent} value={getFormatedDate(experience.endDate.value)} data={{ id: "ModalExperience", field: "endDate", index: index }} />
+                                        </Row>
+                                    }
                                 </Row>
                                 <Row marginBottom5 paddingBottom borderBottom>
                                     <VHText color="gray-90" variant={'platform'} text="Description" />

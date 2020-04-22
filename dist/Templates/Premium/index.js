@@ -38,7 +38,8 @@ var VHPremiumTemplate = function VHPremiumTemplate(props) {
       padding: "0px 0 50px 0"
     }
   }, /*#__PURE__*/_react.default.createElement(_Grid.Container, {
-    lg: true
+    lg: true,
+    id: "hero-session"
   }, /*#__PURE__*/_react.default.createElement(_index.default, {
     title: props.intro.items.title,
     highlight: props.intro.items.highlight,
@@ -51,7 +52,8 @@ var VHPremiumTemplate = function VHPremiumTemplate(props) {
     style: {
       backgroundColor: "#fffffff",
       padding: "50px 0"
-    }
+    },
+    id: "services-session"
   }, /*#__PURE__*/_react.default.createElement(_Grid.Container, {
     lg: true
   }, /*#__PURE__*/_react.default.createElement(_index2.default, {
@@ -69,7 +71,8 @@ var VHPremiumTemplate = function VHPremiumTemplate(props) {
     style: {
       backgroundColor: "rgba(203, 248, 251, 0.44)",
       padding: "50px 0"
-    }
+    },
+    id: "pricing-session"
   }, /*#__PURE__*/_react.default.createElement(_Grid.Container, null, /*#__PURE__*/_react.default.createElement(_index3.default, {
     sectionTitle: props.pricing.items.sectionTitle,
     icon: props.pricing.items.icon,
@@ -81,7 +84,8 @@ var VHPremiumTemplate = function VHPremiumTemplate(props) {
     style: {
       backgroundColor: "#ffffff",
       padding: "50px 0"
-    }
+    },
+    id: "success-casa-session"
   }, /*#__PURE__*/_react.default.createElement(_Grid.Container, {
     lg: true
   }, /*#__PURE__*/_react.default.createElement(_index4.default, {
@@ -106,7 +110,8 @@ var VHPremiumTemplate = function VHPremiumTemplate(props) {
     style: {
       backgroundColor: "#ffffff",
       padding: "50px 0"
-    }
+    },
+    id: "hired-session"
   }, /*#__PURE__*/_react.default.createElement(_Grid.Container, {
     lg: true
   }, /*#__PURE__*/_react.default.createElement(_index5.default, {
@@ -119,7 +124,8 @@ var VHPremiumTemplate = function VHPremiumTemplate(props) {
     style: {
       backgroundColor: "#f2f6f9",
       padding: "50px 0"
-    }
+    },
+    id: "faq-session"
   }, /*#__PURE__*/_react.default.createElement(_Grid.Container, {
     lg: true
   }, /*#__PURE__*/_react.default.createElement(_index6.default, {

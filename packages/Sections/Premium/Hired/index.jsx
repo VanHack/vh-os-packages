@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Row } from "../../../Grid/index";
 import VHText from "../../../Components/Text/index";
 import VHCardHired from "../../../Components/Cards/Hired/index";
-import VHButton from "../../../Components/Button/index";
+import VHButton from "../../../Components/Button-New/index";
 
 const VHPremiumHiredSection = props => {
   return (

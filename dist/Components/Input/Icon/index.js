@@ -61,7 +61,7 @@ var VHInputIcon = function VHInputIcon(props) {
     value: value,
     onEvent: props.onEvent,
     noBorder: !props.loading,
-    maxLength: '100'
+    maxLength: '280'
   }));
 };
 

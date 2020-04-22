@@ -197,6 +197,8 @@ export const BodyPlatform = styled.p`
     font-size: 14px;
     font-weight: normal;
     line-height: 21.5px;
+    hyphens: auto;
+    word-break: break-word
 
     ${({ alignCenter }) => alignCenter && `
         text-align: center;

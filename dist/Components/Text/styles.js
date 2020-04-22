@@ -32,7 +32,7 @@ function _templateObject12() {
 }
 
 function _templateObject11() {
-  var data = _taggedTemplateLiteral(["\n    margin: 0;\n    padding: 0;\n    color: ", ";\n    font-family: Roboto;\n    font-size: 14px;\n    font-weight: normal;\n    line-height: 21.5px;\n\n    ", "\n\n    ", "\n\n", "\n\n"]);
+  var data = _taggedTemplateLiteral(["\n    margin: 0;\n    padding: 0;\n    color: ", ";\n    font-family: Roboto;\n    font-size: 14px;\n    font-weight: normal;\n    line-height: 21.5px;\n    hyphens: auto;\n    word-break: break-word\n\n    ", "\n\n    ", "\n\n", "\n\n"]);
 
   _templateObject11 = function _templateObject11() {
     return data;

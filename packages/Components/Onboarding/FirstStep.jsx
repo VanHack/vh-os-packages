@@ -10,10 +10,10 @@ import VHInputRadio from '../Input/radio'
 
 const FirstStep = props => {
     const positions = props.positions
-    const position = props.positionSkill != undefined ? [positions[props.positionSkill]] : {};
+    const position = props.positionSkill != undefined ? positions.find(element => element.value === props.positionSkill) : {};
 
     const yearsOfExperienceList = props.yearsOfExperienceList
-    const yearsOfExperience = props.yearsOfExperience != undefined ? [yearsOfExperienceList[props.yearsOfExperience]] : {};
+    const yearsOfExperience = props.yearsOfExperience != undefined ? yearsOfExperienceList.find(element => element.value === props.yearsOfExperience)  : {};
 
     return (
         <Row column>

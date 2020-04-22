@@ -103,7 +103,10 @@ var VHLanguageList = function VHLanguageList(props) {
       marginBottom: '0px',
       removeBorder: true,
       caption: "",
-      data: language.code === 'en' || language.code === 'fr' ? 'defaultLanguage' : 'language',
+      data: language.code === 'en' || language.code === 'fr' ? 'defaultLanguage' : {
+        option: 'language',
+        id: language.id
+      },
       className: 'language',
       currentItem: language.code !== undefined ? {
         value: language.code,
@@ -128,7 +131,10 @@ var VHLanguageList = function VHLanguageList(props) {
       marginBottom: '0px',
       removeBorder: true,
       caption: "",
-      data: 'proficiency',
+      data: {
+        option: 'proficiency',
+        id: language.id
+      },
       className: 'proficiency',
       currentItem: language.level != undefined ? secondList[language.level] : {},
       items: secondList,
@@ -138,9 +144,9 @@ var VHLanguageList = function VHLanguageList(props) {
       onEvent: props.onEvent,
       order: index,
       placeholder: 'Proficiency'
-    })), language.id && language.code && language.code !== 'en' && language.code !== 'fr' && /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+    })), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
       width: '10%'
-    }, /*#__PURE__*/_react.default.createElement(S.Close, {
+    }, language.id && language.code && language.code !== 'en' && language.code !== 'fr' && /*#__PURE__*/_react.default.createElement(S.Close, {
       onClick: function onClick() {
         props.onEvent({
           event: 'deleteLanguage',
@@ -152,8 +158,9 @@ var VHLanguageList = function VHLanguageList(props) {
       alt: "Close icon"
     }))));
   }), /*#__PURE__*/_react.default.createElement(S.Wrapper, null, /*#__PURE__*/_react.default.createElement(_Grid.Row, {
-    alignItemsCenter: true,
     row: true,
+    paddingTop: 2,
+    paddingBottom: 2,
     marginRight: 2,
     marginLeft: 2
   }, /*#__PURE__*/_react.default.createElement(_Text.default, {

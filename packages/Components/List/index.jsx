@@ -6,10 +6,6 @@ import { Container, Row } from '../../Grid';
 
 const VHList = props => {
     let items = props.items ? props.items : [];
-    if (items.length > 0) {
-        items.sort((a, b) => (a.id < b.id) ? 1 : -1)
-    }
-    const list = props.list ? props.list : [];
     const secondList = props.secondList ? props.secondList : []
     return (
         <React.Fragment>
@@ -24,13 +20,13 @@ const VHList = props => {
                             placeholder='Select your top skill'
                             removeIndicator
                             removeDropdownIcon
-                            bold={true}
+                            bold={false}
                             marginBottom={'0px'}
                             removeBorder
                             caption=""
                             data={'topSkillExperience'}
                             className={'topSkillExperience'}
-                            currentItem={items[0] ? list.find(element => element.value === items[0].id) : {}}
+                            currentItem={items[0] && items[0].id != 0  ? {value: items[0].id, label:items[0].name} : {}}
                             items={props.list}
                             description=""
                             descriptionColor="primary"
@@ -45,7 +41,7 @@ const VHList = props => {
                         preLoading={props.controls.topSkill.preLoading}
                         placeholder='Experience'
                         removeIndicator
-                        isDisabled={!items[0] ? true : false}
+                        isDisabled={!items[0] || items[0].id === 0  ? true : false}
                         marginBottom={'0px'}
                         removeBorder
                         caption=""
@@ -71,13 +67,13 @@ const VHList = props => {
                             preLoading={props.controls.topSkill.preLoading}
                             placeholder='Select your top skill'
                             removeIndicator
-                            bold={true}
+                            bold={false}
                             marginBottom={'0px'}
                             removeBorder
                             caption=""
                             data={'topSkillExperience'}
                             className={'topSkillExperience'}
-                            currentItem={items[1] ? list.find(element => element.value === items[1].id) : {}}
+                            currentItem={items[1] && items[1].id != 0  ? {value: items[1].id, label:items[1].name} : {}}
                             items={props.list}
                             description=""
                             descriptionColor="primary"
@@ -91,7 +87,7 @@ const VHList = props => {
                         preLoading={props.controls.topSkill.preLoading}
                         placeholder='Experience'
                         removeIndicator
-                        isDisabled={!items[1] ? true : false}
+                        isDisabled={!items[1] || items[1].id === 0 ? true : false}
                         marginBottom={'0px'}
                         removeBorder
                         caption=""
@@ -117,13 +113,13 @@ const VHList = props => {
                             preLoading={props.controls.topSkill.preLoading}
                             placeholder='Select your top skill'
                             removeIndicator
-                            bold={true}
+                            bold={false}
                             marginBottom={'0px'}
                             removeBorder
                             caption=""
                             data={'topSkillExperience'}
                             className={'topSkillExperience'}
-                            currentItem={items[2] ? list.find(element => element.value === items[2].id) : {}}
+                            currentItem={items[2] && items[2].id != 0 ? {value: items[2].id, label:items[2].name} : {}}
                             items={props.list}
                             description=""
                             descriptionColor="primary"
@@ -137,7 +133,7 @@ const VHList = props => {
                         preLoading={props.controls.topSkill.preLoading}
                         placeholder='Experience'
                         removeIndicator
-                        isDisabled={!items[2] ? true : false}
+                        isDisabled={!items[2] || items[2].id === 0 ? true : false}
                         marginBottom={'0px'}
                         removeBorder
                         caption=""

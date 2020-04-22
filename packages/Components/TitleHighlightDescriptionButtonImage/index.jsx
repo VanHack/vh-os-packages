@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Row, Container } from '../../Grid/index';
 import VHText from "../Text/index";
-import VHButton from "../Button/index";
+import VHButton from "../Button-New/index";
 import * as S from './styles';
 
 const VHTitleHighlightDescriptionButtonImage = props => {

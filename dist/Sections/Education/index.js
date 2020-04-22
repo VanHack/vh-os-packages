@@ -142,7 +142,7 @@ var VHEducationSection = function VHEducationSection(props) {
       pointer: true,
       title: item.degreeTitle,
       titleColor: "primary-light",
-      description: item.schoolName,
+      description: "".concat(item.degreeTypeStr, " - ").concat(item.schoolName),
       titleVariant: "h4",
       descriptionVariant: "bodyweb",
       onEvent: props.onEvent,
@@ -176,7 +176,8 @@ var VHEducationSection = function VHEducationSection(props) {
     label: "Add Education"
   }))), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
     column: true,
-    marginBottom5: true
+    marginBottom5: true,
+    marginTop: 48
   }, /*#__PURE__*/_react.default.createElement(_Grid.Row, {
     marginBottom5: true
   }, /*#__PURE__*/_react.default.createElement(_Text.default, {

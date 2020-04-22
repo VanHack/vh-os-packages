@@ -4,7 +4,7 @@ import { Row } from "../../../Grid";
 import VHCardBase from "../Base";
 import VHChips from "../../Chips/index";
 import VHText from "../../Text/index";
-import VHButton from "../../Button/index";
+import VHButton from "../../Button-New/index";
 import * as S from "./styles";
 
 const VHCardPricing = props => {

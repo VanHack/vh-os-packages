@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 import { Row } from "../../Grid";
 import VHModal from "../Modal";
 import VHTitleDescription from "../TitleDescription";
-import VHSelect from "../../Components/Input/Select";
 import VHInput from "../../Components/Input/Simple";
 import VHText from "../../Components/Text/index";
 import VHButton from "../../Components/Button-New/index";

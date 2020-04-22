@@ -36,7 +36,7 @@ var VHCardHired = function VHCardHired(props) {
   }, /*#__PURE__*/_react.default.createElement(S.OutterImg, null, /*#__PURE__*/_react.default.createElement(_index2.default, {
     image: props.userPhoto,
     size: "xl",
-    showCursor: true
+    showCursor: false
   }), /*#__PURE__*/_react.default.createElement(S.InnerImg, null, /*#__PURE__*/_react.default.createElement(_index3.default, {
     title: props.name,
     icon: props.flag,

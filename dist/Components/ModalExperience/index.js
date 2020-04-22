@@ -141,10 +141,9 @@ var VHModalExperience = function VHModalExperience(props) {
       caption: "Industry",
       captionColor: "gray-90",
       className: "vh-general-section-industry ".concat(props.className ? props.className : ''),
-      currentItem: {
-        value: item.industryId.value,
-        label: item.industryId.value ? props.industryList[item.industryId.value].label : ''
-      },
+      currentItem: item.industryId.value ? props.industryList.find(function (element) {
+        return element.value === item.industryId.value;
+      }) : {},
       data: {
         id: "ModalExperience",
         field: "industryId"
@@ -201,12 +200,12 @@ var VHModalExperience = function VHModalExperience(props) {
         variant: "platform1",
         data: {
           modal: 'ModalExperience',
-          checked: experience.isCurrentRole,
+          checked: experience.isCurrentRole.value,
           id: 'isCurrentRole',
           index: index
         },
-        checked: experience.isCurrentRole,
-        value: '',
+        checked: experience.isCurrentRole.value,
+        value: '123',
         name: 'working-role'.concat("-input-checkbox"),
         id: 'working-role'.concat("-vh-input-checkbox"),
         onEvent: props.onEvent
@@ -231,7 +230,7 @@ var VHModalExperience = function VHModalExperience(props) {
           field: "startDate",
           index: index
         }
-      }), experience.startDate.messageError && /*#__PURE__*/_react.default.createElement(S.ErrorMessage, null, "Field required")), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+      }), experience.startDate.messageError && /*#__PURE__*/_react.default.createElement(S.ErrorMessage, null, "Field required")), !experience.isCurrentRole.value && /*#__PURE__*/_react.default.createElement(_Grid.Row, {
         width: '50%',
         marginLeft: 2
       }, /*#__PURE__*/_react.default.createElement(_index.default, {

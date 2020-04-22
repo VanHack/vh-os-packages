@@ -17,8 +17,6 @@ var _Modal = _interopRequireDefault(require("../Modal"));
 
 var _TitleDescription = _interopRequireDefault(require("../TitleDescription"));
 
-var _Select = _interopRequireDefault(require("../../Components/Input/Select"));
-
 var _Simple = _interopRequireDefault(require("../../Components/Input/Simple"));
 
 var _index = _interopRequireDefault(require("../../Components/Text/index"));

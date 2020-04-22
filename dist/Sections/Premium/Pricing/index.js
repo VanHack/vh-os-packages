@@ -37,7 +37,7 @@ var VHPremiumPricingSection = function VHPremiumPricingSection(props) {
     },
     alignItemsCenter: true,
     responsive: true
-  }, props.cardItems.map(function (item) {
+  }, props.cardItems.map(function (item, index) {
     return /*#__PURE__*/_react.default.createElement(_index.Row, {
       width: "360px",
       style: {
@@ -60,7 +60,7 @@ var VHPremiumPricingSection = function VHPremiumPricingSection(props) {
       outlineBtn: item.outlineBtn,
       secondaryBtn: item.secondaryBtn,
       onEvent: props.onEvent,
-      data: "VHCardPrincing"
+      data: "VHCardPrincing".concat(index)
     }));
   })), /*#__PURE__*/_react.default.createElement(_index.Row, {
     marginBottom5: true,

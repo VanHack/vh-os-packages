@@ -20,11 +20,6 @@ var _LanguageList = _interopRequireDefault(require("../LanguageList"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var SixStep = function SixStep(props) {
-  var positions = props.positions;
-  var position = props.positionSkill != undefined ? [positions[props.positionSkill]] : {};
-  var yearsOfExperienceList = props.yearsOfExperienceList;
-  var yearsOfExperience = props.yearsOfExperience != undefined ? [yearsOfExperienceList[props.yearsOfExperience]] : {};
-  var workAsList = props.positions;
   var userPositions = [];
 
   if (props.userPositions) {
@@ -37,7 +32,9 @@ var SixStep = function SixStep(props) {
       } else {
         userPositions.push({
           value: item,
-          label: positions[item].label
+          label: item.label ? item.label : positions.find(function (element) {
+            return element.value === item;
+          }).label
         });
       }
     });

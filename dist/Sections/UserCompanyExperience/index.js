@@ -25,6 +25,8 @@ var _reactPreloadSkeleton = require("react-preload-skeleton");
 
 var _Preloader = _interopRequireDefault(require("../../Components/Preloader"));
 
+var _ModalProfileReview = _interopRequireDefault(require("../../Components/ModalProfileReview"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
@@ -47,19 +49,22 @@ var VHUserCompanyExperienceSection = function VHUserCompanyExperienceSection(pro
 
   var _React$useState3 = _react.default.useState(false),
       _React$useState4 = _slicedToArray(_React$useState3, 2),
-      newExperience = _React$useState4[0],
-      _setNewExperience = _React$useState4[1];
+      openModalReview = _React$useState4[0],
+      setOpenModalReview = _React$useState4[1];
+
+  var _React$useState5 = _react.default.useState(false),
+      _React$useState6 = _slicedToArray(_React$useState5, 2),
+      newExperience = _React$useState6[0],
+      _setNewExperience = _React$useState6[1];
 
   var experience = props.experience.experiences ? props.experience.experiences : [];
 
-  var _React$useState5 = _react.default.useState({}),
-      _React$useState6 = _slicedToArray(_React$useState5, 2),
-      currentItem = _React$useState6[0],
-      _setCurrentItem = _React$useState6[1]; // const [profileReviewInProgress, setProfileReviewInProgress] = React.useState(profileReviewInProgress || props.reviewInProgress);
-  // React.useEffect(() => {
-  //   setProfileReviewInProgress(profileReviewInProgress || props.reviewInProgress);
-  // }, [profileReviewInProgress || props.reviewInProgress])
+  var _React$useState7 = _react.default.useState({}),
+      _React$useState8 = _slicedToArray(_React$useState7, 2),
+      currentItem = _React$useState8[0],
+      _setCurrentItem = _React$useState8[1];
 
+  var notes = props.experience.profileReview ? props.experience.profileReview.notes : [];
 
   function calcDate(date) {
     var df = new Date(date);
@@ -90,6 +95,13 @@ var VHUserCompanyExperienceSection = function VHUserCompanyExperienceSection(pro
     industryList: props.industryList,
     positions: props.positions,
     closeModalExperience: props.closeModalExperience
+  }), openModalReview && /*#__PURE__*/_react.default.createElement(_ModalProfileReview.default, {
+    openModal: openModalReview,
+    onClose: function onClose() {
+      return setOpenModalReview(false);
+    },
+    onEvent: props.onEvent,
+    notes: notes
   }), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
     mmarginBottom: 2
   }, /*#__PURE__*/_react.default.createElement(_Text.default, {
@@ -140,20 +152,22 @@ var VHUserCompanyExperienceSection = function VHUserCompanyExperienceSection(pro
     }
   })), props.experience.canRequestReview && !props.reviewInProgress && /*#__PURE__*/_react.default.createElement(_Grid.Row, {
     row: true,
-    alignItemsCenter: true
+    alignItemsCenter: true,
+    marginRight: 4,
+    autoWidth: true
   }, /*#__PURE__*/_react.default.createElement(_ButtonNew.default, {
     outline: true,
     primary: true,
     onEvent: props.onEvent,
     data: "RequestProfileReview",
-    label: "Request Profile Review"
+    label: props.experience.profileReview && props.experience.profileReview.notes.length > 0 ? 'Request Another Profile Review' : 'Request Profile Review'
   })), !props.experience.canRequestReview && props.experience.canRequestReviewInDays > 0 && /*#__PURE__*/_react.default.createElement(_Grid.Row, {
     row: true,
     alignItemsCenter: true
   }, /*#__PURE__*/_react.default.createElement(_Text.default, {
     variant: "platform2",
     color: "gray-80",
-    text: "You can request another rpofile review in ".concat(props.canRequestReviewInDays, " days")
+    text: "You can request another profile review in ".concat(props.canRequestReviewInDays, " days")
   })), props.reviewInProgress && /*#__PURE__*/_react.default.createElement(_Grid.Row, {
     row: true,
     alignItemsCenter: true
@@ -163,11 +177,26 @@ var VHUserCompanyExperienceSection = function VHUserCompanyExperienceSection(pro
     text: "Your profile is under review"
   })), props.experience.profileReviewInProgress && /*#__PURE__*/_react.default.createElement(_Grid.Row, {
     row: true,
-    alignItemsCenter: true
+    alignItemsCenter: true,
+    marginRight: 4,
+    autoWidth: true
   }, /*#__PURE__*/_react.default.createElement(_Text.default, {
     variant: "platform2",
     color: "gray-80",
     text: "Your profile is under review"
+  })), props.experience.profileReview && props.experience.profileReview.notes.length > 0 && /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+    row: true,
+    alignItemsCenter: true,
+    autoWidth: true
+  }, /*#__PURE__*/_react.default.createElement(_ButtonNew.default, {
+    outline: true,
+    primary: true,
+    onEvent: props.onEvent,
+    data: "ViewReview",
+    label: "Check the Review",
+    onOpen: function onOpen() {
+      setOpenModalReview(true);
+    }
   }))))))));
 };
 

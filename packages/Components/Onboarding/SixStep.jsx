@@ -8,14 +8,6 @@ import VHLanguageList from '../LanguageList'
 
 const SixStep = props => {
 
-    const positions = props.positions
-    const position = props.positionSkill != undefined ? [positions[props.positionSkill]] : {};
-
-    const yearsOfExperienceList = props.yearsOfExperienceList
-    const yearsOfExperience = props.yearsOfExperience != undefined ? [yearsOfExperienceList[props.yearsOfExperience]] : {};
-
-    const workAsList = props.positions
-
     let userPositions = []
 
     if (props.userPositions) {
@@ -23,7 +15,7 @@ const SixStep = props => {
             if (item.id) {
                 userPositions.push({ value: item.id, label: item.name })
             } else {
-                userPositions.push({ value: item, label: positions[item].label })
+                userPositions.push({ value: item, label: item.label ? item.label : positions.find(element => element.value === item).label })
             }
         })
     }

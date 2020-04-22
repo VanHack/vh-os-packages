@@ -29,10 +29,11 @@ var VHTestimonial = function VHTestimonial(props) {
   }, /*#__PURE__*/_react.default.createElement(S.AvatarWrapper, null, /*#__PURE__*/_react.default.createElement(_index2.default, {
     image: props.image,
     size: props.sizeImg,
-    showCursor: true
+    showCursor: false
   })), /*#__PURE__*/_react.default.createElement(S.TextWrapper, {
     xs: props.xs,
     sm: props.sm,
+    md2: props.md2,
     lg: props.lg,
     color: props.color
   }, /*#__PURE__*/_react.default.createElement("p", null, props.testimonial)));

@@ -165,13 +165,13 @@ export const Row = styled.div`
     `}
 
     ${({ paddingTop }) => paddingTop && `
-        paddingTop: ${paddingTop * 3}px;
+        padding-top: ${paddingTop * 3}px;
     `}
     ${({ paddingRight }) => paddingRight && `
-        paddingRight: ${paddingRight * 3}px;
+        padding-right: ${paddingRight * 3}px;
     `  }
     ${({ paddingBottom }) => paddingBottom && `
-        paddingBottom: ${paddingBottom * 3}px;
+        padding-bottom: ${paddingBottom * 3}px;
     `}
     ${({ paddingLeft }) => paddingLeft && `
         padding-left: ${paddingLeft * 3}px;

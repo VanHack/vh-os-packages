@@ -16,7 +16,7 @@ const StartStep = props => {
             <p style={{ textAlign: 'center', lineHeight: '28px', fontFamily: 'Roboto', fontSize: '16px', color: '#4f4f4f' }}>Click on "<b style={{ color: '#0675ce', fontWeight: 'normal' }}>start</b>" to boost your profile’s visibility and get closer to a job offer from an international company.</p>
             <p style={{ textAlign: 'center', lineHeight: '28px', fontFamily: 'Roboto', fontSize: '16px', color: '#4f4f4f' }}>Crafting a successful profile has never been easier. Let's start!</p>
         </div>
-        <div style={{ marginBottom: '50px' }}>
+        <div>
             <button
                 style={{ width: '175px', height: '52px', borderRadius: '3px', backgroundColor: '#0675ce' }}
                 onClick={e => {
@@ -31,7 +31,7 @@ const StartStep = props => {
                     })
                     props.setCurrentStep(1)
                   }}>
-                <p style={{ fontFamily: 'Roboto', fontSize: '16px', color: '#fff', cursor: 'pointer' }}>Let's start!</p>
+                <p style={{ fontFamily: 'Roboto', fontSize: '16px', color: '#fff', cursor: 'pointer' }}>Start!</p>
             </button>
         </div>
     </div>

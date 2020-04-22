@@ -40,9 +40,9 @@ var VHSocialSection = function VHSocialSection(props) {
     id: "linkedin-href"
   }, /*#__PURE__*/_react.default.createElement(_Icon.default, {
     className: "",
-    disabled: props.controls.linkedin.loading,
+    disabled: false,
     error: props.controls.linkedin.error,
-    loading: props.controls.linkedin.loading,
+    loading: false,
     data: 'linkedin',
     icon: "linkedin",
     onEvent: props.onEvent,
@@ -53,9 +53,9 @@ var VHSocialSection = function VHSocialSection(props) {
     id: "github-href"
   }, /*#__PURE__*/_react.default.createElement(_Icon.default, {
     className: "",
-    disabled: props.controls.git.loading,
+    disabled: false,
     error: props.controls.git.error,
-    loading: props.controls.git.loading,
+    loading: false,
     data: 'git',
     icon: "github",
     onEvent: props.onEvent,
@@ -66,9 +66,9 @@ var VHSocialSection = function VHSocialSection(props) {
     id: "website-href"
   }, /*#__PURE__*/_react.default.createElement(_Icon.default, {
     className: "",
-    disabled: props.controls.webSite.loading,
+    disabled: false,
     error: props.controls.webSite.error,
-    loading: props.controls.webSite.loading,
+    loading: false,
     placeholder: "http://sitename.com/",
     value: props.webSite,
     data: 'webSite',
@@ -79,9 +79,9 @@ var VHSocialSection = function VHSocialSection(props) {
     id: "resume-href"
   }, /*#__PURE__*/_react.default.createElement(_Icon.default, {
     className: "",
-    disabled: props.controls.resume.loading,
+    disabled: false,
     error: props.controls.resume.error,
-    loading: props.controls.resume.loading,
+    loading: false,
     placeholder: "https://drive.google.com/your-resume",
     value: props.resume,
     data: 'resume',

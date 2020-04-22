@@ -71,7 +71,7 @@ const VHLanguageList = props => {
                                         marginBottom={'0px'}
                                         removeBorder
                                         caption=""
-                                        data={language.code === 'en' || language.code === 'fr' ? 'defaultLanguage' : 'language'}
+                                        data={language.code === 'en' || language.code === 'fr' ? 'defaultLanguage' : {option: 'language', id: language.id}}
                                         className={'language'}
                                         currentItem={language.code !== undefined ? { value: language.code, label: language.name } : {}}
                                         items={language.code === 'en' ? [{ value: 'en', label: 'English' }] : language.code === 'fr' ? [{ value: 'fr', label: 'French' }] : props.list}
@@ -89,7 +89,7 @@ const VHLanguageList = props => {
                                     marginBottom={'0px'}
                                     removeBorder
                                     caption=""
-                                    data={'proficiency'}
+                                    data={{option: 'proficiency', id: language.id}}
                                     className={'proficiency'}
                                     currentItem={language.level != undefined ? secondList[language.level] : {}}
                                     items={secondList}
@@ -101,8 +101,9 @@ const VHLanguageList = props => {
                                     placeholder={'Proficiency'}
                                 />
                             </Row>
-                            {language.id && language.code && language.code !== 'en' && language.code !== 'fr' &&
-                                <Row width={'10%'}>
+
+                            <Row width={'10%'}>
+                                {language.id && language.code && language.code !== 'en' && language.code !== 'fr' &&
                                     <S.Close
                                         onClick={() => {
                                             props.onEvent({
@@ -112,12 +113,13 @@ const VHLanguageList = props => {
                                         }}>
                                         <VHIcon icon={'delete'} alt="Close icon" />
                                     </S.Close>
-                                </Row>
-                            }
+                                }
+                            </Row>
+
                         </ S.Wrapper>
                     )}
                     <S.Wrapper>
-                        <Row alignItemsCenter row marginRight={2} marginLeft={2}>
+                        <Row row paddingTop={2} paddingBottom={2} marginRight={2} marginLeft={2} >
                             <VHText color="gradient-primary" onEvent={(e) => {
                                 let newLanguages = languages
                                 newLanguages.push({ level: undefined, name: undefined, code: undefined })

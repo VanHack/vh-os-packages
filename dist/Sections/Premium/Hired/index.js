@@ -15,7 +15,7 @@ var _index2 = _interopRequireDefault(require("../../../Components/Text/index"));
 
 var _index3 = _interopRequireDefault(require("../../../Components/Cards/Hired/index"));
 
-var _index4 = _interopRequireDefault(require("../../../Components/Button/index"));
+var _index4 = _interopRequireDefault(require("../../../Components/Button-New/index"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 

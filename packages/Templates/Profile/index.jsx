@@ -18,7 +18,7 @@ const VHProfileTemplate = props => (
     <Row marginBottom={16}>
       <VHProfileAvatar
         avatar= {props.image ? props.image : ''}
-        name= {`${props.firstName} ${props.lastName}`}
+        name= {`${props.firstName ? props.firstName : 'Loading...'} ${props.lastName ? props.lastName : ''}`}
         email= {props.User.email}
         onEvent={props.onEvent}
       />

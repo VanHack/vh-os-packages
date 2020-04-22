@@ -89,7 +89,7 @@ const VHEducationSection = props => {
                               pointer
                               title={item.degreeTitle}
                               titleColor="primary-light"
-                              description={item.schoolName}
+                              description={`${item.degreeTypeStr} - ${item.schoolName}`}
                               titleVariant="h4"
                               descriptionVariant="bodyweb"
                               onEvent={props.onEvent}
@@ -106,7 +106,7 @@ const VHEducationSection = props => {
                         <VHButton data={'openModal'} primary onEvent={props.onEvent} closeModal={props.closeModal} onOpen={() => { setCurrentItem({}); setOpenModal(true) }} label="Add Education" />
                       </Row>
                     </Row>
-                    <Row column marginBottom5>
+                    <Row column marginBottom5 marginTop={48}>
                       <Row marginBottom5>
                         <VHText variant={'subtitle1'} text={'Licenses and Certifications'} color={'black-100'} onEvent={props.onEvent} />
                       </Row>

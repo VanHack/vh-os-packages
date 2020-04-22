@@ -69,6 +69,8 @@ const VHOnboarding = props => {
         disabled = true
       }
     })
+  } else if (currentStep >= 7) {
+    disabled = true
   }
 
   return (
@@ -161,31 +163,33 @@ const VHOnboarding = props => {
                         variant={"platform1"}
                         color={"gray-60"}
                       />
-                      <VHButton
+                      {currentStep < 7 &&
+                        < VHButton
                         className=""
                         label={currentStep < 6 ? "Next" : "Finish"}
                         disabled={disabled}
                         onEvent={e => {
-                          props.onEvent({
-                            type: "OnChangeStep",
-                            origin: "VHOnboarding",
-                            props: {
-                              data: {
-                                stepMinor: currentStep,
-                                step: currentStep + 1,
-                                stepPlus: currentStep + 2
-                              }
+                        props.onEvent({
+                          type: "OnChangeStep",
+                          origin: "VHOnboarding",
+                          props: {
+                            data: {
+                              stepMinor: currentStep,
+                              step: currentStep + 1,
+                              stepPlus: currentStep + 2
                             }
-                          })
-                          setCurrentStep(currentStep + 1)
-
-                          if (currentStep >= 6) {
-                            setDisplayNone(true)
                           }
-                        }}
+                        })
+                        setCurrentStep(currentStep + 1)
+
+                        if (currentStep >= 6) {
+                          setDisplayNone(true)
+                        }
+                      }}
                         primary
                         data={props}
                       />
+}
                     </Row>
                   }
                 </Row>

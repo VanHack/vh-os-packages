@@ -12,13 +12,14 @@ export const Avatar = styled.div`
   border-radius: 50%;
   text-align: center;
   align-content: center;
+  margin: ${props => (props.center ? "0 auto" : "0")};
 
-  margin: ${props => (props.center ? "0 auto" : "0")}
     ${({ showCursor }) =>
       showCursor &&
       `
       cursor: pointer;
   `}
+
     ${({ size }) =>
       size === "xxl" &&
       `
@@ -36,6 +37,12 @@ export const Avatar = styled.div`
       `
     width: 48px;
     height: 48px;
+  `}
+    ${({ size }) =>
+      size === "md2" &&
+      `
+    width: 42px;
+    height: 42px;
   `}
     ${({ size }) =>
       size === "md" &&

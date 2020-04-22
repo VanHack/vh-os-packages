@@ -12,7 +12,7 @@ const VHUserPositonExperience = props => {
             <S.Wrapper hideTimeline={props.hideTimeline}>
                 <Row marginBottom={3}>
                     <VHBlackTitleDescription
-                        title={props.position}
+                        title={props.positionId === 37 ? props.otherPosition : props.position}
                         description={`${new Date(props.startDate).getFullYear()} - ${props.endDate ? new Date(props.endDate).getFullYear() : 'Present'}`}
                         onEvent={props.onEvent}
                         rightTitle={props.rightTitle}

@@ -36,7 +36,7 @@ const VHInputIcon = props => {
         value={value}
         onEvent={props.onEvent}
         noBorder={!props.loading}
-        maxLength={'100'} />
+        maxLength={'280'} />
     </S.Wrapper>
   )
 }
