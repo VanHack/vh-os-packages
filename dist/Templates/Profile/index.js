@@ -86,11 +86,13 @@ var VHProfileTemplate = function VHProfileTemplate(props) {
     }))
   }))), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
     marginBottom: 16
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    id: "social"
   }, /*#__PURE__*/_react.default.createElement(_Social.default, _extends({
     preLoading: props.controls.linkedin.preLoading
   }, props, {
     onEvent: props.onEvent
-  }))), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  })))), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
     marginBottom: 16
   }, /*#__PURE__*/_react.default.createElement("div", {
     id: "language"

@@ -93,7 +93,7 @@ var VHImgCrop = /*#__PURE__*/function (_PureComponent) {
       fileName: '',
       crop: {
         unit: '%',
-        width: 10,
+        width: 30,
         aspect: 1
       },
       inputFile: _react.default.createRef()
@@ -230,12 +230,13 @@ var VHImgCrop = /*#__PURE__*/function (_PureComponent) {
           _this3.setState({
             cropped: false,
             src: null,
-            showCropper: false
+            showCropper: true
           }, function () {
             _this3.state.inputFile.current.click();
           });
         }
       }), /*#__PURE__*/_react.default.createElement(_Modal.default, {
+        header: "Crop your photo",
         marginTop: '50px',
         onClose: function onClose() {
           _this3.setState({
@@ -248,19 +249,28 @@ var VHImgCrop = /*#__PURE__*/function (_PureComponent) {
           column: true,
           responsive: true,
           alignItemsCenter: true
-        }, showCropper && /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+        }, /*#__PURE__*/_react.default.createElement("div", {
+          style: {
+            display: 'none'
+          }
+        }, /*#__PURE__*/_react.default.createElement("input", {
+          ref: this.state.inputFile,
+          type: "file",
+          accept: this.props.acceptTypes || 'image/*',
+          onChange: this.onSelectFile
+        })), src && !cropped && /*#__PURE__*/_react.default.createElement(_reactImageCrop.default, {
+          src: src,
+          crop: crop,
+          ruleOfThirds: true,
+          onImageLoaded: this.onImageLoaded,
+          onComplete: this.onCropComplete,
+          onChange: this.onCropChange
+        }), showCropper && /*#__PURE__*/_react.default.createElement(_Grid.Row, {
           justifyCenter: true,
           column: true,
           responsive: true,
           alignItemsCenter: true
         }, /*#__PURE__*/_react.default.createElement(_Grid.Row, {
-          responsive: true,
-          marginBottom: '10'
-        }, /*#__PURE__*/_react.default.createElement(_Text.default, {
-          variant: "h3",
-          color: "gray-90",
-          text: 'Crop your photo !'
-        })), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
           responsive: true,
           marginBottom: '10'
         }, /*#__PURE__*/_react.default.createElement(_ButtonNew.default, {
@@ -287,23 +297,7 @@ var VHImgCrop = /*#__PURE__*/function (_PureComponent) {
             });
           },
           primary: true
-        }))), /*#__PURE__*/_react.default.createElement("div", {
-          style: {
-            display: 'none'
-          }
-        }, /*#__PURE__*/_react.default.createElement("input", {
-          ref: this.state.inputFile,
-          type: "file",
-          accept: this.props.acceptTypes || 'image/*',
-          onChange: this.onSelectFile
-        })), src && !cropped && /*#__PURE__*/_react.default.createElement(_reactImageCrop.default, {
-          src: src,
-          crop: crop,
-          ruleOfThirds: true,
-          onImageLoaded: this.onImageLoaded,
-          onComplete: this.onCropComplete,
-          onChange: this.onCropChange
-        })),
+        })))),
         onEvent: function noRefCheck() {},
         open: showCropper
       }), croppedImageUrl && cropped && /*#__PURE__*/_react.default.createElement("img", {
