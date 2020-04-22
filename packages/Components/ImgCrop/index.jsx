@@ -294,6 +294,7 @@ class VHImgCrop extends PureComponent {
           }}
         />
         <VHModal
+          header="Crop your photo"
           marginTop={'50px'}
           onClose={() => { this.setState({ showCropper: false }) }}
           content={
