@@ -108,7 +108,7 @@ var VHOnboarding = function VHOnboarding(props) {
       disabled = true;
     }
   } else if (currentStep === 5) {
-    if (props.citizenship === null || props.location === null || props.gender === null || props.phone === null || props.phone === '' || props.linkedin === null || props.linkedin === '') {
+    if (props.citizenship === null || props.location === null || props.gender === null || props.phone === null || props.phone === '') {
       disabled = true;
     }
   } else if (currentStep === 6) {
