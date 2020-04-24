@@ -88,7 +88,7 @@ var VHOnboarding = function VHOnboarding(props) {
       disabled = true;
     } else {
       props.topSkill.map(function (skill) {
-        if (skill.yearsOfExperience === '') {
+        if (skill.yearsOfExperience === 0) {
           disabled = true;
         }
       });
@@ -98,7 +98,7 @@ var VHOnboarding = function VHOnboarding(props) {
       disabled = true;
     } else {
       props.secondarySkill.map(function (skill) {
-        if (skill.yearsOfExperience === '') {
+        if (skill.yearsOfExperience === 0) {
           disabled = true;
         }
       });

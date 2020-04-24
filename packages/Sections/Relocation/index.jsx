@@ -116,7 +116,7 @@ const VHRelocationSection = props => {
                                                 <Row marginBottom={8} width={'600px'} id="target-location">
                                                     <VHTargetLocation onEvent={props.onEvent} items={targetLocation} />
                                                 </Row>
-                                                {preferedCountries.length > 0 &&
+                                                {preferedCountries.length > 1 &&
                                                     <Row width={'50%'} responsive id="preferred-country">
                                                         <VHSelect
                                                             caption={'Which country is your first choice?'}

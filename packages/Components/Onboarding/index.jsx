@@ -39,7 +39,7 @@ const VHOnboarding = props => {
       disabled = true
     } else {
       props.topSkill.map(skill => {
-        if (skill.yearsOfExperience === '') {
+        if (skill.yearsOfExperience === 0) {
           disabled = true
         }
       })
@@ -49,7 +49,7 @@ const VHOnboarding = props => {
       disabled = true
     } else {
       props.secondarySkill.map(skill => {
-        if (skill.yearsOfExperience === '') {
+        if (skill.yearsOfExperience === 0) {
           disabled = true
         }
       })

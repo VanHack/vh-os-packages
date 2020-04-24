@@ -30,6 +30,8 @@ const VHSelect = props => {
     handleChange(newValue);
   }, [newValue])
 
+  const [render, reRender] = React.useState(1)
+
   const style = {
     control: base => ({
       ...base,

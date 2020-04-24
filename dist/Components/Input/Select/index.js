@@ -73,6 +73,11 @@ var VHSelect = function VHSelect(props) {
     handleChange(newValue);
   }, [newValue]);
 
+  var _React$useState3 = _react.default.useState(1),
+      _React$useState4 = _slicedToArray(_React$useState3, 2),
+      render = _React$useState4[0],
+      reRender = _React$useState4[1];
+
   var style = (_style = {
     control: function control(base) {
       return _objectSpread({}, base, {
