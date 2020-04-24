@@ -1,6 +1,6 @@
 {
   "name": "vh-os-packages",
-  "version": "0.0.1-66",
+  "version": "0.0.1-67",
   "private": false,
   "main": "packages",
   "peerDependencies": {
