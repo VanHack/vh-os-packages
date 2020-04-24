@@ -142,7 +142,7 @@ var VHEducationSection = function VHEducationSection(props) {
       pointer: true,
       title: item.degreeTitle,
       titleColor: "primary-light",
-      description: "".concat(item.degreeTypeStr, " - ").concat(item.schoolName),
+      description: "".concat(item.degreeTypeStr != null ? item.degreeTypeStr : '', " - ").concat(item.schoolName != null ? item.schoolName : ''),
       titleVariant: "h4",
       descriptionVariant: "bodyweb",
       onEvent: props.onEvent,

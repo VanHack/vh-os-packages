@@ -95,7 +95,7 @@ const FourthStep = props => {
                         <Row marginBottom={5} width={'100%'}>
                             <VHTargetLocation onEvent={props.onEvent} items={targetLocation} />
                         </Row>
-                        {preferedCountries.length > 0 &&
+                        {preferedCountries.length > 1 &&
                             <Row width={'50%'} responsive id="preferred-country">
                                 <VHSelect
                                     caption={'Which country is your first choice?'}
