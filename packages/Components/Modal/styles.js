@@ -25,6 +25,9 @@ export const ModalContainer = styled.div`
   ${({ width }) => width && `
     width: ${width};
   `}
+  ${({ maxWidth }) => maxWidth && `
+    max-width: ${maxWidth};
+  `}
 
   ${({ height }) => height && `
     height: ${height};

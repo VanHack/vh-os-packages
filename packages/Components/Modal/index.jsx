@@ -14,7 +14,7 @@ const VHModal = props => {
   return (
     <S.ModalWrapper open={props.open} marginTop={props.marginTop}>
         {/* //<GlobalStyle /> */}
-      <S.ModalContainer >
+      <S.ModalContainer maxWidth={props.maxWidth} >
       <S.Header>
           <div>
             {props.header && props.header}
