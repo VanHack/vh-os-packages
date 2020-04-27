@@ -31,7 +31,13 @@ const VHSideProjectsSection = props => {
           color="black-50"
           variant="h2"
         />
+        <VHText 
+          text={"Projects listed in this section can be from either professional, volunteer, or academic roles. They might catch the eye of a recruiter or an employer and help you nail a job!"}
+          color="black-50"
+          variant={'subtitle3'}
+        />        
       </Row>
+      
       <VHCardBase
         className={`vh-sideProjects-section-card ${props.className ? props.className : ''}`}
       >
@@ -46,33 +52,36 @@ const VHSideProjectsSection = props => {
                   <CardSkeleton button />
                 </>
               ) : (
-                  <Row column>
-                    {sideProjects.map(item => {
-                      return (
-                        <Row marginBottom5>
-                          <VHTitleDescription
-                            hover
-                            pointer
-                            title={item.title}
-                            titleColor="primary-light"
-                            description={item.description}
-                            titleVariant="subtitle1"
-                            descriptionVariant="platform"
-                            onEvent={props.onEvent}
-                            data={{ label: 'openModalSideProjects', item: item }}
-                            onOpen={() => setOpenModal(true)}
-                            setCurrentItem={() => setCurrentItem(item)}
-                          />
-                          <VHText cursor hover variant={'platform'} text={item.projectUrl ? item.projectUrl : ''} onEvent={props.onEvent} color={'primary-light'} />
-                          <VHText variant={'caption'} text={`${new Date(item.completedAt).getFullYear()} - ${item.endDate ? new Date(item.endDate).getFullYear() : 'Present'}`} color={'gray-90'} onEvent={props.onEvent} />
-                        </Row>
-                      )
-                    })
-                    }
-                    <Row width={'20%'}>
-                      <VHButton data={'openModal'} primary onEvent={props.onEvent} closeModal={props.closeModalSideProjects} onOpen={() => { setCurrentItem({}); setOpenModal(true) }} label="Add Side Projects" />
+                 <>
+                   <VHText variant={'subtitle1'} text={'Side Projects'} color={'black-100'}  />
+                    <Row paddingTop={'5'} paddingRight8 id="education-level" width={'50%'} >
+                      {sideProjects.map(item => {
+                        return (
+                          <Row marginBottom5>
+                            <VHTitleDescription
+                              hover
+                              pointer
+                              title={item.title}
+                              titleColor="primary-light"
+                              description={item.description}
+                              titleVariant="subtitle1"
+                              descriptionVariant="platform"
+                              onEvent={props.onEvent}
+                              data={{ label: 'openModalSideProjects', item: item }}
+                              onOpen={() => setOpenModal(true)}
+                              setCurrentItem={() => setCurrentItem(item)}
+                            />
+                            <VHText cursor hover variant={'platform'} text={item.projectUrl ? item.projectUrl : ''} onEvent={props.onEvent} color={'primary-light'} />
+                            <VHText variant={'caption'} text={`${new Date(item.completedAt).getFullYear()} - ${item.endDate ? new Date(item.endDate).getFullYear() : 'Present'}`} color={'gray-90'} onEvent={props.onEvent} />
+                          </Row>
+                        )
+                      })
+                      }
+                      <Row width={'20%'}>
+                        <VHButton data={'openModal'} primary onEvent={props.onEvent} closeModal={props.closeModalSideProjects} onOpen={() => { setCurrentItem({}); setOpenModal(true) }} label="Add Side Projects" />
+                      </Row>
                     </Row>
-                  </Row>
+                  </>
                 )
             }
           </React.Fragment>

@@ -27,16 +27,25 @@ const VHModalSideProjects = props => {
             onClose={props.onClose}
             onEvent={props.onEvent}
             header={
-                <Row row>
-                    <VHTitleDescription
-                        title={'Add Side Project'}
-                        description={''}
-                        titleVariant="h3"
-                        titleColor="black-50"
-                        descriptionColor="gray-90"
-                        descriptionVariant="platform"
-                        onEvent={props.onEvent} />
-                </Row>
+                <>
+                    <Row row>
+                        <VHTitleDescription
+                            title={'Add Side Project'}
+                            description={''}
+                            titleVariant="h3"
+                            titleColor="black-50"
+                            descriptionColor="gray-90"
+                            descriptionVariant="platform"
+                            onEvent={props.onEvent} />
+                    </Row>
+                    <Row row>
+                        <VHText
+                            text={"Projects listed in this section can be from either professional, volunteer, or academic roles. They might catch the eye of a recruiter or an employer and help you nail a job!"}
+                            color="black-50"
+                            variant={'subtitle3'}
+                            />  
+                    </Row>
+                </>
             }
             content={
                 <Row column>
