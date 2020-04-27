@@ -39,5 +39,11 @@ export const Card = styled.div`
     ${({ height }) => height &&`
         height: ${height};
     `}
+    ${({ maxWidth }) => maxWidth &&`
+    max-width: ${maxWidth};
+    `}
+    ${({ minHeight }) => minHeight &&`
+    min-height: ${minHeight};
+    `}
 `
 

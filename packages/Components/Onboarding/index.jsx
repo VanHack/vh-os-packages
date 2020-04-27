@@ -77,7 +77,7 @@ const VHOnboarding = props => {
     <Container displayNone={displayNone} currentStep={currentStep} animation justifyCenter fullHeight style={{ backgroundImage: 'linear-gradient(to bottom right, #56CCF2, #0675CE)' }} fullWidth>
       <img style={{ marginBottom: '50px' }} src={VanhackLogo} />
       <Row alignItemsCenter>
-        <Card noPadding width='730px' height='580px' id="onboarding">
+        <Card noPadding  maxWidth='780px' width='100%'   id="onboarding">
           {props.controls.language.loading ?
             <VHPreloader type="fullPage" size="md" />
             :
@@ -94,7 +94,7 @@ const VHOnboarding = props => {
               }
               <Row alignItemsCenter style={{ height: '100%' }}>
                 <Row style={{ width: '100%', height: 'calc(100% - 10px)', boxSizing: 'border-box', padding: '33px' }} >
-                  <Row style={{ height: '100%', overflow: 'auto', boxSizing: 'border-box', padding: '0 3px' }}>
+                  <Row style={{ height: '100%', overflow: 'auto', boxSizing: 'border-box', padding: '0' }}>
                     {
                       currentStep === 0 &&
                       <StartStep {...props} onEvent={props.onEvent} setCurrentStep={() => setCurrentStep(1)} />
