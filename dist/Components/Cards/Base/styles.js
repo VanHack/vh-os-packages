@@ -12,7 +12,7 @@ var _Colors = _interopRequireDefault(require("../../../Colors"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _templateObject3() {
-  var data = _taggedTemplateLiteral(["\n    background-color: ", ";\n    border-radius: ", ";\n    padding: 24px;\n    position: relative;\n    box-sizing: border-box;\n    border-top: ", ";\n\n    :hover {\n        box-shadow: ", ";\n    }\n\n    ", "\n\n    ", "\n    ", "\n"]);
+  var data = _taggedTemplateLiteral(["\n    background-color: ", ";\n    border-radius: ", ";\n    padding: 24px;\n    position: relative;\n    box-sizing: border-box;\n    border-top: ", ";\n\n    :hover {\n        box-shadow: ", ";\n    }\n\n    ", "\n\n    ", "\n    ", "\n    ", "\n    ", "\n"]);
 
   _templateObject3 = function _templateObject3() {
     return data;
@@ -66,6 +66,12 @@ var Card = _styledComponents.default.div(_templateObject3(), _Colors.default["wh
 }, function (_ref3) {
   var height = _ref3.height;
   return height && "\n        height: ".concat(height, ";\n    ");
+}, function (_ref4) {
+  var maxWidth = _ref4.maxWidth;
+  return maxWidth && "\n    max-width: ".concat(maxWidth, ";\n    ");
+}, function (_ref5) {
+  var minHeight = _ref5.minHeight;
+  return minHeight && "\n    min-height: ".concat(minHeight, ";\n    ");
 });
 
 exports.Card = Card;

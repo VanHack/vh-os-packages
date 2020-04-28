@@ -31,7 +31,7 @@ const VHOnboarding = props => {
   let disabled = false
 
   if (currentStep === 1) {
-    if (props.positionSkill === null || props.positionSkill === undefined || props.positionSkill === '') {
+    if (props.positionId === null || props.positionId === undefined || props.positionId === '') {
       disabled = true
     }
   } else if (currentStep === 2) {

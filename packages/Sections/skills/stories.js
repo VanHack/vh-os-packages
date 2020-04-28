@@ -13,7 +13,7 @@ const controls = {
   gender: {preLoading: false, loading: false, error: false, success: true},
   phone: {preLoading: false, loading: false, error: false, success: true},
   onboarding: {preLoading: false, loading: false, error: false, success: true},
-  positionSkill: {preLoading: false, loading: false, error: false, success: true},
+  positionId: {preLoading: false, loading: false, error: false, success: true},
   positionName: {preLoading: false, loading: false, error: false, success: true},
   yearsOfExperience: {preLoading: false, loading: false, error: false, success: true},
   openForDifferentRole: {preLoading: false, loading: false, error: false, success: true},
@@ -92,7 +92,7 @@ storiesOf("Sections|Skills", module)
     <div style={{ backgroundColor: "#f2f2f2", height: "100vh", padding: "24px" }}>
       <VHSkillsSection
         controls={{
-          positionSkill: {
+          positionId: {
             loading: false,
             error: true,
             success: false,
@@ -144,7 +144,7 @@ storiesOf("Sections|Skills", module)
     <div style={{ backgroundColor: "#f2f2f2", height: "100vh", padding: "24px" }}>
       <VHSkillsSection
         controls={{
-          positionSkill: {
+          positionId: {
             loading: true,
             error: false,
             success: false,
@@ -196,7 +196,7 @@ storiesOf("Sections|Skills", module)
       <VHSkillsSection
         preLoading
         controls={{
-          positionSkill: {
+          positionId: {
             loading: true,
             error: false,
             success: false,
