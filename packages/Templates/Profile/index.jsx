@@ -56,11 +56,13 @@ const VHProfileTemplate = props => (
       </div>
     </Row>
      <Row marginBottom={16}>
+     <div id={"social"}>
       <VHSocialSection
         preLoading={props.controls.linkedin.preLoading}
         {...props}
         onEvent={props.onEvent}
       />
+      </div>
     </Row>
     <Row marginBottom={16}>
       <div id={"language"}>

@@ -103,7 +103,7 @@ var FourthStep = function FourthStep(props) {
   }, /*#__PURE__*/_react.default.createElement(_TargetLocation.default, {
     onEvent: props.onEvent,
     items: targetLocation
-  })), preferedCountries.length > 0 && /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  })), preferedCountries.length > 1 && /*#__PURE__*/_react.default.createElement(_Grid.Row, {
     width: '50%',
     responsive: true,
     id: "preferred-country"
