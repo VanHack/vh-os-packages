@@ -188,7 +188,7 @@ var controls = {
     error: false,
     success: true
   },
-  positionSkill: {
+  positionId: {
     preLoading: false,
     loading: false,
     error: false,

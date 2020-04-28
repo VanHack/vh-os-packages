@@ -58,7 +58,7 @@ function _templateObject3() {
 }
 
 function _templateObject2() {
-  var data = _taggedTemplateLiteral(["\n  border-radius:9px;\n  margin: 12px auto;\n  max-width: 90%;\n  width: 100%;\n  min-height: 10vh;\n\n  ", "\n\n  ", "\n\n  padding: 33px;\n  background: rgb(255,255,255);\n"]);
+  var data = _taggedTemplateLiteral(["\n  border-radius:9px;\n  margin: 12px auto;\n  max-width: 90%;\n  width: 100%;\n  min-height: 10vh;\n\n  ", "\n  ", "\n\n  ", "\n\n  padding: 33px;\n  background: rgb(255,255,255);\n"]);
 
   _templateObject2 = function _templateObject2() {
     return data;
@@ -91,7 +91,10 @@ var ModalContainer = _styledComponents.default.div(_templateObject2(), function 
   var width = _ref.width;
   return width && "\n    width: ".concat(width, ";\n  ");
 }, function (_ref2) {
-  var height = _ref2.height;
+  var maxWidth = _ref2.maxWidth;
+  return maxWidth && "\n    max-width: ".concat(maxWidth, ";\n  ");
+}, function (_ref3) {
+  var height = _ref3.height;
   return height && "\n    height: ".concat(height, ";\n  ");
 });
 

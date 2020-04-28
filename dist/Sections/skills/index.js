@@ -29,8 +29,8 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var VHSkillsSection = function VHSkillsSection(props) {
   var positions = props.positions;
-  var position = props.positionSkill != undefined ? positions.find(function (element) {
-    return element.value === props.positionSkill;
+  var position = props.positionId != undefined ? positions.find(function (element) {
+    return element.value === props.positionId;
   }) : {};
   var yearsOfExperienceList = props.yearsOfExperienceList;
   var yearsOfExperience = props.yearsOfExperience != undefined ? yearsOfExperienceList.find(function (element) {
@@ -77,14 +77,14 @@ var VHSkillsSection = function VHSkillsSection(props) {
   }, /*#__PURE__*/_react.default.createElement(_Select.default, {
     preLoading: props.preLoading,
     caption: "I am a/an...",
-    captionColor: props.controls.positionSkill.loading ? "gray-40" : props.controls.positionSkill.error ? "red" : 'gray-90',
-    className: "vh-skills-section-positionSkill ".concat(props.className ? props.className : ''),
+    captionColor: props.controls.positionId.loading ? "gray-40" : props.controls.positionId.error ? "red" : 'gray-90',
+    className: "vh-skills-section-positionId ".concat(props.className ? props.className : ''),
     currentItem: position,
-    data: "positionSkill",
+    data: "positionId",
     onEvent: props.onEvent,
     items: positions,
-    isLoading: props.controls.positionSkill.loading,
-    description: props.controls.positionSkill.error && props.controls.positionSkill.message,
+    isLoading: props.controls.positionId.loading,
+    description: props.controls.positionId.error && props.controls.positionId.message,
     descriptionColor: "red"
   })), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
     width: '40%',

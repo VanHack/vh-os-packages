@@ -79,7 +79,7 @@ var FifthStep = function FifthStep(props) {
     id: "location"
   }, /*#__PURE__*/_react.default.createElement(_Select.default, {
     preLoading: props.controls.location.preLoading || false,
-    caption: "Location",
+    caption: "Current Location",
     placeholder: "Select an option",
     className: "vh-general-section-location ".concat(props.className ? props.className : ''),
     currentItem: location,

@@ -75,7 +75,7 @@ var controls = {
     error: false,
     success: true
   },
-  positionSkill: {
+  positionId: {
     preLoading: false,
     loading: false,
     error: false,
@@ -304,7 +304,7 @@ var apiResponse = {
     }
   }, /*#__PURE__*/_react.default.createElement(_.default, {
     controls: {
-      positionSkill: {
+      positionId: {
         loading: false,
         error: true,
         success: false,
@@ -358,7 +358,7 @@ var apiResponse = {
     }
   }, /*#__PURE__*/_react.default.createElement(_.default, {
     controls: {
-      positionSkill: {
+      positionId: {
         loading: true,
         error: false,
         success: false,
@@ -412,7 +412,7 @@ var apiResponse = {
   }, /*#__PURE__*/_react.default.createElement(_.default, {
     preLoading: true,
     controls: {
-      positionSkill: {
+      positionId: {
         loading: true,
         error: false,
         success: false,
