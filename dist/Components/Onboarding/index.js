@@ -80,7 +80,7 @@ var VHOnboarding = function VHOnboarding(props) {
   var disabled = false;
 
   if (currentStep === 1) {
-    if (props.positionSkill === null || props.positionSkill === undefined || props.positionSkill === '') {
+    if (props.positionId === null || props.positionId === undefined || props.positionId === '') {
       disabled = true;
     }
   } else if (currentStep === 2) {
@@ -140,8 +140,8 @@ var VHOnboarding = function VHOnboarding(props) {
     alignItemsCenter: true
   }, /*#__PURE__*/_react.default.createElement(_Base.default, {
     noPadding: true,
-    width: "730px",
-    height: "580px",
+    maxWidth: "780px",
+    width: "100%",
     id: "onboarding"
   }, props.controls.language.loading ? /*#__PURE__*/_react.default.createElement(_Preloader.default, {
     type: "fullPage",
@@ -167,7 +167,7 @@ var VHOnboarding = function VHOnboarding(props) {
       height: '100%',
       overflow: 'auto',
       boxSizing: 'border-box',
-      padding: '0 3px'
+      padding: '0'
     }
   }, currentStep === 0 && /*#__PURE__*/_react.default.createElement(_StartStep.default, _extends({}, props, {
     onEvent: props.onEvent,

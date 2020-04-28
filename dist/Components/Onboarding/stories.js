@@ -75,7 +75,7 @@ var controls = {
     error: false,
     success: true
   },
-  positionSkill: {
+  positionId: {
     preLoading: false,
     loading: false,
     error: false,
@@ -260,9 +260,63 @@ var controls = {
   return /*#__PURE__*/_react.default.createElement(_.default, {
     controls: controls,
     steps: 6,
+    currentStep: 0,
+    onEvent: function onEvent(e) {
+      console.log(e);
+    }
+  });
+}).add('Step 2', function () {
+  return /*#__PURE__*/_react.default.createElement(_.default, {
+    controls: controls,
+    steps: 6,
     currentStep: 1,
     onEvent: function onEvent(e) {
       console.log(e);
     }
-  }, "asdadassad");
+  });
+}).add('Step 3', function () {
+  return /*#__PURE__*/_react.default.createElement(_.default, {
+    controls: controls,
+    steps: 6,
+    currentStep: 2,
+    onEvent: function onEvent(e) {
+      console.log(e);
+    }
+  });
+}).add('Step 4', function () {
+  return /*#__PURE__*/_react.default.createElement(_.default, {
+    controls: controls,
+    steps: 6,
+    currentStep: 3,
+    onEvent: function onEvent(e) {
+      console.log(e);
+    }
+  });
+}).add('Step 5', function () {
+  return /*#__PURE__*/_react.default.createElement(_.default, {
+    controls: controls,
+    steps: 6,
+    currentStep: 4,
+    onEvent: function onEvent(e) {
+      console.log(e);
+    }
+  });
+}).add('Step 6', function () {
+  return /*#__PURE__*/_react.default.createElement(_.default, {
+    controls: controls,
+    steps: 6,
+    currentStep: 5,
+    onEvent: function onEvent(e) {
+      console.log(e);
+    }
+  });
+}).add('Step 7', function () {
+  return /*#__PURE__*/_react.default.createElement(_.default, {
+    controls: controls,
+    steps: 6,
+    currentStep: 6,
+    onEvent: function onEvent(e) {
+      console.log(e);
+    }
+  });
 });

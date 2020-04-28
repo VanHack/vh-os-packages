@@ -10,7 +10,7 @@ import VHInputRadio from '../Input/radio'
 
 const FirstStep = props => {
     const positions = props.positions
-    const position = props.positionSkill != undefined ? positions.find(element => element.value === props.positionSkill) : {};
+    const position = props.positionId != undefined ? positions.find(element => element.value === props.positionId) : {};
 
     const yearsOfExperienceList = props.yearsOfExperienceList
     const yearsOfExperience = props.yearsOfExperience != undefined ? yearsOfExperienceList.find(element => element.value === props.yearsOfExperience)  : {};
@@ -39,19 +39,19 @@ const FirstStep = props => {
                     preLoading={props.preLoading}
                     caption="Which role best applies to your experience?"
                     captionColor={
-                        props.controls.positionSkill.loading
+                        props.controls.positionId.loading
                             ? "gray-40"
-                            : props.controls.positionSkill.error
+                            : props.controls.positionId.error
                                 ? "red"
                                 : 'gray-90'
                     }
-                    className={`vh-skills-section-positionSkill ${props.className ? props.className : ''}`}
+                    className={`vh-skills-section-positionId ${props.className ? props.className : ''}`}
                     currentItem={position}
-                    data="positionSkill"
+                    data="positionId"
                     onEvent={props.onEvent}
                     items={positions}
-                    isLoading={props.controls.positionSkill.loading}
-                    description={props.controls.positionSkill.error && props.controls.positionSkill.message}
+                    isLoading={props.controls.positionId.loading}
+                    description={props.controls.positionId.error && props.controls.positionId.message}
                     descriptionColor="red"
                 />
             </Row>

@@ -14,7 +14,7 @@ const controls = {
     gender: {preLoading: false, loading: false, error: false, success: true},
     phone: {preLoading: false, loading: false, error: false, success: true},
     onboarding: {preLoading: false, loading: false, error: false, success: true},
-    positionSkill: {preLoading: false, loading: false, error: false, success: true},
+    positionId: {preLoading: false, loading: false, error: false, success: true},
     positionName: {preLoading: false, loading: false, error: false, success: true},
     yearsOfExperience: {preLoading: false, loading: false, error: false, success: true},
     openForDifferentRole: {preLoading: false, loading: false, error: false, success: true},
