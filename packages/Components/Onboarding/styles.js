@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import Color from "../../Colors";
 
+
 const Button = styled.button`
   background: ${Color["primary-rgb-light"]};
   border: 1px solid ${Color["gradient-light"]};
@@ -121,5 +122,6 @@ const Button = styled.button`
   `}
 
 `;
+
 
 export default Button;

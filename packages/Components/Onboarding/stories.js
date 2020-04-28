@@ -53,11 +53,85 @@ storiesOf('Components|Onboarding', module)
         controls={controls}
 
         steps={6}
+        currentStep={0}
+        onEvent={e => {
+            console.log(e)
+        }}
+    >
+    </VHOnboarding>
+))
+
+.add('Step 2', () => (
+    <VHOnboarding
+        controls={controls}
+
+        steps={6}
         currentStep={1}
         onEvent={e => {
             console.log(e)
         }}
     >
-        asdadassad
+    </VHOnboarding>
+))
+
+.add('Step 3', () => (
+    <VHOnboarding
+        controls={controls}
+
+        steps={6}
+        currentStep={2}
+        onEvent={e => {
+            console.log(e)
+        }}
+    >
+    </VHOnboarding>
+))
+
+.add('Step 4', () => (
+    <VHOnboarding
+        controls={controls}
+
+        steps={6}
+        currentStep={3}
+        onEvent={e => {
+            console.log(e)
+        }}
+    >
+    </VHOnboarding>
+))
+.add('Step 5', () => (
+    <VHOnboarding
+        controls={controls}
+
+        steps={6}
+        currentStep={4}
+        onEvent={e => {
+            console.log(e)
+        }}
+    >
+    </VHOnboarding>
+))
+.add('Step 6', () => (
+    <VHOnboarding
+        controls={controls}
+
+        steps={6}
+        currentStep={5}
+        onEvent={e => {
+            console.log(e)
+        }}
+    >
+    </VHOnboarding>
+))
+.add('Step 7', () => (
+    <VHOnboarding
+        controls={controls}
+
+        steps={6}
+        currentStep={6}
+        onEvent={e => {
+            console.log(e)
+        }}
+    >
     </VHOnboarding>
 ))

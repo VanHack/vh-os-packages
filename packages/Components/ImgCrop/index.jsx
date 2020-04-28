@@ -16,6 +16,7 @@ const GlobalStyle = createGlobalStyle`
   .ReactCrop__image {
     display: block;
     max-width: 100%;
+    max-height:350px;
     touch-action: manipulation; }
   .ReactCrop--crop-invisible .ReactCrop__image {
     opacity: 0.5; }
@@ -294,6 +295,7 @@ class VHImgCrop extends PureComponent {
           }}
         />
         <VHModal
+          maxWidth="730px"
           header="Crop your photo"
           marginTop={'50px'}
           onClose={() => { this.setState({ showCropper: false }) }}
@@ -315,10 +317,10 @@ class VHImgCrop extends PureComponent {
             {
               showCropper && (
                 <Row justifyCenter column responsive alignItemsCenter>
-                <Row responsive marginBottom={'10'}>
+                <Row responsive marginBottom={'3'} marginTop={'25'} style={{alignItems: 'flex-end'}} >
                   <VHButton
                     className=""
-                    label="Send"
+                    label="Save photo"
                     onEvent={e => {
                       this.setState({ cropped: false, src: null, showCropper: false, croppedImageUrlSent: croppedImageUrl })
                       fetch(croppedImageUrl)
