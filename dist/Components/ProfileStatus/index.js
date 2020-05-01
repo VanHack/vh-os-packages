@@ -89,7 +89,7 @@ var VHProfileStatus = function VHProfileStatus(props) {
     variant: 'platform',
     text: "Request",
     cursor: true
-  })), props.reviewInProgress || props.review && props.review.isUnderReview && /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  })), props.review && props.review.canRequestReview && (props.reviewInProgress || props.review.isUnderReview) && /*#__PURE__*/_react.default.createElement(_Grid.Row, {
     alignItemsCenter: true
   }, /*#__PURE__*/_react.default.createElement(_Text.default, {
     variant: "platform2",
@@ -130,7 +130,7 @@ var VHProfileStatus = function VHProfileStatus(props) {
     row: true,
     alignItemsCenter: true,
     width: '80%'
-  }, props.englishVerification && (props.englishVerification.status === 'NoTest' || props.englishVerification.status == 'CanStartAgain' || props.englishVerification.status == 'VoidTest') && /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  }, props.englishVerification && (props.englishVerification.status === 'NoTest' || props.englishVerification.status === 'CanStartAgain' || props.englishVerification.status === 'VoidTest' || props.englishVerification.status === 'Expired') && /*#__PURE__*/_react.default.createElement(_Grid.Row, {
     alignItemsCenter: true
   }, /*#__PURE__*/_react.default.createElement(_Text.default, {
     color: "gradient-primary",
