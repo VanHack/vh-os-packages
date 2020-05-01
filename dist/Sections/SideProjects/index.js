@@ -123,9 +123,7 @@ var VHSideProjectsSection = function VHSideProjectsSection(props) {
       color: 'gray-90',
       onEvent: props.onEvent
     }));
-  }), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
-    width: '20%'
-  }, /*#__PURE__*/_react.default.createElement(_ButtonNew.default, {
+  }), /*#__PURE__*/_react.default.createElement(_Grid.Row, null, /*#__PURE__*/_react.default.createElement(_ButtonNew.default, {
     data: 'openModal',
     primary: true,
     onEvent: props.onEvent,

@@ -77,7 +77,7 @@ const VHSideProjectsSection = props => {
                         )
                       })
                       }
-                      <Row width={'20%'}>
+                      <Row>
                         <VHButton data={'openModal'} primary onEvent={props.onEvent} closeModal={props.closeModalSideProjects} onOpen={() => { setCurrentItem({}); setOpenModal(true) }} label="Add Side Projects" />
                       </Row>
                     </Row>
