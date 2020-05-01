@@ -238,6 +238,17 @@ export const Row = styled.div`
        padding-bottom: 50px;
     `}
 
+    ${({ cursor }) => cursor && `
+       cursor: pointer;
+    `}
+
+    ${({ borderRight }) => borderRight && `
+       border-right: 1px solid #bdbdbd;
+    `}
+
+    ${({ borderLeft }) => borderLeft && `
+       border-left: 1px solid #bdbdbd;
+    `}
    
 `   
 

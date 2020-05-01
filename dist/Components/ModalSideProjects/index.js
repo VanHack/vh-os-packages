@@ -81,7 +81,7 @@ var VHModalSideProjects = function VHModalSideProjects(props) {
     open: props.openModal,
     onClose: props.onClose,
     onEvent: props.onEvent,
-    header: /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+    header: /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement(_Grid.Row, {
       row: true
     }, /*#__PURE__*/_react.default.createElement(_TitleDescription.default, {
       title: 'Add Side Project',
@@ -91,7 +91,13 @@ var VHModalSideProjects = function VHModalSideProjects(props) {
       descriptionColor: "gray-90",
       descriptionVariant: "platform",
       onEvent: props.onEvent
-    })),
+    })), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+      row: true
+    }, /*#__PURE__*/_react.default.createElement(_index.default, {
+      text: "Projects listed in this section can be from either professional, volunteer, or academic roles. They might catch the eye of a recruiter or an employer and help you nail a job!",
+      color: "black-50",
+      variant: 'subtitle3'
+    }))),
     content: /*#__PURE__*/_react.default.createElement(_Grid.Row, {
       column: true
     }, /*#__PURE__*/_react.default.createElement(_Grid.Row, {

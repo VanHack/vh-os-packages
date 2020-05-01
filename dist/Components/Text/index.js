@@ -25,7 +25,11 @@ var VHText = function VHText(props) {
   };
 
   var action = function action() {
-    return props.onEvent({
+    if (props.onOpen) {
+      props.onOpen();
+    }
+
+    props.onEvent({
       type: "onClick",
       origin: "VHText",
       props: {

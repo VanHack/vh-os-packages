@@ -108,9 +108,11 @@ const VHInputMultiple = props => {
                         origin: "VHInputMultiple"
                       })
                     } else {
-                      newItems.splice(index, 1)
-                      setNewItems(newItems)
-                      reRender(render + 1)
+                      if (newItems && newItems.length > 1) {
+                        newItems.splice(index, 1)
+                        setNewItems(newItems)
+                        reRender(render + 1)
+                      }
                     }
                     break
                 }

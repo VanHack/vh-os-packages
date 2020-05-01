@@ -31,9 +31,9 @@ var _LanguageSection = _interopRequireDefault(require("../../Sections/LanguageSe
 
 var _VHUserPhotoIconTitleDescription = _interopRequireDefault(require("../../Components/VHUserPhotoIconTitleDescription"));
 
-var _File = _interopRequireDefault(require("../../Components/Input/File/"));
-
 var _SideProjects = _interopRequireDefault(require("../../Sections/SideProjects"));
+
+var _ProfileStatus = _interopRequireDefault(require("../../Components/ProfileStatus/"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -57,6 +57,10 @@ var VHProfileTemplate = function VHProfileTemplate(props) {
     email: props.User.email,
     onEvent: props.onEvent
   })), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+    marginBottom: 16
+  }, /*#__PURE__*/_react.default.createElement(_ProfileStatus.default, _extends({}, props, {
+    onEvent: props.onEvent
+  }))), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
     marginBottom: 16
   }, /*#__PURE__*/_react.default.createElement("div", {
     id: "general"
