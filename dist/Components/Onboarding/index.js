@@ -165,7 +165,6 @@ var VHOnboarding = function VHOnboarding(props) {
   }, /*#__PURE__*/_react.default.createElement(_Grid.Row, {
     style: {
       height: '100%',
-      overflow: 'auto',
       boxSizing: 'border-box',
       padding: '0'
     }

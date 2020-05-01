@@ -26,6 +26,7 @@ const VHSelect = props => {
   }
 
   const [value, handleChange] = React.useState(newValue);
+  
   React.useEffect(() => {
     handleChange(newValue);
   }, [newValue])
@@ -49,6 +50,7 @@ const VHSelect = props => {
     singleValue: (styles) => ({ color: '#4f4f4f' }),
     valueContainer: (styles) => ({ width: 'auto', display: 'flex', paddingLeft: '0' }),
     singleValue: (styles) => ({ padding: '6px 0' }),
+     
     option: (provided, state) => ({
       ...provided,
       color: state.isFocused ? '#646464' : '#646464'.isSelected ? '#fff' : '#646464',
@@ -56,6 +58,9 @@ const VHSelect = props => {
       padding: '6px 12px',
       fontFamily: 'Roboto',
       fontSize: '14px',
+      zIndex: 999,
+
+      
     }),
   };
 
@@ -64,6 +69,7 @@ const VHSelect = props => {
     clearIndicator: (styles) => ({ display: 'none' }),
     valueContainer: (base) => ({ width: 'auto', display: 'flex', marginLeft: 8 }),
     multiValue: (base) => ({ width: 'auto', height: 'auto', marginLeft: 8, display: 'flex', alignItems: 'center' }),
+    
     control: base => ({
       ...base,
       fontFamily: 'Roboto',
@@ -71,7 +77,6 @@ const VHSelect = props => {
       border: '1px solid #e0e0e0',
       padding: '1px 0',
       borderRadius: '6px',
-
 
     }),
     option: (provided, state) => ({
@@ -81,6 +86,8 @@ const VHSelect = props => {
       padding: '6px 12px',
       fontFamily: 'Roboto',
       fontSize: '14px',
+      zIndex: 999,
+     
     }),
   };
 
@@ -124,6 +131,7 @@ const VHSelect = props => {
               }
             })
           }}
+          menuContainerStyle={{'zIndex': 999 }} 
           styles={props.removeBorder ? style : styled}
           closeMenuOnSelect={!props.isMulti}
           className={props.className}
@@ -137,7 +145,7 @@ const VHSelect = props => {
           isClearable={true}
           options={props.items}
           onChange={(newValue, actionMeta) => {
-            switch (true) {
+            switch (true) {  
               case actionMeta.action === "remove-value":
                 let finalValue = []
                 if (newValue !== null && newValue.value === 'zero') {
