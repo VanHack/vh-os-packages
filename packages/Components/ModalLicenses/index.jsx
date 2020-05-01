@@ -56,7 +56,7 @@ const VHModalLicenses = props => {
                     </Row>
                     <Row marginBottom5 row justifySpaceBetween>
                         <Row width={'40%'} marginRight={4}>
-                            <VHText color="gray-90" variant={'platform'} text="Start Date" />
+                            <VHText color="gray-90" variant={'platform'} text="End Date" />
                             <VHInput placeholder="" type={'date'} onEvent={props.onEvent} value={yearOfComplete} data={{ id: "modalLicenses", field: "yearOfComplete" }} />
                             {props.modalLicenses.yearOfComplete.messageError && (
                                 <S.ErrorMessage>Field required</S.ErrorMessage>
