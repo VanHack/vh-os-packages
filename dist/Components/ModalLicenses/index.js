@@ -124,7 +124,7 @@ var VHModalLicenses = function VHModalLicenses(props) {
     }, /*#__PURE__*/_react.default.createElement(_index.default, {
       color: "gray-90",
       variant: 'platform',
-      text: "Start Date"
+      text: "End Date"
     }), /*#__PURE__*/_react.default.createElement(_Simple.default, {
       placeholder: "",
       type: 'date',
