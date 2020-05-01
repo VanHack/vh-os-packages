@@ -37,7 +37,7 @@ const VHProfileStatus = props => {
                                     <VHText color="gradient-primary" onEvent={props.onEvent} data={'RequestProfileReview'} variant={'platform'} text="Request" cursor />
                                 </Row>
                             }
-                            {props.reviewInProgress || props.review && props.review.isUnderReview &&
+                            {(props.review && props.review.canRequestReview) && (props.reviewInProgress || props.review.isUnderReview) &&
                                 <Row alignItemsCenter>
                                     <VHText
                                         variant={"platform2"}
@@ -73,8 +73,8 @@ const VHProfileStatus = props => {
                             <VHText color="black-90" onEvent={props.onEvent} data={'addRole'} variant={'subtitle2'} text="English Verification" />
                         </Row>
                         <Row row alignItemsCenter width={'80%'}>
-                            {(props.englishVerification) && (props.englishVerification.status === 'NoTest' || props.englishVerification.status == 'CanStartAgain'
-                                || props.englishVerification.status == 'VoidTest') &&
+                            {(props.englishVerification) && (props.englishVerification.status === 'NoTest' || props.englishVerification.status === 'CanStartAgain'
+                                || props.englishVerification.status === 'VoidTest' || props.englishVerification.status === 'Expired') &&
                                 <Row alignItemsCenter>
                                     <VHText color="gradient-primary" onEvent={props.onEvent} data={'StartEnglishVerification'} variant={'platform'} text="Start now" cursor />
                                 </Row>
