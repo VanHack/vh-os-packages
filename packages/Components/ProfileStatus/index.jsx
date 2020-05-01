@@ -5,6 +5,7 @@ import VHCardBase from "../../Components/Cards/Base/"
 import VHText from "../../Components/Text/"
 import VHIcon from '../Icon/'
 import * as S from './styles'
+import VHModalProfileReview from '../ModalProfileReview/'
 
 const VHProfileStatus = props => {
 
@@ -19,48 +20,51 @@ const VHProfileStatus = props => {
             }
             <VHCardBase>
                 <Row responsive row alignItemsCenter>
-                    <Row column alignItemsCenter >
-                        <Row marginBottom5 alignItemsCenter>
-                            <VHIcon
-                                icon={'profile'}
-                                color="gray-90"
-                                text={'Profile Review'}
-                                md
-                            />
+                    {props.review && props.review.show &&
+                        < Row column alignItemsCenter borderRight>
+                            <Row marginBottom5 alignItemsCenter>
+                                <VHIcon
+                                    icon={'profile'}
+                                    color="gray-90"
+                                    text={'Profile Review'}
+                                    md
+                                />
+                            </Row>
+                            <Row marginBottom5 alignItemsCenter>
+                                <VHText color="black-90" onEvent={props.onEvent} data={'addRole'} variant={'subtitle2'} text="Profile Review" />
+                            </Row>
+                            <Row row alignItemsCenter width={'80%'}>
+                                {props.review && props.review.canRequestReview && !props.reviewInProgress && 
+                                    <Row alignItemsCenter>
+                                        <VHText color="gradient-primary" onEvent={props.onEvent} data={'RequestProfileReview'} variant={'platform'} text="Request" cursor />
+                                    </Row>
+                                }
+                                {props.review && props.review.isUnderReview && 
+                                    <Row alignItemsCenter>
+                                        <VHText
+                                            variant={"platform2"}
+                                            color="gray-80"
+                                            text={`Under review`}
+                                        />
+                                    </Row>
+                                }
+                                {props.review && props.review.notes.length > 0 &&
+                                    <Row alignItemsCenter>
+                                        <VHText
+                                            cursor
+                                            variant={'platform'}
+                                            color="gradient-primary"
+                                            onEvent={props.onEvent}
+                                            data={"ViewReview"}
+                                            text="Check Review"
+                                            onOpen={() => { setOpenModalReview(true) }}
+                                        />
+                                    </Row>
+                                }
+                            </Row>
                         </Row>
-                        <Row marginBottom5 alignItemsCenter>
-                            <VHText color="black-90" onEvent={props.onEvent} data={'addRole'} variant={'subtitle2'} text="Profile Review" />
-                        </Row>
-                        <Row row alignItemsCenter width={'80%'}>
-                            {props.review && props.review.canRequestReview && !props.review.isUnderReview &&
-                                <Row alignItemsCenter>
-                                    <VHText color="gradient-primary" onEvent={props.onEvent} data={'RequestProfileReview'} variant={'platform'} text="Request" cursor />
-                                </Row>
-                            }
-                            {(props.review && props.review.canRequestReview) && (props.reviewInProgress || props.review.isUnderReview) &&
-                                <Row alignItemsCenter>
-                                    <VHText
-                                        variant={"platform2"}
-                                        color="gray-80"
-                                        text={`Under review`}
-                                    />
-                                </Row>
-                            }
-                            {props.review && props.review.notes.length > 0 &&
-                                <Row>
-                                    <VHText
-                                        cursor
-                                        color="gradient-primary"
-                                        onEvent={props.onEvent}
-                                        data={"ViewReview"}
-                                        text="Check Review"
-                                        onOpen={() => { setOpenModalReview(true) }}
-                                    />
-                                </Row>
-                            }
-                        </Row>
-                    </Row>
-                    <Row column alignItemsCenter borderRight borderLeft>
+                    }
+                    <Row column alignItemsCenter borderRight>
                         <Row marginBottom5 alignItemsCenter>
                             <VHIcon
                                 icon={'language'}
@@ -100,13 +104,13 @@ const VHProfileStatus = props => {
                         </Row>
                         <Row row alignItemsCenter>
                             <Row alignItemsCenter>
-                                <VHText color="gradient-primary" onEvent={props.onEvent} data={'StartCodeTest'} variant={'platform'} text="Start code test" cursor/>
+                                <VHText color="gradient-primary" onEvent={props.onEvent} data={'StartCodeTest'} variant={'platform'} text="Start code test" cursor />
                             </Row>
                         </Row>
                     </Row>
                 </Row>
             </VHCardBase>
-        </React.Fragment>
+        </React.Fragment >
     )
 }
 

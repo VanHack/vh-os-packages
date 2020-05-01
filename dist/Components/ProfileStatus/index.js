@@ -21,6 +21,8 @@ var _Icon = _interopRequireDefault(require("../Icon/"));
 
 var S = _interopRequireWildcard(require("./styles"));
 
+var _ModalProfileReview = _interopRequireDefault(require("../ModalProfileReview/"));
+
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function _getRequireWildcardCache() { return cache; }; return cache; }
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
@@ -45,7 +47,7 @@ var VHProfileStatus = function VHProfileStatus(props) {
       openModalReview = _React$useState2[0],
       setOpenModalReview = _React$useState2[1];
 
-  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, openModalReview && /*#__PURE__*/_react.default.createElement(VHModalProfileReview, {
+  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, openModalReview && /*#__PURE__*/_react.default.createElement(_ModalProfileReview.default, {
     openModal: openModalReview,
     onClose: function onClose() {
       return setOpenModalReview(false);
@@ -56,9 +58,10 @@ var VHProfileStatus = function VHProfileStatus(props) {
     responsive: true,
     row: true,
     alignItemsCenter: true
-  }, /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  }, props.review && props.review.show && /*#__PURE__*/_react.default.createElement(_Grid.Row, {
     column: true,
-    alignItemsCenter: true
+    alignItemsCenter: true,
+    borderRight: true
   }, /*#__PURE__*/_react.default.createElement(_Grid.Row, {
     marginBottom5: true,
     alignItemsCenter: true
@@ -80,7 +83,7 @@ var VHProfileStatus = function VHProfileStatus(props) {
     row: true,
     alignItemsCenter: true,
     width: '80%'
-  }, props.review && props.review.canRequestReview && !props.review.isUnderReview && /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  }, props.review && props.review.canRequestReview && !props.reviewInProgress && /*#__PURE__*/_react.default.createElement(_Grid.Row, {
     alignItemsCenter: true
   }, /*#__PURE__*/_react.default.createElement(_Text.default, {
     color: "gradient-primary",
@@ -89,14 +92,17 @@ var VHProfileStatus = function VHProfileStatus(props) {
     variant: 'platform',
     text: "Request",
     cursor: true
-  })), props.review && props.review.canRequestReview && (props.reviewInProgress || props.review.isUnderReview) && /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  })), props.review && props.review.isUnderReview && /*#__PURE__*/_react.default.createElement(_Grid.Row, {
     alignItemsCenter: true
   }, /*#__PURE__*/_react.default.createElement(_Text.default, {
     variant: "platform2",
     color: "gray-80",
     text: "Under review"
-  })), props.review && props.review.notes.length > 0 && /*#__PURE__*/_react.default.createElement(_Grid.Row, null, /*#__PURE__*/_react.default.createElement(_Text.default, {
+  })), props.review && props.review.notes.length > 0 && /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+    alignItemsCenter: true
+  }, /*#__PURE__*/_react.default.createElement(_Text.default, {
     cursor: true,
+    variant: 'platform',
     color: "gradient-primary",
     onEvent: props.onEvent,
     data: "ViewReview",
@@ -107,8 +113,7 @@ var VHProfileStatus = function VHProfileStatus(props) {
   })))), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
     column: true,
     alignItemsCenter: true,
-    borderRight: true,
-    borderLeft: true
+    borderRight: true
   }, /*#__PURE__*/_react.default.createElement(_Grid.Row, {
     marginBottom5: true,
     alignItemsCenter: true
