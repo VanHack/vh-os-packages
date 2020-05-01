@@ -69,14 +69,25 @@ var VHSideProjectsSection = function VHSideProjectsSection(props) {
     text: "Side Projects",
     color: "black-50",
     variant: "h2"
+  }), /*#__PURE__*/_react.default.createElement(_Text.default, {
+    text: "Projects listed in this section can be from either professional, volunteer, or academic roles. They might catch the eye of a recruiter or an employer and help you nail a job!",
+    color: "black-50",
+    variant: 'subtitle3'
   })), /*#__PURE__*/_react.default.createElement(_Base.default, {
     className: "vh-sideProjects-section-card ".concat(props.className ? props.className : '')
   }, props.controls.sideProjectsSection.loading ? /*#__PURE__*/_react.default.createElement(_Preloader.default, {
     type: "circle"
   }) : /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, props.preLoading ? /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement(_reactPreloadSkeleton.CardSkeleton, null), /*#__PURE__*/_react.default.createElement(_reactPreloadSkeleton.CardSkeleton, {
     button: true
-  })) : /*#__PURE__*/_react.default.createElement(_Grid.Row, {
-    column: true
+  })) : /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement(_Text.default, {
+    variant: 'subtitle1',
+    text: 'Side Projects',
+    color: 'black-100'
+  }), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+    paddingTop: '5',
+    paddingRight8: true,
+    id: "education-level",
+    width: '50%'
   }, sideProjects.map(function (item) {
     return /*#__PURE__*/_react.default.createElement(_Grid.Row, {
       marginBottom5: true
@@ -125,7 +136,7 @@ var VHSideProjectsSection = function VHSideProjectsSection(props) {
       setOpenModal(true);
     },
     label: "Add Side Projects"
-  }))))));
+  })))))));
 };
 
 VHSideProjectsSection.propTypes = {
