@@ -74,7 +74,7 @@ const VHProfileStatus = props => {
                         </Row>
                         <Row row alignItemsCenter width={'80%'}>
                             {(props.englishVerification) && (props.englishVerification.status === 'NoTest' || props.englishVerification.status == 'CanStartAgain'
-                                || userEglishVerification.status == 'VoidTest') &&
+                                || props.englishVerification.status == 'VoidTest') &&
                                 <Row alignItemsCenter>
                                     <VHText color="gradient-primary" onEvent={props.onEvent} data={'StartEnglishVerification'} variant={'platform'} text="Start now" cursor />
                                 </Row>

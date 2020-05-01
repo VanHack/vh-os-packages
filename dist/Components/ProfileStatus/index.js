@@ -130,7 +130,7 @@ var VHProfileStatus = function VHProfileStatus(props) {
     row: true,
     alignItemsCenter: true,
     width: '80%'
-  }, props.englishVerification && (props.englishVerification.status === 'NoTest' || props.englishVerification.status == 'CanStartAgain' || userEglishVerification.status == 'VoidTest') && /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  }, props.englishVerification && (props.englishVerification.status === 'NoTest' || props.englishVerification.status == 'CanStartAgain' || props.englishVerification.status == 'VoidTest') && /*#__PURE__*/_react.default.createElement(_Grid.Row, {
     alignItemsCenter: true
   }, /*#__PURE__*/_react.default.createElement(_Text.default, {
     color: "gradient-primary",
