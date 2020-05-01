@@ -49,20 +49,15 @@ var VHUserCompanyExperienceSection = function VHUserCompanyExperienceSection(pro
 
   var _React$useState3 = _react.default.useState(false),
       _React$useState4 = _slicedToArray(_React$useState3, 2),
-      openModalReview = _React$useState4[0],
-      setOpenModalReview = _React$useState4[1];
-
-  var _React$useState5 = _react.default.useState(false),
-      _React$useState6 = _slicedToArray(_React$useState5, 2),
-      newExperience = _React$useState6[0],
-      _setNewExperience = _React$useState6[1];
+      newExperience = _React$useState4[0],
+      _setNewExperience = _React$useState4[1];
 
   var experience = props.experience.experiences ? props.experience.experiences : [];
 
-  var _React$useState7 = _react.default.useState({}),
-      _React$useState8 = _slicedToArray(_React$useState7, 2),
-      currentItem = _React$useState8[0],
-      _setCurrentItem = _React$useState8[1];
+  var _React$useState5 = _react.default.useState({}),
+      _React$useState6 = _slicedToArray(_React$useState5, 2),
+      currentItem = _React$useState6[0],
+      _setCurrentItem = _React$useState6[1];
 
   var notes = props.experience.profileReview ? props.experience.profileReview.notes : [];
 
@@ -95,13 +90,6 @@ var VHUserCompanyExperienceSection = function VHUserCompanyExperienceSection(pro
     industryList: props.industryList,
     positions: props.positions,
     closeModalExperience: props.closeModalExperience
-  }), openModalReview && /*#__PURE__*/_react.default.createElement(_ModalProfileReview.default, {
-    openModal: openModalReview,
-    onClose: function onClose() {
-      return setOpenModalReview(false);
-    },
-    onEvent: props.onEvent,
-    notes: notes
   }), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
     mmarginBottom: 2
   }, /*#__PURE__*/_react.default.createElement(_Text.default, {
@@ -149,53 +137,6 @@ var VHUserCompanyExperienceSection = function VHUserCompanyExperienceSection(pro
     },
     setNewExperience: function setNewExperience() {
       _setNewExperience(true);
-    }
-  })), props.experience.canRequestReview && !props.reviewInProgress && /*#__PURE__*/_react.default.createElement(_Grid.Row, {
-    row: true,
-    alignItemsCenter: true,
-    marginRight: 4,
-    autoWidth: true
-  }, /*#__PURE__*/_react.default.createElement(_ButtonNew.default, {
-    outline: true,
-    primary: true,
-    onEvent: props.onEvent,
-    data: "RequestProfileReview",
-    label: props.experience.profileReview && props.experience.profileReview.notes.length > 0 ? 'Request Another Profile Review' : 'Request Profile Review'
-  })), !props.experience.canRequestReview && props.experience.canRequestReviewInDays > 0 && /*#__PURE__*/_react.default.createElement(_Grid.Row, {
-    row: true,
-    alignItemsCenter: true
-  }, /*#__PURE__*/_react.default.createElement(_Text.default, {
-    variant: "platform2",
-    color: "gray-80",
-    text: "You can request another profile review in ".concat(props.canRequestReviewInDays, " days")
-  })), props.reviewInProgress && /*#__PURE__*/_react.default.createElement(_Grid.Row, {
-    row: true,
-    alignItemsCenter: true
-  }, /*#__PURE__*/_react.default.createElement(_Text.default, {
-    variant: "platform2",
-    color: "gray-80",
-    text: "Your profile is under review"
-  })), props.experience.profileReviewInProgress && /*#__PURE__*/_react.default.createElement(_Grid.Row, {
-    row: true,
-    alignItemsCenter: true,
-    marginRight: 4,
-    autoWidth: true
-  }, /*#__PURE__*/_react.default.createElement(_Text.default, {
-    variant: "platform2",
-    color: "gray-80",
-    text: "Your profile is under review"
-  })), props.experience.profileReview && props.experience.profileReview.notes.length > 0 && /*#__PURE__*/_react.default.createElement(_Grid.Row, {
-    row: true,
-    alignItemsCenter: true,
-    autoWidth: true
-  }, /*#__PURE__*/_react.default.createElement(_ButtonNew.default, {
-    outline: true,
-    primary: true,
-    onEvent: props.onEvent,
-    data: "ViewReview",
-    label: "Check the Review",
-    onOpen: function onOpen() {
-      setOpenModalReview(true);
     }
   }))))))));
 };

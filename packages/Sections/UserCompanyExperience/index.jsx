@@ -12,7 +12,6 @@ import VHModalProfileReview from '../../Components/ModalProfileReview'
 
 const VHUserCompanyExperienceSection = props => {
   const [openModal, setOpenModal] = React.useState(false);
-  const [openModalReview, setOpenModalReview] = React.useState(false);
   const [newExperience, setNewExperience] = React.useState(false);
   const experience = props.experience.experiences ? props.experience.experiences : [];
   const [currentItem, setCurrentItem] = React.useState({});
@@ -46,11 +45,6 @@ const VHUserCompanyExperienceSection = props => {
           industryList={props.industryList}
           positions={props.positions}
           closeModalExperience={props.closeModalExperience} />
-      }
-      {openModalReview &&
-        <VHModalProfileReview openModal={openModalReview} onClose={() => setOpenModalReview(false)}
-          onEvent={props.onEvent}
-          notes={notes} />
       }
       <Row mmarginBottom={2}>
         <VHText
@@ -103,56 +97,6 @@ const VHUserCompanyExperienceSection = props => {
                             setNewExperience={() => { setNewExperience(true) }}
                           />
                         </Row>
-                        {props.experience.canRequestReview && !props.reviewInProgress &&
-                          <Row row alignItemsCenter  marginRight={4} autoWidth>
-                            <VHButton
-                              outline
-                              primary
-                              onEvent={props.onEvent}
-                              data={"RequestProfileReview"}
-                              label={props.experience.profileReview && props.experience.profileReview.notes.length > 0 ? 'Request Another Profile Review' : 'Request Profile Review'}
-                            />
-                          </Row>
-                        }
-                        {!props.experience.canRequestReview && props.experience.canRequestReviewInDays > 0 &&
-                          <Row row alignItemsCenter>
-                            <VHText
-                              variant={"platform2"}
-                              color="gray-80"
-                              text={`You can request another profile review in ${props.canRequestReviewInDays} days`}
-                            />
-                          </Row>
-                        }
-                        {props.reviewInProgress &&
-                          <Row row alignItemsCenter>
-                            <VHText
-                              variant={"platform2"}
-                              color="gray-80"
-                              text={`Your profile is under review`}
-                            />
-                          </Row>
-                        }
-                        {props.experience.profileReviewInProgress &&
-                          <Row row alignItemsCenter marginRight={4} autoWidth>
-                            <VHText
-                              variant={"platform2"}
-                              color="gray-80"
-                              text={`Your profile is under review`}
-                            />
-                          </Row>
-                        }
-                        {props.experience.profileReview && props.experience.profileReview.notes.length > 0 &&
-                          <Row row alignItemsCenter autoWidth>
-                            <VHButton
-                              outline
-                              primary
-                              onEvent={props.onEvent}
-                              data={"ViewReview"}
-                              label="Check the Review"
-                              onOpen={() => {setOpenModalReview(true)}}
-                            />
-                          </Row>
-                        }
                       </Row>
                     </>
                   )

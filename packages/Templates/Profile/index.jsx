@@ -10,16 +10,22 @@ import VHUserCompanyExperienceSection from '../../Sections/UserCompanyExperience
 import VHPageSection from '../PageSection/index'
 import VHLanguageSection from '../../Sections/LanguageSection'
 import VHProfileAvatar from '../../Components/VHUserPhotoIconTitleDescription'
-import VHInputFile from '../../Components/Input/File/'
 import VHSideProjectsSection from '../../Sections/SideProjects'
+import VHProfileStatus from '../../Components/ProfileStatus/'
 
 const VHProfileTemplate = props => (
-  <Container md style={{maxWidth: "732px"}}>
+  <Container md style={{ maxWidth: "732px" }}>
     <Row marginBottom={16}>
       <VHProfileAvatar
-        avatar= {props.image ? props.image : ''}
-        name= {`${props.firstName ? props.firstName : 'Loading...'} ${props.lastName ? props.lastName : ''}`}
-        email= {props.User.email}
+        avatar={props.image ? props.image : ''}
+        name={`${props.firstName ? props.firstName : 'Loading...'} ${props.lastName ? props.lastName : ''}`}
+        email={props.User.email}
+        onEvent={props.onEvent}
+      />
+    </Row>
+    <Row marginBottom={16}>
+      <VHProfileStatus
+        {...props}
         onEvent={props.onEvent}
       />
     </Row>
@@ -55,13 +61,13 @@ const VHProfileTemplate = props => (
         } />
       </div>
     </Row>
-     <Row marginBottom={16}>
-     <div id={"social"}>
-      <VHSocialSection
-        preLoading={props.controls.linkedin.preLoading}
-        {...props}
-        onEvent={props.onEvent}
-      />
+    <Row marginBottom={16}>
+      <div id={"social"}>
+        <VHSocialSection
+          preLoading={props.controls.linkedin.preLoading}
+          {...props}
+          onEvent={props.onEvent}
+        />
       </div>
     </Row>
     <Row marginBottom={16}>
