@@ -63,11 +63,11 @@ const VHInputRadio = props => {
                 {props.input && checked &&
                     <S.Container error={props.controls.passportExpirationDate.error}>
                         <InputMask mask="99/9999" onBlur={(e) => {
-                                props.onEvent({
-                                    data: {key: 'passportExpirationDate',  value: stringToDate(e.currentTarget.value)},
-                                    event: "onBlur",
-                                    origin: "VHInput",
-                                })
+                            {e.currentTarget.value.length > 0 && props.onEvent({
+                                data: {key: 'passportExpirationDate',  value: stringToDate(e.currentTarget.value)},
+                                event: "onBlur",
+                                origin: "VHInput",
+                            })}
                         }} onChange={(e)=>{setValue(e.currentTarget.value)}} value={value} placeholder={'Expiration: mm/yyyy'} />
                     </S.Container>
                 }

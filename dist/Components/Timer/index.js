@@ -92,7 +92,6 @@ var VHTimer = function VHTimer(props) {
   };
 
   _react.default.useEffect(function () {
-    console.log(props.endDate);
     var countdownFunction = setInterval(function () {
       start(new Date(props.endDate), countdownFunction);
     }, 1000);

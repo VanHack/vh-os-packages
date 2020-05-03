@@ -10,7 +10,18 @@ import VHModalProfileReview from '../ModalProfileReview/'
 const VHProfileStatus = props => {
 
     const [openModalReview, setOpenModalReview] = React.useState(false);
-
+    
+    let englishResult = props.englishLevel
+    if (props.englishVerification && props.englishVerification.status === 'VoidTest') {
+        englishResult = 'Void'
+    }
+    else if (props.englishVerification && props.englishVerification.status === 'Expired') {
+        englishResult = 'Expired'
+    } 
+    else if (props.englishVerification && props.englishVerification.status === 'UnderReview') {
+        englishResult = 'Under review'
+    }
+   
     return (
         <React.Fragment>
             {openModalReview &&
@@ -77,15 +88,14 @@ const VHProfileStatus = props => {
                             <VHText color="black-90" onEvent={props.onEvent} data={'addRole'} variant={'subtitle2'} text="English Verification" />
                         </Row>
                         <Row row alignItemsCenter width={'80%'}>
-                            {(props.englishVerification) && (props.englishVerification.status === 'NoTest' || props.englishVerification.status === 'CanStartAgain'
-                                || props.englishVerification.status === 'VoidTest' || props.englishVerification.status === 'Expired') &&
+                            {(props.englishVerification) && (props.englishLevel === 'NoEnglish' && (props.englishVerification.status === 'VoidTest' || props.englishVerification.status === 'Expired' || props.englishVerification.status === 'InProgress' || props.englishVerification.status === 'NoTest')) &&
                                 <Row alignItemsCenter>
-                                    <VHText color="gradient-primary" onEvent={props.onEvent} data={'StartEnglishVerification'} variant={'platform'} text="Start now" cursor />
+                                    <VHText color="gradient-primary" onEvent={props.onEvent} data={'StartEnglishVerification'} variant={'platform'} text={props.englishVerification.status === 'InProgress' ? 'In progress' : 'Start now'} cursor />
                                 </Row>
                             }
-                            {props.englishLevel !== 'NoEnglish' &&
+                            {englishResult && (props.englishLevel !== 'NoEnglish' || props.englishVerification.status === 'VoidTest' || props.englishVerification.status === 'Expired' || props.englishVerification.status === 'UnderReview') &&
                                 <Row alignItemsCenter>
-                                    <VHText color="gray-80" onEvent={props.onEvent} data={'label'} variant={'platform'} text={props.englishLevel} />
+                                    <VHText color="gray-80" onEvent={props.onEvent} data={'label'} variant={'platform'} text={englishResult} />
                                 </Row>
                             }
                         </Row>
@@ -104,7 +114,7 @@ const VHProfileStatus = props => {
                         </Row>
                         <Row row alignItemsCenter>
                             <Row alignItemsCenter>
-                                <VHText color="gradient-primary" onEvent={props.onEvent} data={'StartCodeTest'} variant={'platform'} text="Start code test" cursor />
+                                <VHText color="gradient-primary" onEvent={props.onEvent} data={'StartCodeTest'} variant={'platform'} text="See Details" cursor />
                             </Row>
                         </Row>
                     </Row>

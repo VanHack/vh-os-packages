@@ -47,6 +47,16 @@ var VHProfileStatus = function VHProfileStatus(props) {
       openModalReview = _React$useState2[0],
       setOpenModalReview = _React$useState2[1];
 
+  var englishResult = props.englishLevel;
+
+  if (props.englishVerification && props.englishVerification.status === 'VoidTest') {
+    englishResult = 'Void';
+  } else if (props.englishVerification && props.englishVerification.status === 'Expired') {
+    englishResult = 'Expired';
+  } else if (props.englishVerification && props.englishVerification.status === 'UnderReview') {
+    englishResult = 'Under review';
+  }
+
   return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, openModalReview && /*#__PURE__*/_react.default.createElement(_ModalProfileReview.default, {
     openModal: openModalReview,
     onClose: function onClose() {
@@ -135,23 +145,23 @@ var VHProfileStatus = function VHProfileStatus(props) {
     row: true,
     alignItemsCenter: true,
     width: '80%'
-  }, props.englishVerification && (props.englishVerification.status === 'NoTest' || props.englishVerification.status === 'CanStartAgain' || props.englishVerification.status === 'VoidTest' || props.englishVerification.status === 'Expired') && /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  }, props.englishVerification && props.englishLevel === 'NoEnglish' && (props.englishVerification.status === 'VoidTest' || props.englishVerification.status === 'Expired' || props.englishVerification.status === 'InProgress' || props.englishVerification.status === 'NoTest') && /*#__PURE__*/_react.default.createElement(_Grid.Row, {
     alignItemsCenter: true
   }, /*#__PURE__*/_react.default.createElement(_Text.default, {
     color: "gradient-primary",
     onEvent: props.onEvent,
     data: 'StartEnglishVerification',
     variant: 'platform',
-    text: "Start now",
+    text: props.englishVerification.status === 'InProgress' ? 'In progress' : 'Start now',
     cursor: true
-  })), props.englishLevel !== 'NoEnglish' && /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  })), englishResult && (props.englishLevel !== 'NoEnglish' || props.englishVerification.status === 'VoidTest' || props.englishVerification.status === 'Expired' || props.englishVerification.status === 'UnderReview') && /*#__PURE__*/_react.default.createElement(_Grid.Row, {
     alignItemsCenter: true
   }, /*#__PURE__*/_react.default.createElement(_Text.default, {
     color: "gray-80",
     onEvent: props.onEvent,
     data: 'label',
     variant: 'platform',
-    text: props.englishLevel
+    text: englishResult
   })))), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
     column: true,
     alignItemsCenter: true
@@ -183,7 +193,7 @@ var VHProfileStatus = function VHProfileStatus(props) {
     onEvent: props.onEvent,
     data: 'StartCodeTest',
     variant: 'platform',
-    text: "Start code test",
+    text: "See Details",
     cursor: true
   })))))));
 };
