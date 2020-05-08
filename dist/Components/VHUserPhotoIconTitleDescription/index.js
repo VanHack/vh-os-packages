@@ -35,6 +35,7 @@ var VHUserAvatar = function VHUserAvatar(props) {
   return /*#__PURE__*/_react.default.createElement(_index.Row, null, /*#__PURE__*/_react.default.createElement(_index.Row, {
     alignItemsCenter: true
   }, /*#__PURE__*/_react.default.createElement(S.OutterImg, null, /*#__PURE__*/_react.default.createElement(_ImgCrop.default, {
+    disable: props.disable,
     source: props.avatar,
     data: {
       context: 2

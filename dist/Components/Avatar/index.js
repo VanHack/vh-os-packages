@@ -28,7 +28,7 @@ var VHAvatar = function VHAvatar(props) {
     loading: props.loading,
     uploading: 100 - props.uploading,
     onClick: function onClick(event) {
-      if (props.onEvent) {
+      if (props.disable) {} else if (props.onEvent) {
         props.onEvent({
           data: props.data,
           type: 'onClick',

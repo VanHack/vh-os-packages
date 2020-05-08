@@ -221,6 +221,7 @@ var VHImgCrop = /*#__PURE__*/function (_PureComponent) {
       return /*#__PURE__*/_react.default.createElement("div", {
         className: "imgCrop"
       }, /*#__PURE__*/_react.default.createElement(GlobalStyle, null), /*#__PURE__*/_react.default.createElement(_Avatar.default, {
+        disable: this.props.disable,
         content: "",
         image: croppedImageUrlSent || this.props.source,
         showCursor: true,
