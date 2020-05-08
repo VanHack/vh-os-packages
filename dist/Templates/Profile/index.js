@@ -52,11 +52,12 @@ var VHProfileTemplate = function VHProfileTemplate(props) {
   }, /*#__PURE__*/_react.default.createElement(_Grid.Row, {
     marginBottom: 16
   }, /*#__PURE__*/_react.default.createElement(_VHUserPhotoIconTitleDescription.default, {
+    disable: props.disableEdit,
     avatar: props.image ? props.image : '',
     name: "".concat(props.firstName ? props.firstName : 'Loading...', " ").concat(props.lastName ? props.lastName : ''),
-    email: props.User.email,
+    email: props.email ? props.email : 'Loading...',
     onEvent: props.onEvent
-  })), /*#__PURE__*/_react.default.createElement(_Grid.Row, {
+  })), !props.disableEdit && /*#__PURE__*/_react.default.createElement(_Grid.Row, {
     marginBottom: 16
   }, /*#__PURE__*/_react.default.createElement(_ProfileStatus.default, _extends({}, props, {
     onEvent: props.onEvent

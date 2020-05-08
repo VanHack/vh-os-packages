@@ -17,18 +17,21 @@ const VHProfileTemplate = props => (
   <Container md style={{ maxWidth: "732px" }}>
     <Row marginBottom={16}>
       <VHProfileAvatar
+        disable={props.disableEdit}
         avatar={props.image ? props.image : ''}
         name={`${props.firstName ? props.firstName : 'Loading...'} ${props.lastName ? props.lastName : ''}`}
-        email={props.User.email}
+        email={props.email ? props.email : 'Loading...'}
         onEvent={props.onEvent}
       />
     </Row>
+    {!props.disableEdit &&
     <Row marginBottom={16}>
       <VHProfileStatus
         {...props}
         onEvent={props.onEvent}
       />
     </Row>
+    }
     <Row marginBottom={16}>
       <div id={"general"}>
         <VHPageSection content={

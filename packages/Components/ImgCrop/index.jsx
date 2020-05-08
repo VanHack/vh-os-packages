@@ -283,6 +283,7 @@ class VHImgCrop extends PureComponent {
       <div className="imgCrop">
         <GlobalStyle />
         <VHAvatar
+          disable={this.props.disable}
           content=""
           image={croppedImageUrlSent || this.props.source}
           showCursor
@@ -300,48 +301,48 @@ class VHImgCrop extends PureComponent {
           marginTop={'50px'}
           onClose={() => { this.setState({ showCropper: false }) }}
           content={
-          <Row className='newModal' justifyCenter column responsive alignItemsCenter>
-            <div style={{ display: 'none' }}>
-              <input ref={this.state.inputFile} type="file" accept={this.props.acceptTypes || 'image/*'} onChange={this.onSelectFile} />
-            </div>
-            {src && !cropped && (
-              <ReactCrop
-                src={src}
-                crop={crop}
-                ruleOfThirds
-                onImageLoaded={this.onImageLoaded}
-                onComplete={this.onCropComplete}
-                onChange={this.onCropChange}
-              />
-            )}
-            {
-              showCropper && (
-                <Row justifyCenter column responsive alignItemsCenter>
-                <Row responsive marginBottom={'3'} marginTop={'25'} style={{alignItems: 'flex-end'}} >
-                  <VHButton
-                    className=""
-                    label="Save photo"
-                    onEvent={e => {
-                      this.setState({ cropped: false, src: null, showCropper: false, croppedImageUrlSent: croppedImageUrl })
-                      fetch(croppedImageUrl)
-                        .then(res => res.blob())
-                        .then(res => {
-                          this.props.onEvent({
-                            data: this.props.data,
-                            src: res,
-                            fileName,
-                            type: 'onCropped',
-                            target: 'VHImgCrop'
-                          })
-                        })
-                    }}
-                    primary
-                  />
-                </Row>
-                </Row>
-              )
-            }
-          </Row>}
+            <Row className='newModal' justifyCenter column responsive alignItemsCenter>
+              <div style={{ display: 'none' }}>
+                <input ref={this.state.inputFile} type="file" accept={this.props.acceptTypes || 'image/*'} onChange={this.onSelectFile} />
+              </div>
+              {src && !cropped && (
+                <ReactCrop
+                  src={src}
+                  crop={crop}
+                  ruleOfThirds
+                  onImageLoaded={this.onImageLoaded}
+                  onComplete={this.onCropComplete}
+                  onChange={this.onCropChange}
+                />
+              )}
+              {
+                showCropper && (
+                  <Row justifyCenter column responsive alignItemsCenter>
+                    <Row responsive marginBottom={'3'} marginTop={'25'} style={{ alignItems: 'flex-end' }} >
+                      <VHButton
+                        className=""
+                        label="Save photo"
+                        onEvent={e => {
+                          this.setState({ cropped: false, src: null, showCropper: false, croppedImageUrlSent: croppedImageUrl })
+                          fetch(croppedImageUrl)
+                            .then(res => res.blob())
+                            .then(res => {
+                              this.props.onEvent({
+                                data: this.props.data,
+                                src: res,
+                                fileName,
+                                type: 'onCropped',
+                                target: 'VHImgCrop'
+                              })
+                            })
+                        }}
+                        primary
+                      />
+                    </Row>
+                  </Row>
+                )
+              }
+            </Row>}
           onEvent={function noRefCheck() { }}
           open={showCropper}
         />
