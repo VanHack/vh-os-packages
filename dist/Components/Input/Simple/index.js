@@ -72,6 +72,7 @@ var VHInput = function VHInput(props) {
     disabled: props.disabled || props.loading,
     error: props.error,
     loading: props.loading,
+    max: "".concat(props.type === 'date' ? "2999-12-31" : ''),
     autoFocus: props.autoFocus,
     value: value,
     noBorder: props.noBorder,

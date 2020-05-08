@@ -122,7 +122,8 @@ var VHSelect = function VHSelect(props) {
       backgroundColor: state.isFocused ? '#F2F2F2' : '#fff'.isSelected ? '#2C9BF5' : '#fff',
       padding: '6px 12px',
       fontFamily: 'Roboto',
-      fontSize: '14px'
+      fontSize: '14px',
+      zIndex: 999
     });
   }), _style);
   var styled = {
@@ -167,7 +168,8 @@ var VHSelect = function VHSelect(props) {
         backgroundColor: state.isFocused ? '#F2F2F2' : '#fff'.isSelected ? '#2C9BF5' : '#fff',
         padding: '6px 12px',
         fontFamily: 'Roboto',
-        fontSize: '14px'
+        fontSize: '14px',
+        zIndex: 999
       });
     }
   };
@@ -208,6 +210,9 @@ var VHSelect = function VHSelect(props) {
           value: newValue
         }
       });
+    },
+    menuContainerStyle: {
+      'zIndex': 999
     },
     styles: props.removeBorder ? style : styled,
     closeMenuOnSelect: !props.isMulti,

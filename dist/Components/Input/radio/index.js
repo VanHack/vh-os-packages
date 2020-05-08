@@ -107,14 +107,16 @@ var VHInputRadio = function VHInputRadio(props) {
   }, /*#__PURE__*/_react.default.createElement(_reactInputMask.default, {
     mask: "99/9999",
     onBlur: function onBlur(e) {
-      props.onEvent({
-        data: {
-          key: 'passportExpirationDate',
-          value: (0, _util.stringToDate)(e.currentTarget.value)
-        },
-        event: "onBlur",
-        origin: "VHInput"
-      });
+      {
+        e.currentTarget.value.length > 0 && props.onEvent({
+          data: {
+            key: 'passportExpirationDate',
+            value: (0, _util.stringToDate)(e.currentTarget.value)
+          },
+          event: "onBlur",
+          origin: "VHInput"
+        });
+      }
     },
     onChange: function onChange(e) {
       setValue(e.currentTarget.value);
