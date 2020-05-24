@@ -49,6 +49,8 @@
     "styled-components": "^5.1.0"
   },
   "dependencies": {
+    "chart.js": "^2.9.3",
+    "react-chartjs-2": "^2.9.0",
     "react-image-crop": "^8.5.0",
     "react-input-mask": "^3.0.0-alpha.2",
     "react-preload-skeleton": "^0.0.1-16",
