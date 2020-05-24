@@ -41,9 +41,20 @@ export const getFormatedPassport = date => {
 export const stringToDate = date => {
     let result = ''
     if (date) {
-        let newDate = '01/'+date
+        let newDate = '01/' + date
         var dateParts = newDate.split("/");
         result = new Date(+dateParts[2], dateParts[1] - 1, +dateParts[0])
     }
     return result
+}
+
+export const formatCurrency = (value, type = 'CAD') => {
+    const locales = {
+        'CAD': 'en-US',
+        'USD': 'en-US',
+        'EUR': 'de-DE'
+    }
+    return new Intl.NumberFormat(locales[type], {
+        currency: type, style: 'currency', minimumFractionDigits: 2
+    }).format(value);
 }
