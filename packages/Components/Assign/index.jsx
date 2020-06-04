@@ -23,7 +23,7 @@ const VHAssign = props => {
           if (index < 3) {
             count ++
             return (
-              <S.Wrapper key={`vh-assign-${item.id}`}>
+              <S.Wrapper key={`vh-assign-${item.id}`} data-testid="user-avatar">
                 <S.Tooltip>{item.name}</S.Tooltip>
                 <VHAvatar
                   content="test"
@@ -36,7 +36,7 @@ const VHAssign = props => {
           }
           if (index > 2 && index === props.items.length - 1) {
             return (
-              <S.Wrapper key={`vh-assign-${item.id}`}>
+              <S.Wrapper key={`vh-assign-${item.id}`} data-testid="user-count">
                 <S.Rounded>
                   <VHText variant="platform" text={`+${props.items.length - count}`} />
                 </S.Rounded>
